@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<style>     
-    <title>Peuplitique – Le peuple reprend la parole</title>
-sommaire a:hover { ... }
+<meta charset="UTF-8">
+<title>Peuplitique – Le peuple reprend la parole</title>
+
+<style>
+
+/* --- Mise en forme générale --- */
+body {
+    font-family: Arial, sans-serif;
+    background: #0d2f4f;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- Conteneur central --- */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* --- Titres --- */
+h1, h2, h3 {
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+/* --- Menu de navigation --- */
+nav.sommaire {
+    background: #0b253d;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav.sommaire a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.sommaire a:hover {
+    text-decoration: underline;
+}
+
+/* --- Encadrés --- */
+.box {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-left: 4px solid #fff;
+    margin: 20px 0;
+}
 
 </style>
 </head>
+
 <body>
+
+<!-- ========================= -->
+<!--       SOMMAIRE           -->
+<!-- ========================= -->
+
 <nav class="sommaire">
     <h2>Sommaire</h2>
     <ul>
@@ -18,30 +78,43 @@ sommaire a:hover { ... }
     </ul>
 </nav>
 
-    <h1>Peuplitique – Le peuple reprend la parole</h1>    ...
-    </style>
-
-</head>
-<body>
-<nav class="sommaire">
-    <h2>Sommaire</h2>
-    <ul>
-        <li><a href="#constitution">Étape 1 — Constitution</a></li>
-        <li><a href="#analyse">Étape 2 — Analyse</a></li>
-        <li><a href="#pedagogie">Section pédagogique</a></li>
-        <li><a href="#glossaire">Glossaire</a></li>
-    </ul>
-</nav>
 <div class="container">
 
     <h1>Peuplitique – Le peuple reprend la parole</h1>
-
     <p>Première plateforme citoyenne indépendante créée sans argent, par intelligence collective.</p>
 <!-- ========================= -->
-<!--   ÉTAPE 1 — CONSTITUTION  -->
-<!-- ========================= -->
+    <!--   ÉTAPE 1 — CONSTITUTION  -->
+    <!-- ========================= -->
 
-<a id="constitution"></a>
+    <h2 id="constitution">Étape 1 — Constitution</h2>
+    <p>Contenu de la constitution…</p>
+
+    <!-- ========================= -->
+    <!--   ÉTAPE 2 — ANALYSE       -->
+    <!-- ========================= -->
+
+    <h2 id="analyse">Étape 2 — Analyse</h2>
+    <p>Contenu de l’analyse…</p>
+
+    <!-- ========================= -->
+    <!--   SECTION PÉDAGOGIQUE    -->
+    <!-- ========================= -->
+
+    <h2 id="pedagogie">Section pédagogique</h2>
+    <p>Contenu pédagogique…</p>
+
+    <!-- ========================= -->
+    <!--        GLOSSAIRE         -->
+    <!-- ========================= -->
+
+    <h2 id="glossaire">Glossaire</h2>
+    <p>Définitions…</p>
+
+</div>
+
+</body>
+</html>
+
 <h2>Étape 1 — Constitution : Structure générale</h2>
 
 <p class="intro">
