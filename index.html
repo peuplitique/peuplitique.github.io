@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
-<style>.
-
-.menu a {
+<style>./* --- Mise en forme générale --- */
+body {
+    font-family: Arial, sans-serif;
+    background: #1a4a7a;
     color: white;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- Conteneur central pour lisibilité --- */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* --- Titres --- */
+h1, h2, h3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 26px; }
+h3 { font-size: 22px; }
+
+/* --- Menu de navigation --- */
+.menu {
+    background: #0d2f4f;
+    padding: 12px;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
+
+.menu a {
     color: white;
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -19,6 +48,14 @@
 .menu a:hover {
     text-decoration: underline;
 }
+
+/* --- Encadrés pédagogiques --- */
+.box {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-left: 4px solid #fff;
+    margin: 20px 0;
+
 
 /* ----------------------------- */
 /*   STRUCTURE GÉNÉRALE         */
