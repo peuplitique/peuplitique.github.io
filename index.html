@@ -2,96 +2,16 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-</body>
-   <nav>
-    <ul>
-        <li><a href="#intro">Accueil</a></li>
-
-        <li class="menu-deroulant">
-            <a href="#">Pays adhérents</a>
-            <ul class="sous-menu">
-                <li><span class="pays-ok"></span>France</li>
-                <li><span class="pays-ok"></span>Belgique</li>
-                <li><span class="pays-ok"></span>Canada</li>
-                <li><span class="pays-ok"></span>Suisse</li>
-            </ul>
-        </li>
-
-        <li><a href="?lang=fr">FR</a></li>
-        <li><a href="?lang=en">EN</a></li>
-    </ul>
-</nav> 
-    <!-- TITRE -->
-<h1 id="intro">Peuplitique – Le peuple reprend la parole</h1>
-
-<h2>Introduction générale</h2>
-<p>…</p>
-<p>…</p>.
-    <div class="introduction">
-    <h2>Introduction générale</h2>
-    <p>
-        Peuplitique est une plateforme citoyenne conçue pour redonner au peuple un rôle central 
-        dans la compréhension, la construction et l’évaluation des décisions publiques.
-    </p>
-    <p>
-        Elle repose sur une méthodologie simple, accessible et transparente, permettant à chacun 
-        de participer sans prérequis techniques ou politiques.
-    </p>
-   </div> 
-Peuplitique est la première plateforme citoyenne indépendante conçue pour redonner au peuple la maîtrise de la
-        parole publique, de l’analyse collective et de la décision commune.
-        Elle repose sur un principe simple :
-        <strong>l’intelligence collective est plus puissante que toute structure centralisée</strong>.
-    </p>
-dans la compréhension, la construction et l’évaluation des décisions publiques. 
-
- Bienvenue sur Peuplitique, la plateforme citoyenne où la parole retrouve sa valeur, où la vérité se construit
-        ensemble, et où le peuple reprend la maîtrise de son destin.
- </p>
-        Créée sans argent, sans parti, sans institution et sans hiérarchie, Peuplitique démontre qu’un peuple organisé,
-        outillé et souverain peut produire :
-    </p>
-
-    <ul style="padding: 0 40px;">
-        <li>des analyses fines, nuancées et argumentées ;</li>
-        <li>des décisions collectives claires, assumées et traçables ;</li>
-        <li>des propositions concrètes pour transformer la réalité politique, sociale et économique.</li>
-    </ul>
-   
-<p>
-Cette introduction présente le cadre général, avant d’entrer dans les étapes de travail, 
-les outils pédagogiques, les mécanismes avancés et le glossaire.
-</p>
-
-<!-- SOMMAIRE -->
-<div id="sommaire">
+    <title>Peuplitique – Le peuple reprend la parole</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-   introduction {
-    margin: 30px 20px 40px 20px;
-    padding: 20px;
-    background: #001a3d;
-    border-left: 5px solid #4a90e2;
-    border-radius: 6px;
-} <div class="introduction">
-    <h2>Introduction générale</h2>
-    <p>
-        Peuplitique est une plateforme citoyenne conçue pour redonner au peuple un rôle central 
-        dans la compréhension, la construction et l’évaluation des décisions publiques.
-    </p>
-    <p>
-        Elle repose sur une méthodologie simple, accessible et transparente, permettant à chacun 
-        de participer sans prérequis techniques ou politiques.
-    </p>
-</div>    
         /* --- Mise en forme générale --- */
- 
-</nav> 
-        {
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #00275a; /* bleu foncé */
+            background: #00275a;
             color: white;
             line-height: 1.6;
         }
@@ -154,7 +74,7 @@ les outils pédagogiques, les mécanismes avancés et le glossaire.
             margin: 5px 0;
         }
 
-        /* Carré vert pour pays adhérents */
+        /* Carré vert */
         .pays-ok {
             width: 12px;
             height: 12px;
@@ -164,6 +84,15 @@ les outils pédagogiques, les mécanismes avancés et le glossaire.
             border-radius: 3px;
         }
 
+        /* --- INTRODUCTION --- */
+        .introduction {
+            margin: 30px 20px 40px 20px;
+            padding: 20px;
+            background: #001a3d;
+            border-left: 5px solid #4a90e2;
+            border-radius: 6px;
+        }
+
         /* --- SOMMAIRE --- */
         #sommaire {
             background: #001f47;
@@ -171,10 +100,6 @@ les outils pédagogiques, les mécanismes avancés et le glossaire.
             border-left: 5px solid #4a90e2;
             padding: 20px;
             margin: 20px;
-        }
-
-        #sommaire h2 {
-            margin-top: 0;
         }
 
         #sommaire ul {
@@ -216,7 +141,55 @@ les outils pédagogiques, les mécanismes avancés et le glossaire.
         </ul>
     </nav>
 
-    
+    <!-- TITRE -->
+    <h1 id="intro">Peuplitique – Le peuple reprend la parole</h1>
+
+    <!-- INTRODUCTION -->
+    <div class="introduction">
+        <h2>Introduction générale</h2>
+
+        <p>
+            Peuplitique est une plateforme citoyenne conçue pour redonner au peuple un rôle central 
+            dans la compréhension, la construction et l’évaluation des décisions publiques.
+        </p>
+
+        <p>
+            Elle repose sur une méthodologie simple, accessible et transparente, permettant à chacun 
+            de participer sans prérequis techniques ou politiques.
+        </p>
+
+        <p>
+            Peuplitique est la première plateforme citoyenne indépendante conçue pour redonner au peuple 
+            la maîtrise de la parole publique, de l’analyse collective et de la décision commune.
+        </p>
+
+        <p>
+            Elle repose sur un principe simple : 
+            <strong>l’intelligence collective est plus puissante que toute structure centralisée</strong>.
+        </p>
+
+        <p>
+            Bienvenue sur Peuplitique, la plateforme citoyenne où la parole retrouve sa valeur, 
+            où la vérité se construit ensemble, et où le peuple reprend la maîtrise de son destin.
+        </p>
+
+        <p>
+            Créée sans argent, sans parti, sans institution et sans hiérarchie, Peuplitique démontre 
+            qu’un peuple organisé, outillé et souverain peut produire :
+        </p>
+
+        <ul style="padding: 0 40px;">
+            <li>des analyses fines, nuancées et argumentées ;</li>
+            <li>des décisions collectives claires, assumées et traçables ;</li>
+            <li>des propositions concrètes pour transformer la réalité politique, sociale et économique.</li>
+        </ul>
+
+        <p>
+            Cette introduction présente le cadre général, avant d’entrer dans les étapes de travail, 
+            les outils pédagogiques, les mécanismes avancés et le glossaire.
+        </p>
+    </div>
+
     <!-- SOMMAIRE -->
     <div id="sommaire">
         <h2>Sommaire</h2>
@@ -229,25 +202,36 @@ les outils pédagogiques, les mécanismes avancés et le glossaire.
         </ul>
     </div>
 
-    <!-- ÉTAPE 1 -->
-    <h2 id="etape1">Étape 1 — Constitution</h2>
-    <p>Contenu de l’étape 1…</p>
+    <!-- SCRIPT TRADUCTION AUTOMATIQUE -->
+    <script>
+        const translations = {
+            "Accueil": "Home",
+            "Pays adhérents": "Member Countries",
+            "Introduction générale": "General Introduction",
+            "Sommaire": "Summary",
+            "Étape 1 — Constitution": "Step 1 — Constitution",
+            "Étape 2 — Analyse": "Step 2 — Analysis",
+            "Section pédagogique": "Pedagogical Section",
+            "Mécanismes avancés": "Advanced Mechanisms",
+            "Glossaire": "Glossary"
+        };
 
-    <!-- ÉTAPE 2 -->
-    <h2 id="etape2">Étape 2 — Analyse</h2>
-    <p>Contenu de l’étape 2…</p>
+        function applyTranslation() {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get("lang");
 
-    <!-- SECTION PÉDAGOGIQUE -->
-    <h2 id="pedagogie">Section pédagogique</h2>
-    <p>Contenu pédagogique…</p>
+            if (lang !== "en") return;
 
-    <!-- MÉCANISMES AVANCÉS -->
-    <h2 id="mecanismes">Mécanismes avancés</h2>
-    <p>Contenu des mécanismes…</p>
+            document.querySelectorAll("h1, h2, h3, p, li, a").forEach(el => {
+                const text = el.innerText.trim();
+                if (translations[text]) {
+                    el.innerText = translations[text];
+                }
+            });
+        }
 
-    <!-- GLOSSAIRE -->
-    <h2 id="glossaire">Glossaire</h2>
-    <p>Définitions…</p>
+        applyTranslation();
+    </script>
 
 </body>
 </html>
