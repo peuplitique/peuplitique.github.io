@@ -235,6 +235,124 @@
 
 </body>
 </html>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="#intro">Accueil</a></li>
+
+            <li class="menu-deroulant">
+                <a href="#">Pays adhérents</a>
+                <ul class="sous-menu">
+                    <li><span class="pays-ok"></span>France</li>
+                    <li><span class="pays-ok"></span>Belgique</li>
+                    <li><span class="pays-ok"></span>Canada</li>
+                    <li><span class="pays-ok"></span>Suisse</li>
+                </ul>
+            </li>
+
+            <li><a href="?lang=fr">FR</a></li>
+            <li><a href="?lang=en">EN</a></li>
+        </ul>
+    </nav>
+
+    <!-- TITRE -->
+    <h1 id="intro">Peuplitique – Le peuple reprend la parole</h1>
+
+    <!-- INTRODUCTION -->
+    <div class="introduction">
+        <h2>Introduction générale</h2>
+
+        <p>
+            Peuplitique est une plateforme citoyenne conçue pour redonner au peuple un rôle central 
+            dans la compréhension, la construction et l’évaluation des décisions publiques.
+        </p>
+
+        <p>
+            Elle repose sur une méthodologie simple, accessible et transparente, permettant à chacun 
+            de participer sans prérequis techniques ou politiques.
+        </p>
+
+        <p>
+            Peuplitique est la première plateforme citoyenne indépendante conçue pour redonner au peuple 
+            la maîtrise de la parole publique, de l’analyse collective et de la décision commune.
+        </p>
+
+        <p>
+            Elle repose sur un principe simple : 
+            <strong>l’intelligence collective est plus puissante que toute structure centralisée</strong>.
+        </p>
+
+        <p>
+            Bienvenue sur Peuplitique, la plateforme citoyenne où la parole retrouve sa valeur, 
+            où la vérité se construit ensemble, et où le peuple reprend la maîtrise de son destin.
+        </p>
+
+        <p>
+            Créée sans argent, sans parti, sans institution et sans hiérarchie, Peuplitique démontre 
+            qu’un peuple organisé, outillé et souverain peut produire :
+        </p>
+
+        <ul style="padding: 0 40px;">
+            <li>des analyses fines, nuancées et argumentées ;</li>
+            <li>des décisions collectives claires, assumées et traçables ;</li>
+            <li>des propositions concrètes pour transformer la réalité politique, sociale et économique.</li>
+        </ul>
+
+        <p>
+            Cette introduction présente le cadre général, avant d’entrer dans les étapes de travail, 
+            les outils pédagogiques, les mécanismes avancés et le glossaire.
+        </p>
+    </div>
+
+    <!-- SOMMAIRE -->
+    <div id="sommaire">
+        <h2>Sommaire</h2>
+        <ul>
+            <li><a href="#etape1">Étape 1 — Constitution</a></li>
+            <li><a href="#etape2">Étape 2 — Analyse</a></li>
+            <li><a href="#pedagogie">Section pédagogique</a></li>
+            <li><a href="#mecanismes">Mécanismes avancés</a></li>
+            <li><a href="#glossaire">Glossaire</a></li>
+        </ul>
+    </div>
+
+    <!-- SCRIPT TRADUCTION AUTOMATIQUE -->
+    <script>
+        const translations = {
+            "Accueil": "Home",
+            "Pays adhérents": "Member Countries",
+            "Introduction générale": "General Introduction",
+            "Sommaire": "Summary",
+            "Étape 1 — Constitution": "Step 1 — Constitution",
+            "Étape 2 — Analyse": "Step 2 — Analysis",
+            "Section pédagogique": "Pedagogical Section",
+            "Mécanismes avancés": "Advanced Mechanisms",
+            "Glossaire": "Glossary"
+        };
+
+        function applyTranslation() {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get("lang");
+
+            if (lang !== "en") return;
+
+            document.querySelectorAll("h1, h2, h3, p, li, a").forEach(el => {
+                const text = el.innerText.trim();
+                if (translations[text]) {
+                    el.innerText = translations[text];
+                }
+            });
+        }
+
+        applyTranslation();
+    </script>
+
+</body>
+</html>
 
  <!-- MENU -->
     <nav>
