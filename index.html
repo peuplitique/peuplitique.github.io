@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <title>Peuplitique – Le peuple reprend la parole</title>
@@ -12,7 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #00275a; /* bleu foncé propre et lisible */
+            background: #00275a; /* bleu foncé */
             color: white;
             line-height: 1.6;
         }
@@ -31,9 +30,10 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: #f5f5f5;
-            border-bottom: 1px solid #ddd;
+            background: #0d1b2a;
+            border-bottom: 1px solid #4a90e2;
         }
+
         nav ul {
             list-style: none;
             display: flex;
@@ -48,7 +48,7 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #000;
+            color: #a8d4ff;
             font-weight: 600;
         }
 
@@ -58,9 +58,9 @@
             position: absolute;
             top: 100%;
             left: 0;
-            background: white;
+            background: #1b263b;
             padding: 10px;
-            border: 1px solid #ddd;
+            border: 1px solid #4a90e2;
             list-style: none;
             min-width: 180px;
             z-index: 999;
@@ -74,18 +74,22 @@
             margin: 5px 0;
         }
 
+        /* Carré vert pour pays adhérents */
+        .pays-ok {
+            width: 12px;
+            height: 12px;
+            background: #00c853;
+            display: inline-block;
+            margin-right: 6px;
+            border-radius: 3px;
+        }
+
         /* --- SOMMAIRE --- */
-       #sommaire {
-    background: #00275a;
-    color: white;
-    border-left: 5px solid #4a90e2;
-}
-#sommaire a {
-    color: #a8d4ff;
-}
-        
-            padding: 20px;
+        #sommaire {
+            background: #001f47;
+            color: white;
             border-left: 5px solid #4a90e2;
+            padding: 20px;
             margin: 20px;
         }
 
@@ -104,12 +108,74 @@
 
         #sommaire a {
             text-decoration: none;
-            color: #003c8f;
+            color: #a8d4ff;
             font-weight: 600;
         }
- </style>
+    </style>
 </head>
+
 <body>
+
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="#intro">Accueil</a></li>
+
+            <li class="menu-deroulant">
+                <a href="#">Pays adhérents</a>
+                <ul class="sous-menu">
+                    <li><span class="pays-ok"></span>France</li>
+                    <li><span class="pays-ok"></span>Belgique</li>
+                    <li><span class="pays-ok"></span>Canada</li>
+                    <li><span class="pays-ok"></span>Suisse</li>
+                </ul>
+            </li>
+
+            <li><a href="?lang=fr">FR</a></li>
+            <li><a href="?lang=en">EN</a></li>
+        </ul>
+    </nav>
+
+    <!-- TITRE -->
+    <h1 id="intro">Peuplitique – Le peuple reprend la parole</h1>
+
+    <!-- SOMMAIRE -->
+    <div id="sommaire">
+        <h2>Sommaire</h2>
+        <ul>
+            <li><a href="#etape1">Étape 1 — Constitution</a></li>
+            <li><a href="#etape2">Étape 2 — Analyse</a></li>
+            <li><a href="#pedagogie">Section pédagogique</a></li>
+            <li><a href="#mecanismes">Mécanismes avancés</a></li>
+            <li><a href="#glossaire">Glossaire</a></li>
+        </ul>
+    </div>
+
+    <!-- ÉTAPE 1 -->
+    <h2 id="etape1">Étape 1 — Constitution</h2>
+    <p>Contenu de l’étape 1…</p>
+
+    <!-- ÉTAPE 2 -->
+    <h2 id="etape2">Étape 2 — Analyse</h2>
+    <p>Contenu de l’étape 2…</p>
+
+    <!-- SECTION PÉDAGOGIQUE -->
+    <h2 id="pedagogie">Section pédagogique</h2>
+    <p>Contenu pédagogique…</p>
+
+    <!-- MÉCANISMES AVANCÉS -->
+    <h2 id="mecanismes">Mécanismes avancés</h2>
+    <p>Contenu des mécanismes…</p>
+
+    <!-- GLOSSAIRE -->
+    <h2 id="glossaire">Glossaire</h2>
+    <p>Définitions…</p>
+
+</body>
+</html>
+
+
+
 
     <!-- MENU -->
     <nav>
@@ -129,10 +195,7 @@
         </ul>
     </nav>
 
-    <!-- SOMMAIRE -->
-    <section id="sommaire">
-        <h2>Sommaire</h2>
-        <ul>
+   
             <li><a href="#intro">Introduction générale</a></li>
             <li><a href="#token">Token citoyen</a></li>
             <li><a href="#referendum">Référendum</a></li>
