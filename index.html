@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        /* --- Mise en forme générale --- */
+        /* Mise en forme générale */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -25,7 +25,7 @@
             padding: 0 20px;
         }
 
-        /* --- MENU HAUT --- */
+        /* Menu haut */
         nav {
             position: sticky;
             top: 0;
@@ -36,90 +36,25 @@
 
         nav ul {
             list-style: none;
-            display: flex;
-            gap: 20px;
-            padding: 12px 20px;
             margin: 0;
+            padding: 10px 20px;
+            display: flex;
+            gap: 15px;
         }
 
-        nav ul li {
-            position: relative;
-        }
-
-        nav ul li a {
+        nav a {
+            color: #ffffff;
             text-decoration: none;
-            color: #a8d4ff;
-            font-weight: 600;
         }
 
-        /* Sous-menu */
-        .menu-deroulant .sous-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: #1b263b;
-            padding: 10px;
-            border: 1px solid #4a90e2;
-            list-style: none;
-            min-width: 180px;
-            z-index: 999;
-        }
-
-        .menu-deroulant:hover .sous-menu {
-            display: block;
-        }
-
-        .sous-menu li {
-            margin: 5px 0;
-        }
-
-        /* Carré vert */
-        .pays-ok {
-            width: 12px;
-            height: 12px;
-            background: #00c853;
-            display: inline-block;
-            margin-right: 6px;
-            border-radius: 3px;
-        }
-
-        /* --- INTRODUCTION --- */
         .introduction {
-            margin: 30px 20px 40px 20px;
-            padding: 20px;
-            background: #001a3d;
-            border-left: 5px solid #4a90e2;
-            border-radius: 6px;
-        }
-
-        /* --- SOMMAIRE --- */
-        #sommaire {
-            background: #001f47;
-            color: white;
-            border-left: 5px solid #4a90e2;
-            padding: 20px;
-            margin: 20px;
-        }
-
-        #sommaire ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        #sommaire ul li {
-            margin: 6px 0;
-        }
-
-        #sommaire a {
-            text-decoration: none;
-            color: #a8d4ff;
-            font-weight: 600;
+            margin-top: 20px;
         }
     </style>
 </head>
-
 <body>
+
+<!-- MENU LANGUES -->
 <nav>
     <ul>
         <li><a href="?lang=fr">FR</a></li>
@@ -127,8 +62,10 @@
     </ul>
 </nav>
 
+<!-- TITRE PRINCIPAL -->
 <h1 id="intro">Peuplitique – Le peuple reprend la parole</h1>
 
+<!-- INTRODUCTION GÉNÉRALE -->
 <div class="introduction">
     <h2>Introduction générale</h2>
     <p>
@@ -139,7 +76,7 @@
         Elle repose sur une méthodologie simple, accessible et transparente, permettant à chacun 
         de participer sans prérequis techniques ou politiques.
     </p>
-</div>    
+</div>
 <nav>
     <ul>
         <li><a href="?lang=fr">FR</a></li>
