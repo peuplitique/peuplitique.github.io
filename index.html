@@ -12,6 +12,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: #eef6ff;
 }
 
 /* --- MENU HAUT --- */
@@ -52,64 +53,21 @@ nav ul li a {
 .sous-menu li {
     margin: 5px 0;
 }
-.sous-menu li a {
-    color: #005bbb;
-}
 
 /* --- SOMMAIRE --- */
-.sommaire {
-    background: #eef4ff;
+#sommaire {
+    background: #d9e9ff;
     padding: 20px;
-    border-left: 4px solid #005bbb;
-    margin: 30px 20px;
+    border-left: 5px solid #4a90e2;
+    margin: 20px;
 }
-.sommaire h2 {
+#sommaire h2 {
     margin-top: 0;
 }
-.sommaire ul {
-    list-style: none;
-    padding-left: 0;
-}
-.sommaire li {
-    margin-bottom: 8px;
-}
-.sommaire a {
-    color: #005bbb;
-    font-weight: 600;
-    text-decoration: none;
-}
-.sommaire a:hover {
-    text-decoration: underline;
-}
 
-/* --- TOKEN NAV --- */
-.token-nav {
-    background: #eef4ff;
-    padding: 18px;
-    border-left: 4px solid #005bbb;
-    border-radius: 4px;
-    margin: 30px 20px;
-}
-.token-nav p {
-    margin: 0 0 12px 0;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-.token-nav ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-}
-.token-nav li {
-    margin-bottom: 8px;
-}
-.token-nav a {
-    text-decoration: none;
-    color: #005bbb;
-    font-weight: 600;
-}
-.token-nav a:hover {
-    text-decoration: underline;
+/* --- TITRES --- */
+h1, h2, h3 {
+    padding: 10px 20px;
 }
 
 </style>
@@ -117,180 +75,43 @@ nav ul li a {
 
 <body>
 
-<!-- ========================= -->
-<!--   MENU HAUT DU SITE      -->
-<!-- ========================= -->
-
+<!-- MENU -->
 <nav>
     <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li class="menu-deroulant">
+            <a href="#">Mécanismes</a>
+            <ul class="sous-menu">
+                <li><a href="#token">Token citoyen</a></li>
+                <li><a href="#referendum">Référendum</a></li>
+                <li><a href="#vote">Vote</a></li>
+                <li><a href="#resultats">Résultats</a></li>
+            </ul>
+        </li>
         <li><a href="#constitution">Étape 1</a></li>
-        <li><a href="#analyse">Étape 2</a></li>
-        <li><a href="#pedagogie">Section pédagogique</a></li>
-        <li><a href="#mecanismes">Mécanismes avancés</a></li>
-        <li><a href="#glossaire">Glossaire</a></li>
-
-        <li class="menu-deroulant">
-            <a href="#">Pays adhérents</a>
-            <ul class="sous-menu">
-                <li><a href="#pays-france">France</a></li>
-                <li><a href="#pays-maurice">Maurice</a></li>
-                <li><a href="#pays-canada">Canada</a></li>
-                <li><a href="#pays-suisse">Suisse</a></li>
-                <li><a href="#pays-autres">Autres pays</a></li>
-            </ul>
-        </li>
+        <li><a href="#etape2">Étape 2</a></li>
     </ul>
 </nav>
 
-<!-- ========================= -->
-<!--   SOMMAIRE LISIBLE        -->
-<!-- ========================= -->
-
-<div class="sommaire">
+<!-- SOMMAIRE -->
+<section id="sommaire">
     <h2>Sommaire</h2>
     <ul>
+        <li><a href="#intro">Introduction générale</a></li>
+        <li><a href="#token">Token citoyen</a></li>
+        <li><a href="#referendum">Référendum</a></li>
+        <li><a href="#vote">Vote</a></li>
+        <li><a href="#resultats">Résultats</a></li>
         <li><a href="#constitution">Étape 1 — Constitution</a></li>
-        <li><a href="#analyse">Étape 2 — Analyse</a></li>
-        <li><a href="#pedagogie">Section pédagogique</a></li>
-        <li><a href="#mecanismes">Mécanismes avancés</a></li>
-        <li><a href="#glossaire">Glossaire</a></li>
+        <li><a href="#etape2">Étape 2 — Limites structurelles</a></li>
     </ul>
-</div>
-        <!-- MENU DÉROULANT PAYS ADHÉRENTS -->
-        <li class="menu-deroulant">
-            <a href="#">Pays adhérents</a>
-            <ul class="sous-menu">
-                <li><a href="#pays-france">France</a></li>
-                <li><a href="#pays-maurice">Maurice</a></li>
-                <li><a href="#pays-canada">Canada</a></li>
-                <li><a href="#pays-suisse">Suisse</a></li>
-                <li><a href="#pays-autres">Autres pays</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-    font-family: Arial, sans-serif;
-    background: #0d2f4f;
-    color: white;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+</section>
 
-/* --- Conteneur central --- */
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* --- Titres --- */
-h1, h2, h3 {
-    font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 15px;
-}
-
-/* --- Menu de navigation --- */
-nav.sommaire {
-    background: #0b253d;
-    padding: 12px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav.sommaire a {
-    color: white;
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav.sommaire a:hover {
-    text-decoration: underline;
-}
-
-/* --- Encadrés --- */
-.box {
-    background: rgba(255,255,255,0.1);
-    padding: 15px;
-    border-left: 4px solid #fff;
-    margin: 20px 0;
-}
-
-</style>
-</head>
-<style>
-nav ul { list-style: none; display: flex; gap: 20px; padding: 0; margin: 0; }
-nav ul li { position: relative; }
-nav ul li a { text-decoration: none; color: #000; }
-
-.menu-deroulant .sous-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    padding: 10px;
-    border: 1px solid #ddd;
-    list-style: none;
-    min-width: 180px;
-    z-index: 999;
-}
-
-.menu-deroulant:hover .sous-menu {
-    display: block;
-}
-
-.sous-menu li { margin: 5px 0; }
-.sous-menu li a { color: #005bbb; }
-</style>
-<body>
-
-<!-- ========================= -->
-<!--       SOMMAIRE           -->
-<!-- ========================= -->
-
-<nav class="sommaire">
-    <h2>Sommaire</h2>
-    <ul>
-        <li><a href="#constitution">Étape 1 — Constitution</a></li>
-        <li><a href="#analyse">Étape 2 — Analyse</a></li>
-        <li><a href="#pedagogie">Section pédagogique</a></li>
-        <li><a href="#mecanismes">Mécanismes avancés</a></li>
-        <li><a href="#glossaire">Glossaire</a></li>
-
-        <!-- MENU DÉROULANT PAYS ADHÉRENTS -->
-        <li class="menu-deroulant">
-            <a href="#">Pays adhérents</a>
-            <ul class="sous-menu">
-                <li><a href="#pays-france">France</a></li>
-                <li><a href="#pays-maurice">Maurice</a></li>
-                <li><a href="#pays-canada">Canada</a></li>
-                <li><a href="#pays-suisse">Suisse</a></li>
-                <li><a href="#pays-autres">Autres pays</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-
-<div class="container">
-
-    <!-- ========================= -->
-    <!--         TITRE            -->
-    <!-- ========================= -->
-
-    <h1>Peuplitique – Le peuple reprend la parole</h1>
-
-    <!-- ========================= -->
-    <!--   INTRODUCTION GÉNÉRALE  -->
-    <!-- ========================= -->
-
-    <h2 id="introduction">Introduction générale</h2>
-
-    <p>
+<!-- INTRODUCTION -->
+<h1 id="intro">Introduction générale</h1>
+<p style="padding: 0 20px;">
+Bienvenue sur Peuplitique, la plateforme citoyenne où la parole retrouve sa valeur, où la vérité se construit ensemble, et où le peuple reprend la maîtrise de son destin.
+</p>
     Peuplitique est la première plateforme citoyenne indépendante conçue pour redonner au peuple la maîtrise de la parole publique, de l’analyse collective et de la décision commune. 
     Elle repose sur un principe simple : <strong>l’intelligence collective est plus puissante que toute structure centralisée</strong>.
     </p>
