@@ -2,8 +2,49 @@
 <html lang="fr">
 <head>
 <style>
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+/* Sous-menu */
+.menu-deroulant .sous-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    list-style: none;
+    min-width: 180px;
+    z-index: 999;
+}
+.menu-deroulant:hover .sous-menu {
+    display: block;
+}
+.sous-menu li {
+    margin: 5px 0;
+}
+.sous-menu li a {
+    color: #005bbb;
+}
+</style>    
+<style>
+<style>
 .token-nav {
-    background: #eef4ff;
+    background: #eef4ff; /* bleu très clair lisible */
     padding: 18px;
     border-left: 4px solid #005bbb;
     border-radius: 4px;
@@ -31,6 +72,7 @@
     text-decoration: underline;
 }
 </style>
+</style>
 <meta charset="UTF-8">
 <title>Peuplitique – Le peuple reprend la parole</title>
 
@@ -38,6 +80,28 @@
 
 /* --- Mise en forme générale --- */
 body {
+    <nav>
+    <ul>
+        <li><a href="#sommaire">Sommaire</a></li>
+        <li><a href="#etape1">Étape 1</a></li>
+        <li><a href="#etape2">Étape 2</a></li>
+        <li><a href="#pedagogie">Section pédagogique</a></li>
+        <li><a href="#mecanismes">Mécanismes avancés</a></li>
+        <li><a href="#glossaire">Glossaire</a></li>
+
+        <!-- MENU DÉROULANT PAYS ADHÉRENTS -->
+        <li class="menu-deroulant">
+            <a href="#">Pays adhérents</a>
+            <ul class="sous-menu">
+                <li><a href="#pays-france">France</a></li>
+                <li><a href="#pays-maurice">Maurice</a></li>
+                <li><a href="#pays-canada">Canada</a></li>
+                <li><a href="#pays-suisse">Suisse</a></li>
+                <li><a href="#pays-autres">Autres pays</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
     font-family: Arial, sans-serif;
     background: #0d2f4f;
     color: white;
