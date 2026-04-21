@@ -2,150 +2,240 @@
 <html lang="fr">
 
 <head>
-<meta charset="UTF-8">
-<title>Peuplitique – Le peuple reprend la parole</title>
+    <meta charset="UTF-8">
+    <title>Peuplitique – Le peuple reprend la parole</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+    <style>
+        /* --- Mise en forme générale --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #eef6ff;
+            line-height: 1.6;
+        }
 
-/* --- Mise en forme générale --- */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #eef6ff;
-}
+        h1, h2, h3 {
+            padding: 10px 20px;
+            margin-top: 30px;
+        }
 
-/* --- MENU HAUT --- */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 12px 20px;
-    margin: 0;
-    background: #f5f5f5;
-    border-bottom: 1px solid #ddd;
-}
-nav ul li {
-    position: relative;
-}
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 600;
-}
+        p {
+            padding: 0 20px;
+        }
 
-/* Sous-menu */
-.menu-deroulant .sous-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    padding: 10px;
-    border: 1px solid #ddd;
-    list-style: none;
-    min-width: 180px;
-    z-index: 999;
-}
-.menu-deroulant:hover .sous-menu {
-    display: block;
-}
-.sous-menu li {
-    margin: 5px 0;
-}
+        /* --- MENU HAUT --- */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #f5f5f5;
+            border-bottom: 1px solid #ddd;
+        }
 
-/* --- SOMMAIRE --- */
-#sommaire {
-    background: #d9e9ff;
-    padding: 20px;
-    border-left: 5px solid #4a90e2;
-    margin: 20px;
-}
-#sommaire h2 {
-    margin-top: 0;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 12px 20px;
+            margin: 0;
+        }
 
-/* --- TITRES --- */
-h1, h2, h3 {
-    padding: 10px 20px;
-}
+        nav ul li {
+            position: relative;
+        }
 
-</style>
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+        }
+
+        /* Sous-menu */
+        .menu-deroulant .sous-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            padding: 10px;
+            border: 1px solid #ddd;
+            list-style: none;
+            min-width: 180px;
+            z-index: 999;
+        }
+
+        .menu-deroulant:hover .sous-menu {
+            display: block;
+        }
+
+        .sous-menu li {
+            margin: 5px 0;
+        }
+
+        /* --- SOMMAIRE --- */
+        #sommaire {
+            background: #d9e9ff;
+            padding: 20px;
+            border-left: 5px solid #4a90e2;
+            margin: 20px;
+        }
+
+        #sommaire h2 {
+            margin-top: 0;
+        }
+
+        #sommaire ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #sommaire ul li {
+            margin: 6px 0;
+        }
+
+        #sommaire a {
+            text-decoration: none;
+            color: #003c8f;
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- MENU -->
-<nav>
-    <ul>
-        <li><a href="#intro">Introduction</a></li>
-        <li class="menu-deroulant">
-            <a href="#">Mécanismes</a>
-            <ul class="sous-menu">
-                <li><a href="#token">Token citoyen</a></li>
-                <li><a href="#referendum">Référendum</a></li>
-                <li><a href="#vote">Vote</a></li>
-                <li><a href="#resultats">Résultats</a></li>
-            </ul>
-        </li>
-        <li><a href="#constitution">Étape 1</a></li>
-        <li><a href="#analyse">Étape 2</a></li>
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li class="menu-deroulant">
+                <a href="#">Mécanismes</a>
+                <ul class="sous-menu">
+                    <li><a href="#token">Token citoyen</a></li>
+                    <li><a href="#referendum">Référendum</a></li>
+                    <li><a href="#vote">Vote</a></li>
+                    <li><a href="#resultats">Résultats</a></li>
+                </ul>
+            </li>
+            <li><a href="#constitution">Étape 1</a></li>
+            <li><a href="#analyse">Étape 2</a></li>
+        </ul>
+    </nav>
+
+    <!-- SOMMAIRE -->
+    <section id="sommaire">
+        <h2>Sommaire</h2>
+        <ul>
+            <li><a href="#intro">Introduction générale</a></li>
+            <li><a href="#token">Token citoyen</a></li>
+            <li><a href="#referendum">Référendum</a></li>
+            <li><a href="#vote">Vote</a></li>
+            <li><a href="#resultats">Résultats</a></li>
+            <li><a href="#constitution">Étape 1 — Constitution</a></li>
+            <li><a href="#analyse">Étape 2 — Analyse</a></li>
+        </ul>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <h1 id="intro">Introduction générale</h1>
+
+    <p>
+        Bienvenue sur Peuplitique, la plateforme citoyenne où la parole retrouve sa valeur, où la vérité se construit
+        ensemble, et où le peuple reprend la maîtrise de son destin.
+    </p>
+
+    <p>
+        Peuplitique est la première plateforme citoyenne indépendante conçue pour redonner au peuple la maîtrise de la
+        parole publique, de l’analyse collective et de la décision commune.
+        Elle repose sur un principe simple :
+        <strong>l’intelligence collective est plus puissante que toute structure centralisée</strong>.
+    </p>
+
+    <p>
+        Créée sans argent, sans parti, sans institution et sans hiérarchie, Peuplitique démontre qu’un peuple organisé,
+        outillé et souverain peut produire :
+    </p>
+
+    <ul style="padding: 0 40px;">
+        <li>des analyses fines, nuancées et argumentées ;</li>
+        <li>des décisions collectives claires, assumées et traçables ;</li>
+        <li>des propositions concrètes pour transformer la réalité politique, sociale et économique.</li>
     </ul>
-</nav>
 
-<!-- SOMMAIRE -->
-<section id="sommaire">
-    <h2>Sommaire</h2>
-    <ul>
-        <li><a href="#intro">Introduction générale</a></li>
-        <li><a href="#token">Token citoyen</a></li>
-        <li><a href="#referendum">Référendum</a></li>
-        <li><a href="#vote">Vote</a></li>
-        <li><a href="#resultats">Résultats</a></li>
-        <li><a href="#constitution">Étape 1 — Constitution</a></li>
-        <li><a href="#analyse">Étape 2 — Analyse</a></li>
+    <!-- TOKEN CITOYEN -->
+    <h2 id="token">Le token citoyen</h2>
+
+    <p>
+        Le token citoyen est une unité symbolique qui représente la participation active d’un citoyen dans un processus
+        de réflexion, de débat ou de décision.
+        Il ne s’agit pas d’un outil financier, mais d’un outil de traçabilité et de reconnaissance de la contribution.
+    </p>
+
+    <p>
+        Chaque token citoyen est associé à :
+    </p>
+
+    <ul style="padding: 0 40px;">
+        <li>une personne réelle (citoyen ou citoyenne) ;</li>
+        <li>un contexte précis (référendum, débat, analyse, vote) ;</li>
+        <li>une action (lecture, contribution, vote, argumentation).</li>
     </ul>
-</section>
 
-<!-- INTRODUCTION -->
-<h1 id="intro">Introduction générale</h1>
+    <!-- RÉFÉRENDUM -->
+    <h2 id="referendum">Référendum</h2>
 
-<p style="padding: 0 20px;">
-Bienvenue sur Peuplitique, la plateforme citoyenne où la parole retrouve sa valeur, où la vérité se construit ensemble, et où le peuple reprend la maîtrise de son destin.
-</p>
+    <p>
+        Le référendum sur Peuplitique n’est pas un simple “oui/non” déconnecté du réel.
+        Il est précédé d’un travail de clarification, de mise en contexte et d’analyse collective.
+    </p>
 
-<p style="padding: 0 20px;">
-Peuplitique est la première plateforme citoyenne indépendante conçue pour redonner au peuple la maîtrise de la parole publique, de l’analyse collective et de la décision commune. 
-Elle repose sur un principe simple : <strong>l’intelligence collective est plus puissante que toute structure centralisée</strong>.
-</p>
+    <p>
+        Chaque référendum suit un chemin clair :
+    </p>
 
-<p style="padding: 0 20px;">
-Créée sans argent, sans parti, sans institution et sans hiérarchie, Peuplitique démontre qu’un peuple organisé, outillé et souverain peut produire :
-</p>
+    <ul style="padding: 0 40px;">
+        <li>formulation de la question de manière neutre et compréhensible ;</li>
+        <li>mise à disposition d’éléments de contexte, de données, de points de vue ;</li>
+        <li>ouverture d’un espace de débat structuré ;</li>
+        <li>puis seulement, ouverture du vote.</li>
+    </ul>
 
-<ul style="padding: 0 40px;">
-    <li>des analyses fiables, transparentes et vérifiables ;</li>
-    <li>des décisions collectives légitimes ;</li>
-    <li>des mécanismes de gouvernance distribuée ;</li>
-    <li>des outils pédagogiques accessibles à tous ;</li>
-    <li>une protection contre la propagande et la manipulation.</li>
-</ul>
+    <!-- VOTE -->
+    <h2 id="vote">Vote</h2>
 
-<p style="padding: 0 20px;">
-La plateforme repose sur un protocole rigoureux, structuré en étapes pédagogiques, articles constitutionnels, mécanismes avancés et outils de pondération sectorielle. 
-Chaque citoyen peut comprendre, vérifier, contribuer et participer à la construction d’un système réellement démocratique.
-</p>
+    <p>
+        Le vote sur Peuplitique est conçu pour être :
+    </p>
 
-<p style="padding: 0 20px;">
-Peuplitique n’est pas un projet politique : c’est un <strong>outil de souveraineté citoyenne</strong>.  
-Un espace où la parole retrouve sa valeur, où la vérité se construit ensemble, et où le peuple reprend la maîtrise de son destin.
-</p>
+    <ul style="padding: 0 40px;">
+        <li>transparent (les règles sont visibles et compréhensibles) ;</li>
+        <li>traçable (chaque vote est associé à un token citoyen) ;</li>
+        <li>équitable (une personne = une voix, dans le cadre défini).</li>
+    </ul>
 
-<!-- ========================= -->
-<!--        ÉTAPE 1           -->
-<!-- ========================= -->
+    <p>
+        Le but n’est pas de créer une nouvelle couche de complexité, mais au contraire de rendre visible ce qui est
+        habituellement caché : qui participe, comment, et sur quelle base.
+    </p>
 
-<h2 id="constitution">Étape 1 — Constitution</h2>
+    <!-- RÉSULTATS -->
+    <h2 id="resultats">Résultats</h2>
+
+    <p>
+        Les résultats ne sont pas seulement des pourcentages.
+        Ils sont accompagnés d’une lecture qualitative :
+    </p>
+
+    <ul style="padding: 0 40px;">
+        <li>taux de participation ;</li>
+        <li>répartition des votes ;</li>
+        <li>analyse des arguments principaux ;</li>
+        <li>pistes d’action ou de transformation.</li>
+    </ul>
+
+    <!-- ÉTAPE 1 — CONSTITUTION -->
+    <h2 id="constitution">Étape 1 — Constitution</h2>
 
 <p style="padding: 0 20px;">
 L’Étape 1 définit la structure fondatrice de Peuplitique. Elle établit les principes, les responsabilités citoyennes, les règles de transparence et les mécanismes de gouvernance distribuée.
