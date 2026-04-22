@@ -262,6 +262,151 @@
         <li>accès à des synthèses IA avancées</li>
     </ul>
 </section>
+<section>
+    <h2>Schéma visuel du nouvel écosystème citoyen</h2>
 
+    <!-- Schéma ASCII (lecture conceptuelle) -->
+    <pre style="background:#f0f0f0;padding:20px;border-radius:8px;overflow-x:auto;font-size:13px;">
+
+                               NOUVEL ÉCOSYSTÈME CITOYEN
+                                           │
+                                           │
+                                 [ ÉCONOMIE INTÉGRÉE ]
+                                           │
+       ┌───────────────────────────────────┼───────────────────────────────────┐
+       │                                   │                                   │
+       │                                   │                                   │
+ [ ESPACE NATIONAL ]             [ ESPACE INTERNATIONAL ]          [ VALEUR DE L’ARGENT ]
+       │                                   │                                   │
+ Santé, éducation,                 Conflits, alliances,              Production réelle
+ agriculture, énergie,             ressources, climat,               + énergie
+ économie, justice                 prix mondiaux                     + confiance
+       │                                   │                         + position internationale
+       └───────────────────────┬───────────┴───────────┬────────────────────────┘
+                               │                       │
+                               │                       │
+                    [ INNOVATION & ÉNERGIE VERTE ]   [ COMPARATEUR DE SCÉNARIOS ]
+                               │                       │
+                               │                       │
+                   Autonomie énergétique,       Scénario actuel
+                   technologies, projets        Scénario transition verte
+                   citoyens, prix réels         Scénario économie intégrée
+                               │                       │
+                               └───────────────┬───────┘
+                                               │
+                                               │
+                                     [ VOTE VIA TOKENS ]
+                                               │
+                                               │
+                                  Souveraineté citoyenne,
+                                  décisions collectives,
+                                  auditabilité
+                                               │
+                                               │
+                        [ CULTURE, FORUMS & IA CITOYENNE ]
+                                               │
+                                               │
+       ┌───────────────────────────────┬───────────────┬──────────────────────────────┐
+       │                               │               │                              │
+ Forums thématiques            Modération           Synthèses IA              Information en
+ (médecine, génétique,         transparente         citoyennes                temps réel
+ philosophie, histoire,        explicite,           non censurantes           (économie, énergie,
+ archéologie, arts…)           visible,             clarté, contexte,         géopolitique,
+                               traçable             compréhension             climat, social)
+                                               │
+                                               │
+                                   [ MODÈLE COOPÉRATIF ]
+                                               │
+                                               │
+                              Abonnement volontaire, rémunération
+                              transparente, gouvernance citoyenne
+
+    </pre>
+
+    <!-- Schéma SVG (graphique simplifié) -->
+    <svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:1000px;display:block;margin:20px auto;">
+        <style>
+            .node { fill:#ffffff; stroke:#333; stroke-width:1.2; rx:8; ry:8; }
+            .root { fill:#1a1a1a; stroke:#000; }
+            .root-text { fill:#ffffff; font-weight:bold; }
+            .label { font-family: Arial, sans-serif; font-size:12px; fill:#222; }
+            .title { font-family: Arial, sans-serif; font-size:14px; font-weight:bold; fill:#222; }
+            .arrow { stroke:#555; stroke-width:1.2; marker-end:url(#arrowhead); }
+        </style>
+
+        <defs>
+            <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+                <polygon points="0 0, 8 3, 0 6" fill="#555" />
+            </marker>
+        </defs>
+
+        <!-- Racine : Économie intégrée -->
+        <rect x="450" y="60" width="300" height="50" class="node root"/>
+        <text x="600" y="90" text-anchor="middle" class="root-text">ÉCONOMIE INTÉGRÉE (RACINE)</text>
+
+        <!-- Niveau 1 : Espaces + Valeur de l’argent -->
+        <rect x="80" y="170" width="260" height="60" class="node"/>
+        <text x="210" y="195" text-anchor="middle" class="title">Espace national</text>
+        <text x="210" y="212" text-anchor="middle" class="label">Santé, éducation, agriculture, énergie…</text>
+
+        <rect x="470" y="170" width="260" height="60" class="node"/>
+        <text x="600" y="195" text-anchor="middle" class="title">Espace international</text>
+        <text x="600" y="212" text-anchor="middle" class="label">Conflits, alliances, ressources…</text>
+
+        <rect x="860" y="170" width="260" height="60" class="node"/>
+        <text x="990" y="195" text-anchor="middle" class="title">Valeur de l’argent</text>
+        <text x="990" y="212" text-anchor="middle" class="label">Production, énergie, confiance, position</text>
+
+        <!-- Flèches racine -> niveau 1 -->
+        <line x1="600" y1="110" x2="210" y2="170" class="arrow"/>
+        <line x1="600" y1="110" x2="600" y2="170" class="arrow"/>
+        <line x1="600" y1="110" x2="990" y2="170" class="arrow"/>
+
+        <!-- Niveau 2 : Innovation & scénarios -->
+        <rect x="260" y="300" width="260" height="60" class="node"/>
+        <text x="390" y="325" text-anchor="middle" class="title">Innovation & énergie verte</text>
+        <text x="390" y="342" text-anchor="middle" class="label">Autonomie, technologies, projets citoyens</text>
+
+        <rect x="680" y="300" width="260" height="60" class="node"/>
+        <text x="810" y="325" text-anchor="middle" class="title">Comparateur de scénarios</text>
+        <text x="810" y="342" text-anchor="middle" class="label">Actuel, transition, économie intégrée</text>
+
+        <!-- Flèches niveau 1 -> niveau 2 -->
+        <line x1="210" y1="230" x2="390" y2="300" class="arrow"/>
+        <line x1="990" y1="230" x2="810" y2="300" class="arrow"/>
+
+        <!-- Vote via tokens -->
+        <rect x="470" y="430" width="260" height="60" class="node"/>
+        <text x="600" y="455" text-anchor="middle" class="title">Vote via tokens</text>
+        <text x="600" y="472" text-anchor="middle" class="label">Souveraineté, auditabilité, décisions</text>
+
+        <!-- Flèches niveau 2 -> vote -->
+        <line x1="390" y1="360" x2="600" y2="430" class="arrow"/>
+        <line x1="810" y1="360" x2="600" y2="430" class="arrow"/>
+
+        <!-- Culture, forums & IA -->
+        <rect x="390" y="540" width="420" height="70" class="node"/>
+        <text x="600" y="565" text-anchor="middle" class="title">Culture, forums & IA citoyenne</text>
+        <text x="600" y="585" text-anchor="middle" class="label">Forums, modération transparente, synthèses IA</text>
+
+        <!-- Flèche vote -> culture -->
+        <line x1="600" y1="490" x2="600" y2="540" class="arrow"/>
+
+        <!-- Information en temps réel -->
+        <rect x="120" y="660" width="320" height="70" class="node"/>
+        <text x="280" y="685" text-anchor="middle" class="title">Information en temps réel</text>
+        <text x="280" y="705" text-anchor="middle" class="label">Économie, énergie, géopolitique, climat, social</text>
+
+        <!-- Modèle coopératif -->
+        <rect x="720" y="660" width="320" height="70" class="node"/>
+        <text x="880" y="685" text-anchor="middle" class="title">Modèle coopératif</text>
+        <text x="880" y="705" text-anchor="middle" class="label">Abonnement volontaire, rémunération, gouvernance</text>
+
+        <!-- Flèches culture -> info & modèle -->
+        <line x1="600" y1="610" x2="280" y2="660" class="arrow"/>
+        <line x1="600" y1="610" x2="880" y2="660" class="arrow"/>
+
+    </svg>
+</section>
 </body>
 </html>
