@@ -67,7 +67,9 @@ section h2 {
 footer {
     text-align: center;
     padding: 20px;
-    background: #002b5c;
+    nav {
+    background: #0a3d78;
+}
     color: white;
     margin-top: 40px;
 }
