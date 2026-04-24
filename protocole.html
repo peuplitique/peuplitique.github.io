@@ -5,12 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protocole – Peuplitique</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; background: #f7f7f7; color: #222; }
-        h1, h2, h3 { color: #333; }
-        .section { margin-bottom: 40px; background: #fff; padding: 20px; border-radius: 4px; }
-        pre { background: #eee; padding: 15px; border-radius: 4px; overflow-x: auto; }
-        nav a { margin-right: 15px; }
-    </style>
+/* --- Mise en forme générale --- */
+body {
+    font-family: Arial, sans-serif;
+    background: #0d2f4f;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- Conteneur central --- */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+}
+
+/* --- Titres --- */
+h1 {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-left: 4px solid #fff;
+    padding-left: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* --- Menu de navigation --- */
+nav {
+    background: #0b253d;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- Encadrés pédagogiques --- */
+.box {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-left: 4px solid #fff;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+</style>    
 </head>
 
 <body>
