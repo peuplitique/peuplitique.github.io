@@ -1,0 +1,73 @@
+/* --- RESET SIMPLE --- */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fa;
+    color: #1a1a1a;
+    padding-bottom: 40px;
+}
+
+/* --- NAVIGATION --- */
+nav {
+    background: #002b5c;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- HEADER --- */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #e8f1ff;
+    border-bottom: 2px solid #c7d9f5;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* --- SECTIONS --- */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #003b7a;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #002b5c;
+    color: white;
+    margin-top: 40px;
+}
