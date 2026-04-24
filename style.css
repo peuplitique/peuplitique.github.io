@@ -71,3 +71,11 @@ footer {
     color: white;
     margin-top: 40px;
 }
+/* --- COULEURS PAR PAGE --- */
+body.structurelle { background: #f7f7f7; }
+body.economique { background: #faf7f0; }
+body.politique { background: #e8f1ff; }
+body.glossaire { background: #ffffff; }
+body.protocole { background: #eef4fb; }
+body.mecanismes { background: #f2f2f2; }
+body.articles { background: #fcfcfc; }
