@@ -2,133 +2,97 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peuplitique – Plateforme citoyenne</title>
+    <title>Peuplitique — Plateforme citoyenne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #faf7f0;
-            color: #0a3d78;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #faf7f0;
+            color: #0b253d;
             line-height: 1.6;
         }
-
         header {
-            background-color: #0a3d78;
-            padding: 20px;
-            text-align: center;
+            background: #0a3d78;
+            color: #fff;
+            padding: 20px 30px;
         }
-
         header h1 {
-            color: white;
             margin: 0;
-            font-size: 32px;
+            font-size: 2rem;
         }
-
         nav {
-            background-color: #0a3d78;
-            padding: 10px 0;
-            text-align: center;
+            background:#0a3d78;
+            padding:12px 0;
+            text-align:center;
         }
-
         nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
+            color:white;
+            margin:0 15px;
+            text-decoration:none;
+            font-weight:bold;
         }
-
-        nav a:hover {
-            text-decoration: underline;
+        main {
+            max-width: 900px;
+            margin: 30px auto 60px;
+            padding: 0 20px;
         }
-
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
+        h2, h3 {
+            color:#0a3d78;
         }
-
-        h2 {
-            color: #0a3d78;
-            border-left: 5px solid #0a3d78;
-            padding-left: 10px;
-        }
-
-        .sommaire a {
-            display: block;
-            margin: 8px 0;
-            color: #0a3d78;
-            text-decoration: none;
-        }
-
-        .sommaire a:hover {
-            text-decoration: underline;
-        }
-
         footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            background-color: #0a3d78;
-            color: white;
+            margin-top:60px;
+            padding:20px;
+            text-align:center;
+            background:#0b253d;
+            color:white;
+            font-size:0.9em;
+            border-top:1px solid rgba(255,255,255,0.2);
+        }
+        footer a {
+            color:white;
+            text-decoration:underline;
         }
     </style>
 </head>
 
 <body>
 
-<a id="accueil"></a>
-
 <header>
-    <h1>Peuplitique – Plateforme citoyenne</h1>
+    <h1>Peuplitique — Plateforme citoyenne</h1>
+    <p>Construire ensemble une gouvernance distribuée et transparente</p>
 </header>
 
 <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="economie-integree.html">Économie intégrée</a>
-    <a href="organisation-economique-structurelle.html">Organisation économique & structurelle</a>
-    <a href="organisation-politique-territoriale.html">Organisation politique & territoriale</a>
-    <a href="organisation-structurelle.html">Organisation structurelle</a>
-    <a href="desequilibre-structurelle.html">Déséquilibre structurelle</a>
-    <a href="protocole.html">Protocole & Articles</a>
-    <a href="glossaire.html">Glossaire</a>
+    <a href="index.html">Accueil</a>
+    <a href="gouvernance-partagee.html">Gouvernance Partagée</a>
+    <a href="desequilibre-structurelle.html">Déséquilibres Structurels</a>
+    <a href="dao.html">DAO</a>
+    <a href="secteurs.html">Secteurs</a>
 </nav>
 
-<div class="container">
+<main>
 
     <h2>Introduction</h2>
-    <p>
-        Bienvenue sur Peuplitique, une plateforme citoyenne indépendante visant à redonner au peuple la compréhension
-        et la capacité d’agir sur les mécanismes essentiels de la société.
-    </p>
+    <p>Peuplitique est la première plateforme citoyenne indépendante créée sans argent, fondée sur l’intelligence collective et la transparence totale des processus décisionnels.</p>
 
     <h2>Sommaire</h2>
-    <div class="sommaire">
-        <a href="#mise-en-forme">Mise en forme générale</a>
-        <a href="#introduction-detaillee">Introduction détaillée</a>
-    </div>
+    <ul>
+        <li><a href="gouvernance-partagee.html">Gouvernance Partagée</a></li>
+        <li><a href="desequilibre-structurelle.html">Déséquilibres Structurels</a></li>
+        <li><a href="economie-integree.html">Économie intégrée</a></li>
+        <li><a href="organisation-economique-structurelle.html">Organisation économique & structurelle</a></li>
+        <li><a href="organisation-politique-territoriale.html">Organisation politique & territoriale</a></li>
+        <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
+        <li><a href="protocole.html">Protocole & Articles</a></li>
+        <li><a href="glossaire.html">Glossaire</a></li>
+    </ul>
 
-    <h2 id="mise-en-forme">Mise en forme générale</h2>
-    <p>
-        Cette section présente les principes de mise en forme utilisés sur l’ensemble du site : cohérence visuelle,
-        hiérarchie des titres, couleurs harmonisées, blocs structurés et lisibilité générale.
-    </p>
-
-    <h2 id="introduction-detaillee">Introduction détaillée</h2>
-    <p>
-        L’introduction détaillée expose les fondements de Peuplitique : la logique structurelle, les mécanismes
-        naturels d’organisation, et la manière dont chaque citoyen peut comprendre et agir sur les éléments
-        essentiels de la société.
-    </p>
-
-</div>
+</main>
 
 <footer>
-    Peuplitique – Plateforme citoyenne • 2026
+    <p>Première plateforme citoyenne indépendante créée sans argent, par intelligence collective.</p>
+    <p><a href="https://github.com/peuplitique/peuplitique.github.io">Code source sur GitHub</a></p>
 </footer>
 
 </body>
