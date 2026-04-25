@@ -2,122 +2,76 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Économie intégrée – Peuplitique</title>
+    <title>Économie intégrée — Peuplitique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-/* --- Mise en forme générale --- */
-body {
-     font-family: Arial, sans-serif;
-    color: white;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-
-/* --- Conteneur central --- */
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 8px;
-}
-
-/* --- Titres --- */
-h1 {
-    font-size: 32px;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    text-align: center;
-}
-
-h2 {
-    font-size: 26px;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    border-left: 4px solid #fff;
-    padding-left: 10px;
-}
-
-h3 {
-    font-size: 22px;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-/* --- Menu de navigation --- */
-nav {
-    background: #0b253d;
-    padding: 12px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav a {
-    color: white;
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* --- Encadrés pédagogiques --- */
-.box {
-    background: rgba(255,255,255,0.1);
-    padding: 15px;
-    border-left: 4px solid #fff;
-    margin: 20px 0;
-    border-radius: 4px;
-}
-</style>
+        body {
+            margin:0;
+            font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+            background:#faf7f0;
+            color:#0b253d;
+            line-height:1.6;
+        }
+        header {
+            background:#0a3d78;
+            color:white;
+            padding:20px 30px;
+        }
+        header h1 { margin:0; font-size:2rem; }
+        nav {
+            background:#0a3d78;
+            padding:12px 0;
+            text-align:center;
+        }
+        nav a {
+            color:white;
+            margin:0 15px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+        main {
+            max-width:900px;
+            margin:30px auto 60px;
+            padding:0 20px;
+        }
+        h2, h3 { color:#0a3d78; }
+        pre {
+            background:#fff;
+            padding:20px;
+            border:1px solid #ddd;
+            white-space:pre-wrap;
+            font-size:14px;
+        }
+        footer {
+            margin-top:60px;
+            padding:20px;
+            text-align:center;
+            background:#0b253d;
+            color:white;
+            font-size:0.9em;
+            border-top:1px solid rgba(255,255,255,0.2);
+        }
+        footer a { color:white; text-decoration:underline; }
+    </style>
 </head>
 
-<body class="economique">
+<body>
+
+<header>
+    <h1>Économie intégrée</h1>
+    <p>Vers une organisation économique cohérente, équilibrée et distribuée</p>
+</header>
+
 <nav>
-    <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="protocole.html">Protocole</a></li>
-        <li><a href="glossaire.html">Glossaire</a></li>
-        <li><a href="economie-integree.html">Économie intégrée</a></li>
-        <li><a href="organisation-economique-structurelle.html">Organisation économique et structurelle</a></li>
-    </ul>
+    <a href="index.html">Accueil</a>
+    <a href="gouvernance-partagee.html">Gouvernance Partagée</a>
+    <a href="desequilibre-structurelle.html">Déséquilibres Structurels</a>
+    <a href="dao.html">DAO</a>
+    <a href="secteurs.html">Secteurs</a>
 </nav>
-<h1>Économie intégrée</h1>
 
-<section class="section">
-    <h2>Introduction</h2>
-    <p>
-        L’économie intégrée relie les décisions publiques, les impacts économiques et les réalités
-        sectorielles dans un système cohérent, traçable et compréhensible par tous. Elle rend visibles
-        les flux, les effets et les interactions entre secteurs afin de permettre une gouvernance
-        réellement informée et symétrique.
-    </p>
-</section>
-<p>
-    Pour comprendre les limites du modèle économique actuel et les raisons du changement proposé,
-    voir la page : <a href="deséquilibre-structurelle.html">Déséquilibre structurel</a>.
-</p>
-<section class="section">
-    <h2>Objectifs</h2>
-    <ul>
-        <li>Mesurer les effets économiques en temps réel.</li>
-        <li>Aligner les décisions publiques avec les réalités sectorielles.</li>
-        <li>Éviter les distorsions et déséquilibres structurels.</li>
-        <li>Permettre une participation citoyenne informée.</li>
-        <li>Créer un modèle stable, transparent et équitable.</li>
-    </ul>
-</section>
+<main>
 
-<section class="section">
     <h2>Schéma général (ASCII)</h2>
     <pre>
                 ┌──────────────────────────────┐
@@ -144,106 +98,26 @@ nav a:hover {
                 │     & STRUCTURELLE            │
                 └──────────────────────────────┘
     </pre>
-</section>
 
-<section class="section">
-    <h2>Architecture de l’économie intégrée</h2>
+    <h2>Définition</h2>
+    <p>L’économie intégrée vise à relier les secteurs, les ressources, les responsabilités et les décisions dans un système cohérent, transparent et équilibré.</p>
 
-    <h3>1. Banque coopérative</h3>
-    <p>
-        La banque coopérative constitue le socle financier du modèle. Elle ne vise pas l’accumulation
-        spéculative mais la circulation des ressources au service des besoins réels, des transitions
-        et des projets collectifs.
-    </p>
-<p>
-Pour une compréhension complète du fonctionnement financier du pays,
-consultez également :
-<a href="organisation-economique-structurelle.html">
-Organisation économique et structurelle — Banque coopérative et DAO
-</a>.
-</p>
-    <h3>2. Flux économiques intégrés</h3>
-    <p>
-        Les flux entre secteurs (énergie, alimentation, santé, éducation, innovation, etc.) sont
-        cartographiés pour rendre visibles les interdépendances et anticiper les effets en cascade.
-    </p>
-
-    <h3>3. Tokens et pondération</h3>
-    <p>
-        Les pondérations sectorielles permettent d’ajuster les priorités selon les besoins réels.
-        Elles sont transparentes, vérifiables et contrôlées par le collectif.
-    </p>
-
-    <h3>4. Marchés citoyens</h3>
-    <p>
-        Les marchés citoyens garantissent une allocation équitable des ressources, sans asymétrie
-        d’information ni capture par des acteurs dominants.
-    </p>
-
-    <h3>5. Innovation & énergie</h3>
-    <p>
-        L’innovation et l’énergie sont traitées comme des leviers structurants permettant au système
-        de rester soutenable, adaptable et résilient.
-    </p>
-
-    <h3>6. Scénarios économiques</h3>
-    <p>
-        Les scénarios (croissance, transition, crise, résilience) permettent de simuler les effets
-        des décisions avant leur mise en œuvre.
-    </p>
-
-    <h3>7. Organisation économique et structurelle</h3>
-    <p>
-        Cette section décrit la manière dont les secteurs, les flux, les décisions et les responsabilités
-        s’articulent dans un ensemble cohérent. Elle vise à empêcher la concentration du pouvoir et les
-        asymétries structurelles durables.
-    </p>
-
-    <h3>7.3 — Dynamique interne du système économique</h3>
-    <p>
-        La dynamique interne repose sur la circulation continue des ressources, la pondération
-        adaptative et la rétroaction citoyenne. Elle empêche la capture du pouvoir économique.
-    </p>
-
-    <h3>7.4 — Flux de gouvernance économique</h3>
-    <p>
-        Les décisions suivent un flux clair : observation, analyse distribuée, pondération citoyenne,
-        décision collective et traçabilité. Chaque étape est vérifiable.
-    </p>
-
-    <h3>7.5 — Stabilisation du modèle</h3>
-    <p>
-        Le modèle intègre des seuils de sécurité, des amortisseurs automatiques et des réserves
-        coopératives pour éviter les crises structurelles.
-    </p>
-
-    <h3>7.6 — Prévention des dérives structurelles</h3>
-    <p>
-        Des garde‑fous empêchent la concentration du capital, la capture institutionnelle et la
-        manipulation des flux. Ils reposent sur la transparence, la symétrie du pouvoir et la
-        responsabilité distribuée.
-    </p>
-</section>
-<nav>
+    <h2>Objectifs</h2>
     <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="protocole.html">Protocole</a></li>
-        <li><a href="glossaire.html">Glossaire</a></li>
-        <li><a href="economie-integree.html">Économie intégrée</a></li>
-        <li><a href="organisation-economique-structurelle.html">Organisation économique et structurelle</a></li>
+        <li>Réduire les ruptures entre secteurs</li>
+        <li>Assurer une répartition équitable des ressources</li>
+        <li>Créer une cohérence entre production, distribution et besoins</li>
+        <li>Renforcer la résilience collective</li>
     </ul>
-</nav>
-<section class="section">
-    <h2>Conclusion</h2>
-    <p>
-        L’économie intégrée constitue un socle décisionnel moderne, transparent et équitable.
-        Elle permet de comprendre, d’anticiper et de corriger les effets économiques de manière
-        continue, au service du bien commun.
-    </p>
-</section>
+
+    <h2>Principes</h2>
+    <p>Une économie intégrée repose sur la coordination, la transparence, la participation citoyenne et la gestion collective des ressources essentielles.</p>
+
+</main>
 
 <footer>
-    Peuplitique – Plateforme citoyenne • 2026
+    <p>Peuplitique — Plateforme citoyenne indépendante créée sans financement, fondée sur l’intelligence collective.</p>
+    <p><a href="https://github.com/peuplitique/peuplitique.github.io">Code source sur GitHub</a></p>
 </footer>
 
 </body>
