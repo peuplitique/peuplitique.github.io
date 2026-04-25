@@ -1,75 +1,224 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Organisation économique structurelle – Peuplitique</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Organisation économique & structurelle — Peuplitique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin:0;
+            font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+            background:#faf7f0;
+            color:#0b253d;
+            line-height:1.6;
+        }
+        header {
+            background:#0a3d78;
+            color:white;
+            padding:20px 30px;
+        }
+        header h1 { margin:0; font-size:2rem; }
+        nav {
+            background:#0a3d78;
+            padding:12px 0;
+            text-align:center;
+        }
+        nav a {
+            color:white;
+            margin:0 15px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+        main {
+            max-width:900px;
+            margin:30px auto 60px;
+            padding:0 20px;
+        }
+        h2 { color:#0a3d78; }
+        pre {
+            background:#fff;
+            padding:20px;
+            border:1px solid #ddd;
+            white-space:pre-wrap;
+            font-size:14px;
+        }
+        ul { padding-left:20px; }
+        footer {
+            margin-top:60px;
+            padding:20px;
+            text-align:center;
+            background:#0b253d;
+            color:white;
+            font-size:0.9em;
+            border-top:1px solid rgba(255,255,255,0.2);
+        }
+        footer a { color:white; text-decoration:underline; }
+    </style>
 </head>
 
 <body>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
-        <li><a href="organisation-economique-structurelle.html">Économie intégrée</a></li>
-        <li><a href="protocole.html">Protocole</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="mecanismes.html">Mécanismes</a></li>
-        <li><a href="glossaire.html">Glossaire</a></li>
-    </ul>
-</nav>
-
 <header>
-    <h1>Organisation économique structurelle</h1>
-    <p>Une économie intégrée, transparente et orientée vers le bien commun.</p>
+    <h1>Organisation économique & structurelle</h1>
+    <p>Architecture complète du système économique citoyen</p>
 </header>
 
-<section>
-    <h2>1. Principes fondamentaux</h2>
-    <p>L’économie intégrée de Peuplitique repose sur trois piliers :</p>
-    <ul>
-        <li><strong>Transparence totale</strong> des flux financiers publics et privés.</li>
-        <li><strong>Allocation collective</strong> via un DAO citoyen.</li>
-        <li><strong>Équilibre structurel</strong> entre production, redistribution et innovation.</li>
-    </ul>
-</section>
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="gouvernance-partagee.html">Gouvernance Partagée</a>
+    <a href="desequilibre-structurelle.html">Déséquilibres Structurels</a>
+    <a href="economie-integree.html">Économie intégrée</a>
+    <a href="secteurs.html">Secteurs</a>
+</nav>
 
-<section>
-    <h2>2. Le DAO économique</h2>
-    <p>Le DAO gère la répartition des fonds publics par secteurs :</p>
-    <ul>
-        <li>Santé</li>
-        <li>Éducation</li>
-        <li>Écologie</li>
-        <li>Infrastructures</li>
-        <li>Innovation</li>
-        <li>Culture</li>
-    </ul>
-    <p>Chaque citoyen dispose d’un droit de vote proportionnel et transparent.</p>
-</section>
+<main>
 
-<section>
-    <h2>3. Les flux économiques</h2>
-    <p>Les flux sont organisés en trois niveaux :</p>
-    <ul>
-        <li><strong>Niveau 1 :</strong> Production et création de valeur.</li>
-        <li><strong>Niveau 2 :</strong> Redistribution automatisée.</li>
-        <li><strong>Niveau 3 :</strong> Réinvestissement stratégique.</li>
-    </ul>
-</section>
+    <h2>Introduction</h2>
+    <p>
+        L’organisation économique et structurelle de Peuplitique repose sur une articulation cohérente
+        entre les citoyens, les secteurs, la banque coopérative, la DAO, les flux économiques et les
+        mécanismes de pondération. Cette page présente l’architecture complète, incluant la DAO
+        intégrée au cœur du système.
+    </p>
 
-<section>
-    <h2>4. Objectifs</h2>
+    <h2>Schéma général de l’organisation économique</h2>
+    <pre>
+                ┌──────────────────────────────┐
+                │      BANQUE COOPÉRATIVE      │
+                └──────────────┬───────────────┘
+                               │
+        ┌──────────────────────┼────────────────────────┐
+        │                      │                        │
+┌───────────────┐     ┌────────────────┐      ┌────────────────────┐
+│   FLUX ÉCO     │     │  TOKENS /      │      │   MARCHÉS          │
+│   SECTORIELS   │────▶│  PONDÉRATION   │─────▶│   CITOYENS         │
+└───────────────┘     └────────────────┘      └────────────────────┘
+        │                      │                        │
+        └──────────────┬──────┴───────────────┬────────┘
+                       │                      │
+               ┌──────────────┐      ┌────────────────────┐
+               │  INNOVATION   │      │   SCÉNARIOS         │
+               │   & ÉNERGIE   │      │   ÉCONOMIQUES       │
+               └──────────────┘      └────────────────────┘
+                               │
+                               ▼
+                ┌──────────────────────────────┐
+                │ ORGANISATION ÉCONOMIQUE       │
+                │     & STRUCTURELLE            │
+                └──────────────────────────────┘
+    </pre>
+
+    <h2>Banque coopérative</h2>
+    <p>
+        La banque coopérative est l’organe central de gestion des ressources. Elle fonctionne sans
+        actionnaires, sans intérêts privés, et redistribue les fonds selon les décisions citoyennes
+        validées par la DAO.
+    </p>
+
     <ul>
-        <li>Réduire les inégalités structurelles.</li>
-        <li>Optimiser l’usage des ressources publiques.</li>
-        <li>Créer un modèle économique durable et participatif.</li>
+        <li>Gestion collective des ressources</li>
+        <li>Transparence totale des flux</li>
+        <li>Redistribution selon pondération citoyenne</li>
+        <li>Absence de spéculation</li>
     </ul>
-</section>
+
+    <h2>Flux économiques sectoriels</h2>
+    <p>
+        Les flux économiques relient les secteurs entre eux. Ils permettent de visualiser les besoins,
+        les ressources, les excédents et les tensions.
+    </p>
+
+    <h2>Tokens & pondération citoyenne</h2>
+    <p>
+        Le système de tokens permet de pondérer les décisions selon l’impact, la priorité et la
+        cohérence collective. Il ne s’agit pas d’une monnaie spéculative, mais d’un outil de
+        gouvernance.
+    </p>
+
+    <h2>Marchés citoyens</h2>
+    <p>
+        Les marchés citoyens ne sont pas des marchés financiers, mais des espaces où les besoins,
+        priorités et choix collectifs s’expriment.
+    </p>
+
+    <h2>Scénarios économiques</h2>
+    <p>
+        Les scénarios permettent d’anticiper les conséquences des décisions, d’ajuster les flux et
+        d’éviter les déséquilibres structurels.
+    </p>
+
+    <h2>Intégration complète de la DAO</h2>
+    <p>
+        La DAO est intégrée au cœur de l’organisation économique. Elle gère les propositions, les
+        votes, la pondération, les règles, la répartition des fonds publics et la transparence totale.
+    </p>
+
+    <h2>Schéma DAO intégré</h2>
+    <pre>
+                ┌──────────────────────────────┐
+                │            CITOYENS           │
+                └──────────────┬───────────────┘
+                               │
+                ┌──────────────┴──────────────┐
+                │     PROPOSITIONS / VOTES     │
+                └──────────────┬──────────────┘
+                               │
+                ┌──────────────┴──────────────┐
+                │   SMART CONTRACTS / RÈGLES    │
+                └──────────────┬──────────────┘
+                               │
+                ┌──────────────┴──────────────┐
+                │   RÉPARTITION DES RESSOURCES │
+                │        (FONDS PUBLICS)       │
+                └──────────────┬──────────────┘
+                               │
+                               ▼
+                ┌──────────────────────────────┐
+                │   TRANSPARENCE & TRAÇABILITÉ  │
+                └──────────────────────────────┘
+    </pre>
+
+    <h2>Fonctionnement détaillé de la DAO</h2>
+    <ul>
+        <li>Chaque citoyen peut proposer un projet</li>
+        <li>Les votes sont pondérés selon l’impact collectif</li>
+        <li>Les règles sont codées dans des smart contracts</li>
+        <li>Les fonds publics sont distribués automatiquement</li>
+        <li>Chaque décision est traçable et vérifiable</li>
+    </ul>
+
+    <h2>Interaction DAO ↔ Banque coopérative</h2>
+    <p>
+        La DAO valide les décisions, la banque coopérative exécute les flux.  
+        Ensemble, elles garantissent :
+    </p>
+
+    <ul>
+        <li>une répartition juste</li>
+        <li>une transparence totale</li>
+        <li>une cohérence économique</li>
+        <li>une absence de corruption</li>
+    </ul>
+
+    <h2>Résumé global</h2>
+    <p>
+        L’organisation économique et structurelle de Peuplitique repose sur une architecture
+        intégrée où :
+    </p>
+
+    <ul>
+        <li>les citoyens sont au centre,</li>
+        <li>la DAO garantit la transparence,</li>
+        <li>la banque coopérative gère les ressources,</li>
+        <li>les flux sectoriels assurent la cohérence,</li>
+        <li>les scénarios économiques anticipent les risques.</li>
+    </ul>
+
+</main>
 
 <footer>
-    <p>© Peuplitique – Plateforme citoyenne</p>
+    <p>Peuplitique — Plateforme citoyenne indépendante créée sans financement, fondée sur l’intelligence collective.</p>
+    <p><a href="https://github.com/peuplitique/peuplitique.github.io">Code source sur GitHub</a></p>
 </footer>
 
 </body>
