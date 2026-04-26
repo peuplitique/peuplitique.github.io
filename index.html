@@ -1,110 +1,74 @@
-/* RESET CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peuplitique – Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-html, body {
-    font-family: Arial, sans-serif;
-    background-color: #faf7f0;
-    color: #0a3d78;
-    line-height: 1.6;
-}
+<body>
 
-/* BARRE BLEUE HAUT (~3 cm) */
-header {
-    background-color: #0a3d78;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-}
+    <!-- BARRE BLEUE HAUT -->
+    <header>
+        PEUPLITIQUE
+    </header>
 
-/* BARRE BLANCHE SOMMAIRE (~5 cm) */
-.sommaire-bar {
-    background-color: white;
-    padding: 60px 20px;
-    margin-bottom: 40px;
-    border-bottom: 2px solid #0a3d78;
-}
+    <!-- BARRE BLANCHE SOMMAIRE -->
+    <div class="sommaire-bar">
+        <h2>Sommaire</h2>
+        <ul>
+            <li><a href="#peuplitique">Peuplitique</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#objectifs">Objectifs</a></li>
+            <li><a href="#fonctionnement">Fonctionnement</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 
-.sommaire-bar h2 {
-    color: #0a3d78;
-    text-align: center;
-    margin-bottom: 20px;
-}
+    <!-- SECTION PEUPLITIQUE FOND BLEU -->
+    <section id="peuplitique" class="section-peuplitique">
+        <h1>Bienvenue à Destin</h1>
+        <p>
+            Peuplitique est une plateforme citoyenne conçue pour démontrer que l’intelligence collective peut transformer la société. 
+            Ici, chaque citoyen peut proposer, voter, analyser et participer à la construction d’un modèle plus juste, transparent et efficace.
+        </p>
+    </section>
 
-.sommaire-bar ul {
-    list-style: none;
-    text-align: center;
-}
+    <!-- SECTIONS CLASSIQUES -->
+    <section id="vision">
+        <h2>Vision</h2>
+        <p>
+            Construire un espace où chaque citoyen peut contribuer à des décisions publiques éclairées, basées sur la transparence, la logique et l’intérêt général.
+        </p>
+    </section>
 
-.sommaire-bar ul li {
-    margin: 8px 0;
-}
+    <section id="objectifs">
+        <h2>Objectifs</h2>
+        <p>
+            Peuplitique vise à créer un modèle participatif, accessible à tous, permettant de structurer des propositions, analyser des impacts et orienter des choix collectifs.
+        </p>
+    </section>
 
-.sommaire-bar a {
-    color: #0a3d78;
-    text-decoration: none;
-    font-weight: bold;
-}
+    <section id="fonctionnement">
+        <h2>Fonctionnement</h2>
+        <p>
+            La plateforme repose sur un système simple : proposer, analyser, voter.  
+            Un DAO transparent permet d’allouer les fonds publics par secteur, selon les priorités citoyennes.
+        </p>
+    </section>
 
-.sommaire-bar a:hover {
-    text-decoration: underline;
-}
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            Pour toute question ou suggestion, contactez-nous à :  
+            <strong>contact@peuplitique.org</strong>
+        </p>
+    </section>
 
-/* SECTION PEUPLITIQUE FOND BLEU (~12 cm) */
-.section-peuplitique {
-    background-color: #0a3d78;
-    color: white;
-    padding: 120px 20px;
-    text-align: center;
-}
+    <footer>
+        © 2026 Peuplitique – Tous droits réservés.
+    </footer>
 
-.section-peuplitique h1 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-}
-
-.section-peuplitique p {
-    font-size: 1.2rem;
-    max-width: 900px;
-    margin: auto;
-}
-
-/* SECTIONS CLASSIQUES */
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-section h2 {
-    color: #0a3d78;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-section p {
-    margin-bottom: 20px;
-}
-
-/* LIENS */
-a {
-    color: #0a3d78;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #0a3d78;
-    margin-top: 40px;
-}
+</body>
+</html>
