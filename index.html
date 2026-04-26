@@ -1,70 +1,110 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peuplitique — Plateforme citoyenne</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<body>
+html, body {
+    font-family: Arial, sans-serif;
+    background-color: #faf7f0;
+    color: #0a3d78;
+    line-height: 1.6;
+}
 
-    <!-- NAVIGATION -->
-    <nav class="top-nav">
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
-            <li><a href="desequilibre-structurelle.html">Déséquilibres structurels</a></li>
-            <li><a href="economie-integree.html">Économie intégrée</a></li>
-            <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
-            <li><a href="gouvernance-dao.html">Gouvernance & DAO</a></li>
-            <li><a href="protocole.html">Protocole</a></li>
-            <li><a href="glossaire.html">Glossaire</a></li>
-            <li><a href="participer.html">Participer</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+/* BARRE BLEUE HAUT (~3 cm) */
+header {
+    background-color: #0a3d78;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
 
-    <!-- BANDE SOMMAIRE BLANCHE -->
-    <div class="sommaire-large">
-        <h2>Sommaire</h2>
-        <ul>
-            <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
-            <li><a href="desequilibre-structurelle.html">Déséquilibres structurels</a></li>
-            <li><a href="economie-integree.html">Économie intégrée</a></li>
-            <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
-            <li><a href="gouvernance-dao.html">Gouvernance & DAO</a></li>
-            <li><a href="protocole.html">Protocole</a></li>
-            <li><a href="glossaire.html">Glossaire</a></li>
-            <li><a href="participer.html">Participer</a></li>
-        </ul>
-    </div>
+/* BARRE BLANCHE SOMMAIRE (~5 cm) */
+.sommaire-bar {
+    background-color: white;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #0a3d78;
+}
 
-    <!-- CONTENU PRINCIPAL SUR FOND BLEU -->
-    <section class="content">
-        <h1>Peuplitique — Gouvernance partagée</h1>
-        <h2>Plateforme citoyenne</h2>
+.sommaire-bar h2 {
+    color: #0a3d78;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-        <p>
-            Bienvenue sur <strong>Peuplitique</strong>, la plateforme citoyenne où la parole retrouve sa valeur,
-            où la vérité se construit ensemble et où le peuple reprend la maîtrise de son destin.
-        </p>
+.sommaire-bar ul {
+    list-style: none;
+    text-align: center;
+}
 
-        <p>
-            Peuplitique repose sur un principe simple : <strong>la décision commune au sein d’une Gouvernance Partagée</strong>.
-        </p>
+.sommaire-bar ul li {
+    margin: 8px 0;
+}
 
-        <p>
-            Cette nouvelle Constitution s’oppose aux modèles pyramidaux traditionnels et à leurs dérives structurelles.
-            Ici, <strong>seul un collectif souverain</strong>, qui se protège mutuellement, structure les règles établies
-            <strong>par les citoyens et pour les citoyens</strong>.
-        </p>
+.sommaire-bar a {
+    color: #0a3d78;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        <p>
-            Elle établit un espace où chaque citoyen contribue, analyse, propose, corrige et décide — sans intermédiaire,
-            sans filtre, sans hiérarchie imposée — les lois et les principes qui la régissent.
-        </p>
-    </section>
+.sommaire-bar a:hover {
+    text-decoration: underline;
+}
 
-</body>
-</html>
+/* SECTION PEUPLITIQUE FOND BLEU (~12 cm) */
+.section-peuplitique {
+    background-color: #0a3d78;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.section-peuplitique h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.section-peuplitique p {
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* SECTIONS CLASSIQUES */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h2 {
+    color: #0a3d78;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+/* LIENS */
+a {
+    color: #0a3d78;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #0a3d78;
+    margin-top: 40px;
+}
