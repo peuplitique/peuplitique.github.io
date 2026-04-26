@@ -1,97 +1,97 @@
-/* RESET */
+/* RESET CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY GLOBAL */
-body {
+html, body {
     font-family: Arial, sans-serif;
+    background-color: #faf7f0;
+    color: #0a3d78;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
     background-color: #0a3d78;
     color: white;
-    line-height: 1.6;
+    padding: 20px;
     text-align: center;
 }
 
-/* NAVIGATION — BARRE BLEUE HAUT */
-nav {
+/* MENU */
+.menu {
     background-color: #0a3d78;
-    padding: 10px 0;
+    padding: 10px;
+    text-align: center;
 }
 
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav ul li a {
+.menu a {
     color: white;
+    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 15px;
 }
 
-nav ul li a:hover {
+.menu a:hover {
     text-decoration: underline;
 }
 
-/* BANDE SOMMAIRE BLANCHE — CARRÉ BLANC */
-.sommaire-large {
+/* SOMMAIRE BLANC */
+.sommaire-blanc {
     background-color: white;
-    color: #0a3d78;
-    padding: 12px 0;
-    width: 60%;
-    margin: 5px auto;      /* remonte légèrement */
-    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.sommaire-large h2 {
-    margin-bottom: 6px;
-    font-size: 20px;
-}
-
-.sommaire-large ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sommaire-large ul li {
-    margin: 3px 0;
-}
-
-.sommaire-large ul li a {
-    color: #0a3d78;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.sommaire-large ul li a:hover {
-    text-decoration: underline;
-}
-
-/* CONTENU PRINCIPAL — REMONTÉ */
-.content {
-    padding: 10px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.content h1 {
-    font-size: 30px;
+.sommaire-blanc h2 {
     margin-bottom: 10px;
 }
 
-.content h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
+.sommaire-blanc ul {
+    list-style: none;
 }
 
-.content p {
-    margin-bottom: 15px;
-    font-size: 18px;
+.sommaire-blanc li {
+    margin: 8px 0;
+}
+
+.sommaire-blanc a {
+    color: #0a3d78;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sommaire-blanc a:hover {
+    text-decoration: underline;
+}
+
+/* SECTION BLEUE */
+.section-bleue {
+    background-color: #0a3d78;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* SECTIONS CLASSIQUES */
+.section-classique {
+    background-color: #faf7f0;
+    padding: 40px 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0a3d78;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
 }
