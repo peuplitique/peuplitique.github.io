@@ -8,19 +8,19 @@
 /* ===== GLOBAL ===== */
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background-color: #0a3d78; /* FOND BLEU GLOBAL */
+    background-color: #0a3d78; /* Fond bleu global */
     color: #ffffff; /* Texte blanc par défaut */
     line-height: 1.6;
     padding-bottom: 40px;
 }
 
 /* ===== NAVIGATION ===== */
-nav, .main-nav {
+nav {
     background-color: #0a3d78;
     padding: 12px 0;
 }
 
-nav ul, .main-nav ul {
+nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -28,55 +28,67 @@ nav ul, .main-nav ul {
     gap: 20px;
 }
 
-nav a, .main-nav a {
+nav a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
 }
 
-/* ===== CONTENU D’ACCUEIL ===== */
-.content {
-    background: transparent; /* Texte directement sur fond bleu */
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-.content h1,
-.content h2,
-.content p {
-    color: #ffffff; /* Titre + texte en blanc */
-}
-
-/* ===== SOMMAIRE (SEUL BLOC BLANC) ===== */
-.sommaire {
+/* ===== GRAND SOMMAIRE BLANC LARGE ===== */
+.sommaire-large {
     background: #ffffff;
-    max-width: 260px;
-    margin: 20px auto;
-    padding: 12px;
-    border-radius: 8px;
-    font-size: 0.85rem;
-    color: #000000; /* Texte noir dans le sommaire */
+    width: 90%;              /* plus large que la barre */
+    max-width: 1200px;       /* limite élégante */
+    margin: 30px auto;       /* centré */
+    padding: 25px 40px;
+    border-radius: 10px;
+    color: #000000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-.sommaire h2 {
-    font-size: 1rem;
-    margin-bottom: 8px;
-    text-align: center;
+.sommaire-large h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
     color: #000000;
 }
 
-.sommaire ul {
-    padding-left: 15px;
+.sommaire-large ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-.sommaire li {
-    margin-bottom: 5px;
+.sommaire-large li {
+    margin-bottom: 8px;
 }
 
-.sommaire a {
-    color: #0a3d78; /* Liens bleus dans le sommaire */
-    text-decoration: none;
+.sommaire-large a {
+    color: #0a3d78;
     font-weight: 600;
+    text-decoration: none;
+}
+
+/* ===== CONTENU PEUPLITIQUE SUR FOND BLEU ===== */
+.content {
+    background: transparent;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 2.2rem;   /* plus grand */
+    color: #ffffff;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.content p {
+    color: #ffffff;
+    font-size: 1.1rem;
 }
