@@ -95,6 +95,34 @@ body {
     padding: 30px 25px;
     line-height: 1.8;
 }
+/* TOUT LE BAS DE LA PAGE EN BLEU FONCÉ CONTINU */
+.zone-bleue {
+    background-color: #0a3d78; /* même bleu que le haut */
+    color: white;
+    padding: 60px 40px;
+    margin: 0;
+    width: 100%;
+}
+
+/* TITRE DANS LE BLEU */
+.zone-bleue h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: white;
+}
+
+/* TEXTE AÉRÉ + POINTS AUTOMATIQUES */
+.zone-bleue p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: white;
+}
+
+/* POINTS AUTOMATIQUES DEVANT CHAQUE LIGNE */
+.zone-bleue p::before {
+    content: "• ";
+}
 
 .fondements p {
     margin-bottom: 12px;
