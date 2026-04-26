@@ -44,10 +44,10 @@ nav ul li a:hover {
 .sommaire-large {
     background-color: white;
     color: #0a3d78;
-    padding: 25px 0;
-    width: 70%;
-    margin: 20px auto;
-    border-radius: 10px;
+    padding: 15px 0;         /* réduit la hauteur */
+    width: 70%;              /* réduit la largeur */
+    margin: 20px auto;       /* centre le bloc */
+    border-radius: 10px;     /* arrondit légèrement */
 }
 
 .sommaire-large h2 {
@@ -76,7 +76,7 @@ nav ul li a:hover {
 
 /* CONTENU PRINCIPAL SUR FOND BLEU */
 .content {
-    padding: 60px 20px;
+    padding: 25px 20px;   /* remonte le contenu pour voir “Bienvenue…” */
     max-width: 900px;
     margin: auto;
 }
