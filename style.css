@@ -1,7 +1,22 @@
-/* ===== 1 — BARRE BLEUE HAUTEUR 3 CM ===== */
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== GLOBAL ===== */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #0a3d78;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* ===== 1 — BARRE BLEUE (NAVIGATION) — 3 CM ===== */
 nav {
     background-color: #0a3d78;
-    height: 3cm;                 /* hauteur fixe */
+    height: 3cm;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,65 +35,7 @@ nav a {
     font-size: 18px;
 }
 
-/* ===== 2 — BARRE BLANCHE SOMMAIRE HAUTEUR 5 CM ===== */
-.sommaire-large {
-    background: white;
-    height: 5cm;                 /* hauteur fixe */
-    width: 100%;                 /* pleine largeur */
-    padding: 10px 40px;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;     /* centrer verticalement */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-}
-
-.sommaire-large h2 {
-    margin: 0 0 8px 0;
-    font-size: 1.2rem;
-}
-
-.sommaire-large ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 0;
-}
-
-.sommaire-large a {
-    color: #0a3d78;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-/* ===== 3 — FOND BLEU TEXTE HAUTEUR 12 CM ===== */
-.content {
-    background: #0a3d78;
-    width: 100%;
-    height: 12cm;                /* hauteur fixe */
-    padding: 40px;
-    color: white;
-}
-
-.content h1 {
-    text-align: center;
-    font-size: 2.4rem;
-    margin-bottom: 20px;
-}
-
-.content h2 {
-    text-align: center;
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-}
-
-.content p {
-    max-width: 900px;
-    margin: 0 auto 20px auto;
-    font-size: 1.2rem;
-}
-/* ===== CORRECTION DU SOMMAIRE ===== */
+/* ===== 2 — BARRE BLANCHE (SOMMAIRE) — 5 CM ===== */
 .sommaire-large {
     background: white;
     height: 5cm;
@@ -88,13 +45,14 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* centre horizontalement */
+    align-items: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
 .sommaire-large h2 {
     margin: 0 0 10px 0;
     font-size: 1.3rem;
+    color: black;
 }
 
 .sommaire-large ul {
@@ -102,13 +60,9 @@ nav a {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: center; /* centre les liens */
+    justify-content: center;
     margin: 0;
     padding: 0;
-}
-
-.sommaire-large li {
-    margin: 0;
 }
 
 .sommaire-large a {
@@ -117,7 +71,7 @@ nav a {
     text-decoration: none;
 }
 
-/* ===== CORRECTION DU TEXTE SUR FOND BLEU ===== */
+/* ===== 3 — FOND BLEU (CONTENU) — 12 CM ===== */
 .content {
     background: #0a3d78;
     width: 100%;
@@ -126,9 +80,19 @@ nav a {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* centre verticalement */
-    align-items: center;     /* centre horizontalement */
-    text-align: center;      /* centre le texte */
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;      
+}
+
+.content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
 }
 
 .content p {
