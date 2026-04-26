@@ -17,7 +17,7 @@ body {
 /* NAVIGATION — BARRE BLEUE HAUT */
 nav {
     background-color: #0a3d78;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 nav ul {
@@ -26,7 +26,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 0 12px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -40,19 +40,19 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* BANDE SOMMAIRE BLANCHE CENTRÉE ET TRÈS FINE */
+/* BANDE SOMMAIRE BLANCHE — ULTRA RÉDUITE */
 .sommaire-large {
     background-color: white;
     color: #0a3d78;
-    padding: 10px 0;        /* très fin */
-    width: 65%;             /* plus étroit */
-    margin: 15px auto;      /* réduit l’espace autour */
-    border-radius: 10px;
+    padding: 4px 0;        /* hauteur MINIMALE */
+    width: 55%;            /* plus étroit */
+    margin: 8px auto;      /* très peu d’espace autour */
+    border-radius: 8px;
 }
 
 .sommaire-large h2 {
-    margin-bottom: 8px;
-    font-size: 22px;
+    margin-bottom: 4px;
+    font-size: 18px;
 }
 
 .sommaire-large ul {
@@ -61,37 +61,37 @@ nav ul li a:hover {
 }
 
 .sommaire-large ul li {
-    margin: 3px 0;
+    margin: 2px 0;
 }
 
 .sommaire-large ul li a {
     color: #0a3d78;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .sommaire-large ul li a:hover {
     text-decoration: underline;
 }
 
-/* CONTENU PRINCIPAL SUR FOND BLEU */
+/* CONTENU PRINCIPAL SUR FOND BLEU — REMONTÉ AU MAXIMUM */
 .content {
-    padding: 10px 20px;     /* remonte fortement le contenu */
+    padding: 5px 20px;   /* remonte le texte au maximum */
     max-width: 900px;
     margin: auto;
 }
 
 .content h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 8px;
 }
 
 .content h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 12px;
 }
 
 .content p {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     font-size: 18px;
 }
