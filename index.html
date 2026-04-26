@@ -11,31 +11,25 @@
 
     <!-- BARRE BLEUE FONCÉE -->
     <header class="header-blue">
-        <div class="title-main">PEUPLITIQUE</div>
-        <div class="title-sub">
-            Première plateforme citoyenne indépendante conçue pour redonner au peuple la parole publique,
-            l’analyse collective et la décision commune
-        </div>
-
-        <nav class="menu">
-            <ul>
-                <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
-                <li><a href="gouvernance-dao.html">Gouvernance DAO</a></li>
-                <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
-                <li><a href="economie-integree.html">Économie intégrée</a></li>
-                <li><a href="organisation-economique-structurelle.html">Organisation économique & structurelle</a></li>
-                <li><a href="organisation-politique-territoriale.html">Organisation politique territoriale</a></li>
-                <li><a href="glossaire.html">Glossaire</a></li>
-                <li><a href="protocole.html">Protocole</a></li>
-                <li><a href="mecanismes.html">Mécanismes</a></li>
-            </ul>
-        </nav>
+        <h1 class="title-main">PEUPLITIQUE</h1>
+        <p class="title-sub">Première plateforme citoyenne indépendante – Gouvernance partagée – Décision commune</p>
     </header>
 
-    <!-- BANDE BLEU CLAIR SOUS PEUPLITIQUE -->
-    <section class="sous-titre-zone"></section>
+    <!-- BANDE BLEU-VERT CLAIR -->
+    <div class="sous-titre-zone"></div>
 
-    <!-- SOMMAIRE BLANC -->
+    <!-- MENU -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="gouvernance.html">Gouvernance</a></li>
+            <li><a href="organisation.html">Organisation</a></li>
+            <li><a href="dao.html">DAO</a></li>
+            <li><a href="glossaire.html">Glossaire</a></li>
+        </ul>
+    </nav>
+
+    <!-- SOMMAIRE -->
     <section class="sommaire">
         <h2>Sommaire</h2>
         <ul>
@@ -49,118 +43,26 @@
         </ul>
     </section>
 
-    <!-- BLOC GOUVERNANCE PARTAGÉE -->
+    <!-- INTRODUCTION -->
     <section class="intro">
         <h2>Peuplitique — Gouvernance partagée</h2>
-
         <p>
-            Son principe est une Constitution qui s’oppose aux modèles pyramidaux traditionnels et au pouvoir
-            centralisé qui créent des dérives structurelles. Elle vise à reconstruire un espace où chaque citoyen
-            contribue, analyse, propose, corrige et décide — sans intermédiaire, sans filtre, sans hiérarchie imposée.
+            Son principe est une Constitution qui s’oppose aux modèles pyramidaux traditionnels et au pouvoir centralisé qui créent des dérives structurelles.
+            Elle vise à reconstruire un espace où chaque citoyen contribue, analyse, propose, corrige et décide — sans intermédiaire, sans filtre, sans hiérarchie imposée.
         </p>
-
         <p>
-            Elle permet aux citoyens de reprendre la maîtrise des décisions qui les concernent et repose sur plusieurs
-            fondements essentiels :
+            Elle permet aux citoyens de reprendre la maîtrise des décisions qui les concernent et repose sur plusieurs fondements essentiels :
         </p>
+    </section>
 
-        <div class="fondements">
-            <p><strong>Transparence totale :</strong> chaque étape, chaque décision, chaque analyse est visible et accessible.</p>
-            <p><strong>Participation ouverte :</strong> tout citoyen peut contribuer, sans condition d’appartenance, de statut ou de compétence préalable.</p>
-            <p><strong>Équité d’expression :</strong> aucune voix ne vaut plus qu’une autre ; la légitimité vient de la contribution, pas du statut.</p>
-            <p><strong>Intelligence collective :</strong> les décisions émergent de l’analyse croisée, de la confrontation constructive et de la diversité des points de vue.</p>
-            <p><strong>Responsabilité commune :</strong> chacun participe à la qualité du débat, à la rigueur des analyses et à la cohérence des décisions.</p>
-        </div>
+    <!-- FONDEMENTS -->
+    <section class="fondements">
+        <p>• Transparence totale : chaque étape, chaque décision, chaque analyse est visible et accessible.</p>
+        <p>• Participation ouverte : tout citoyen peut contribuer, sans condition d’appartenance ou de statut.</p>
+        <p>• Équité d’expression : aucune voix ne vaut plus qu’une autre.</p>
+        <p>• Intelligence collective : les décisions émergent de la diversité des points de vue.</p>
+        <p>• Responsabilité commune : chacun participe à la rigueur des analyses et à la cohérence des décisions.</p>
     </section>
 
 </body>
 </html>
-⭐⭐ 2) STYLE.CSS — VERSION FINALE, COMPLÈTE, PROPRE
-➡️ COLLE TOUT CE FICHIER DANS STYLE.CSS (RAW)  
-➡️ REMPLACE TOUT CE QUI S’Y TROUVE
-
-css
-/* RESET */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #faf7f0;
-    color: #333;
-}
-
-/* BARRE BLEUE FONCÉE */
-.header-blue {
-    background-color: #0a3d78;
-    color: white;
-    padding: 25px 20px;
-    text-align: center;
-}
-
-.title-main {
-    font-size: 42px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.title-sub {
-    font-size: 16px;
-    margin-top: 8px;
-    margin-bottom: 20px;
-}
-
-/* MENU */
-.menu ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* BANDE BLEU CLAIR */
-.sous-titre-zone {
-    background-color: #e8f1ff;
-    height: 1.5cm;
-}
-
-/* SOMMAIRE BLANC */
-.sommaire {
-    background-color: white;
-    padding: 20px;
-    border-bottom: 2px solid #ddd;
-}
-
-.sommaire h2 {
-    color: #0a3d78;
-    margin-bottom: 10px;
-}
-
-.sommaire ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-/* BLOC GOUVERNANCE PARTAGÉE */
-.intro {
-    background-color: #0a3d78;
-    color: white;
-    padding: 40px;
-    margin: 40px 25px;
-    border-radius: 8px;
-}
-
-.intro h2 {
-    margin-bottom: 15px;
-}
-
-.fondements p {
-    margiin-bottom: 12px;
