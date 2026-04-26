@@ -9,9 +9,8 @@
 
 <body>
 
-    <!-- 1️⃣ BARRE BLEUE — TITRE + SOUS-TITRE + MENU -->
+    <!-- BARRE BLEUE FONCÉE -->
     <header class="header-blue">
-       
         <div class="title-main">PEUPLITIQUE</div>
         <div class="title-sub">
             Première plateforme citoyenne indépendante conçue pour redonner au peuple la parole publique,
@@ -32,11 +31,11 @@
             </ul>
         </nav>
     </header>
- .sous-titre-zone {
-    background-color: #e8f1ff; /* bleu clair */
-    height: 1.5cm;
-}
-    <!-- 2️⃣ SOMMAIRE BLANC -->
+
+    <!-- BANDE BLEU CLAIR SOUS PEUPLITIQUE -->
+    <section class="sous-titre-zone"></section>
+
+    <!-- SOMMAIRE BLANC -->
     <section class="sommaire">
         <h2>Sommaire</h2>
         <ul>
@@ -50,7 +49,7 @@
         </ul>
     </section>
 
-    <!-- 3️⃣ CADRE BLEU FONCÉ -->
+    <!-- BLOC GOUVERNANCE PARTAGÉE -->
     <section class="intro">
         <h2>Peuplitique — Gouvernance partagée</h2>
 
@@ -76,7 +75,10 @@
 
 </body>
 </html>
-⭐⭐ 2) style.css — VERSION FINALE À COLLER TEL QUEL
+⭐⭐ 2) STYLE.CSS — VERSION FINALE, COMPLÈTE, PROPRE
+➡️ COLLE TOUT CE FICHIER DANS STYLE.CSS (RAW)  
+➡️ REMPLACE TOUT CE QUI S’Y TROUVE
+
 css
 /* RESET */
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -87,7 +89,7 @@ body {
     color: #333;
 }
 
-/* 1️⃣ BARRE BLEUE */
+/* BARRE BLEUE FONCÉE */
 .header-blue {
     background-color: #0a3d78;
     color: white;
@@ -107,7 +109,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* MENU DANS LA BARRE BLEUE */
+/* MENU */
 .menu ul {
     list-style: none;
     display: flex;
@@ -122,11 +124,13 @@ body {
     font-size: 18px;
 }
 
-.menu a:hover {
-    text-decoration: underline;
+/* BANDE BLEU CLAIR */
+.sous-titre-zone {
+    background-color: #e8f1ff;
+    height: 1.5cm;
 }
 
-/* 2️⃣ SOMMAIRE BLANC */
+/* SOMMAIRE BLANC */
 .sommaire {
     background-color: white;
     padding: 20px;
@@ -145,12 +149,12 @@ body {
     flex-wrap: wrap;
 }
 
-/* 3️⃣ CADRE BLEU FONCÉ */
+/* BLOC GOUVERNANCE PARTAGÉE */
 .intro {
     background-color: #0a3d78;
     color: white;
-    padding: 30px;
-    margin: 25px;
+    padding: 40px;
+    margin: 40px 25px;
     border-radius: 8px;
 }
 
@@ -159,5 +163,4 @@ body {
 }
 
 .fondements p {
-    margin-bottom: 12px;
-}
+    margiin-bottom: 12px;
