@@ -1,82 +1,82 @@
 /* ===== RESET ===== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* ===== GLOBAL ===== */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #faf7f0;
-  color: #222;
-  line-height: 1.6;
-  padding-bottom: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #0a3d78; /* FOND BLEU GLOBAL */
+    color: #ffffff; /* Texte blanc par défaut */
+    line-height: 1.6;
+    padding-bottom: 40px;
 }
 
 /* ===== NAVIGATION ===== */
-.main-nav {
-  background-color: #0a3d78;
-  padding: 12px 0;
+nav, .main-nav {
+    background-color: #0a3d78;
+    padding: 12px 0;
 }
 
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+nav ul, .main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.main-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
+nav a, .main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
 }
 
-.main-nav a:hover {
-  text-decoration: underline;
+/* ===== CONTENU D’ACCUEIL ===== */
+.content {
+    background: transparent; /* Texte directement sur fond bleu */
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
-/* ===== TITRES ===== */
-h1, h2, h3 {
-  color: #0a3d78;
-  margin: 20px 0 10px;
+.content h1,
+.content h2,
+.content p {
+    color: #ffffff; /* Titre + texte en blanc */
 }
 
-/* ===== CONTENU ===== */
-section, .content {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-/* ===== SOMMAIRE ===== */
+/* ===== SOMMAIRE (SEUL BLOC BLANC) ===== */
 .sommaire {
-  background: #ffffff;
-  border-left: 4px solid #0a3d78;
-  padding: 15px 20px;
-  margin: 20px auto;
-  max-width: 900px;
+    background: #ffffff;
+    max-width: 260px;
+    margin: 20px auto;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #000000; /* Texte noir dans le sommaire */
+}
+
+.sommaire h2 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #000000;
 }
 
 .sommaire ul {
-  list-style: none;
+    padding-left: 15px;
 }
 
 .sommaire li {
-  margin: 6px 0;
+    margin-bottom: 5px;
 }
 
 .sommaire a {
-  color: #0a3d78;
-  text-decoration: none;
-}
-
-.sommaire a:hover {
-  text-decoration: underline;
+    color: #0a3d78; /* Liens bleus dans le sommaire */
+    text-decoration: none;
+    font-weight: 600;
 }
