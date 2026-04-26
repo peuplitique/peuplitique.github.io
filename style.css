@@ -1,65 +1,49 @@
-/* ===== RESET ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ===== GLOBAL ===== */
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background-color: #0a3d78; /* Fond bleu global */
-    color: #ffffff; /* Texte blanc par défaut */
-    line-height: 1.6;
-    padding-bottom: 40px;
-}
-
-/* ===== NAVIGATION ===== */
+/* ===== 1 — BARRE BLEUE HAUTEUR 3 CM ===== */
 nav {
     background-color: #0a3d78;
-    padding: 12px 0;
+    height: 3cm;                 /* hauteur fixe */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
 }
 
 nav a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
 }
 
-/* ===== GRAND SOMMAIRE BLANC LARGE ===== */
+/* ===== 2 — BARRE BLANCHE SOMMAIRE HAUTEUR 5 CM ===== */
 .sommaire-large {
-    background: #ffffff;
-    width: 90%;              /* plus large que la barre */
-    max-width: 1200px;       /* limite élégante */
-    margin: 30px auto;       /* centré */
-    padding: 25px 40px;
-    border-radius: 10px;
-    color: #000000;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    background: white;
+    height: 5cm;                 /* hauteur fixe */
+    width: 100%;                 /* pleine largeur */
+    padding: 10px 40px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     /* centrer verticalement */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
 .sommaire-large h2 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-    color: #000000;
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
 }
 
 .sommaire-large ul {
     list-style: none;
-    padding-left: 0;
-}
-
-.sommaire-large li {
-    margin-bottom: 8px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0;
 }
 
 .sommaire-large a {
@@ -68,27 +52,29 @@ nav a {
     text-decoration: none;
 }
 
-/* ===== CONTENU PEUPLITIQUE SUR FOND BLEU ===== */
+/* ===== 3 — FOND BLEU TEXTE HAUTEUR 12 CM ===== */
 .content {
-    background: transparent;
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
+    background: #0a3d78;
+    width: 100%;
+    height: 12cm;                /* hauteur fixe */
+    padding: 40px;
+    color: white;
 }
 
 .content h1 {
-    font-size: 2.2rem;   /* plus grand */
-    color: #ffffff;
     text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
 }
 
 .content h2 {
-    font-size: 1.4rem;
-    color: #ffffff;
     text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
 }
 
 .content p {
-    color: #ffffff;
-    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    font-size: 1.2rem;
 }
