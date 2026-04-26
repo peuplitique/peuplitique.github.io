@@ -40,19 +40,19 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* BANDE SOMMAIRE BLANCHE CENTRÉE ET RÉDUITE */
+/* BANDE SOMMAIRE BLANCHE CENTRÉE ET TRÈS FINE */
 .sommaire-large {
     background-color: white;
     color: #0a3d78;
-    padding: 15px 0;         /* réduit la hauteur */
-    width: 70%;              /* réduit la largeur */
-    margin: 20px auto;       /* centre le bloc */
-    border-radius: 10px;     /* arrondit légèrement */
+    padding: 10px 0;        /* très fin */
+    width: 65%;             /* plus étroit */
+    margin: 15px auto;      /* réduit l’espace autour */
+    border-radius: 10px;
 }
 
 .sommaire-large h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
+    margin-bottom: 8px;
+    font-size: 22px;
 }
 
 .sommaire-large ul {
@@ -61,13 +61,13 @@ nav ul li a:hover {
 }
 
 .sommaire-large ul li {
-    margin: 4px 0;
+    margin: 3px 0;
 }
 
 .sommaire-large ul li a {
     color: #0a3d78;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .sommaire-large ul li a:hover {
@@ -76,22 +76,22 @@ nav ul li a:hover {
 
 /* CONTENU PRINCIPAL SUR FOND BLEU */
 .content {
-    padding: 25px 20px;   /* remonte le contenu pour voir “Bienvenue…” */
+    padding: 10px 20px;     /* remonte fortement le contenu */
     max-width: 900px;
     margin: auto;
 }
 
 .content h1 {
     font-size: 32px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .content h2 {
     font-size: 24px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .content p {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     font-size: 18px;
 }
