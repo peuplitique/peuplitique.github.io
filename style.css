@@ -40,19 +40,19 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* BANDE SOMMAIRE BLANCHE — ULTRA RÉDUITE */
+/* BANDE SOMMAIRE BLANCHE — REMONTÉE */
 .sommaire-large {
     background-color: white;
     color: #0a3d78;
-    padding: 4px 0;        /* hauteur MINIMALE */
-    width: 55%;            /* plus étroit */
-    margin: 8px auto;      /* très peu d’espace autour */
-    border-radius: 8px;
+    padding: 10px 0;
+    width: 60%;
+    margin: 0 auto 5px auto;   /* <<< FOND BLANC REMONTÉ */
+    border-radius: 10px;
 }
 
 .sommaire-large h2 {
-    margin-bottom: 4px;
-    font-size: 18px;
+    margin-bottom: 6px;
+    font-size: 20px;
 }
 
 .sommaire-large ul {
@@ -61,7 +61,7 @@ nav ul li a:hover {
 }
 
 .sommaire-large ul li {
-    margin: 2px 0;
+    margin: 3px 0;
 }
 
 .sommaire-large ul li a {
@@ -74,21 +74,21 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* CONTENU PRINCIPAL SUR FOND BLEU — REMONTÉ AU MAXIMUM */
+/* CONTENU PRINCIPAL — REMONTÉ */
 .content {
-    padding: 5px 20px;   /* remonte le texte au maximum */
+    padding: 10px 20px;
     max-width: 900px;
     margin: auto;
 }
 
 .content h1 {
     font-size: 30px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .content h2 {
     font-size: 22px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .content p {
