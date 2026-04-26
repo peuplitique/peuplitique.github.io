@@ -1,5 +1,9 @@
 /* RESET */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -7,7 +11,7 @@ body {
     color: #333;
 }
 
-/* 1️⃣ BARRE BLEUE */
+/* BARRE BLEUE FONCÉE */
 .header-blue {
     background-color: #0a3d78;
     color: white;
@@ -27,12 +31,20 @@ body {
     margin-bottom: 20px;
 }
 
-/* MENU DANS LA BARRE BLEUE */
+/* BANDE BLEU-VERT CLAIR */
+.sous-titre-zone {
+    background-color: #c8f3f1; /* bleu-vert clair */
+    height: 1.5cm;
+}
+
+/* MENU */
 .menu ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 25px;
+    padding: 15px 0;
+    background-color: #0a3d78;
 }
 
 .menu a {
@@ -46,31 +58,31 @@ body {
     text-decoration: underline;
 }
 
-/* 2️⃣ SOMMAIRE BLANC */
+/* SOMMAIRE */
 .sommaire {
     background-color: white;
-    padding: 20px;
+    padding: 25px;
     border-bottom: 2px solid #ddd;
 }
 
 .sommaire h2 {
     color: #0a3d78;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .sommaire ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    list-style-type: "• ";
+    padding-left: 25px;
+    line-height: 1.8;
 }
 
-/* 3️⃣ CADRE BLEU FONCÉ */
+/* INTRODUCTION */
 .intro {
     background-color: #0a3d78;
     color: white;
-    padding: 30px;
-    margin: 25px;
+    padding: 40px;
+    margin: 40px 25px;
     border-radius: 8px;
 }
 
@@ -78,6 +90,13 @@ body {
     margin-bottom: 15px;
 }
 
+/* FONDEMENTS */
+.fondements {
+    padding: 30px 25px;
+    line-height: 1.8;
+}
+
 .fondements p {
     margin-bottom: 12px;
+    font-size: 17px;
 }
