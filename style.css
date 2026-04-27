@@ -1,120 +1,96 @@
-/* RESET */
-* {
+/* ----------------------------- */
+/*   STYLE GLOBAL DU SITE        */
+/* ----------------------------- */
+
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #faf7f0; /* fond clair */
+    color: #0a3d78;      /* bleu foncé */
+    line-height: 1.6;
 }
 
-/* BODY GLOBAL */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0A3D78;
-    color: white;
-    line-height: 1.6;
+/* ----------------------------- */
+/*   BARRE BLEUE (HEADER)        */
+/* ----------------------------- */
+
+header {
+    background: #0a3d78;
+    padding: 20px;
     text-align: center;
 }
 
-/* BARRE BLEUE FONCÉE */
-.top-bar {
-    background-color: #0A3D78;
-    padding: 20px 0;
-}
-
-.site-title {
+header h1 {
     color: white;
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: uppercase;
+    margin: 0;
+    font-size: 48px;
 }
 
-/* SOUS-TITRE BLEU-VERT PEPS */
+/* ----------------------------- */
+/*   SOUS-TITRE                  */
+/* ----------------------------- */
+
 .subtitle {
-    color: #3FD1C2;
-    font-size: 18px;
+    color: #c8f3f1; /* bleu-vert clair */
+    text-align: center;
+    font-size: 22px;
     margin-top: 10px;
-}
-
-/* FINE LIGNE BLEU-VERT PEPS */
-.subtitle-separator {
-    width: 100%;
-    height: 2px;
-    background-color: #3FD1C2;
-    margin: 15px 0;
-}
-
-/* MENU BLEU */
-.main-nav {
-    background-color: #0A3D78;
-    padding: 10px 0;
-}
-
-.main-nav ul {
-    list-style: none;
-}
-
-.main-nav ul li {
-    display: inline-block;
-    margin: 0 12px;
-}
-
-.main-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.main-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* SOMMAIRE BLANC */
-.sommaire-bar {
-    background-color: white;
-    color: #0A3D78;
-    width: 70%;
-    margin: 20px auto;
-    padding: 15px 0;
-    border-radius: 10px;
-}
-
-.sommaire-title {
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-.sommaire-list {
-    list-style: none;
-}
-
-.sommaire-list li {
-    margin: 4px 0;
-    font-size: 15px;
-}
-
-/* CONTENU PRINCIPAL */
-.page-content {
     max-width: 900px;
-    margin: 30px auto;
-    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.page-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #3FD1C2;
+.subtitle-line {
+    width: 60%;
+    height: 2px;
+    background: #c8f3f1;
+    margin: 20px auto;
 }
 
-.page-content p {
-    font-size: 17px;
-    margin-bottom: 20px;
+/* ----------------------------- */
+/*   SOMMAIRE                    */
+/* ----------------------------- */
+
+.sommaire {
+    background: #faf7f0;
+    padding: 30px;
 }
 
-/* FOOTER */
-.site-footer {
-    margin-top: 40px;
-    padding: 20px 0;
-    background-color: #0A3D78;
+.sommaire h2 {
+    color: #0a3d78;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.sommaire ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+/* ----------------------------- */
+/*   BLOC BLEU — SECTIONS        */
+/* ----------------------------- */
+
+.bloc-bleu {
+    background: #0a3d78;
+    padding: 40px;
     color: white;
-    font-size: 14px;
+}
+
+.bloc-bleu h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.bloc-bleu h3 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.bloc-bleu p {
+    margin-top: 0;
+    margin-bottom: 25px;
 }
