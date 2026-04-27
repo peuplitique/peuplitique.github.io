@@ -1,27 +1,37 @@
- /* --- RESET SIMPLE --- */
-body, h1, h2, h3, h4, p, ul {
+/* ===== RESET ===== */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* --- COULEURS GLOBALES --- */
+/* ===== GLOBAL ===== */
 body {
     background-color: #faf7f0;
     color: #222;
     line-height: 1.6;
-    padding-bottom: 40px;
 }
 
-/* --- TITRE PRINCIPAL --- */
-.main-title {
+/* ===== HERO SECTION ===== */
+.hero {
+    background-color: #0a3d78;
+    color: white;
     text-align: center;
-    padding: 25px 0;
-    font-size: 2.2rem;
-    color: #0a3d78;
+    padding: 60px 20px;
 }
 
-/* --- MENU --- */
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* ===== MENU ===== */
 .menu {
     background-color: #0a3d78;
     padding: 10px 0;
@@ -31,70 +41,48 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 .menu a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-}
-
-.menu a.active {
-    border-bottom: 2px solid #7ec8c2;
-}
-
-/* --- TITRES DE PAGE --- */
-.section-title {
-    font-size: 1.9rem;
-    color: #0a3d78;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-/* --- INTRO --- */
-.intro {
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    font-size: 1.1rem;
-    text-align: center;
-    color: #333;
-}
-
-/* --- SECTIONS --- */
-section {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    background: white;
-    border-left: 5px solid #0a3d78;
+    padding: 8px 12px;
     border-radius: 4px;
+    transition: 0.2s;
 }
 
-/* --- TITRES SECONDAIRES --- */
-h3 {
-    font-size: 1.4rem;
+.menu a:hover,
+.menu a.active {
+    background-color: #08315f;
+}
+
+/* ===== CONTENT ===== */
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content h2 {
     color: #0a3d78;
     margin-bottom: 10px;
-}
-
-h4 {
-    font-size: 1.15rem;
-    color: #0a3d78;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
-/* --- PARAGRAPHES --- */
-p {
-    margin-bottom: 12px;
-}
-
-/* --- FOOTER --- */
-footer {
-    text-align: center;
     margin-top: 40px;
-    padding: 20px 0;
-    color: #555;
+    font-size: 1.8rem;
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #0a3d78;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 0.9rem;
 }
