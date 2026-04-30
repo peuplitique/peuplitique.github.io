@@ -60,7 +60,11 @@ body {
     font-size: 1.1rem;
     margin-bottom: 6px;
 }
-
+.sommaire {
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
 /* ----------------------------- */
 /* HEADER PEUPLITIQUE */
 /* ----------------------------- */
