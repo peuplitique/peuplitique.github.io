@@ -25,7 +25,7 @@ section {
 
 .header-blue {
     background: #0a3d78;
-    height: 3cm; /* hauteur validée */
+    height: 3cm;
     padding-top: 40px;
     padding-bottom: 10px;
     text-align: center;
@@ -79,7 +79,7 @@ section {
 
 .sommaire {
     background: #faf7f0;
-    height: 4cm; /* hauteur validée */
+    height: 4cm;
     padding: 30px;
     max-width: 900px;
     margin: 0 auto 40px auto;
