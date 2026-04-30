@@ -31,17 +31,20 @@ section {
     text-align: center;
 }
 
-.header-blue h1 {
-    color: white;
-    font-size: 48px;
-    margin: 0 0 10px 0;
-}
+<header class="header-blue">
+    <h1>Peuplitique</h1>
+    <p>Gouvernance partagée – Décision commune</p>
 
-.header-blue p {
-    color: #c8f3f1;
-    font-size: 22px;
-    margin: 0 0 20px 0;
-}
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="constitution.html">Constitution</a></li>
+            <li><a href="organisation.html">Organisation structurelle</a></li>
+            <li><a href="protocole.html">Protocole</a></li>
+            <li><a href="glossaire.html">Glossaire</a></li>
+        </ul>
+    </nav>
+</header>
 
 /* ----------------------------- */
 /*   MENU                        */
