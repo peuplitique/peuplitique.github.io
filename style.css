@@ -1,28 +1,56 @@
-/* ----------------------------- */
 /* TYPOGRAPHIE GLOBALE */
-/* ----------------------------- */
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f0f0f0;
-    color: #0a3d78;
-    line-height: 1.5;
+    font-family: "Segoe UI", Arial, sans-serif;
     font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
 }
 
-/* ----------------------------- */
-/* BARRE BLEUE : MENU */
-/* ----------------------------- */
+h1, h2, h3 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* HEADER */
+.header {
+    background-color: #0a3d78;
+    color: white;
+    text-align: center;
+    padding: 25px 0 10px 0;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.sous-titre {
+    color: #4db6ac;
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.ligne {
+    width: 80%;
+    height: 3px;
+    background-color: #4db6ac;
+    margin: 10px auto 0 auto;
+}
+
+/* MENU */
 .menu {
     background-color: #0a3d78;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .menu ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
     margin: 0;
     padding: 0;
 }
@@ -31,64 +59,47 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
 }
 
-/* ----------------------------- */
-/* BARRE BLANCHE : SOMMAIRE */
-/* ----------------------------- */
+/* SOMMAIRE */
 .sommaire {
     background-color: white;
-    padding: 25px;
+    padding: 15px 0;
     border-bottom: 3px solid #0a3d78;
+    width: 100%;
+    text-align: center;
 }
 
 .sommaire h2 {
     color: #0a3d78;
-    margin-top: 0;
-    font-size: 1.6rem;
+    margin-bottom: 10px;
 }
 
 .sommaire ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 .sommaire li {
     color: #0a3d78;
     font-size: 1.1rem;
-    margin-bottom: 6px;
-}
-.sommaire {
-    width: 70%;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-/* ----------------------------- */
-/* HEADER PEUPLITIQUE */
-/* ----------------------------- */
-.header {
-    background-color: #0a3d78;
-    color: white;
-    text-align: center;
-    padding: 40px 0;
 }
 
-.header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-.sous-titre {
-    color: #4db6ac;
-    margin: 10px 0 5px 0;
-    font-size: 1.4rem;
-}
-
-.ligne {
+/* ZONE BLEUE FONCÉE */
+.zone-bleue {
+    background-color: #0a3d78; /* même bleu que le haut */
+    padding: 30px;
+    margin: 30px auto;
     width: 80%;
-    height: 3px;
-    background-color: #4db6ac;
-    margin: 10px auto 0 auto;
+    border-radius: 10px;
+    color: white;
+}
+
+.zone-bleue h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
 }
