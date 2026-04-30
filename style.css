@@ -103,3 +103,29 @@ h1, h2, h3 {
     font-size: 1.6rem;
     margin-bottom: 10px;
 }
+/* CENTRAGE GLOBAL DU SITE */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centre tout le contenu */
+}
+
+/* LARGEUR MAX POUR TOUTES LES SECTIONS */
+header,
+.menu,
+.sommaire,
+.zone-bleue,
+.content,
+footer {
+    width: 100%;
+    max-width: 900px;      /* largeur propre et centrée */
+    box-sizing: border-box;
+    margin: 0 auto;        /* centrage horizontal */
+}
+
+/* CENTRAGE DU TEXTE */
+.content,
+.content h2,
+.content p {
+    text-align: center;
+}
