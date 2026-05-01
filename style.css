@@ -80,3 +80,17 @@ a {
 a:hover {
     text-decoration: underline;
 }
+/* FORCE LE CENTRAGE DU SOMMAIRE */
+.sommaire {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.sommaire ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
