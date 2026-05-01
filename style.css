@@ -68,11 +68,6 @@ body {
     text-align: center;
 }
 /* CENTRAGE DU MENU ET DU SOMMAIRE */
-.menu,
-.sommaire {
-    max-width: 900px;
-    margin: 0 auto;
-}
 .sommaire ul {
     display: flex;
     justify-content: center;
