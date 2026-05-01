@@ -49,13 +49,6 @@ nav ul li a {
     margin: 30px 0;
 }
 
-/* SOMMAIRE CENTRÉ & HARMONISÉ */
-.sommaire {
-    width: 100%;
-    text-align: center;
-    margin: 40px 0;
-}
-
 .sommaire ul {
     list-style: none;
     padding: 0;
