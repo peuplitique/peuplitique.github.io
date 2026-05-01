@@ -86,13 +86,12 @@ body {
 /* ========================= */
 /* ZONE BLEUE                */
 /* ========================= */
-
 .zone-bleue {
-    background-color: #0a3d78;
-    color: white;
+    background-color: #0a3d78;   /* FOND BLEU */
+    color: white;                /* TEXTE BLANC */
     padding: 20px;
     margin: 30px 0;
-    text-align: center;
+    text-align: center;          /* CENTRAGE DU TEXTE */
     border-radius: 10px;
 }
 
