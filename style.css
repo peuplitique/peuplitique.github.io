@@ -61,17 +61,25 @@ body {
 }
 /* SOMMAIRE CENTRÉ */
 .sommaire {
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 3px solid #0a3d78;
     width: 100%;
     text-align: center;
-    margin: 40px 0;
 }
 
 .sommaire ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
     list-style: none;
+    margin: 0;
     padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    text-align: left;
+}
+
+.sommaire li {
+    color: #0a3d78;
+    font-size: 1.1rem;
 }
 /* ========================= */
 /* ZONE BLEUE                */
@@ -89,12 +97,37 @@ body {
 /* ========================= */
 /* CONTENT                   */
 /* ========================= */
+.content {
+    width: 100%;
+    margin: 30px 0;
+    text-align: left;
+}
 
+/* TITRES CENTRÉS */
 .content h1,
 .content h2,
 .content h3 {
     text-align: center;
+    color: #0a3d78;
+    margin-bottom: 20px;
 }
+
+/* PARAGRAPHES */
+.content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* LISTES */
+.content ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.content li {
+    margin-bottom: 8px;
+}
+
 
 
 
