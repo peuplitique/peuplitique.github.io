@@ -1,60 +1,36 @@
-/* TYPOGRAPHIE DE BASE */
+/* TYPOGRAPHIE GLOBALE */
 body {
     font-family: Arial, sans-serif;
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+    text-align: left;
     line-height: 1.6;
     color: #000;
 }
 
-/* TITRES */
+/* TITRES CENTRÉS */
 h1, h2, h3 {
-    color: #0a3d78;
     text-align: center;
+    color: #0a3d78;
 }
-/* HEADER – TITRE, SOUS-TITRE, LIGNE FINE */
 
-/* Bloc header */
+/* HEADER */
 header {
     background-color: #0a3d78;
     color: white;
     padding: 20px 0;
     text-align: center;
-    margin-bottom: 30px;
 }
 
-/* Titre principal */
-header h1 {
-    font-size: 2rem;
-    margin: 0;
-    font-weight: bold;
-}
-
-/* Sous-titre */
-header h2 {
-    font-size: 1.2rem;
-    font-weight: normal;
-    margin-top: -5px;
-    margin-bottom: 10px;
-}
-
-/* Ligne fine */
-.ligne-fine {
-    border: none;
-    border-top: 2px solid white;
-    width: 60%;
-    margin: 10px auto 0 auto;
-}
-
-/* MENU SIMPLE ET CENTRÉ */
+/* MENU */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     background-color: #0a3d78;
     padding: 10px 0;
 }
@@ -65,7 +41,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* ZONE BLEUE (ACCUEIL) */
+/* ZONE BLEUE */
 .zone-bleue {
     background-color: #e6f0ff;
     border-left: 5px solid #0a3d78;
@@ -73,29 +49,54 @@ nav ul li a {
     margin: 30px 0;
 }
 
-/* SOMMAIRE SIMPLE */
+/* SOMMAIRE CENTRÉ & HARMONISÉ */
 .sommaire {
-    margin: 30px 0;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
 }
 
 .sommaire ul {
     list-style: none;
     padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
 }
 
 .sommaire li {
-    margin: 8px 0;
+    font-size: 1.1rem;
+    margin: 6px 0;
+    font-weight: 500;
     color: #0a3d78;
-   font-weight: 600;
-    text-decoration: none;
 }
 
 /* LIENS */
 a {
     color: #0a3d78;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+/* FORCE LE CENTRAGE DU SOMMAIRE */
+.sommaire {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.sommaire ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+/* FORCE LE CENTRAGE GLOBAL DU CONTENU */
+body {
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 20px;
 }
