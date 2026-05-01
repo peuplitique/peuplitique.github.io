@@ -122,10 +122,37 @@ footer {
     box-sizing: border-box;
     margin: 0 auto;        /* centrage horizontal */
 }
+/* CENTRAGE GLOBAL DU TEXTE */
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
 
-/* CENTRAGE DU TEXTE */
-.content,
-.content h2,
-.content p {
+/* TITRES CENTRÉS */
+h1, h2, h3 {
     text-align: center;
+}
+
+/* SOMMAIRE CENTRÉ */
+.sommaire {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.sommaire ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+.sommaire li {
+    font-size: 1.1rem;
+    margin: 6px 0;
+    font-weight: 500;
 }
