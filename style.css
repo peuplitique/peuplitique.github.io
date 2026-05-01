@@ -45,11 +45,12 @@ body {
     text-align: center;
 }
 
-.menu ul {
-    list-style: none;
+.sommaire ul {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    flex-wrap: wrap;      /* autorise retour à la ligne */
+    gap: 12px;            /* espace réduit */
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -71,12 +72,12 @@ body {
 .sommaire ul {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    flex-wrap: wrap;      /* autorise retour à la ligne */
+    gap: 12px;            /* espace réduit */
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 .sommaire li {
     color: #0a3d78;
     font-size: 1.1rem;
