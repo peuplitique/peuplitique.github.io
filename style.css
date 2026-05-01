@@ -61,34 +61,6 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
-/* SOMMAIRE */
-.sommaire {
-    background-color: white;
-    padding: 15px 0;
-    border-bottom: 3px solid #0a3d78;
-    width: 100%;
-    text-align: center;
-}
-
-.sommaire h2 {
-    color: #0a3d78;
-    margin-bottom: 10px;
-}
-
-.sommaire ul {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.sommaire li {
-    color: #0a3d78;
-    font-size: 1.1rem;
-}
-
 /* ZONE BLEUE FONCÉE */
 .zone-bleue {
     background-color: #0a3d78; /* même bleu que le haut */
