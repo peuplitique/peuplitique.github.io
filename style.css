@@ -1,8 +1,8 @@
 /* TYPOGRAPHIE GLOBALE */
 body {
     font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 900px !important;
+    margin: 0 auto !important;
     padding: 20px;
     text-align: left;
     line-height: 1.6;
@@ -49,11 +49,18 @@ nav ul li a {
     margin: 30px 0;
 }
 
+/* SOMMAIRE CENTRÉ — VERSION FINALE */
+.sommaire {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
 .sommaire ul {
     list-style: none;
     padding: 0;
-    margin: 0 auto;
-    display: inline-block;
+    margin: 0;
     text-align: left;
 }
 
@@ -72,24 +79,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-/* FORCE LE CENTRAGE DU SOMMAIRE */
-.sommaire {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-}
-
-.sommaire ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-}
-/* FORCE LE CENTRAGE GLOBAL DU CONTENU */
-body {
-    max-width: 900px !important;
-    margin: 0 auto !important;
-    padding: 20px;
 }
