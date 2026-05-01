@@ -13,13 +13,38 @@ h1, h2, h3 {
     color: #0a3d78;
     text-align: center;
 }
+/* HEADER – TITRE, SOUS-TITRE, LIGNE FINE */
 
-/* HEADER */
+/* Bloc header */
 header {
     background-color: #0a3d78;
     color: white;
     padding: 20px 0;
     text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Titre principal */
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Sous-titre */
+header h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+/* Ligne fine */
+.ligne-fine {
+    border: none;
+    border-top: 2px solid white;
+    width: 60%;
+    margin: 10px auto 0 auto;
 }
 
 /* MENU SIMPLE ET CENTRÉ */
@@ -59,15 +84,16 @@ nav ul li a {
 }
 
 .sommaire li {
-    margin: 5px 0;
+    margin: 8px 0;
     color: #0a3d78;
-    font-weight: 500;
+   font-weight: 600;
+    text-decoration: none;
 }
 
 /* LIENS */
 a {
     color: #0a3d78;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
