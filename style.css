@@ -94,3 +94,9 @@ a:hover {
     margin: 0;
     text-align: left;
 }
+/* FORCE LE CENTRAGE GLOBAL DU CONTENU */
+body {
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 20px;
+}
