@@ -22,8 +22,7 @@ header {
     padding: 20px 0;
     text-align: center;
 }
-
-/* MENU */
+/* MENU CENTRÉ */
 nav ul {
     list-style: none;
     padding: 0;
@@ -48,19 +47,16 @@ nav ul li a {
     padding: 20px;
     margin: 30px 0;
 }
-
-/* SOMMAIRE CENTRÉ — VERSION FINALE */
+/* SOMMAIRE CENTRÉ */
 .sommaire {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin: 40px 0;
 }
 
 .sommaire ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    display: inline-block;
     text-align: left;
 }
 
@@ -69,6 +65,16 @@ nav ul li a {
     margin: 6px 0;
     font-weight: 500;
     color: #0a3d78;
+}
+
+/* BLOC SOUS SOMMAIRE CENTRÉ */
+.contenu-page {
+    text-align: center;
+}
+
+/* 4ᵉ BLOC CENTRÉ */
+.bloc-4 {
+    text-align: center;
 }
 
 /* LIENS */
@@ -80,16 +86,8 @@ a {
 a:hover {
     text-decoration: underline;
 }
-/* CENTRAGE DU TEXTE DU SITE */
-main, section, article, .contenu, .texte {
-    text-align: center;
-}
-nav ul {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-/* CENTRAGE GLOBAL DE TOUT LE CONTENU JUSQU'A LA FIN */
-main, section, article, .contenu-page, .bloc-4, .texte, .contenu {
+
+/* CENTRAGE GLOBAL DE TOUT LE CONTENU */
+main, section, article, .contenu, .texte, body * {
     text-align: center;
 }
