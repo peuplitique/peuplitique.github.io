@@ -84,3 +84,12 @@ a:hover {
 main, section, article, .contenu, .texte {
     text-align: center;
 }
+nav ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/* CENTRAGE GLOBAL DE TOUT LE CONTENU JUSQU'A LA FIN */
+main, section, article, .contenu-page, .bloc-4, .texte, .contenu {
+    text-align: center;
+}
