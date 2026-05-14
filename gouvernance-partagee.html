@@ -6,16 +6,24 @@
     <title>Gouvernance Partagée – Peuplitique</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<body>
+
+<!-- LANG SWITCH -->
 <div class="lang-switch">
     <a href="?lang=fr">FR</a> |
     <a href="?lang=en">EN</a> |
     <a href="?lang=es">ES</a> |
     <a href="?lang=ru">RU</a> |
     <a href="?lang=cn">CN</a>
-</div>     
+</div>
+
+<!-- FOOTER (PLACÉ CORRECTEMENT DANS LE BODY) -->
 <footer class="footer">
     <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
+
+<!-- SCRIPT MULTILINGUE (FERMÉ CORRECTEMENT) -->
 <script>
 const translations = {
     "en": {
@@ -60,7 +68,7 @@ function applyTranslation(lang) {
 const params = new URLSearchParams(window.location.search);
 const lang = params.get("lang");
 if (lang) applyTranslation(lang);
-    
+</script>
 
 <!-- BARRE BLEUE + MENU COMMUN -->
 <header class="header-blue">
@@ -84,13 +92,10 @@ if (lang) applyTranslation(lang);
 <section class="intro">
     <h2>Gouvernance partagée</h2>
     <p>
-        La gouvernance partagée est un modèle où le pouvoir de décider, d’analyser et de corriger
-        est distribué entre les citoyens, plutôt que concentré dans une structure pyramidale.
+        La gouvernance partagée est un modèle où le pouvoir de décider, d’analyser et de corriger est distribué entre les citoyens, plutôt que concentré dans une structure pyramidale.
     </p>
     <p>
-        Elle repose sur trois piliers complémentaires : une analyse des limites structurelles des systèmes actuels,
-        une constitution citoyenne adaptée, et une organisation structurelle distribuée soutenue par un protocole
-        de décision commun.
+        Elle repose sur trois piliers complémentaires : une analyse des limites structurelles des systèmes actuels, une constitution citoyenne adaptée, et une organisation structurelle distribuée soutenue par un protocole de décision commun.
     </p>
 </section>
 
@@ -113,69 +118,58 @@ if (lang) applyTranslation(lang);
     </ul>
 </section>
 
-<!-- LES 7 SECTIONS (TON TEXTE EXACT) -->
+<!-- LES 7 SECTIONS -->
 <div class="zone-bleue">
-
     <h3 class="subtitle">Une participation continue, structurée et transparente</h3>
 
     <section>
         <h4>1. Participation continue</h4>
         <p>
-            La participation citoyenne devient un processus continu. Les citoyens peuvent signaler un problème,
-            proposer une solution, analyser un enjeu, participer à un débat ou suivre les décisions. Chaque
-            contribution est intégrée dans un flux structuré, traçable et visible par tous.
+            La participation citoyenne devient un processus continu. Les citoyens peuvent signaler un problème, proposer une solution, analyser un enjeu, participer à un débat ou suivre les décisions.
         </p>
     </section>
 
     <section>
         <h4>2. Délibération structurée</h4>
         <p>
-            La délibération devient un travail collectif de clarification. Les citoyens comparent les options,
-            analysent les impacts, identifient les risques et formulent des arbitrages. La plateforme transforme
-            un ensemble dispersé d’avis en intelligence collective structurée.
+            La délibération devient un travail collectif de clarification. Les citoyens comparent les options, analysent les impacts, identifient les risques et formulent des arbitrages.
         </p>
     </section>
 
     <section>
         <h4>3. Décision transparente</h4>
         <p>
-            Chaque décision est accompagnée de son objectif, de ses moyens, de son calendrier et de ses indicateurs
-            de suivi. Les citoyens peuvent vérifier ce qui a été fait, ce qui ne l’a pas été, et demander des ajustements.
+            Chaque décision est accompagnée de son objectif, de ses moyens, de son calendrier et de ses indicateurs de suivi.
         </p>
     </section>
 
     <section>
         <h4>4. Contrôle citoyen</h4>
         <p>
-            Le contrôle devient un droit continu. Les citoyens ont accès aux données, aux résultats, aux écarts entre
-            prévision et réalité, et peuvent demander des corrections lorsque les décisions ne répondent plus aux besoins réels.
+            Le contrôle devient un droit continu. Les citoyens ont accès aux données, aux résultats, aux écarts entre prévision et réalité.
         </p>
     </section>
 
     <section>
         <h4>5. Rôle des institutions</h4>
         <p>
-            Les institutions ne décident plus “à la place de”. Elles mettent en œuvre les décisions issues de la plateforme,
-            rendent compte en continu, garantissent la conformité juridique et assurent la coordination entre territoires et secteurs.
+            Les institutions ne décident plus “à la place de”. Elles mettent en œuvre les décisions issues de la plateforme.
         </p>
     </section>
 
     <section>
         <h4>6. Traçabilité complète</h4>
         <p>
-            Chaque étape — contribution, analyse, arbitrage, décision, mise en œuvre — est documentée. La traçabilité renforce
-            la compréhension, la cohérence et la confiance collective.
+            Chaque étape — contribution, analyse, arbitrage, décision, mise en œuvre — est documentée.
         </p>
     </section>
 
     <section>
         <h4>7. Équité et inclusion</h4>
         <p>
-            La gouvernance partagée garantit que les minorités sont entendues, que les désaccords sont traités sans exclusion,
-            que les décisions restent argumentées et que les biais structurels sont identifiés et corrigés.
+            La gouvernance partagée garantit que les minorités sont entendues et que les décisions restent argumentées.
         </p>
     </section>
-
 </div>
 
 <!-- SCHÉMA GÉNÉRAL -->
