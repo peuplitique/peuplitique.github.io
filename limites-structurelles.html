@@ -6,63 +6,19 @@
     <title>Limites structurelles – Peuplitique</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<body>
+
+<!-- LANG SWITCH -->
 <div class="lang-switch">
     <a href="?lang=fr">FR</a> |
     <a href="?lang=en">EN</a> |
     <a href="?lang=es">ES</a> |
     <a href="?lang=ru">RU</a> |
     <a href="?lang=cn">CN</a>
-</div>     
-<footer class="footer">
-    <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
-</footer>
-<script>
-const translations = {
-    "en": {
-        "menu_home": "Home",
-        "menu_limits": "Structural Limits",
-        "menu_governance": "Shared Governance",
-        "menu_protocol": "Protocol",
-        "footer": "© 2026 Peuplitique – All rights reserved"
-    },
-    "es": {
-        "menu_home": "Inicio",
-        "menu_limits": "Límites Estructurales",
-        "menu_governance": "Gobernanza Compartida",
-        "menu_protocol": "Protocolo",
-        "footer": "© 2026 Peuplitique – Todos los derechos reservados"
-    },
-    "ru": {
-        "menu_home": "Главная",
-        "menu_limits": "Структурные ограничения",
-        "menu_governance": "Совместное управление",
-        "menu_protocol": "Протокол",
-        "footer": "© 2026 Peuplitique – Все права защищены"
-    },
-    "cn": {
-        "menu_home": "首页",
-        "menu_limits": "结构限制",
-        "menu_governance": "共享治理",
-        "menu_protocol": "协议",
-        "footer": "© 2026 Peuplitique – 版权所有"
-    }
-};
+</div>
 
-function applyTranslation(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-}
-
-const params = new URLSearchParams(window.location.search);
-const lang = params.get("lang");
-if (lang) applyTranslation(lang);
-    
-<body>
-
+<!-- HEADER + MENU -->
 <header class="header-blue">
     <h1>Peuplitique</h1>
     <p>Plateforme citoyenne – Participation, transparence, gouvernance partagée</p>
@@ -81,221 +37,188 @@ if (lang) applyTranslation(lang);
     </nav>
 </header>
 
+<!-- ZONE BLEUE -->
 <section class="zone-bleue">
     <h2>Limites structurelles</h2>
 </section>
 
+<!-- CONTENU -->
 <main class="content">
 
     <h2>1. Limites institutionnelles</h2>
-    <p>Les institutions actuelles fonctionnent sur des modèles hérités du XIXe et XXe siècle, 
-        conçus pour des sociétés moins complexes, moins interconnectées et moins rapides. 
-        Leur capacité d’adaptation est limitée par des cadres juridiques rigides, des processus 
-        décisionnels lents et une faible participation citoyenne.
-<p>
+    <p>
+        Les institutions actuelles fonctionnent sur des modèles hérités du XIXe et XXe siècle, conçus pour des sociétés moins complexes, moins interconnectées et moins rapides. Leur capacité d’adaptation est limitée par des cadres juridiques rigides, des processus décisionnels lents et une faible participation citoyenne.
+    </p>
+
     <h2>2. Limites démocratiques</h2>
-       <p>La démocratie représentative repose sur une délégation quasi totale du pouvoir politique : les citoyens confient à des élus la capacité de décider en leur nom, de voter les lois, de gérer les finances publiques et de définir les priorités collectives. Dans ce modèle, les fonds publics et les ressources bancaires liées à l’État sont soumis aux prérogatives du gouvernement, qui applique les orientations votées par le Parlement et en fixe les règles d’utilisation.</p>
+    <p>
+        La démocratie représentative repose sur une délégation quasi totale du pouvoir politique : les citoyens confient à des élus la capacité de décider en leur nom, de voter les lois, de gérer les finances publiques et de définir les priorités collectives.
+    </p>
 
-<p>Cette architecture crée plusieurs limites structurelles :</p>
+    <p>Cette architecture crée plusieurs limites structurelles :</p>
 
-<h4>1. Concentration du pouvoir</h4>
-<p>Une fois élus, les représentants disposent d’une large marge de manœuvre, souvent peu contrôlée en continu par les citoyens. Le pouvoir se concentre dans un triangle exécutif–législatif–financier, éloigné de la réalité économique, de l’urbanisme, du développement territorial et des impacts concrets des décisions (endettement, infrastructures, gestion des ressources). Cette distance crée un décalage entre les besoins du terrain et les décisions institutionnelles.</p>
+    <h4>1. Concentration du pouvoir</h4>
+    <p>
+        Une fois élus, les représentants disposent d’une large marge de manœuvre, souvent peu contrôlée en continu par les citoyens.
+    </p>
 
-<h4>2. Absence de décision directe</h4>
-<p>Le citoyen ne peut plus décider, car l’absence de référendum d’initiative populaire retire au peuple la capacité d’intervenir sur les choix majeurs. Entre deux élections, il ne peut ni corriger, ni ajuster, ni bloquer directement les décisions prises sans son accord. La souveraineté populaire devient symbolique, tandis que la décision réelle se joue dans des espaces institutionnels fermés.</p>
+    <h4>2. Absence de décision directe</h4>
+    <p>
+        Le citoyen ne peut plus décider, car l’absence de référendum d’initiative populaire retire au peuple la capacité d’intervenir sur les choix majeurs.
+    </p>
 
-<h4>3. Captation par des intérêts intermédiaires</h4>
-<p>Les décisions publiques peuvent être influencées par des lobbys, des partis, des groupes économiques ou financiers qui disposent d’un accès privilégié aux décideurs. Cette proximité crée un déséquilibre entre l’intérêt général et les intérêts particuliers, au détriment du collectif.</p>
+    <h4>3. Captation par des intérêts intermédiaires</h4>
+    <p>
+        Les décisions publiques peuvent être influencées par des lobbys, des partis ou des groupes économiques.
+    </p>
 
-<h4>4. Opacité des flux financiers</h4>
-<p>Les mécanismes budgétaires, monétaires et bancaires échappent au contrôle direct des citoyens. Leur complexité renforce les dérives possibles entre ceux qui financent (le peuple) et ceux qui décident de l’usage des fonds. Cette opacité limite la transparence, la compréhension et la responsabilité institutionnelle.</p>
+    <h4>4. Opacité des flux financiers</h4>
+    <p>
+        Les mécanismes budgétaires, monétaires et bancaires échappent au contrôle direct des citoyens.
+    </p>
 
-<h4>5. Faible capacité de correction citoyenne</h4>
-<p>Quand les décisions ne répondent plus aux besoins collectifs, les citoyens disposent de très peu d’outils institutionnels pour corriger la trajectoire. En l’absence de mécanismes de décision directe — comme le référendum d’initiative citoyenne — ils ne peuvent ni ajuster, ni bloquer, ni réorienter les choix politiques qui les concernent. Les seules réponses possibles deviennent l’abstention, la contestation ou l’attente du prochain scrutin, ce qui renforce un sentiment d’impuissance démocratique.</p>
+    <h4>5. Faible capacité de correction citoyenne</h4>
+    <p>
+        Les citoyens disposent de très peu d’outils institutionnels pour corriger la trajectoire.
+    </p>
 
-<p>En résumé, la démocratie représentative, telle qu’elle fonctionne aujourd’hui, tend à transformer la souveraineté populaire en un simple acte de délégation périodique. Le peuple finance et subit les décisions, mais ne participe ni à leur élaboration, ni à leur contrôle, ni à leur ajustement en temps réel. C’est précisément ce type de limites que Peuplitique cherche à dépasser en redonnant au citoyen un rôle direct d’analyse, de proposition, de correction et de décision.</p>
-
+    <p>
+        En résumé, la démocratie représentative tend à transformer la souveraineté populaire en un simple acte de délégation périodique.
     </p>
 
     <h2>3. Limites économiques</h2>
-    
-<p>Les modèles économiques actuels favorisent la concentration des richesses, la dépendance aux marchés financiers et l’endettement structurel. Les États peinent à financer les services publics, à maintenir les infrastructures et à redistribuer équitablement les ressources sans augmenter la pression fiscale ou recourir à la dette.</p>
+    <p>
+        Les modèles économiques actuels favorisent la concentration des richesses, la dépendance aux marchés financiers et l’endettement structurel.
+    </p>
 
-<p>Cette dépendance systémique aux marchés financiers — où s’arbitrent stabilité budgétaire, exigences des investisseurs et besoins réels de la population — empêche de répondre concrètement à l’absence de développement réel, à une inflation constante et à un manque d’autonomie sur les besoins de base. Les États deviennent vulnérables aux fluctuations des marchés, aux taux d’intérêt, aux agences de notation et aux cycles spéculatifs, ce qui limite leur capacité à planifier des politiques publiques durables.</p>
+    <p>
+        Certains modèles alternatifs évoquent l’idée d’une <strong>monnaie indexée</strong> liée à des actifs réels plutôt qu’à la spéculation.
+    </p>
 
-<p>Dans ce contexte, certains modèles alternatifs évoquent l’idée d’une <strong>monnaie indexée</strong> : une monnaie dont la valeur serait liée à des actifs réels (énergie, production locale, ressources naturelles, travail utile, innovation) plutôt qu’à la spéculation financière. L’objectif serait de réduire la volatilité, renforcer l’autonomie économique, stabiliser les échanges et reconnecter la valeur monétaire à la valeur réelle produite par la société.</p>
+    <h2>4. Limites du système judiciaire</h2>
+    <p>
+        Le système judiciaire souffre de lenteur, surcharge, coûts élevés et inégalités territoriales.
+    </p>
 
-<p>Les politiques économiques deviennent alors réactives plutôt que stratégiques : elles répondent aux contraintes financières immédiates plutôt qu’aux priorités de long terme comme l’éducation, la santé, l’innovation ou la transition écologique. Ce modèle aujourd hui obsolete crée un cercle vicieux où l’endettement alimente l’endettement, où les investissements essentiels sont reportés, et où les citoyens supportent les conséquences d’un système qui ne leur permet pas d’influer directement sur les choix économiques majeurs.</p>
-
-<h2>4. Limites du système judiciaire</h2>
-<p>Le système judiciaire, pilier essentiel de l’État de droit, souffre de limites structurelles. Tributaire d’une gestion étatique insuffisante et de réglementations parfois non conformes à l’esprit constitutionnel, il accumule lenteur des procédures, coûts élevés, surcharge administrative et inégalités territoriales. La justice devient alors perçue comme inaccessible, lente ou inéquitable selon les situations sociales.</p>
-
-<p>La dépendance du judiciaire vis‑à‑vis du pouvoir politique pour son financement, son organisation et parfois même ses priorités fragilise son indépendance réelle et sa déontologie. Les citoyens disposent de très peu de leviers pour contester ou corriger les dysfonctionnements du système, et les mécanismes de transparence deviennent opaques.</p>
-
-<p>Cette situation alimente l’injustice, les abus de confiance, les abus de pouvoir et un sentiment croissant de perte de confiance dans l’institution judiciaire.</p>
-
-  <p> <h2>5. Limites sociales</h2>
-   
-    <p>Les sociétés contemporaines sont marquées par une fragmentation croissante : inégalités économiques, fractures territoriales, tensions culturelles, perte de repères communs et affaiblissement du lien social. Ces dynamiques créent un environnement où les divisions sont entretenues plutôt que les solidarités, fragilisant profondément la cohésion collective.</p>
-
-<p>L’absence de visibilité sur les décisions publiques, combinée à des institutions qui ne représentent plus fidèlement la diversité sociale, renforce ce sentiment de rupture. Les citoyens n’ont jamais réellement eu la possibilité d’orienter les choix politiques, économiques ou sociaux qui influencent directement leur vie quotidienne. Ils subissent des décisions prises sans eux, pour eux, dans des espaces institutionnels éloignés de leurs réalités.</p>
-
-<p>Les modèles sociaux actuels peinent également à répondre aux nouveaux besoins : transitions professionnelles rapides, précarité numérique, isolement, vieillissement, accès inégal aux services essentiels. Sans mécanismes de participation directe, les citoyens restent spectateurs d’un système qui ne reflète plus leurs réalités, leurs priorités ni leurs besoins concrets.</p>
-
-<p>Cette déconnexion progressive entre institutions et population alimente la défiance, l’abstention, le repli individuel et la perte de confiance dans la capacité collective à agir. Les limites sociales deviennent alors un frein majeur à la construction d’un modèle plus juste, plus inclusif et réellement représentatif.</p>
+    <h2>5. Limites sociales</h2>
+    <p>
+        Les sociétés contemporaines sont marquées par une fragmentation croissante : inégalités, fractures territoriales, tensions culturelles.
     </p>
 
     <h2>6. Limites technologiques</h2>
-    
-<p>Les technologies évoluent aujourd’hui beaucoup plus vite que les cadres légaux, institutionnels et éthiques censés les encadrer. Les institutions publiques ne disposent pas des outils nécessaires pour garantir la transparence, la sécurité et la souveraineté numérique.</p>
-
-<p>L’absence d’encadrement, de régulations adaptées et d’une information accessible empêche également de valoriser pleinement l’automatisation, la recherche commune et les modèles complexes d’analyse permettant d’optimiser le développement, la croissance et la formation des compétences.</p>
-
-<p>Ce décalage entre innovation technologique et gouvernance publique crée une dépendance accrue envers des acteurs privés ou étrangers, fragilise la maîtrise des données et limite la capacité collective à orienter l’usage des technologies vers l’intérêt général.</p>
-
-<p>Sans cadre souverain, transparent et contrôlable, les sociétés deviennent vulnérables à la désinformation, à la perte d’autonomie numérique et à la concentration du pouvoir technologique entre quelques acteurs.</p>
- </p>
+    <p>
+        Les technologies évoluent plus vite que les cadres légaux et institutionnels censés les encadrer.
+    </p>
 
     <h2>7. Limites environnementales</h2>
     <p>
-        Les modèles actuels ne permettent pas de répondre efficacement aux crises écologiques. 
-        Les décisions sont souvent court-termistes, influencées par des intérêts économiques 
-        immédiats plutôt que par la préservation du vivant.L'absence de régulations au sein d'un écosystme mal compris et des ressources mal exploitées ne permettent d'orienter  rendement et  autoprésrvation via une génie mcanique adaptée . 
+        Les modèles actuels ne permettent pas de répondre efficacement aux crises écologiques.
     </p>
 
     <h2>8. Limites de gouvernance</h2>
     <p>
-        La centralisation excessive ralentit les décisions, crée des goulots d’étranglement et 
-        empêche l’innovation locale. L'incapacit d allier cohérence,couts  et invstissements pondérés au passif ne répondent plus à la réalité d'une politique territoriale. Les structures pyramidales ne sont plus adaptées à la 
-        complexité moderne.
+        La centralisation excessive ralentit les décisions et empêche l’innovation locale.
     </p>
 
     <h2>9. Limites de transparence</h2>
     <p>
-        Les citoyens n’ont pas accès à une information claire, complète et en temps réel. 
-        L’opacité nourrit la méfiance, les théories alternatives et la désinformation.
+        Les citoyens n’ont pas accès à une information claire, complète et en temps réel.
     </p>
 
     <h2>10. Limites fiscales</h2>
     <p>
-        Les systèmes fiscaux sont complexes, opaques et souvent inefficaces. Ils peinent à 
-        s’adapter aux nouveaux modèles économiques (numérique, automatisation, plateformes) et ne sont plus en corrélation a un réalité économique qui a fait le choix d'un endettememnt dans un système encouragant celui-ci.  
+        Les systèmes fiscaux sont complexes, opaques et souvent inefficaces.
     </p>
 
     <h2>11. Limites structurelles globales</h2>
     <p>
-        L’ensemble de ces limites crée un système rigide, lent, infficace, peu participatif et incapable 
-        de répondre aux défis contemporains. Peuplitique propose une alternative structurée, 
-        transparente et participative pour dépasser ces blocages.
+        L’ensemble de ces limites crée un système rigide, lent, inefficace et peu participatif.
     </p>
 
-<section id="chambre-commerce">
-    <h2>11. Chambre de commerce – Limites, compétences et encadrement des contrats internationaux</h2>
+    <!-- CHAMBRE DE COMMERCE -->
+    <section id="chambre-commerce">
+        <h2>11. Chambre de commerce – Limites, compétences et encadrement des contrats internationaux</h2>
 
-    <p>
-        La Chambre de commerce constitue un organe technique essentiel, mais strictement limité afin d’éviter toute
-        dérive d’influence, de rente ou de capture institutionnelle. Son rôle est exclusivement consultatif et analytique.
-        Elle ne peut en aucun cas orienter les investissements publics, décider des priorités nationales ou influencer les
-        choix stratégiques territoriaux.
-    </p>
+        <p>
+            La Chambre de commerce constitue un organe technique essentiel, mais strictement limité afin d’éviter toute dérive d’influence.
+        </p>
 
-    <h3>1. Compétences autorisées</h3>
-    <p>La Chambre de commerce peut intervenir uniquement dans les domaines suivants :</p>
-    <ul>
-        <li>Analyse économique sectorielle : production, consommation, flux logistiques, besoins industriels.</li>
-        <li>Évaluation de l’impact des taxes sur les entreprises et les chaînes de valeur.</li>
-        <li>Propositions techniques pour améliorer la compétitivité, l’innovation et la circularité.</li>
-        <li>Veille stratégique sur les marchés, matières premières, technologies et risques économiques.</li>
-        <li>Accompagnement des petites structures (TPE/PME, coopératives, artisans).</li>
-    </ul>
-    <p>
-        Elle ne peut pas influencer la loi, financer des partis, imposer des normes, ni intervenir dans la fiscalité
-        citoyenne.
-    </p>
+        <h3>1. Compétences autorisées</h3>
+        <ul>
+            <li>Analyse économique sectorielle</li>
+            <li>Évaluation de l’impact des taxes</li>
+            <li>Propositions techniques</li>
+            <li>Veille stratégique</li>
+            <li>Accompagnement des petites structures</li>
+        </ul>
 
-    <h3>2. Budget et limites financières</h3>
-    <ul>
-        <li>Financement public strictement plafonné (ex. 0,05 % du budget national).</li>
-        <li>Aucune ressource privée provenant d’entreprises, lobbies ou multinationales.</li>
-        <li>Transparence totale : publication annuelle des dépenses, études et rémunérations.</li>
-        <li>Interdiction de constituer des réserves financières pouvant créer un pouvoir autonome.</li>
-    </ul>
+        <h3>2. Budget et limites financières</h3>
+        <ul>
+            <li>Financement public strictement plafonné</li>
+            <li>Aucune ressource privée</li>
+            <li>Transparence totale</li>
+            <li>Interdiction de constituer des réserves</li>
+        </ul>
 
-    <h3>3. Développement économique : rôle et limites</h3>
-    <p>
-        La Chambre de commerce peut contribuer au développement économique uniquement dans un cadre non prescriptif :
-    </p>
-    <ul>
-        <li>Identifier les opportunités compatibles avec les limites écologiques et sociales.</li>
-        <li>Proposer des scénarios alignés sur la consommation réelle et les capacités productives locales.</li>
-        <li>Soutenir la transition énergétique, numérique et circulaire via des recommandations techniques.</li>
-        <li>Faciliter la coopération entre acteurs économiques sans créer de dépendance ou de monopole.</li>
-    </ul>
-    <p>
-        Elle ne peut pas orienter les investissements publics, définir les priorités nationales ou influencer les choix
-        territoriaux.
-    </p>
+        <h3>3. Développement économique : rôle et limites</h3>
+        <ul>
+            <li>Identifier les opportunités compatibles</li>
+            <li>Proposer des scénarios alignés</li>
+            <li>Soutenir la transition</li>
+            <li>Faciliter la coopération</li>
+        </ul>
 
-    <h3>4. Encadrement des contrats internationaux sans dette</h3>
-    <p>
-        La Chambre de commerce peut encadrer des contrats internationaux uniquement s’ils sont neutres en dette et
-        structurés pour absorber la dette existante plutôt que l’augmenter. Aucun contrat ne peut engager l’État
-        financièrement, directement ou indirectement.
-    </p>
+        <h3>4. Encadrement des contrats internationaux sans dette</h3>
+        <p>
+            La Chambre de commerce peut encadrer des contrats internationaux uniquement s’ils sont neutres en dette.
+        </p>
 
-    <h4>4.1. Principe “Zéro dette publique”</h4>
-    <ul>
-        <li>Aucune garantie publique.</li>
-        <li>Aucun engagement budgétaire futur.</li>
-        <li>Aucun transfert de risque vers le contribuable.</li>
-        <li>Paiement uniquement sur valeur créée.</li>
-    </ul>
+        <h4>4.1. Principe “Zéro dette publique”</h4>
+        <ul>
+            <li>Aucune garantie publique</li>
+            <li>Aucun engagement budgétaire</li>
+            <li>Aucun transfert de risque</li>
+            <li>Paiement uniquement sur valeur créée</li>
+        </ul>
 
-    <h4>4.2. Mécanismes permettant d’absorber la dette</h4>
-    <ul>
-        <li>Contrats basés sur la valeur créée : royalties, licences, partage de bénéfices.</li>
-        <li>Co‑investissements privés sans garantie publique.</li>
-        <li>Contrats de performance : paiement conditionné à des résultats mesurables.</li>
-        <li>Réduction des importations coûteuses et augmentation des exportations à forte valeur ajoutée.</li>
-    </ul>
+        <h4>4.2. Mécanismes permettant d’absorber la dette</h4>
+        <ul>
+            <li>Royalties</li>
+            <li>Co‑investissements privés</li>
+            <li>Contrats de performance</li>
+            <li>Réduction des importations coûteuses</li>
+        </ul>
 
-    <h4>4.3. Alignement avec la consommation et la fiscalité</h4>
-    <p>
-        Même sans pouvoir fiscal, la Chambre de commerce peut analyser les flux de consommation et proposer des
-        partenariats internationaux permettant :
-    </p>
-    <ul>
-        <li>de réduire le déficit commercial,</li>
-        <li>d’augmenter les recettes fiscales naturelles,</li>
-        <li>de stabiliser les prix essentiels,</li>
-        <li>d’absorber une partie de la dette structurelle.</li>
-    </ul>
+        <h4>4.3. Alignement consommation / fiscalité</h4>
+        <ul>
+            <li>Réduire le déficit commercial</li>
+            <li>Augmenter les recettes fiscales naturelles</li>
+            <li>Stabiliser les prix essentiels</li>
+            <li>Absorber une partie de la dette structurelle</li>
+        </ul>
 
-    <h3>5. Processus opérationnel : “Contrat international neutre en dette”</h3>
-    <ol>
-        <li><strong>Analyse technique</strong> : viabilité, risques, impact sur la consommation, compatibilité avec les limites structurelles.</li>
-        <li><strong>Validation citoyenne</strong> : transparence, débat public, vote si impact national.</li>
-        <li><strong>Signature</strong> : acteurs privés uniquement (entreprises, coopératives, partenaires internationaux).</li>
-        <li><strong>Clause obligatoire</strong> : zéro dette publique, zéro garantie, zéro engagement budgétaire.</li>
-    </ol>
+        <h3>5. Processus opérationnel</h3>
+        <ol>
+            <li>Analyse technique</li>
+            <li>Validation citoyenne</li>
+            <li>Signature privée</li>
+            <li>Clause obligatoire : zéro dette publique</li>
+        </ol>
 
-    <h3>6. Garde-fous institutionnels</h3>
-    <ul>
-        <li>Rotation obligatoire des membres (mandats courts, non renouvelables).</li>
-        <li>Représentation équilibrée : artisans, PME, coopératives, agriculture, industrie.</li>
-        <li>Interdiction de cumul avec des fonctions politiques ou des conseils d’administration privés.</li>
-        <li>Audit citoyen annuel garantissant indépendance et utilité.</li>
-    </ul>
+        <h3>Synthèse</h3>
+        <p>
+            La Chambre de commerce agit comme un outil technique neutre, garant de transparence et de neutralité budgétaire.
+        </p>
+    </section>
 
-    <h3>Synthèse</h3>
-    <p>
-        La Chambre de commerce agit comme un outil technique, un observatoire économique et un garant de neutralité
-        budgétaire. Elle encadre les contrats internationaux uniquement lorsqu’ils sont neutres en dette et fondés sur la
-        valeur créée. Elle ne peut ni orienter les investissements publics, ni définir les priorités nationales, ni
-        influencer les choix territoriaux. Son action contribue à absorber la dette structurelle sans jamais l’augmenter.
-    </p>
-</section>
-    </main>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
+</footer>
+
+<!-- SCRIPT MULTILINGUE -->
 <script>
 const translations = {
     "en": {
@@ -343,4 +266,3 @@ if (lang) applyTranslation(lang);
 </script>
 
 </body>
-</html>
