@@ -54,6 +54,12 @@
 </nav>
 
 <!-- ZONE BLEUE -->
+.zone-bleue {
+    background-color: #0a3d78;
+    color: white;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
 <section class="zone-bleue">
     <h1 data-key="zb_title"></h1>
     <p data-key="zb_p1"></p>
