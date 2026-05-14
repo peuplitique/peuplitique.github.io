@@ -1,49 +1,41 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Déséquilibres Structurels – Peuplitique</title>
+    <title>Déséquilibres structurels – Peuplitique</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<body class="light-bg">
+
+<!-- LANG SWITCH -->
 <div class="lang-switch">
     <a href="?lang=fr">FR</a> |
     <a href="?lang=en">EN</a> |
     <a href="?lang=es">ES</a> |
     <a href="?lang=ru">RU</a> |
     <a href="?lang=cn">CN</a>
-</div>     
+</div>
+
+<!-- FOOTER (PLACÉ CORRECTEMENT DANS LE BODY) -->
 <footer class="footer">
     <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
+
+<!-- SCRIPT MULTILINGUE (FERMÉ CORRECTEMENT) -->
 <script>
 const translations = {
     "en": {
-        "menu_home": "Home",
-        "menu_limits": "Structural Limits",
-        "menu_governance": "Shared Governance",
-        "menu_protocol": "Protocol",
         "footer": "© 2026 Peuplitique – All rights reserved"
     },
     "es": {
-        "menu_home": "Inicio",
-        "menu_limits": "Límites Estructurales",
-        "menu_governance": "Gobernanza Compartida",
-        "menu_protocol": "Protocolo",
         "footer": "© 2026 Peuplitique – Todos los derechos reservados"
     },
     "ru": {
-        "menu_home": "Главная",
-        "menu_limits": "Структурные ограничения",
-        "menu_governance": "Совместное управление",
-        "menu_protocol": "Протокол",
         "footer": "© 2026 Peuplitique – Все права защищены"
     },
     "cn": {
-        "menu_home": "首页",
-        "menu_limits": "结构限制",
-        "menu_governance": "共享治理",
-        "menu_protocol": "协议",
         "footer": "© 2026 Peuplitique – 版权所有"
     }
 };
@@ -60,103 +52,106 @@ function applyTranslation(lang) {
 const params = new URLSearchParams(window.location.search);
 const lang = params.get("lang");
 if (lang) applyTranslation(lang);
-    
-<body class="light-bg">
+</script>
 
-<header>
-    <h1>Déséquilibres Structurels</h1>
-    <p>Comprendre les ruptures systémiques pour mieux les corriger</p>
+<!-- HEADER -->
+<header class="header-blue">
+    <h1>Peuplitique</h1>
+    <p>Plateforme citoyenne – Participation, transparence, gouvernance partagée</p>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
+            <li><a href="gouvernance-dao.html">DAO</a></li>
+            <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
+            <li><a href="economie-integree.html">Économie intégrée</a></li>
+            <li><a href="desequilibre-structurelle.html" class="active">Déséquilibres structurels</a></li>
+            <li><a href="protocole.html">Protocole</a></li>
+            <li><a href="glossaire.html">Glossaire</a></li>
+        </ul>
+    </nav>
 </header>
 
-<nav class="menu">
-    <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="gouvernance-partagee.html">Gouvernance Partagée</a></li>
-        <li><a href="glossaire.html">Glossaire</a></li>
-        <li><a href="economie-integree.html">Économie Intégrée</a></li>
-        <li><a href="organisation-economique-structurelle.html">Organisation Économique</a></li>
-        <li><a href="organisation-structurelle.html">Organisation Structurelle</a></li>
-        <li><a href="gouvernance-dao.html">Gouvernance DAO</a></li>
-        <li><a href="organisation-politique-territoriale.html">Organisation Politique</a></li>
-        <li><a href="protocole.html">Protocole</a></li>
-        <li><a href="desequilibre-structurelle.html" class="active">Déséquilibres Structurels</a></li>
-    </ul>
-</nav>
+<!-- ZONE BLEUE -->
+<section class="zone-bleue">
+    <h2>Déséquilibres structurels</h2>
+</section>
 
-<main class="page-container">
+<!-- CONTENU -->
+<main class="content">
 
-<section class="content-section">
     <h2>Définition</h2>
     <p>
-        Les déséquilibres structurels sont les ruptures profondes qui empêchent un système social,
-        économique ou politique de fonctionner de manière cohérente. Ils apparaissent lorsque les
-        responsabilités, les ressources ou les décisions sont mal réparties.
+        Les déséquilibres structurels désignent les ruptures internes d’un système : économiques, politiques, institutionnelles, sociales ou territoriales.
     </p>
-</section>
 
-<section class="content-section">
-    <h2>Origines des déséquilibres</h2>
-    <ul>
-        <li>Concentration excessive du pouvoir</li>
-        <li>Absence de transparence</li>
-        <li>Rupture entre besoins réels et décisions</li>
-        <li>Inégalités structurelles persistantes</li>
-        <li>Manque de coordination entre secteurs</li>
-    </ul>
-</section>
-
-<section class="content-section">
     <h2>Schéma général (ASCII)</h2>
+
 <pre>
 ┌──────────────────────────────┐
-│ DÉSÉQUILIBRES STRUCTURELS    │
-└──────────────┬──────────────┘
+│  DÉSÉQUILIBRES STRUCTURELS   │
+└──────────────┬───────────────┘
                │
-   ┌───────────┴──────────────┐
-   │ RUPTURES ENTRE SECTEURS   │
-   └───────────┬──────────────┘
+    ┌──────────┼────────────────────────┐
+    │          │                        │
+┌───────────┐ ┌────────────────┐ ┌────────────────────┐
+│ ÉCONOMIE  │ │ INSTITUTIONS   │ │ TERRITOIRES        │
+└───────────┘ └────────────────┘ └────────────────────┘
                │
-   ┌───────────┴──────────────┐
-   │ MAUVAISE RÉPARTITION      │
-   │ DES RESSOURCES            │
-   └───────────┬──────────────┘
                │
-   ┌───────────┴──────────────┐
-   │ DÉCISIONS NON ALIGNÉES    │
-   │ AVEC LES BESOINS          │
-   └───────────┬──────────────┘
-               │
+    └──────────┬───────────────┬────────┘
+               │               │
+     ┌──────────────┐   ┌────────────────────┐
+     │ SOCIÉTÉ       │   │ GOUVERNANCE        │
+     └──────────────┘   └────────────────────┘
+
                ▼
 ┌──────────────────────────────┐
-│ INSTABILITÉ & INCOHÉRENCE    │
+│  CONSÉQUENCES : RUPTURES     │
+│  INÉGALITÉS, LENTEURS,       │
+│  OPACITÉ, DÉFIANCE           │
 └──────────────────────────────┘
 </pre>
-</section>
 
-<section class="content-section">
-    <h2>Conséquences</h2>
+    <h2>Principaux déséquilibres</h2>
+
+    <h3>1. Économiques</h3>
     <ul>
-        <li>Perte de confiance citoyenne</li>
-        <li>Décisions inefficaces ou injustes</li>
-        <li>Fragilité du système global</li>
-        <li>Incapacité à anticiper les crises</li>
+        <li>Concentration excessive des richesses</li>
+        <li>Dépendance aux marchés financiers</li>
+        <li>Endettement structurel</li>
     </ul>
-</section>
 
-<section class="content-section">
-    <h2>Correction des déséquilibres</h2>
-    <p>
-        La correction passe par la transparence, la redistribution des responsabilités,
-        la participation citoyenne et une coordination renforcée entre les secteurs.
-    </p>
-</section>
+    <h3>2. Institutionnels</h3>
+    <ul>
+        <li>Lenteur décisionnelle</li>
+        <li>Rigidité des cadres juridiques</li>
+        <li>Manque de transparence</li>
+    </ul>
+
+    <h3>3. Territoriaux</h3>
+    <ul>
+        <li>Fractures régionales</li>
+        <li>Inégalités d’accès aux services</li>
+        <li>Concentration des ressources</li>
+    </ul>
+
+    <h3>4. Sociaux</h3>
+    <ul>
+        <li>Fragmentation de la société</li>
+        <li>Tensions culturelles</li>
+        <li>Perte de confiance dans les institutions</li>
+    </ul>
+
+    <h3>5. De gouvernance</h3>
+    <ul>
+        <li>Centralisation excessive</li>
+        <li>Manque de participation citoyenne</li>
+        <li>Opacité des décisions</li>
+    </ul>
 
 </main>
 
-<footer>
-    <p>© Peuplitique – Déséquilibres Structurels</p>
-</footer>
-
-</script>
 </body>
 </html>
