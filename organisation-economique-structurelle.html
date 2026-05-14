@@ -3,47 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organisation Économique Structurelle</title>
+    <title>Organisation économique structurelle – Peuplitique</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<body class="light-bg">
+
+<!-- LANG SWITCH -->
 <div class="lang-switch">
     <a href="?lang=fr">FR</a> |
     <a href="?lang=en">EN</a> |
     <a href="?lang=es">ES</a> |
     <a href="?lang=ru">RU</a> |
     <a href="?lang=cn">CN</a>
-</div>     
+</div>
+
+<!-- HEADER + MENU -->
+<header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="gouvernance-dao.html">Gouvernance DAO</a></li>
+            <li><a href="economie-integree.html">Économie intégrée</a></li>
+            <li><a href="organisation-economique-structurelle.html" class="active">Organisation économique</a></li>
+            <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
+            <li><a href="organisation-politique-territoriale.html">Organisation politique</a></li>
+            <li><a href="protocole.html">Protocole citoyen</a></li>
+            <li><a href="glossaire.html">Glossaire</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- CONTENU -->
+<main class="content">
+
+    <h1>Organisation économique structurelle</h1>
+
+    <section>
+        <p>
+            L’organisation économique structurelle définit la manière dont les ressources, les flux, les productions et les échanges sont structurés dans un modèle intégré, transparent et démocratique.
+        </p>
+    </section>
+
+    <section>
+        <h2>1. Les trois piliers économiques</h2>
+        <ul>
+            <li><strong>Production</strong> — création de biens et services.</li>
+            <li><strong>Distribution</strong> — circulation des ressources.</li>
+            <li><strong>Régulation</strong> — équilibre, transparence, équité.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>2. Rôle du DAO dans l’économie</h2>
+        <ul>
+            <li>Traçabilité totale des flux.</li>
+            <li>Budgets participatifs automatisés.</li>
+            <li>Audit public permanent.</li>
+            <li>Optimisation des ressources.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Schéma structurel</h2>
+
+<pre class="ascii-schema">
+[ Production ]
+        |
+        v
+[ Distribution ]
+        |
+        v
+[ Régulation ]
+</pre>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
 <footer class="footer">
     <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
+
+<!-- SCRIPT MULTILINGUE -->
 <script>
 const translations = {
     "en": {
-        "menu_home": "Home",
-        "menu_limits": "Structural Limits",
-        "menu_governance": "Shared Governance",
-        "menu_protocol": "Protocol",
         "footer": "© 2026 Peuplitique – All rights reserved"
     },
     "es": {
-        "menu_home": "Inicio",
-        "menu_limits": "Límites Estructurales",
-        "menu_governance": "Gobernanza Compartida",
-        "menu_protocol": "Protocolo",
         "footer": "© 2026 Peuplitique – Todos los derechos reservados"
     },
     "ru": {
-        "menu_home": "Главная",
-        "menu_limits": "Структурные ограничения",
-        "menu_governance": "Совместное управление",
-        "menu_protocol": "Протокол",
         "footer": "© 2026 Peuplitique – Все права защищены"
     },
     "cn": {
-        "menu_home": "首页",
-        "menu_limits": "结构限制",
-        "menu_governance": "共享治理",
-        "menu_protocol": "协议",
         "footer": "© 2026 Peuplitique – 版权所有"
     }
 };
@@ -60,118 +115,7 @@ function applyTranslation(lang) {
 const params = new URLSearchParams(window.location.search);
 const lang = params.get("lang");
 if (lang) applyTranslation(lang);
-    
-<body class="light-bg">
-
-<header>
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="protocole.html">Protocole</a></li>
-            <li><a href="economie-integree.html">Économie intégrée</a></li>
-            <li><a href="organisation-economique-structurelle.html" class="active">Organisation structurelle</a></li>
-            <li><a href="desequilibre-structurel.html">Déséquilibre structurel</a></li>
-            <li><a href="gouvernance-dao.html">Gouvernance DAO</a></li>
-            <li><a href="glossaire.html">Glossaire</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main class="content">
-
-    <h1>Organisation Économique Structurelle</h1>
-
-    <section>
-        <p>
-            L’organisation économique structurelle décrit la manière dont une société répartit, régule et fait circuler ses ressources 
-            afin d’assurer stabilité, résilience et équité. Elle constitue l’ossature qui permet à l’économie intégrée de fonctionner 
-            sans créer de déséquilibres systémiques.
-        </p>
-    </section>
-
-    <section>
-        <h2>1. Structure fonctionnelle</h2>
-        <p>
-            L’économie est organisée autour de trois pôles complémentaires :
-        </p>
-
-        <ul>
-            <li><strong>Pôle productif</strong> — création de biens et services.</li>
-            <li><strong>Pôle social</strong> — redistribution, accès, équité.</li>
-            <li><strong>Pôle régulateur</strong> — règles, transparence, contrôle démocratique.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>2. Flux économiques équilibrés</h2>
-        <p>
-            Un système stable repose sur des flux circulaires maîtrisés :
-        </p>
-
-        <ul>
-            <li>Production → Distribution → Accès citoyen</li>
-            <li>Ressources publiques → Services essentiels → Bien-être collectif</li>
-            <li>Innovation → Valeur ajoutée → Réinvestissement</li>
-        </ul>
-
-        <p>
-            Lorsque l’un de ces flux se rompt, un <a href="desequilibre-structurel.html">déséquilibre structurel</a> apparaît.
-        </p>
-    </section>
-
-    <section>
-        <h2>3. Rôle du DAO dans l’équilibre structurel</h2>
-        <p>
-            Le DAO assure la transparence, la traçabilité et la participation citoyenne dans l’allocation des ressources publiques.
-        </p>
-
-        <ul>
-            <li><strong>Répartition par secteurs</strong> : santé, éducation, infrastructures, innovation, social.</li>
-            <li><strong>Votes citoyens</strong> : priorisation des investissements.</li>
-            <li><strong>Audit automatique</strong> : contrôle continu des flux.</li>
-            <li><strong>Tableaux de bord publics</strong> : accès en temps réel aux données.</li>
-        </ul>
-
-        <p>
-            Le DAO devient ainsi un garant structurel : il empêche les dérives, les concentrations excessives et les ruptures de flux.
-        </p>
-    </section>
-
-    <section>
-        <h2>4. Schéma structurel (ASCII)</h2>
-
-<pre class="ascii-schema">
-        [ Pôle Productif ]
-                |
-                v
-        [ Distribution ]
-                |
-                v
-        [ Accès Citoyen ]
-                |
-                v
-        [ Bien-être Collectif ]
-                |
-                v
-        [ DAO : Allocation & Contrôle ]
-                |
-                v
-        [ Réinvestissement ]
-</pre>
-
-    </section>
-
-    <section>
-        <h2>5. Conclusion</h2>
-        <p>
-            L’organisation économique structurelle fournit la stabilité nécessaire pour que l’économie intégrée fonctionne sans 
-            générer de déséquilibres. Le DAO renforce cette stabilité en assurant une gouvernance transparente, participative et 
-            orientée vers l’intérêt collectif.
-        </p>
-    </section>
-
-</main>
-
+</script>
 
 </body>
 </html>
