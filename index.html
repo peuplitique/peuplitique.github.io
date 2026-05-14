@@ -6,7 +6,96 @@
     <title>Peuplitique – Accueil</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+const translations = {
+    "fr": {
+        "title": "Peuplitique — Gouvernance partagée",
+        "intro1": "Peuplitique est la première plateforme citoyenne indépendante où le peuple reprend la parole publique, l’analyse collective et la décision commune.",
+        "intro2": "Elle repose sur un principe simple : une gouvernance partagée permet de dépasser les modèles pyramidaux traditionnels d’un pouvoir centralisé, où se créent des dérives structurelles et où les décisions ne répondent plus aux besoins collectifs qui appartiennent au peuple.",
+        "intro3": "Elle vise à reconstruire un espace souverain où chaque citoyen contribue, analyse, propose, corrige et décide, sans intermédiaire, sans filtre et sans hiérarchie imposée.",
+        "intro4": "Ce collectif devient alors souverain, protégé mutuellement et structuré par des règles établies par les citoyens, pour les citoyens.",
+        "struct": "Comprendre la structure actuelle",
+        "structText": "Nous vivons dans un système où les décisions sont prises par une minorité, souvent déconnectée des réalités du terrain...",
+        "history": "Contexte historique",
+        "historyText": "Depuis des décennies, les structures politiques et économiques se sont complexifiées...",
+        "limits": "Limites structurelles",
+        "limitsText": "Les modèles actuels montrent des limites : manque de transparence, lenteur décisionnelle...",
+        "foundations": "Fondements",
+        "foundationsText": "La plateforme repose sur trois piliers : compréhension, participation et action...",
+        "steps": "Étapes pédagogiques",
+        "stepsText": "Peuplitique accompagne chaque utilisateur dans un parcours progressif...",
+        "open": "Participation ouverte",
+        "openText": "Tout citoyen peut contribuer, sans condition d’appartenance...",
+        "participation": "Participation citoyenne",
+        "participationText": "La participation est au cœur du projet...",
+        "equity": "Équité d’expression",
+        "equityText": "Aucune voix ne vaut plus qu’une autre...",
+        "collective": "Intelligence collective",
+        "collectiveText": "Les décisions émergent de l’analyse croisée...",
+        "footer": "© 2026 Peuplitique — Tous droits réservés"
+    },
 
+    "en": {
+        "title": "Peuplitique — Shared Governance",
+        "intro1": "Peuplitique is the first independent citizen platform where the people reclaim public speech, collective analysis, and common decision‑making.",
+        "intro2": "It is based on a simple principle: shared governance makes it possible to overcome traditional pyramidal models of centralized power...",
+        "intro3": "It aims to rebuild a sovereign space where every citizen contributes, analyzes, proposes, corrects, and decides...",
+        "intro4": "This collective then becomes sovereign, mutually protected, and structured by rules established by the citizens, for the citizens.",
+        "struct": "Understanding the current structure",
+        "structText": "We live in a system where decisions are made by a minority, often disconnected from realities on the ground...",
+        "history": "Historical context",
+        "historyText": "For decades, political and economic structures have become increasingly complex...",
+        "limits": "Structural limits",
+        "limitsText": "Current models show limits: lack of transparency, slow decision‑making...",
+        "foundations": "Foundations",
+        "foundationsText": "The platform is based on three pillars: understanding, participation, and action...",
+        "steps": "Educational steps",
+        "stepsText": "Peuplitique guides each user through a progressive path...",
+        "open": "Open participation",
+        "openText": "Any citizen can contribute, without conditions of membership...",
+        "participation": "Citizen participation",
+        "participationText": "Participation is at the heart of the project...",
+        "equity": "Equality of expression",
+        "equityText": "No voice is worth more than another...",
+        "collective": "Collective intelligence",
+        "collectiveText": "Decisions emerge from cross‑analysis...",
+        "footer": "© 2026 Peuplitique — All rights reserved"
+    },
+
+    "es": {
+        "title": "Peuplitique — Gobernanza compartida",
+        "intro1": "Peuplitique es la primera plataforma ciudadana independiente donde el pueblo recupera la palabra pública...",
+        "intro2": "Se basa en un principio sencillo: una gobernanza compartida permite superar los modelos piramidales...",
+        "intro3": "Apunta a reconstruir un espacio soberano donde cada ciudadano contribuye, analiza, propone...",
+        "intro4": "Este colectivo se vuelve entonces soberano, protegido mutuamente...",
+        "struct": "Comprender la estructura actual",
+        "structText": "Vivimos en un sistema donde las decisiones las toma una minoría...",
+        "history": "Contexto histórico",
+        "historyText": "Desde hace décadas, las estructuras políticas y económicas se han vuelto más complejas...",
+        "limits": "Limitaciones estructurales",
+        "limitsText": "Los modelos actuales muestran límites: falta de transparencia...",
+        "foundations": "Fundamentos",
+        "foundationsText": "La plataforma se basa en tres pilares: comprensión, participación y acción...",
+        "steps": "Etapas pedagógicas",
+        "stepsText": "Peuplitique acompaña a cada usuario...",
+        "open": "Participación abierta",
+        "openText": "Cualquier ciudadano puede contribuir...",
+        "participation": "Participación ciudadana",
+        "participationText": "La participación está en el corazón del proyecto...",
+        "equity": "Equidad de expresión",
+        "equityText": "Ninguna voz vale más que otra...",
+        "collective": "Inteligencia colectiva",
+        "collectiveText": "Las decisiones emergen del análisis cruzado...",
+        "footer": "© 2026 Peuplitique — Todos los derechos reservados"
+    }
+};
+
+function setLang(lang) {
+    document.querySelectorAll("[data-key]").forEach(el => {
+        el.innerHTML = translations[lang][el.getAttribute("data-key")];
+    });
+}
+</script>
 <body>
 
 <div class="lang-switch">
@@ -36,7 +125,11 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
-
+<div class="lang-switch">
+    <button onclick="setLang('fr')">FR</button>
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('es')">ES</button>
+</div>
 <!-- SOMMAIRE -->
 <section class="sommaire">
     <ul>
