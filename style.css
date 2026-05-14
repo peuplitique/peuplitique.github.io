@@ -153,4 +153,32 @@ body {
     margin: 8px 0;
     font-size: 1rem;
 }
+/* ========================= */
+/* MULTILINGUE – LANG SWITCH */
+/* ========================= */
+
+.lang-switch {
+    text-align: right;
+    margin: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.lang-switch a {
+    color: #0a3d78;
+    text-decoration: none;
+    margin: 0 4px;
+    font-weight: bold;
+}
+
+.lang-switch a:hover {
+    text-decoration: underline;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+    .lang-switch {
+        text-align: center;
+        margin: 15px 0;
+        font-size: 1rem;
+    }
  
