@@ -1,58 +1,59 @@
-/* TYPOGRAPHIE GLOBALE */
+/* ----------------------------------------------------
+   RESET
+---------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------------------------------------
+   TYPOGRAPHIE GLOBALE
+---------------------------------------------------- */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 18px;
     line-height: 1.6;
     color: #333;
-    margin: 0;
-    padding: 0;
     background-color: #f7f7f7;
+
     /* centrage propre */
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
 }
 
-/* ========================= */
-/* HEADER + TITRES           */
-/* ========================= */
+/* ----------------------------------------------------
+   HEADER + TITRES
+---------------------------------------------------- */
 .header {
     background-color: #0a3d78;
     color: white;
     text-align: center;
     padding: 20px;
 }
+
 .sous-titre {
     font-size: 20px;
-    color:#3FD1C2; 
+    color: #3FD1C2;
     margin-top: 5px;
 }
 
 .ligne {
     width: 60%;
     height: 3px;
-    background-color:#3FD1C2; 
+    background-color: #3FD1C2;
     margin: 15px auto;
 }
 
-/* ========================= */
-/* MENU                      */
-/* ========================= */
-/* MENU BLEU — VERSION STABLE ET CENTRÉE */
+/* ----------------------------------------------------
+   MENU BLEU
+---------------------------------------------------- */
 .menu {
     background-color: #0a3d78;
     padding: 10px 0;
     text-align: center;
-}
-
-.sommaire ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;      /* autorise retour à la ligne */
-    gap: 12px;            /* espace réduit */
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .menu a {
@@ -60,7 +61,10 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-/* SOMMAIRE CENTRÉ */
+
+/* ----------------------------------------------------
+   SOMMAIRE HORIZONTAL
+---------------------------------------------------- */
 .sommaire {
     background-color: white;
     padding: 15px 0;
@@ -68,43 +72,48 @@ body {
     width: 100%;
     text-align: center;
 }
-/* CENTRAGE DU MENU ET DU SOMMAIRE */
+
+.sommaire-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .sommaire ul {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;      /* autorise retour à la ligne */
-    gap: 12px;            /* espace réduit */
+    flex-wrap: wrap;
+    gap: 12px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .sommaire li {
     color: #0a3d78;
     font-size: 1.1rem;
 }
-  
-/* ========================= */
-/* ZONE BLEUE                */
-/* ========================= */
+
+/* ----------------------------------------------------
+   ZONE BLEUE
+---------------------------------------------------- */
 .zone-bleue {
-    background-color: #0a3d78;   /* FOND BLEU */
-    color: white;                /* TEXTE BLANC */
+    background-color: #0a3d78;
+    color: white;
     padding: 20px;
     margin: 30px 0;
-    text-align: center;          /* CENTRAGE DU TEXTE */
+    text-align: center;
     border-radius: 10px;
 }
 
-/* ========================= */
-/* CONTENT                   */
-/* ========================= */
+/* ----------------------------------------------------
+   CONTENT
+---------------------------------------------------- */
 .content {
     max-width: 900px;
     margin: 0 auto;
     text-align: left;
 }
 
-/* TITRES CENTRÉS */
 .content h1,
 .content h2,
 .content h3 {
@@ -113,13 +122,10 @@ body {
     margin-bottom: 20px;
 }
 
-/* PARAGRAPHES */
 .content p {
     margin-bottom: 15px;
-    line-height: 1.6;
 }
 
-/* LISTES */
 .content ul {
     margin: 15px 0;
     padding-left: 20px;
@@ -128,14 +134,14 @@ body {
 .content li {
     margin-bottom: 8px;
 }
+
 .contenu-centre {
     text-align: center;
 }
-.sommaire-inner {
-    max-width: 900px;
-    margin: 0 auto;
-}
-/* SECTION IA MOBILE */
+
+/* ----------------------------------------------------
+   SECTION IA MOBILE
+---------------------------------------------------- */
 #ia-mobile {
     padding: 20px;
     max-width: 900px;
@@ -153,10 +159,10 @@ body {
     margin: 8px 0;
     font-size: 1rem;
 }
-/* ========================= */
-/* MULTILINGUE – LANG SWITCH */
-/* ========================= */
 
+/* ----------------------------------------------------
+   MULTILINGUE — LANG SWITCH
+---------------------------------------------------- */
 .lang-switch {
     text-align: right;
     margin: 10px 20px;
@@ -174,193 +180,22 @@ body {
     text-decoration: underline;
 }
 
-/* Version mobile */
+/* ----------------------------------------------------
+   VERSION MOBILE
+---------------------------------------------------- */
 @media (max-width: 768px) {
-    .lang-switch {
-        text-align: center;
-        margin: 15px 0;
-        font-size: 1rem;
-   /* TYPOGRAPHIE GLOBALE */
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    /* centrage propre */
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-/* ========================= */
-/* HEADER + TITRES           */
-/* ========================= */
-.header {
-    background-color: #0a3d78;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-.sous-titre {
-    font-size: 20px;
-    color:#3FD1C2; 
-    margin-top: 5px;
-}
-
-.ligne {
-    width: 60%;
-    height: 3px;
-    background-color:#3FD1C2; 
-    margin: 15px auto;
-}
-
-/* ========================= */
-/* MENU                      */
-/* ========================= */
-/* MENU BLEU — VERSION STABLE ET CENTRÉE */
-.menu {
-    background-color: #0a3d78;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.sommaire ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;      /* autorise retour à la ligne */
-    gap: 12px;            /* espace réduit */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-/* SOMMAIRE CENTRÉ */
-.sommaire {
-    background-color: white;
-    padding: 15px 0;
-    border-bottom: 3px solid #0a3d78;
-    width: 100%;
-    text-align: center;
-}
-/* CENTRAGE DU MENU ET DU SOMMAIRE */
-.sommaire ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;      /* autorise retour à la ligne */
-    gap: 12px;            /* espace réduit */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.sommaire li {
-    color: #0a3d78;
-    font-size: 1.1rem;
-}
-  
-/* ========================= */
-/* ZONE BLEUE                */
-/* ========================= */
-.zone-bleue {
-    background-color: #0a3d78;   /* FOND BLEU */
-    color: white;                /* TEXTE BLANC */
-    padding: 20px;
-    margin: 30px 0;
-    text-align: center;          /* CENTRAGE DU TEXTE */
-    border-radius: 10px;
-}
-
-/* ========================= */
-/* CONTENT                   */
-/* ========================= */
-.content {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-/* TITRES CENTRÉS */
-.content h1,
-.content h2,
-.content h3 {
-    text-align: center;
-    color: #0a3d78;
-    margin-bottom: 20px;
-}
-
-/* PARAGRAPHES */
-.content p {
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-/* LISTES */
-.content ul {
-    margin: 15px 0;
-    padding-left: 20px;
-}
-
-.content li {
-    margin-bottom: 8px;
-}
-.contenu-centre {
-    text-align: center;
-}
-.sommaire-inner {
-    max-width: 900px;
-    margin: 0 auto;
-}
-/* SECTION IA MOBILE */
-#ia-mobile {
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    line-height: 1.5;
-}
-
-#ia-mobile h2 {
-    font-size: 1.4rem;
-    margin-bottom: 12px;
-    color: #333;
-}
-
-.ia-mobile-bloc p {
-    margin: 8px 0;
-    font-size: 1rem;
-}
-/* ========================= */
-/* MULTILINGUE – LANG SWITCH */
-/* ========================= */
-
-.lang-switch {
-    text-align: right;
-    margin: 10px 20px;
-    font-size: 0.9rem;
-}
-
-.lang-switch a {
-    color: #0a3d78;
-    text-decoration: none;
-    margin: 0 4px;
-    font-weight: bold;
-}
-
-.lang-switch a:hover {
-    text-decoration: underline;
-}
-
-/* Version mobile */
-@media (max-width: 768px) {
     .lang-switch {
         text-align: center;
         margin: 15px 0;
         font-size: 1rem;
     }
- }
+
+    .sommaire ul {
+        justify-content: center;
+    }
+
+    body {
+        padding: 10px;
+    }
+   } 
