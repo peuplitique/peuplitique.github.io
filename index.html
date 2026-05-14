@@ -108,21 +108,69 @@ function setLang(lang) {
 
 <!-- HEADER -->
 <header class="header">
-    <h1>PEUPLITIQUE</h1>
+    <h1>data-key=PEUPLITIQUE</h1>
     <h3 class="sous-titre">Plateforme citoyenne partagée</h3>
-    <div class="ligne"></div>
+<div class="ligne"></div>
 </header>
 
 <!-- MENU -->
 <nav class="menu">
     <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="gouvernance.html">Gouvernance partagée</a></li>
-        <li><a href="economie-integree.html">Économie intégrée</a></li>
-        <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
-        <li><a href="protocole.html">Protocole</a></li>
-        <li><a href="glossaire.html">Glossaire</a></li>
-        <li><a href="contact.html">Contact</a></li>
+       
+<li><a href="index.html" data-key="menu_home"></a></li>
+<li><a href="gouvernance.html" data-key="menu_governance"></a></li>
+<li><a href="economie-integree.html" data-key="menu_economie"></a></li>
+<li><a href="organisation-structurelle.html" data-key="menu_structure"></a></li>
+<li><a href="protocole.html" data-key="menu_protocole"></a></li>
+<li><a href="glossaire.html" data-key="menu_glossaire"></a></li>
+<li><a href="contact.html" data-key="menu_contact"></a></li>
+<!-- SOMMAIRE -->
+<li><a href="constitution.html#constitution" data-key="sum_constitution"></a></li>
+<li><a href="limites-structurelles.html" data-key="sum_limites"></a></li>
+<li><a href="desequilibre-structurelle.html" data-key="sum_desequilibres"></a></li>
+<li><a href="organisation-economique-structurelle.html" data-key="sum_economie"></a></li>
+<li><a href="organisation-politique-territoriale.html" data-key="sum_territoriale"></a></li>
+<li><a href="gouvernance-dao.html" data-key="sum_dao"></a></li>
+<li><a href="protocole.html#synthese" data-key="sum_synthese"></a></li>
+<li><a href="protocole.html#mise-en-oeuvre" data-key="sum_mise"></a></li>
+<li><a href="constitution.html#articles" data-key="sum_articles"></a></li>
+        
+        <!-- ZONE BLEUE -->
+<h1 data-key="zb_title"></h1>
+<p data-key="zb_p1"></p>
+<p data-key="zb_p2"></p>
+<p data-key="zb_p3"></p>
+<p data-key="zb_p4"></p>
+
+<!-- SECTIONS -->
+<h2 data-key="sec_structure_title"></h2>
+<p data-key="sec_structure_p1"></p>
+<p data-key="sec_structure_p2"></p>
+
+<h2 data-key="sec_hist_title"></h2>
+<p data-key="sec_hist_p1"></p>
+
+<h2 data-key="sec_limites_title"></h2>
+<p data-key="sec_limites_p1"></p>
+<p data-key="sec_limites_p2"></p>
+
+<h2 data-key="sec_fondements_title"></h2>
+<p data-key="sec_fondements_p1"></p>
+<p data-key="sec_fondements_p2"></p>
+
+<h2 data-key="sec_etapes_title"></h2>
+<p data-key="sec_etapes_p1"></p>
+<p data-key="sec_etapes_p2"></p>
+
+<h2 data-key="sec_participation_title"></h2>
+<p data-key="sec_participation_p1"></p>
+<p data-key="sec_participation_p2"></p>
+<p data-key="sec_participation_p3"></p>
+
+<footer>
+    <p data-key="footer"></p>
+</footer> 
+                
     </ul>
 </nav>
 <div class="lang-switch">
@@ -130,29 +178,7 @@ function setLang(lang) {
     <button onclick="setLang('en')">EN</button>
     <button onclick="setLang('es')">ES</button>
 </div>
-<!-- SOMMAIRE -->
-<section class="sommaire">
-    <ul>
-        <li><a href="constitution.html#constitution">• Constitution</a></li>
-        <li><a href="limites-structurelles.html#limites">• Limites structurelles</a></li>
-        <li><a href="desequilibre-structurelle.html#desequilibres">• Déséquilibres structurels</a></li>
-        <li><a href="organisation-economique-structurelle.html#economie">• Organisation économique structurelle</a></li>
-        <li><a href="organisation-politique-territoriale.html#territoriale">• Organisation politique territoriale</a></li>
-        <li><a href="gouvernance-dao.html#dao">• DAO / Gouvernance distribuée</a></li>
-        <li><a href="gouvernance-partagee.html#synthese">• Synthèse</a></li>
-        <li><a href="protocole.html#mise-en-oeuvre">• Mise en œuvre</a></li>
-        <li><a href="articles.html#articles">• Articles</a></li>
-    </ul>
-</section>
 
-<!-- ZONE BLEUE -->
-<div class="zone-bleue">
-    <h1>Peuplitique — Gouvernance partagée</h1>
-    <p>Peuplitique est la première plateforme citoyenne indépendante où le peuple reprend la parole publique, l’analyse collective et la décision commune.</p>
-    <p>Elle repose sur un principe simple : une gouvernance partagée permet de dépasser les modèles pyramidaux traditionnels d’un pouvoir centralisé, où se créent des dérives structurelles et où les décisions ne répondent plus aux besoins collectifs qui appartiennent au peuple.</p>
-    <p>Elle vise à reconstruire un espace souverain où chaque citoyen contribue, analyse, propose, corrige et décide, sans intermédiaire, sans filtre et sans hiérarchie imposée.</p>
-    <p>Ce collectif devient alors souverain, protégé mutuellement et structuré par des règles établies par les citoyens, pour les citoyens.</p>
-</div>
 
 <!-- CONTENU -->
 <main class="content">
@@ -216,6 +242,14 @@ function setLang(lang) {
 
 <script>
 const translations = {
+"fr": { ... }   
+    "zb_title": "Peuplitique — Gouvernance partagée",
+"zb_p1": "Peuplitique est la première plateforme citoyenne indépendante où le peuple reprend la parole publique, l’analyse collective et la décision commune.",
+"zb_p2": "Elle repose sur un principe simple : une gouvernance partagée permet de dépasser les modèles pyramidaux traditionnels d’un pouvoir centralisé, où se créent des dérives structurelles et où les décisions ne répondent plus aux besoins collectifs qui appartiennent au peuple.",
+"zb_p3": "Elle vise à reconstruire un espace souverain où chaque citoyen contribue, analyse, propose, corrige et décide, sans intermédiaire, sans filtre et sans hiérarchie imposée.",
+"zb_p4": "Ce collectif devient alors souverain, protégé mutuellement et structuré par des règles établies par les citoyens, pour les citoyens.",
+  },       
+           
     "en": {
         "footer": "© 2026 Peuplitique – All rights reserved"
     },
@@ -239,6 +273,7 @@ function applyTranslation(lang) {
     });
 }
 const translations = {
+    
     "en": {
         "title_main": "Peuplitique – Home",
         "header_title": "PEUPLITIQUE",
