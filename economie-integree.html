@@ -6,16 +6,24 @@
     <title>Économie intégrée – Peuplitique</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<body>
+
+<!-- LANG SWITCH -->
 <div class="lang-switch">
     <a href="?lang=fr">FR</a> |
     <a href="?lang=en">EN</a> |
     <a href="?lang=es">ES</a> |
     <a href="?lang=ru">RU</a> |
     <a href="?lang=cn">CN</a>
-</div>     
+</div>
+
+<!-- FOOTER (PLACÉ CORRECTEMENT DANS LE BODY) -->
 <footer class="footer">
     <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
+
+<!-- SCRIPT MULTILINGUE (FERMÉ CORRECTEMENT) -->
 <script>
 const translations = {
     "en": {
@@ -60,9 +68,9 @@ function applyTranslation(lang) {
 const params = new URLSearchParams(window.location.search);
 const lang = params.get("lang");
 if (lang) applyTranslation(lang);
-    
-<body>
+</script>
 
+<!-- HEADER -->
 <header class="header-blue">
     <h1>Peuplitique</h1>
     <p>Plateforme citoyenne – Participation, transparence, gouvernance partagée</p>
@@ -81,7 +89,7 @@ if (lang) applyTranslation(lang);
     </nav>
 </header>
 
-<!-- SOMMAIRE HARMONISÉ -->
+<!-- SOMMAIRE -->
 <section class="sommaire">
     <ul>
         <li><a href="organisation-economique.html">Organisation économique structurelle</a></li>
@@ -89,10 +97,12 @@ if (lang) applyTranslation(lang);
     </ul>
 </section>
 
+<!-- ZONE BLEUE -->
 <section class="zone-bleue">
     <h2>Économie intégrée</h2>
 </section>
 
+<!-- CONTENU -->
 <main class="content">
 
     <h2>Schéma général (ASCII)</h2>
@@ -102,19 +112,21 @@ if (lang) applyTranslation(lang);
 │        BANQUE COOPÉRATIVE    │
 └──────────────┬───────────────┘
                │
-   ┌───────────┼────────────────────────┐
-   │           │                        │
+    ┌──────────┼────────────────────────┐
+    │          │                        │
 ┌───────────┐ ┌────────────────┐ ┌────────────────────┐
-│ FLUX ÉCO  │ │ TOKENS /       │ │ MARCHÉS CITOYENS    │
+│ FLUX ÉCO  │ │ TOKENS /       │ │ MARCHÉS CITOYENS   │
 │ SECTORIELS│ │ PONDÉRATION    │ │                    │
 └───────────┘ └────────────────┘ └────────────────────┘
-   │           │                        │
-   └───────────┬───────────────┬────────┘
+               │
+               │
+    └──────────┬───────────────┬────────┘
                │               │
      ┌──────────────┐   ┌────────────────────┐
      │ INNOVATION    │   │ SCÉNARIOS          │
      │ & ÉNERGIE     │   │ ÉCONOMIQUES        │
      └──────────────┘   └────────────────────┘
+
                ▼
 ┌──────────────────────────────┐
 │ ORGANISATION ÉCONOMIQUE      │
@@ -124,8 +136,7 @@ if (lang) applyTranslation(lang);
 
     <h2>Définition</h2>
     <p>
-        L’économie intégrée vise à relier les secteurs, les ressources, les responsabilités 
-        et les décisions dans un système cohérent, transparent et équilibré.
+        L’économie intégrée vise à relier les secteurs, les ressources, les responsabilités et les décisions dans un système cohérent, transparent et équilibré.
     </p>
 
     <h2>Objectifs</h2>
@@ -138,15 +149,10 @@ if (lang) applyTranslation(lang);
 
     <h2>Principes</h2>
     <p>
-        Une économie intégrée repose sur la coordination, la transparence, la participation 
-        citoyenne et la gestion collective des ressources essentielles.
+        Une économie intégrée repose sur la coordination, la transparence, la participation citoyenne et la gestion collective des ressources essentielles.
     </p>
 
 </main>
-
-<footer class="footer">
-    <p>© 2026 Peuplitique — Plateforme citoyenne</p>
-</footer>
 
 </body>
 </html>
