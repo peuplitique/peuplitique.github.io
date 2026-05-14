@@ -135,5 +135,22 @@ body {
     max-width: 900px;
     margin: 0 auto;
 }
+/* SECTION IA MOBILE */
+#ia-mobile {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
 
+#ia-mobile h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.ia-mobile-bloc p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
  
