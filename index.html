@@ -3,14 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peuplitique – Accueil</title>
+    <title>Peuplitique</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<body>
+
+<!-- LANG SWITCH -->
+<div class="lang-switch">
+    <button onclick="setLang('fr')">FR</button>
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('es')">ES</button>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+    <h1 data-key="peuplitique_title"></h1>
+    <h3 class="sous-titre">Plateforme citoyenne partagée</h3>
+    <div class="ligne"></div>
+</header>
+
+<!-- MENU -->
+<nav class="menu">
+    <ul>
+        <li><a href="index.html" data-key="menu_home"></a></li>
+        <li><a href="gouvernance.html" data-key="menu_governance"></a></li>
+        <li><a href="economie-integree.html" data-key="menu_economie"></a></li>
+        <li><a href="organisation-structurelle.html" data-key="menu_structure"></a></li>
+        <li><a href="protocole.html" data-key="menu_protocole"></a></li>
+        <li><a href="glossaire.html" data-key="menu_glossaire"></a></li>
+        <li><a href="contact.html" data-key="menu_contact"></a></li>
+
+        <!-- SOMMAIRE -->
+        <li><a href="constitution.html#constitution" data-key="sum_constitution"></a></li>
+        <li><a href="limites-structurelles.html" data-key="sum_limites"></a></li>
+        <li><a href="desequilibre-structurelle.html" data-key="sum_desequilibres"></a></li>
+        <li><a href="organisation-economique-structurelle.html" data-key="sum_economie"></a></li>
+        <li><a href="organisation-politique-territoriale.html" data-key="sum_territoriale"></a></li>
+        <li><a href="gouvernance-dao.html" data-key="sum_dao"></a></li>
+        <li><a href="protocole.html#synthese" data-key="sum_synthese"></a></li>
+        <li><a href="protocole.html#mise-en-oeuvre" data-key="sum_mise"></a></li>
+        <li><a href="constitution.html#articles" data-key="sum_articles"></a></li>
+    </ul>
+</nav>
+
+<!-- ZONE BLEUE -->
+<section class="zone-bleue">
+    <h1 data-key="zb_title"></h1>
+    <p data-key="zb_p1"></p>
+    <p data-key="zb_p2"></p>
+    <p data-key="zb_p3"></p>
+    <p data-key="zb_p4"></p>
+</section>
+
+<!-- SECTIONS -->
+<main class="content">
+
+    <h2 data-key="sec_structure_title"></h2>
+    <p data-key="sec_structure_p1"></p>
+    <p data-key="sec_structure_p2"></p>
+
+    <h2 data-key="sec_hist_title"></h2>
+    <p data-key="sec_hist_p1"></p>
+
+    <h2 data-key="sec_limites_title"></h2>
+    <p data-key="sec_limites_p1"></p>
+    <p data-key="sec_limites_p2"></p>
+
+    <h2 data-key="sec_fondements_title"></h2>
+    <p data-key="sec_fondements_p1"></p>
+    <p data-key="sec_fondements_p2"></p>
+
+    <h2 data-key="sec_etapes_title"></h2>
+    <p data-key="sec_etapes_p1"></p>
+    <p data-key="sec_etapes_p2"></p>
+
+    <h2 data-key="sec_participation_title"></h2>
+    <p data-key="sec_participation_p1"></p>
+    <p data-key="sec_participation_p2"></p>
+    <p data-key="sec_participation_p3"></p>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p data-key="footer"></p>
+</footer>
+
+<!-- SCRIPT MULTILINGUE -->
 <script>
 const translations = {
 
     "fr": {
-       "peuplitique_title": "Peuplitique",
+        "peuplitique_title": "Peuplitique",
         "zb_title": "Peuplitique — Gouvernance partagée",
         "zb_p1": "Peuplitique est la première plateforme citoyenne indépendante où le peuple reprend la parole publique, l’analyse collective et la décision commune.",
         "zb_p2": "Elle repose sur un principe simple : une gouvernance partagée permet de dépasser les modèles pyramidaux traditionnels d’un pouvoir centralisé, où se créent des dérives structurelles et où les décisions ne répondent plus aux besoins collectifs qui appartiennent au peuple.",
@@ -20,7 +105,7 @@ const translations = {
     },
 
     "en": {
-      "peuplitique_title": "Peuplitique", 
+        "peuplitique_title": "Peuplitique",
         "zb_title": "Peuplitique — Shared Governance",
         "zb_p1": "Peuplitique is the first independent citizen platform where the people reclaim public speech, collective analysis, and common decision‑making.",
         "zb_p2": "It is based on a simple principle: shared governance makes it possible to overcome traditional pyramidal models of centralized power, where structural drifts emerge and decisions no longer respond to the collective needs that belong to the people.",
@@ -30,7 +115,7 @@ const translations = {
     },
 
     "es": {
-       "peuplitique_title": "Peuplitique",
+        "peuplitique_title": "Peuplitique",
         "zb_title": "Peuplitique — Gobernanza compartida",
         "zb_p1": "Peuplitique es la primera plataforma ciudadana independiente donde el pueblo recupera la palabra pública, el análisis colectivo y la decisión común.",
         "zb_p2": "Se basa en un principio sencillo: una gobernanza compartida permite superar los modelos piramidales tradicionales de poder centralizado, donde surgen derivas estructurales y las decisiones ya no responden a las necesidades colectivas que pertenecen al pueblo.",
@@ -44,158 +129,8 @@ function setLang(lang) {
     document.querySelectorAll("[data-key]").forEach(el => {
         el.innerHTML = translations[lang][el.getAttribute("data-key")];
     });
-    
 }
 </script>
-<body>
-
-<div class="lang-switch">
-    <a href="?lang=fr">FR</a> |
-    <a href="?lang=en">EN</a> |
-    <a href="?lang=es">ES</a> |
-    <a href="?lang=ru">RU</a> |
-    <a href="?lang=cn">CN</a>
-</div>
-
-<!-- HEADER -->
-<header class="header">
- <h1 data-key="peuplitique_title"></h1>
-    <h3 class="sous-titre">Plateforme citoyenne partagée</h3>
-<div class="ligne"></div>
-</header>
-
-<!-- MENU -->
-<nav class="menu">
-    <ul>
-       
-<li><a href="index.html" data-key="menu_home"></a></li>
-<li><a href="gouvernance.html" data-key="menu_governance"></a></li>
-<li><a href="economie-integree.html" data-key="menu_economie"></a></li>
-<li><a href="organisation-structurelle.html" data-key="menu_structure"></a></li>
-<li><a href="protocole.html" data-key="menu_protocole"></a></li>
-<li><a href="glossaire.html" data-key="menu_glossaire"></a></li>
-<li><a href="contact.html" data-key="menu_contact"></a></li>
-<!-- SOMMAIRE -->
-<li><a href="constitution.html#constitution" data-key="sum_constitution"></a></li>
-<li><a href="limites-structurelles.html" data-key="sum_limites"></a></li>
-<li><a href="desequilibre-structurelle.html" data-key="sum_desequilibres"></a></li>
-<li><a href="organisation-economique-structurelle.html" data-key="sum_economie"></a></li>
-<li><a href="organisation-politique-territoriale.html" data-key="sum_territoriale"></a></li>
-<li><a href="gouvernance-dao.html" data-key="sum_dao"></a></li>
-<li><a href="protocole.html#synthese" data-key="sum_synthese"></a></li>
-<li><a href="protocole.html#mise-en-oeuvre" data-key="sum_mise"></a></li>
-<li><a href="constitution.html#articles" data-key="sum_articles"></a></li>
-
-</ul>
-</nav>
- <!-- ZONE BLEUE -->
-<h1 data-key="zb_title"></h1>
-<p data-key="zb_p1"></p>
-<p data-key="zb_p2"></p>
-<p data-key="zb_p3"></p>
-<p data-key="zb_p4"></p>
-               
-       
-<!-- SECTIONS -->
-<h2 data-key="sec_structure_title"></h2>
-<p data-key="sec_structure_p1"></p>
-<p data-key="sec_structure_p2"></p>
-
-<h2 data-key="sec_hist_title"></h2>
-<p data-key="sec_hist_p1"></p>
-
-<h2 data-key="sec_limites_title"></h2>
-<p data-key="sec_limites_p1"></p>
-<p data-key="sec_limites_p2"></p>
-
-<h2 data-key="sec_fondements_title"></h2>
-<p data-key="sec_fondements_p1"></p>
-<p data-key="sec_fondements_p2"></p>
-
-<h2 data-key="sec_etapes_title"></h2>
-<p data-key="sec_etapes_p1"></p>
-<p data-key="sec_etapes_p2"></p>
-
-<h2 data-key="sec_participation_title"></h2>
-<p data-key="sec_participation_p1"></p>
-<p data-key="sec_participation_p2"></p>
-<p data-key="sec_participation_p3"></p>
-
-<footer>
-    <p data-key="footer"></p>
-</footer> 
-                
-    </ul>
-</nav>
-<div class="lang-switch">
-    <button onclick="setLang('fr')">FR</button>
-    <button onclick="setLang('en')">EN</button>
-    <button onclick="setLang('es')">ES</button>
-</div>
-
-
-<!-- CONTENU -->
-<main class="content">
-
-<section>
-    <h2 id="structure">Comprendre la structure actuelle</h2>
-    <p>Nous vivons dans un système où les décisions sont prises par une minorité, souvent déconnectée des réalités du terrain. Peuplitique propose une approche citoyenne, transparente et collective.</p>
-</section>
-
-<section>
-    <p>Son principe est une Constitution qui s’oppose aux modèles pyramidaux traditionnels et au pouvoir centralisé qui créent des dérives structurelles.</p>
-</section>
-
-<section>
-    <h2 id="historique">Contexte historique</h2>
-    <p>Depuis des décennies, les structures politiques et économiques se sont complexifiées, créant une distance entre les citoyens et les centres de décision. Cette plateforme vise à rétablir ce lien.</p>
-</section>
-
-<section>
-    <h2 id="limites">Limites structurelles</h2>
-    <p>Les modèles actuels montrent des limites : manque de transparence, lenteur décisionnelle, absence de participation réelle. Peuplitique propose une alternative fondée sur l’intelligence collective.</p>
-</section>
-
-<section>
-    <p>Elle permet aux citoyens de reprendre la maîtrise des décisions qui les concernent et repose sur plusieurs fondements essentiels :</p>
-</section>
-
-<section>
-    <h2 id="fondements">Fondements</h2>
-    <p>La plateforme repose sur trois piliers : compréhension, participation et action. Chaque citoyen peut contribuer à l’amélioration du système.</p>
-</section>
-
-<section>
-    <p>Transparence totale : chaque étape, chaque décision, chaque analyse est visible et accessible.</p>
-</section>
-
-<section>
-    <h2 id="etapes">Étapes pédagogiques</h2>
-    <p>Peuplitique accompagne chaque utilisateur dans un parcours progressif pour comprendre les enjeux, analyser les structures et proposer des solutions concrètes.</p>
-</section>
-
-<section>
-    <p>Participation ouverte : tout citoyen peut contribuer, sans condition d’appartenance, de statut ou de compétence préalable.</p>
-</section>
-
-<section>
-    <h2 id="participation">Participation citoyenne</h2>
-    <p>La participation est au cœur du projet. Chaque voix compte, chaque idée peut être intégrée dans un processus transparent et collectif.</p>
-</section>
-
-<section>
-    <p>Équité d’expression : aucune voix ne vaut plus qu’une autre ; la légitimité vient de la contribution, pas du statut.</p>
-    <p>Intelligence collective : les décisions émergent de l’analyse croisée, de la confrontation constructive et de la diversité des points de vue.</p>
-</section>
-
-</main>
-
-<footer class="footer">
-    <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
-</footer>
-
-<script>
-<!-- force update -->
 
 </body>
 </html>
