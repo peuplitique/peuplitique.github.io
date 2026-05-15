@@ -5,17 +5,25 @@ body {
 }
 
 /* HEADER */
-.header {
+.header-bar h1 {
    background-color: #007BFF; /* bleu */
   text-align: center;        /* ✅ centre le contenu */
   padding: 10px;             /* espace intérieur */
 }
-.header-bar h1 {
+
   margin: 0;
   color: white;
   font-size: 1.5em;
 } 
-
+@media (max-width: 600px) {
+  .header h1, .header-bar h1 {
+    font-size: 1.2em;
+  }
+  .zone-bleue {
+    padding: 20px 10px;
+    text-align: center;
+  }
+}
 .sous-titre {
     color: #3FD1C2;
 }
