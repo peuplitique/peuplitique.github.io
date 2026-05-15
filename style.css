@@ -5,22 +5,32 @@ body {
 }
 
 /* HEADER */
-.header-bar h1 {
+.header {
    background-color: #007BFF; /* bleu */
   text-align: center;        /* ✅ centre le contenu */
   padding: 10px;             /* espace intérieur */
 }
+.header h1 {
   margin: 0;
   color: white;
   font-size: 1.5em;
 } 
+/* Zone bleue */
+.zone-bleue {
+  background-color: #0a3d78;
+  color: white;
+  padding: 40px 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Responsive mobile */
 @media (max-width: 600px) {
-  .header h1, .header-bar h1 {
+  .header h1 {
     font-size: 1.2em;
   }
   .zone-bleue {
     padding: 20px 10px;
-    text-align: center;
   }
 }
 .sous-titre {
