@@ -19,10 +19,9 @@ body {
   font-size: 1.5em;
 }
 
-/* Barre bleue */* Barres uniformes */
+/* Barres uniformes */
 header,
-nav.menu,
-footer {
+nav.menu {
    background-color: #0a3d78; /* même bleu que Gouvernance Partagée */
    color: white;   
   text-align: center;        /* texte centré */
