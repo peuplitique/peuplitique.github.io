@@ -7,46 +7,76 @@ body {
 
 /* HEADER */
 .header {
-  background-color: #007BFF; /* bleu */
-  text-align: center;        /* centre le contenu */
-  padding: 10px;             /* espace intérieur */
+  background-color: #007BFF; /* bleu uniforme */
+  text-align: center;
+  padding: 10px;
 }
 .header h1 {
   margin: 0;
   color: white;
   font-size: 1.5em;
 }
+
+/* Barre bleue uniforme */
 header,
 nav.menu,
 nav.sommaire,
 .zone-bleue,
 footer {
-  background-color: #007BFF; /* même bleu partout */
-  color: white;              /* texte en blanc */
+  background-color: #007BFF;
+  color: white;
 }
+
+/* Zone bleue centrale */
 .zone-bleue {
-  
   padding: 40px 20px;
   margin-bottom: 40px;
   text-align: center;
 }
+
+/* Sommaire */
 .sommaire {
   background-color: #007BFF;
   padding: 10px 0;
+}
+.sommaire ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 .sommaire a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
+
+/* Menu principal */
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  margin: 0;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Liens généraux */
 nav ul {
-  list-style: none;       /* enlève les puces */
+  list-style: none;
   padding: 0;
   margin: 0;
-  display: inline-block;  /* permet de centrer */
+  display: inline-block;
 }
 nav ul li {
-  display: inline;        /* met les liens côte à côte */
+  display: inline;
   margin: 0 15px;
 }
 nav a {
@@ -64,10 +94,11 @@ nav a {
     padding: 20px 10px;
   }
 }
+
+/* Sous-titre et ligne décorative */
 .sous-titre {
     color: #3FD1C2;
 }
-
 .ligne {
     width: 80px;
     height: 3px;
@@ -75,57 +106,14 @@ nav a {
     margin: 10px auto;
 }
 
-/* SOMMAIRE */
-.sommaire {
-    background: #f5f5f5;
-    padding: 10px 0;
-}
-
-.sommaire-inner ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.sommaire a {
-    color: #0a3d78;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-/* MENU */
-.menu ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
-    margin: 0;
-}
-
-.menu a {
-    color: #0a3d78;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* ZONE BLEUE */
-.zone-bleue {
-    background-color: #0a3d78;
-    color: white;
-    padding: 40px 20px;
-    margin-bottom: 40px;
-}
-
-/* CONTENT */
+/* Contenu principal */
 .content {
     max-width: 900px;
     margin: auto;
     padding: 20px;
 }
+
+/* Footer */
 footer {
   background-color: #007BFF;
   color: white;
