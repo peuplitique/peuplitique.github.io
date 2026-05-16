@@ -15,7 +15,14 @@ body {
   color: white;
   font-size: 1.5em;
 }
-
+header,
+nav.menu,
+nav.sommaire,
+.zone-bleue,
+footer {
+  background-color: #007BFF; /* même bleu partout */
+  color: white;              /* texte en blanc */
+}
 /* ZONE BLEUE */
 .zone-bleue {
   background-color: #0a3d78;
