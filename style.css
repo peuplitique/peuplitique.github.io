@@ -19,7 +19,7 @@ body {
   font-size: 1.5em;
 }
 
-/* Barre bleue */
+/* Barre bleue */* Barres uniformes */
 header,
 nav.menu,
 footer {
@@ -27,8 +27,17 @@ footer {
    color: white;   
   text-align: center;        /* texte centré */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* typo plus douce */
-  
-}
+/* Footer spécifique */
+footer {
+  background-color: #0a3d78; /* bleu foncé uniforme */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;  
+}  
 
 /* Zone bleue foncée */
 .zone-bleue {
@@ -91,13 +100,4 @@ footer {
     padding: 20px;
 }
 
-/* Footer */
-footer {
-  background-color: #007BFF;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
+
