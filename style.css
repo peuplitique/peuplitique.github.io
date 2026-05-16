@@ -17,6 +17,7 @@ body {
   margin: 0;
   color: white;
   font-size: 1.5em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;  
 }
 
 /* Barres uniformes */
@@ -46,12 +47,14 @@ footer {
   padding: 40px 20px;
   margin-bottom: 40px;
   text-align: center;
+ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;   
 }
 
 /* Sommaire gris clair */
 .sommaire {
     background: #f5f5f5;
     padding: 10px 0;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
 }
 .sommaire ul {
     list-style: none;
@@ -89,6 +92,7 @@ footer {
 /* Sous-titre et ligne turquoise */
 .sous-titre {
     color: #3FD1C2;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .ligne {
     width: 80px;
