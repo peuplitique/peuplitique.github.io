@@ -7,9 +7,11 @@ body {
 
 /* HEADER */
 .header {
-  background-color: #007BFF; /* bleu clair */
+  background-color: #0a3d78; /* même bleu que Gouvernance Partagée */
   text-align: center;
   padding: 10px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .header h1 {
   margin: 0;
@@ -22,10 +24,10 @@ header,
 nav.menu,
 footer {
    background-color: #0a3d78; /* même bleu que Gouvernance Partagée */
+   color: white;   
   text-align: center;        /* texte centré */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* typo plus douce */
-}
-  color: white;
+  
 }
 
 /* Zone bleue foncée */
