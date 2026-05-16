@@ -21,7 +21,10 @@ body {
 header,
 nav.menu,
 footer {
-  background-color: #007BFF;
+   background-color: #0a3d78; /* même bleu que Gouvernance Partagée */
+  text-align: center;        /* texte centré */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* typo plus douce */
+}
   color: white;
 }
 
