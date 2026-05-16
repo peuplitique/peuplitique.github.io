@@ -2,7 +2,7 @@
 body {
     text-align: center;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* HEADER */
@@ -60,11 +60,13 @@ footer {
     gap: 20px;
     padding: 0;
     margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .sommaire a {
     color: #0a3d78;
     text-decoration: none;
     font-weight: 600;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Menu principal */
@@ -75,11 +77,13 @@ footer {
     gap: 20px;
     padding: 10px 0;
     margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .menu a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Sous-titre et ligne turquoise */
@@ -91,6 +95,7 @@ footer {
     height: 3px;
     background-color: #3FD1C2;
     margin: 10px auto;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Contenu principal */
@@ -98,6 +103,7 @@ footer {
     max-width: 900px;
     margin: auto;
     padding: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
