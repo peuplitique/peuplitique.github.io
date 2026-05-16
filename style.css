@@ -1,5 +1,6 @@
 /* RESET */
 body {
+    text-align: center;
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -22,6 +23,21 @@ nav.sommaire,
 footer {
   background-color: #007BFF; /* même bleu partout */
   color: white;              /* texte en blanc */
+}
+nav ul {
+  list-style: none;       /* enlève les puces */
+  padding: 0;
+  margin: 0;
+  display: inline-block;  /* permet de centrer */
+}
+nav ul li {
+  display: inline;        /* met les liens côte à côte */
+  margin: 0 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 /* ZONE BLEUE */
 .zone-bleue {
