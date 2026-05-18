@@ -4,13 +4,7 @@ body {
     margin: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-/* TITRES GLOBAUX */
-h1, h2, h3 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #0a3d78;
-    margin-top: 20px;
-    text-align: left;
-}
+
 /* HEADER */
 .header {
   background-color: #0a3d78; /* même bleu que Gouvernance Partagée */
@@ -35,7 +29,17 @@ nav.menu {
    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* typo plus douce */
 }
 
-
+/* Footer spécifique */
+footer {
+  background-color: #0a3d78; /* bleu foncé uniforme */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;  
+}
 /* Zone bleue foncée */
 .zone-bleue {
   background-color: #0a3d78;
@@ -103,30 +107,15 @@ nav.menu {
     max-width: 900px;
     margin: auto;
     padding: 20px;
-    text-align: left;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-/* SECTIONS */
-section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-    text-align: left;
-}
-section h2 {
-    color: #0a3d78;
-    border-left: 5px solid #3FD1C2;
-    padding-left: 10px;
-}
-/* Footer spécifique */
-footer {
-  background-color: #0a3d78; /* bleu foncé uniforme */
-  color: white;
-  text-align: center;
-   padding: 10px;
-  position: relative;
-  margin-top: 40px;  
-  bottom: 0;
-  width: 100%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;  
-}
+
+
+
+
+
+
+
+
+
+
