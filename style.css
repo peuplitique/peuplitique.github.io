@@ -110,7 +110,19 @@ footer {
     padding: 20px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+/* Force le centrage du titre dans le header */
+.header h1,
+.header .sous-titre,
+.header .ligne {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+/* Si c'est le bloc bleu qui doit centrer le titre */
+.zone-bleue {
+    text-align: center;
+}
 
 
 
