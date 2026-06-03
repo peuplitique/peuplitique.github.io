@@ -8,7 +8,6 @@
 </head>
 
 <body>
-    
 
 <!-- LANG SWITCH -->
 <div class="lang-switch">
@@ -19,12 +18,12 @@
     <a href="?lang=cn">CN</a>
 </div>
 
-<!-- FOOTER (PLACÉ CORRECTEMENT DANS LE BODY) -->
+<!-- FOOTER -->
 <footer class="footer">
     <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
 
-<!-- SCRIPT MULTILINGUE (FERMÉ CORRECTEMENT) -->
+<!-- SCRIPT MULTILINGUE -->
 <script>
 const translations = {
     "en": {
@@ -35,8 +34,19 @@ const translations = {
         "menu_constitution": "Constitution",
         "menu_structure": "Structural Organization",
         "menu_protocol": "Protocol",
-        "footer": "© 2026 Peuplitique – All rights reserved"
+        "footer": "© 2026 Peuplitique – All rights reserved",
+
+        "sum_constitution": "Constitution",
+        "sum_limites": "Structural Limits",
+        "sum_desequilibres": "Structural Imbalances",
+        "sum_economie": "Economic Organization",
+        "sum_territoriale": "Territorial Organization",
+        "sum_dao": "DAO",
+        "sum_synthese": "Summary",
+        "sum_mise": "Implementation",
+        "sum_articles": "Articles"
     },
+
     "es": {
         "menu_home": "Inicio",
         "menu_governance": "Gobernanza compartida",
@@ -45,8 +55,19 @@ const translations = {
         "menu_constitution": "Constitución",
         "menu_structure": "Organización estructural",
         "menu_protocol": "Protocolo",
-        "footer": "© 2026 Peuplitique – Todos los derechos reservados"
+        "footer": "© 2026 Peuplitique – Todos los derechos reservados",
+
+        "sum_constitution": "Constitución",
+        "sum_limites": "Límites estructurales",
+        "sum_desequilibres": "Desequilibrios estructurales",
+        "sum_economie": "Organización económica",
+        "sum_territoriale": "Organización territorial",
+        "sum_dao": "DAO",
+        "sum_synthese": "Síntesis",
+        "sum_mise": "Implementación",
+        "sum_articles": "Artículos"
     },
+
     "ru": {
         "menu_home": "Главная",
         "menu_governance": "Совместное управление",
@@ -55,8 +76,19 @@ const translations = {
         "menu_constitution": "Конституция",
         "menu_structure": "Структурная организация",
         "menu_protocol": "Протокол",
-        "footer": "© 2026 Peuplitique – Все права защищены"
+        "footer": "© 2026 Peuplitique – Все права защищены",
+
+        "sum_constitution": "Конституция",
+        "sum_limites": "Структурные ограничения",
+        "sum_desequilibres": "Структурные дисбалансы",
+        "sum_economie": "Экономическая организация",
+        "sum_territoriale": "Территориальная организация",
+        "sum_dao": "DAO",
+        "sum_synthese": "Сводка",
+        "sum_mise": "Реализация",
+        "sum_articles": "Статьи"
     },
+
     "cn": {
         "menu_home": "首页",
         "menu_governance": "共享治理",
@@ -65,7 +97,38 @@ const translations = {
         "menu_constitution": "宪章",
         "menu_structure": "结构组织",
         "menu_protocol": "协议",
-        "footer": "© 2026 Peuplitique – 版权所有"
+        "footer": "© 2026 Peuplitique – 版权所有",
+
+        "sum_constitution": "宪章",
+        "sum_limites": "结构限制",
+        "sum_desequilibres": "结构失衡",
+        "sum_economie": "经济组织",
+        "sum_territoriale": "区域组织",
+        "sum_dao": "DAO",
+        "sum_synthese": "摘要",
+        "sum_mise": "实施",
+        "sum_articles": "条款"
+    },
+
+    "fr": {
+        "menu_home": "Accueil",
+        "menu_governance": "Gouvernance partagée",
+        "menu_dao": "DAO",
+        "menu_limits": "Limites structurelles",
+        "menu_constitution": "Constitution",
+        "menu_structure": "Organisation structurelle",
+        "menu_protocol": "Protocole",
+        "footer": "© 2026 Peuplitique – Tous droits réservés",
+
+        "sum_constitution": "Constitution",
+        "sum_limites": "Limites structurelles",
+        "sum_desequilibres": "Déséquilibres structurels",
+        "sum_economie": "Organisation économique",
+        "sum_territoriale": "Organisation territoriale",
+        "sum_dao": "DAO",
+        "sum_synthese": "Synthèse",
+        "sum_mise": "Mise en œuvre",
+        "sum_articles": "Articles"
     }
 };
 
@@ -76,12 +139,20 @@ function applyTranslation(lang) {
             el.textContent = translations[lang][key];
         }
     });
+
+    document.querySelectorAll("[data-key]").forEach(el => {
+        const key = el.getAttribute("data-key");
+        if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+        }
+    });
 }
 
 const params = new URLSearchParams(window.location.search);
 const lang = params.get("lang");
 if (lang) applyTranslation(lang);
 </script>
+
 <!-- HEADER -->
 <header class="header-blue">
     <h1 class="title-main">PEUPLITIQUE</h1>
@@ -100,6 +171,8 @@ if (lang) applyTranslation(lang);
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+</header>
+
 <!-- SOMMAIRE HORIZONTAL -->
 <nav class="sommaire">
     <ul>
@@ -115,20 +188,16 @@ if (lang) applyTranslation(lang);
     </ul>
 </nav>
 
+<!-- TITRES -->
 <h2 id="principes">Principes</h2>
-
 <h2 id="droits">Droits</h2>
-
 <h2 id="devoirs">Devoirs</h2>
-
 <h2 id="institutions">Institutions</h2>
-
 <h2 id="processus">Processus</h2>
-
 <h2 id="garanties">Garanties</h2>
+
 <!-- CONTENU -->
 <main class="content">
-
 <!-- ========================= -->
 <!-- ÉTAPE 1 — CONSTITUTION -->
 <!-- ========================= -->
