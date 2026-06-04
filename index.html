@@ -1,10 +1,10 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peuplitique</title>
-    <link rel="stylesheet" href="style.css"v=9999">
+    <title data-key="peuplitique_title">Peuplitique</title>
+    <link rel="stylesheet" href="style.css?v=9999">
 </head>
 
 <body>
@@ -18,41 +18,42 @@
 
 <!-- HEADER -->
 <header class="header">
-    <h1 data-key="peuplitique_title"></h1>
+    <h1 data-key="peuplitique_title">Peuplitique</h1>
     <h3 class="sous-titre">Plateforme citoyenne partagée</h3>
     <div class="ligne"></div>
 </header>
- 
+
 <!-- MENU PRINCIPAL -->
 <nav class="menu">
     <ul>
-        <li><a href="index.html" data-key="menu_home"></a></li>
-        <li><a href="gouvernance-partagee.html" class="active" data-i18n="menu_governance">Gouvernance partagée</a></li>
-        <li><a href="economie-integree.html" data-key="menu_economie"></a></li>
-        <li><a href="organisation-structurelle.html" data-key="menu_structure"></a></li>
-        <li><a href="protocole.html" data-key="menu_protocole"></a></li>
-        <li><a href="glossaire.html" data-key="menu_glossaire"></a></li>
-        <li><a href="contact.html" data-key="menu_contact"></a></li>
+        <li><a href="index.html" data-key="menu_home">Accueil</a></li>
+        <li><a href="gouvernance-partagee.html" class="active" data-key="menu_governance">Gouvernance partagée</a></li>
+        <li><a href="economie-integree.html" data-key="menu_economie">Économie intégrée</a></li>
+        <li><a href="organisation-structurelle.html" data-key="menu_structure">Organisation structurelle</a></li>
+        <li><a href="protocole.html" data-key="menu_protocole">Protocole</a></li>
+        <li><a href="glossaire.html" data-key="menu_glossaire">Glossaire</a></li>
+        <li><a href="contact.html" data-key="menu_contact">Contact</a></li>
     </ul>
 </nav>
+
 <!-- SOMMAIRE HORIZONTAL -->
 <nav class="sommaire">
     <ul>
-        <li><a href="constitution.html#constitution" data-key="sum_constitution"></a></li>
-        <li><a href="limites-structurelles.html" data-key="sum_limites"></a></li>
-        <li><a href="desequilibre-structurelle.html" data-key="sum_desequilibres"></a></li>
-        <li><a href="organisation-economique-structurelle.html" data-key="sum_economie"></a></li>
-        <li><a href="organisation-politique-territoriale.html" data-key="sum_territoriale"></a></li>
-        <li><a href="gouvernance-dao.html" data-key="sum_dao"></a></li>
-        <li><a href="protocole.html#synthese" data-key="sum_synthese"></a></li>
-        <li><a href="protocole.html#mise-en-oeuvre" data-key="sum_mise"></a></li>
-        <li><a href="constitution.html#articles" data-key="sum_articles"></a></li>
+        <li><a href="constitution.html#constitution" data-key="sum_constitution">Constitution</a></li>
+        <li><a href="limites-structurelles.html" data-key="sum_limites">Limites structurelles</a></li>
+        <li><a href="desequilibre-structurelle.html" data-key="sum_desequilibres">Déséquilibres structurels</a></li>
+        <li><a href="organisation-economique-structurelle.html" data-key="sum_economie">Organisation économique</a></li>
+        <li><a href="organisation-politique-territoriale.html" data-key="sum_territoriale">Organisation territoriale</a></li>
+        <li><a href="gouvernance-dao.html" data-key="sum_dao">Gouvernance DAO</a></li>
+        <li><a href="protocole.html#synthese" data-key="sum_synthese">Synthèse</a></li>
+        <li><a href="protocole.html#mise-en-oeuvre" data-key="sum_mise">Mise en œuvre</a></li>
+        <li><a href="constitution.html#articles" data-key="sum_articles">Articles</a></li>
     </ul>
 </nav>
 
 <!-- ZONE BLEUE -->
 <section class="zone-bleue">
-    <h1>Gouvernance Partagée</h1>
+    <h1 data-key="zb_title">Peuplitique — Gouvernance partagée</h1>
     <p data-key="zb_p1"></p>
     <p data-key="zb_p2"></p>
     <p data-key="zb_p3"></p>
@@ -93,7 +94,7 @@
     <p data-key="footer"></p>
 </footer>
 
-<!-- SCRIPT MULTILINGUE COMPLET -->
+<!-- SCRIPT MULTILINGUE -->
 <script>
 const translations = {
 
@@ -266,7 +267,6 @@ function setLang(lang) {
         el.innerHTML = translations[lang][el.getAttribute("data-key")];
     });
 }
-
 setLang('fr');
 </script>
 
