@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Gouvernance & DAO – Peuplitique</title>
+    <title data-i18n="page_title_dao">Gouvernance & DAO – Peuplitique</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Gouvernance décentralisée, transparence et allocation collective des ressources via DAO sur Peuplitique.">
     <link rel="stylesheet" href="style.css">
@@ -10,19 +10,18 @@
 
 <body class="bg-main">
 
+<!-- LANG SWITCH -->
 <div class="lang-switch">
-    <a href="?lang=fr">FR</a> |
-    <a href="?lang=en">EN</a> |
-    <a href="?lang=es">ES</a> |
-    <a href="?lang=ru">RU</a> |
-    <a href="?lang=cn">CN</a>
+    <a href="#" onclick="setLang('fr')">FR</a> |
+    <a href="#" onclick="setLang('en')">EN</a> |
+    <a href="#" onclick="setLang('es')">ES</a>
 </div>
 
 <header class="site-header">
     <div class="logo-title">
         <a href="index.html" class="logo-link">
-            <span class="site-logo">Peuplitique</span>
-            <span class="site-subtitle">Plateforme citoyenne</span>
+            <span class="site-logo" data-i18n="site_title">Peuplitique</span>
+            <span class="site-subtitle" data-i18n="site_subtitle">Plateforme citoyenne</span>
         </a>
     </div>
 
@@ -30,92 +29,102 @@
         <ul>
             <li><a href="index.html" data-i18n="menu_home">Accueil</a></li>
             <li><a href="gouvernance-partagee.html" data-i18n="menu_governance">Gouvernance partagée</a></li>
-            <li><a href="glossaire.html">Glossaire</a></li>
-            <li><a href="economie-integree.html">Économie intégrée</a></li>
-            <li><a href="organisation-economique-structurelle.html">Économie structurelle</a></li>
-            <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
-            <li><a href="gouvernance-dao.html" class="active">Gouvernance & DAO</a></li>
-            <li><a href="organisation-politique-territoriale.html">Organisation politique & territoriale</a></li>
+            <li><a href="glossaire.html" data-i18n="menu_glossaire">Glossaire</a></li>
+            <li><a href="economie-integree.html" data-i18n="menu_economie">Économie intégrée</a></li>
+            <li><a href="organisation-economique-structurelle.html" data-i18n="menu_eco_struct">Économie structurelle</a></li>
+            <li><a href="organisation-structurelle.html" data-i18n="menu_structure">Organisation structurelle</a></li>
+            <li><a href="gouvernance-dao.html" class="active" data-i18n="menu_dao">Gouvernance & DAO</a></li>
+            <li><a href="organisation-politique-territoriale.html" data-i18n="menu_territoire">Organisation politique & territoriale</a></li>
             <li><a href="protocole.html" data-i18n="menu_protocol">Protocole & Articles</a></li>
-            <li><a href="desequilibre-structurelle.html">Déséquilibre structurel</a></li>
+            <li><a href="desequilibre-structurelle.html" data-i18n="menu_desequilibre">Déséquilibre structurel</a></li>
         </ul>
     </nav>
 </header>
 
+<!-- SOMMAIRE HARMONISÉ -->
+<nav class="sommaire">
+    <ul>
+        <li><a href="#dao" data-i18n="sum_dao">Gouvernance & DAO</a></li>
+        <li><a href="gouvernance-partagee.html" data-i18n="sum_governance">Gouvernance partagée</a></li>
+        <li><a href="organisation-structurelle.html" data-i18n="sum_structure">Organisation structurelle</a></li>
+        <li><a href="economie-integree.html" data-i18n="sum_economie">Économie intégrée</a></li>
+    </ul>
+</nav>
+
 <main class="page-container">
 
     <section class="page-hero">
-        <h1>Gouvernance & DAO</h1>
-        <p>
+        <h1 data-i18n="dao_title">Gouvernance & DAO</h1>
+        <p data-i18n="dao_subtitle">
             Une gouvernance transparente, collective et traçable grâce à une organisation autonome décentralisée (DAO).
         </p>
     </section>
 
-    <section class="content-section">
-        <h2>Pourquoi un DAO ?</h2>
-        <p>
+    <section class="content-section" id="dao">
+        <h2 data-i18n="dao_why_title">Pourquoi un DAO ?</h2>
+        <p data-i18n="dao_why_p1">
             Le DAO (Decentralized Autonomous Organization) est le cœur de la gouvernance de Peuplitique. Il permet de rendre visibles, traçables et compréhensibles toutes les décisions collectives.
         </p>
         <ul>
-            <li><strong>Transparence totale :</strong> chaque décision est inscrite dans un registre public.</li>
-            <li><strong>Participation citoyenne :</strong> chacun peut proposer, débattre et prioriser des projets.</li>
-            <li><strong>Règles claires :</strong> les mécanismes de vote et d’allocation sont définis collectivement.</li>
-            <li><strong>Évolution continue :</strong> le DAO peut être amélioré par la communauté.</li>
+            <li data-i18n="dao_why_li1"><strong>Transparence totale :</strong> chaque décision est inscrite dans un registre public.</li>
+            <li data-i18n="dao_why_li2"><strong>Participation citoyenne :</strong> chacun peut proposer, débattre et prioriser des projets.</li>
+            <li data-i18n="dao_why_li3"><strong>Règles claires :</strong> les mécanismes de vote et d’allocation sont définis collectivement.</li>
+            <li data-i18n="dao_why_li4"><strong>Évolution continue :</strong> le DAO peut être amélioré par la communauté.</li>
         </ul>
     </section>
 
     <section class="content-section">
-        <h2>Fonctionnement du DAO</h2>
-        <p>
+        <h2 data-i18n="dao_func_title">Fonctionnement du DAO</h2>
+        <p data-i18n="dao_func_p1">
             Le DAO structure la prise de décision collective autour de trois piliers : les propositions, les votes et la traçabilité.
         </p>
 
-        <h3>1. Propositions citoyennes</h3>
-        <p>
+        <h3 data-i18n="dao_prop_title">1. Propositions citoyennes</h3>
+        <p data-i18n="dao_prop_p">
             Tout membre peut soumettre une idée, un projet ou une modification des règles. Les propositions sont publiques, argumentées et ouvertes au débat.
         </p>
 
-        <h3>2. Votes et arbitrages</h3>
-        <p>
+        <h3 data-i18n="dao_vote_title">2. Votes et arbitrages</h3>
+        <p data-i18n="dao_vote_p1">
             Les citoyen·ne·s votent sur les projets selon des mécanismes définis collectivement :
         </p>
         <ul>
-            <li>vote pondéré ou égalitaire, selon les règles choisies ;</li>
-            <li>quorum minimal pour valider une décision ;</li>
-            <li>périodes de vote transparentes et annoncées.</li>
+            <li data-i18n="dao_vote_li1">vote pondéré ou égalitaire, selon les règles choisies ;</li>
+            <li data-i18n="dao_vote_li2">quorum minimal pour valider une décision ;</li>
+            <li data-i18n="dao_vote_li3">périodes de vote transparentes et annoncées.</li>
         </ul>
 
-        <h3>3. Registre public</h3>
-        <p>
+        <h3 data-i18n="dao_register_title">3. Registre public</h3>
+        <p data-i18n="dao_register_p">
             Toutes les décisions sont inscrites dans un registre consultable par tous, garantissant une transparence totale de la gouvernance.
         </p>
     </section>
 
     <section class="content-section">
-        <h2>Allocation des ressources via le DAO</h2>
-        <p>
+        <h2 data-i18n="dao_alloc_title">Allocation des ressources via le DAO</h2>
+        <p data-i18n="dao_alloc_p1">
             Le DAO permet d’allouer les ressources publiques de manière transparente et collective.
         </p>
         <ul>
-            <li><strong>Budgets sectoriels :</strong> chaque secteur (santé, énergie, éducation…) reçoit une enveloppe définie.</li>
-            <li><strong>Priorisation collective :</strong> les citoyen·ne·s décident des projets à financer.</li>
-            <li><strong>Suivi public :</strong> chaque euro dépensé est traçable.</li>
-            <li><strong>Évaluation continue :</strong> les résultats sont visibles dans les tableaux de bord structurels.</li>
+            <li data-i18n="dao_alloc_li1"><strong>Budgets sectoriels :</strong> chaque secteur (santé, énergie, éducation…) reçoit une enveloppe définie.</li>
+            <li data-i18n="dao_alloc_li2"><strong>Priorisation collective :</strong> les citoyen·ne·s décident des projets à financer.</li>
+            <li data-i18n="dao_alloc_li3"><strong>Suivi public :</strong> chaque euro dépensé est traçable.</li>
+            <li data-i18n="dao_alloc_li4"><strong>Évaluation continue :</strong> les résultats sont visibles dans les tableaux de bord structurels.</li>
         </ul>
     </section>
 
     <section class="content-section">
-        <h2>Évolution du DAO</h2>
-        <p>
+        <h2 data-i18n="dao_evo_title">Évolution du DAO</h2>
+        <p data-i18n="dao_evo_p1">
             Le DAO n’est pas un système figé. Il évolue avec la communauté, les besoins et les apprentissages.
         </p>
         <ul>
-            <li>amélioration des règles de vote ;</li>
-            <li>ajout de nouveaux indicateurs ;</li>
-            <li>adaptation aux réalités locales ;</li>
-            <li>intégration de nouveaux outils de participation.</li>
+            <li data-i18n="dao_evo_li1">amélioration des règles de vote ;</li>
+            <li data-i18n="dao_evo_li2">ajout de nouveaux indicateurs ;</li>
+            <li data-i18n="dao_evo_li3">adaptation aux réalités locales ;</li>
+            <li data-i18n="dao_evo_li4">intégration de nouveaux outils de participation.</li>
         </ul>
-        <p>
+        <p data-i18n="dao_evo_p2">
             Cette flexibilité garantit une gouvernance vivante, résiliente et réellement collective.
         </p>
     </section>
@@ -126,39 +135,208 @@
     <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
 
+<!-- SCRIPT MULTILINGUE -->
 <script>
 const translations = {
-    "en": {
-        "menu_home": "Home",
-        "menu_limits": "Structural Limits",
-        "menu_governance": "Shared Governance",
-        "menu_protocol": "Protocol",
-        "footer": "© 2026 Peuplitique – All rights reserved"
+    fr: {
+        page_title_dao: "Gouvernance & DAO – Peuplitique",
+        site_title: "Peuplitique",
+        site_subtitle: "Plateforme citoyenne",
+
+        menu_home: "Accueil",
+        menu_governance: "Gouvernance partagée",
+        menu_glossaire: "Glossaire",
+        menu_economie: "Économie intégrée",
+        menu_eco_struct: "Économie structurelle",
+        menu_structure: "Organisation structurelle",
+        menu_dao: "Gouvernance & DAO",
+        menu_territoire: "Organisation politique & territoriale",
+        menu_protocol: "Protocole & Articles",
+        menu_desequilibre: "Déséquilibre structurel",
+
+        sum_dao: "Gouvernance & DAO",
+        sum_governance: "Gouvernance partagée",
+        sum_structure: "Organisation structurelle",
+        sum_economie: "Économie intégrée",
+
+        dao_title: "Gouvernance & DAO",
+        dao_subtitle: "Une gouvernance transparente, collective et traçable grâce à une organisation autonome décentralisée (DAO).",
+
+        dao_why_title: "Pourquoi un DAO ?",
+        dao_why_p1: "Le DAO (Decentralized Autonomous Organization) est le cœur de la gouvernance de Peuplitique. Il permet de rendre visibles, traçables et compréhensibles toutes les décisions collectives.",
+        dao_why_li1: "Transparence totale : chaque décision est inscrite dans un registre public.",
+        dao_why_li2: "Participation citoyenne : chacun peut proposer, débattre et prioriser des projets.",
+        dao_why_li3: "Règles claires : les mécanismes de vote et d’allocation sont définis collectivement.",
+        dao_why_li4: "Évolution continue : le DAO peut être amélioré par la communauté.",
+
+        dao_func_title: "Fonctionnement du DAO",
+        dao_func_p1: "Le DAO structure la prise de décision collective autour de trois piliers : les propositions, les votes et la traçabilité.",
+
+        dao_prop_title: "1. Propositions citoyennes",
+        dao_prop_p: "Tout membre peut soumettre une idée, un projet ou une modification des règles. Les propositions sont publiques, argumentées et ouvertes au débat.",
+
+        dao_vote_title: "2. Votes et arbitrages",
+        dao_vote_p1: "Les citoyen·ne·s votent sur les projets selon des mécanismes définis collectivement :",
+        dao_vote_li1: "vote pondéré ou égalitaire, selon les règles choisies ;",
+        dao_vote_li2: "quorum minimal pour valider une décision ;",
+        dao_vote_li3: "périodes de vote transparentes et annoncées.",
+
+        dao_register_title: "3. Registre public",
+        dao_register_p: "Toutes les décisions sont inscrites dans un registre consultable par tous, garantissant une transparence totale de la gouvernance.",
+
+        dao_alloc_title: "Allocation des ressources via le DAO",
+        dao_alloc_p1: "Le DAO permet d’allouer les ressources publiques de manière transparente et collective.",
+        dao_alloc_li1: "Budgets sectoriels : chaque secteur (santé, énergie, éducation…) reçoit une enveloppe définie.",
+        dao_alloc_li2: "Priorisation collective : les citoyen·ne·s décident des projets à financer.",
+        dao_alloc_li3: "Suivi public : chaque euro dépensé est traçable.",
+        dao_alloc_li4: "Évaluation continue : les résultats sont visibles dans les tableaux de bord structurels.",
+
+        dao_evo_title: "Évolution du DAO",
+        dao_evo_p1: "Le DAO n’est pas un système figé. Il évolue avec la communauté, les besoins et les apprentissages.",
+        dao_evo_li1: "amélioration des règles de vote ;",
+        dao_evo_li2: "ajout de nouveaux indicateurs ;",
+        dao_evo_li3: "adaptation aux réalités locales ;",
+        dao_evo_li4: "intégration de nouveaux outils de participation.",
+        dao_evo_p2: "Cette flexibilité garantit une gouvernance vivante, résiliente et réellement collective.",
+
+        footer: "© 2026 Peuplitique – Tous droits réservés"
     },
-    "es": {
-        "menu_home": "Inicio",
-        "menu_limits": "Límites Estructurales",
-        "menu_governance": "Gobernanza Compartida",
-        "menu_protocol": "Protocolo",
-        "footer": "© 2026 Peuplitique – Todos los derechos reservados"
+
+    en: {
+        page_title_dao: "Governance & DAO – Peuplitique",
+        site_title: "Peuplitique",
+        site_subtitle: "Citizen platform",
+
+        menu_home: "Home",
+        menu_governance: "Shared Governance",
+        menu_glossaire: "Glossary",
+        menu_economie: "Integrated Economy",
+        menu_eco_struct: "Structural Economy",
+        menu_structure: "Structural Organization",
+        menu_dao: "Governance & DAO",
+        menu_territoire: "Political & Territorial Organization",
+        menu_protocol: "Protocol & Articles",
+        menu_desequilibre: "Structural Imbalance",
+
+        sum_dao: "Governance & DAO",
+        sum_governance: "Shared Governance",
+        sum_structure: "Structural Organization",
+        sum_economie: "Integrated Economy",
+
+        dao_title: "Governance & DAO",
+        dao_subtitle: "Transparent, collective and traceable governance through a decentralized autonomous organization (DAO).",
+
+        dao_why_title: "Why a DAO?",
+        dao_why_p1: "The DAO (Decentralized Autonomous Organization) is the core of Peuplitique’s governance. It makes all collective decisions visible, traceable and understandable.",
+        dao_why_li1: "Full transparency: every decision is recorded in a public ledger.",
+        dao_why_li2: "Citizen participation: everyone can propose, debate and prioritize projects.",
+        dao_why_li3: "Clear rules: voting and allocation mechanisms are defined collectively.",
+        dao_why_li4: "Continuous evolution: the DAO can be improved by the community.",
+
+        dao_func_title: "How the DAO works",
+        dao_func_p1: "The DAO structures collective decision‑making around three pillars: proposals, votes and traceability.",
+
+        dao_prop_title: "1. Citizen proposals",
+        dao_prop_p: "Any member can submit an idea, a project or a rule modification. Proposals are public, argued and open to debate.",
+
+        dao_vote_title: "2. Voting and arbitration",
+        dao_vote_p1: "Citizens vote on projects according to collectively defined mechanisms:",
+        dao_vote_li1: "weighted or equal voting, depending on chosen rules;",
+        dao_vote_li2: "minimum quorum to validate a decision;",
+        dao_vote_li3: "transparent and announced voting periods.",
+
+        dao_register_title: "3. Public ledger",
+        dao_register_p: "All decisions are recorded in a publicly accessible ledger, ensuring full transparency of governance.",
+
+        dao_alloc_title: "Resource allocation through the DAO",
+        dao_alloc_p1: "The DAO enables transparent and collective allocation of public resources.",
+        dao_alloc_li1: "Sector budgets: each sector (health, energy, education…) receives a defined envelope.",
+        dao_alloc_li2: "Collective prioritization: citizens decide which projects to fund.",
+        dao_alloc_li3: "Public tracking: every euro spent is traceable.",
+        dao_alloc_li4: "Continuous evaluation: results are visible in structural dashboards.",
+
+        dao_evo_title: "DAO evolution",
+        dao_evo_p1: "The DAO is not a fixed system. It evolves with the community, needs and learning.",
+        dao_evo_li1: "improvement of voting rules;",
+        dao_evo_li2: "addition of new indicators;",
+        dao_evo_li3: "adaptation to local realities;",
+        dao_evo_li4: "integration of new participation tools.",
+        dao_evo_p2: "This flexibility ensures living, resilient and truly collective governance.",
+
+        footer: "© 2026 Peuplitique – All rights reserved"
     },
-    "ru": {
-        "menu_home": "Главная",
-        "menu_limits": "Структурные ограничения",
-        "menu_governance": "Совместное управление",
-        "menu_protocol": "Протокол",
-        "footer": "© 2026 Peuplitique – Все права защищены"
-    },
-    "cn": {
-        "menu_home": "首页",
-        "menu_limits": "结构限制",
-        "menu_governance": "共享治理",
-        "menu_protocol": "协议",
-        "footer": "© 2026 Peuplitique – 版权所有"
+
+    es: {
+        page_title_dao: "Gobernanza & DAO – Peuplitique",
+        site_title: "Peuplitique",
+        site_subtitle: "Plataforma ciudadana",
+
+        menu_home: "Inicio",
+        menu_governance: "Gobernanza compartida",
+        menu_glossaire: "Glosario",
+        menu_economie: "Economía integrada",
+        menu_eco_struct: "Economía estructural",
+        menu_structure: "Organización estructural",
+        menu_dao: "Gobernanza & DAO",
+        menu_territoire: "Organización política y territorial",
+        menu_protocol: "Protocolo & Artículos",
+        menu_desequilibre: "Desequilibrio estructural",
+
+        sum_dao: "Gobernanza & DAO",
+        sum_governance: "Gobernanza compartida",
+        sum_structure: "Organización estructural",
+        sum_economie: "Economía integrada",
+
+        dao_title: "Gobernanza & DAO",
+        dao_subtitle: "Una gobernanza transparente, colectiva y trazable gracias a una organización autónoma descentralizada (DAO).",
+
+        dao_why_title: "¿Por qué una DAO?",
+        dao_why_p1: "La DAO (Organización Autónoma Descentralizada) es el núcleo de la gobernanza de Peuplitique. Permite que todas las decisiones colectivas sean visibles, trazables y comprensibles.",
+        dao_why_li1: "Transparencia total: cada decisión se registra en un libro público.",
+        dao_why_li2: "Participación ciudadana: cualquiera puede proponer, debatir y priorizar proyectos.",
+        dao_why_li3: "Reglas claras: los mecanismos de voto y asignación se definen colectivamente.",
+        dao_why_li4: "Evolución continua: la DAO puede ser mejorada por la comunidad.",
+
+        dao_func_title: "Funcionamiento de la DAO",
+        dao_func_p1: "La DAO estructura la toma de decisiones colectivas en torno a tres pilares: propuestas, votos y trazabilidad.",
+
+        dao_prop_title: "1. Propuestas ciudadanas",
+        dao_prop_p: "Cualquier miembro puede presentar una idea, un proyecto o una modificación de las reglas. Las propuestas son públicas, argumentadas y abiertas al debate.",
+
+        dao_vote_title: "2. Votos y arbitrajes",
+        dao_vote_p1: "Las personas ciudadanas votan sobre los proyectos según mecanismos definidos colectivamente:",
+        dao_vote_li1: "voto ponderado o igualitario, según las reglas elegidas;",
+        dao_vote_li2: "quórum mínimo para validar una decisión;",
+        dao_vote_li3: "periodos de votación transparentes y anunciados.",
+
+        dao_register_title: "3. Registro público",
+        dao_register_p: "Todas las decisiones se inscriben en un registro consultable por cualquiera, garantizando una transparencia total de la gobernanza.",
+
+        dao_alloc_title: "Asignación de recursos vía la DAO",
+        dao_alloc_p1: "La DAO permite asignar los recursos públicos de manera transparente y colectiva.",
+        dao_alloc_li1: "Presupuestos sectoriales: cada sector (salud, energía, educación…) recibe una dotación definida.",
+        dao_alloc_li2: "Priorización colectiva: la ciudadanía decide qué proyectos financiar.",
+        dao_alloc_li3: "Seguimiento público: cada euro gastado es trazable.",
+        dao_alloc_li4: "Evaluación continua: los resultados son visibles en los cuadros de mando estructurales.",
+
+        dao_evo_title: "Evolución de la DAO",
+        dao_evo_p1: "La DAO no es un sistema fijo. Evoluciona con la comunidad, las necesidades y los aprendizajes.",
+        dao_evo_li1: "mejora de las reglas de voto;",
+        dao_evo_li2: "añadido de nuevos indicadores;",
+        dao_evo_li3: "adaptación a las realidades locales;",
+        dao_evo_li4: "integración de nuevas herramientas de participación.",
+        dao_evo_p2: "Esta flexibilidad garantiza una gobernanza viva, resiliente y realmente colectiva.",
+
+        footer: "© 2026 Peuplitique – Todos los derechos reservados"
     }
 };
 
-function applyTranslation(lang) {
+function setLang(lang) {
+    localStorage.setItem("lang", lang);
+    applyTranslations(lang);
+}
+
+function applyTranslations(lang) {
     document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
         if (translations[lang] && translations[lang][key]) {
@@ -167,11 +345,8 @@ function applyTranslation(lang) {
     });
 }
 
-const params = new URLSearchParams(window.location.search);
-const lang = params.get("lang");
-if (lang) applyTranslation(lang);
+applyTranslations(localStorage.getItem("lang") || "fr");
 </script>
 
 </body>
 </html>
-
