@@ -13,57 +13,72 @@
 <div class="lang-switch">
     <a href="?lang=fr">FR</a> |
     <a href="?lang=en">EN</a> |
-    <a href="?lang=es">ES</a> |
-    <a href="?lang=ru">RU</a> |
-    <a href="?lang=cn">CN</a>
+    <a href="?lang=es">ES</a>
 </div>
 
 <!-- HEADER + MENU -->
 <header class="header-blue">
     <h1>Peuplitique</h1>
-    <p>Plateforme citoyenne – Participation, transparence, gouvernance partagée</p>
+    <p data-i18n="sous-titre">
+        Plateforme citoyenne – Participation, transparence, gouvernance partagée
+    </p>
 
     <nav class="menu">
         <ul>
-            <li><a href="index.html" class="active">Accueil</a></li>
-            <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
-            <li><a href="gouvernance-dao.html">DAO</a></li>
-            <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
-            <li><a href="economie-integree.html">Économie intégrée</a></li>
-            <li><a href="protocole.html">Protocole</a></li>
-            <li><a href="glossaire.html">Glossaire</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="active" data-i18n="menu-accueil">Accueil</a></li>
+            <li><a href="gouvernance-partagee.html" data-i18n="menu-gouv">Gouvernance partagée</a></li>
+            <li><a href="gouvernance-dao.html" data-i18n="menu-dao">DAO</a></li>
+            <li><a href="organisation-structurelle.html" data-i18n="menu-orga">Organisation structurelle</a></li>
+            <li><a href="economie-integree.html" data-i18n="menu-eco">Économie intégrée</a></li>
+            <li><a href="protocole.html" data-i18n="menu-protocole">Protocole</a></li>
+            <li><a href="glossaire.html" data-i18n="menu-glossaire">Glossaire</a></li>
+            <li><a href="contact.html" data-i18n="menu-contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
 <!-- ZONE BLEUE -->
 <section class="zone-bleue">
-    <h2>Bienvenue sur Peuplitique</h2>
+    <h2 data-i18n="titre-page">Bienvenue sur Peuplitique</h2>
 </section>
+
+<!-- SOMMAIRE HORIZONTAL -->
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="#intro" data-i18n="sommaire-intro">Introduction</a></li>
+        <li><a href="#acces" data-i18n="sommaire-acces">Accès rapide</a></li>
+        <li><a href="#commencer" data-i18n="sommaire-commencer">Commencer</a></li>
+    </ul>
+</nav>
 
 <!-- CONTENU -->
 <main class="content">
 
-    <h2>Une plateforme citoyenne</h2>
-    <p>
-        Peuplitique est une plateforme conçue pour permettre à chaque citoyen de participer directement à la gouvernance, à la transparence publique et à la prise de décision collective.
-    </p>
+    <section id="intro">
+        <h2 data-i18n="intro-titre">Une plateforme citoyenne</h2>
+        <p data-i18n="intro-texte">
+            Peuplitique est une plateforme conçue pour permettre à chaque citoyen de participer directement à la gouvernance, à la transparence publique et à la prise de décision collective.
+        </p>
+    </section>
 
-    <h2>Accès rapide</h2>
-    <ul>
-        <li><a href="gouvernance-partagee.html">Comprendre la gouvernance partagée</a></li>
-        <li><a href="gouvernance-dao.html">Découvrir le DAO citoyen</a></li>
-        <li><a href="organisation-structurelle.html">Explorer l’organisation structurelle</a></li>
-        <li><a href="economie-integree.html">Voir l’économie intégrée</a></li>
-        <li><a href="protocole.html">Lire le protocole citoyen</a></li>
-        <li><a href="glossaire.html">Consulter le glossaire</a></li>
-    </ul>
+    <section id="acces">
+        <h2 data-i18n="acces-titre">Accès rapide</h2>
+        <ul>
+            <li><a href="gouvernance-partagee.html" data-i18n="acces-gouv">Comprendre la gouvernance partagée</a></li>
+            <li><a href="gouvernance-dao.html" data-i18n="acces-dao">Découvrir le DAO citoyen</a></li>
+            <li><a href="organisation-structurelle.html" data-i18n="acces-orga">Explorer l’organisation structurelle</a></li>
+            <li><a href="economie-integree.html" data-i18n="acces-eco">Voir l’économie intégrée</a></li>
+            <li><a href="protocole.html" data-i18n="acces-protocole">Lire le protocole citoyen</a></li>
+            <li><a href="glossaire.html" data-i18n="acces-glossaire">Consulter le glossaire</a></li>
+        </ul>
+    </section>
 
-    <h2>Commencer</h2>
-    <p>
-        Choisissez une section pour découvrir comment fonctionne Peuplitique et comment participer activement.
-    </p>
+    <section id="commencer">
+        <h2 data-i18n="commencer-titre">Commencer</h2>
+        <p data-i18n="commencer-texte">
+            Choisissez une section pour découvrir comment fonctionne Peuplitique et comment participer activement.
+        </p>
+    </section>
 
 </main>
 
@@ -76,16 +91,71 @@
 <script>
 const translations = {
     "en": {
+        "sous-titre": "Citizen platform – Participation, transparency, shared governance",
+        "menu-accueil": "Home",
+        "menu-gouv": "Shared Governance",
+        "menu-dao": "DAO",
+        "menu-orga": "Structural Organization",
+        "menu-eco": "Integrated Economy",
+        "menu-protocole": "Protocol",
+        "menu-glossaire": "Glossary",
+        "menu-contact": "Contact",
+
+        "titre-page": "Welcome to Peuplitique",
+
+        "sommaire-intro": "Introduction",
+        "sommaire-acces": "Quick Access",
+        "sommaire-commencer": "Get Started",
+
+        "intro-titre": "A citizen platform",
+        "intro-texte": "Peuplitique is a platform designed to allow every citizen to directly participate in governance, public transparency, and collective decision-making.",
+
+        "acces-titre": "Quick access",
+        "acces-gouv": "Understand shared governance",
+        "acces-dao": "Discover the citizen DAO",
+        "acces-orga": "Explore structural organization",
+        "acces-eco": "See the integrated economy",
+        "acces-protocole": "Read the citizen protocol",
+        "acces-glossaire": "Consult the glossary",
+
+        "commencer-titre": "Get started",
+        "commencer-texte": "Choose a section to learn how Peuplitique works and how to participate actively.",
+
         "footer": "© 2026 Peuplitique – All rights reserved"
     },
+
     "es": {
+        "sous-titre": "Plataforma ciudadana – Participación, transparencia, gobernanza compartida",
+        "menu-accueil": "Inicio",
+        "menu-gouv": "Gobernanza compartida",
+        "menu-dao": "DAO",
+        "menu-orga": "Organización estructural",
+        "menu-eco": "Economía integrada",
+        "menu-protocole": "Protocolo",
+        "menu-glossaire": "Glosario",
+        "menu-contact": "Contacto",
+
+        "titre-page": "Bienvenido a Peuplitique",
+
+        "sommaire-intro": "Introducción",
+        "sommaire-acces": "Acceso rápido",
+        "sommaire-commencer": "Comenzar",
+
+        "intro-titre": "Una plataforma ciudadana",
+        "intro-texte": "Peuplitique es una plataforma diseñada para permitir que cada ciudadano participe directamente en la gobernanza, la transparencia pública y la toma de decisiones colectivas.",
+
+        "acces-titre": "Acceso rápido",
+        "acces-gouv": "Comprender la gobernanza compartida",
+        "acces-dao": "Descubrir el DAO ciudadano",
+        "acces-orga": "Explorar la organización estructural",
+        "acces-eco": "Ver la economía integrada",
+        "acces-protocole": "Leer el protocolo ciudadano",
+        "acces-glossaire": "Consultar el glosario",
+
+        "commencer-titre": "Comenzar",
+        "commencer-texte": "Elija una sección para descubrir cómo funciona Peuplitique y cómo participar activamente.",
+
         "footer": "© 2026 Peuplitique – Todos los derechos reservados"
-    },
-    "ru": {
-        "footer": "© 2026 Peuplitique – Все права защищены"
-    },
-    "cn": {
-        "footer": "© 2026 Peuplitique – 版权所有"
     }
 };
 
