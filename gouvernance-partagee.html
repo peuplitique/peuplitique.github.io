@@ -11,17 +11,19 @@
 
 <!-- LANG SWITCH -->
 <div class="lang-switch">
-    <a href="?lang=fr">FR</a> |
-    <a href="?lang=en">EN</a> |
-    <a href="?lang=es">ES</a> |
-    <a href="?lang=ru">RU</a> |
-    <a href="?lang=cn">CN</a>
+    <a href="?lang=fr" data-lang="fr">FR</a> |
+    <a href="?lang=en" data-lang="en">EN</a> |
+    <a href="?lang=es" data-lang="es">ES</a> |
+    <a href="?lang=ru" data-lang="ru">RU</a> |
+    <a href="?lang=cn" data-lang="cn">CN</a>
 </div>
 
 <!-- BARRE BLEUE + MENU COMMUN -->
 <header class="header-blue">
     <h1 class="title-main" data-i18n="title_main">PEUPLITIQUE</h1>
-    <p class="title-sub" data-i18n="title_sub">Première plateforme citoyenne indépendante – Gouvernance partagée – Décision commune</p>
+    <p class="title-sub" data-i18n="title_sub">
+        Première plateforme citoyenne indépendante – Gouvernance partagée – Décision commune
+    </p>
     <div class="header-line"></div>
 
     <nav class="menu">
@@ -36,8 +38,8 @@
     </nav>
 </header>
 
-<!-- INTRODUCTION -->
-<section class="intro">
+<!-- INTRODUCTION FR -->
+<section class="intro lang-fr">
     <h2 data-i18n="gov_title">Gouvernance partagée</h2>
     <p data-i18n="gov_intro1">
         La gouvernance partagée est un modèle où le pouvoir de décider, d’analyser et de corriger
@@ -50,32 +52,105 @@
     </p>
 </section>
 
-<!-- LES 3 PILIERS -->
-<section class="sommaire">
+<!-- INTRODUCTION EN -->
+<section class="intro lang-en">
+    <h2 data-i18n="gov_title_en">Shared governance</h2>
+    <p data-i18n="gov_intro1_en">
+        Shared governance is a model where the power to decide, analyse and correct
+        is distributed among citizens, rather than concentrated in a pyramidal structure.
+    </p>
+    <p data-i18n="gov_intro2_en">
+        It relies on three complementary pillars: an analysis of the structural limits of current systems,
+        a citizen‑driven constitution, and a distributed structural organisation supported by a common decision protocol.
+    </p>
+</section>
+
+<!-- INTRODUCTION ES -->
+<section class="intro lang-es">
+    <h2 data-i18n="gov_title_es">Gobernanza compartida</h2>
+    <p data-i18n="gov_intro1_es">
+        La gobernanza compartida es un modelo en el que el poder de decidir, analizar y corregir
+        se distribuye entre los ciudadanos, en lugar de concentrarse en una estructura piramidal.
+    </p>
+    <p data-i18n="gov_intro2_es">
+        Se apoya en tres pilares complementarios: un análisis de los límites estructurales de los sistemas actuales,
+        una constitución ciudadana adaptada y una organización estructural distribuida sostenida por un protocolo
+        de decisión común.
+    </p>
+</section>
+
+<!-- LES 3 PILIERS (FR) -->
+<section class="sommaire lang-fr">
     <h3 data-i18n="pillars_title">Les trois piliers de la gouvernance partagée</h3>
     <ul>
         <li>
-            <strong data-i18n="pillar1_title">1. Limites structurelles</strong> – 
+            <strong data-i18n="pillar1_title">1. Limites structurelles</strong> –
             <span data-i18n="pillar1_desc">comprendre les dérives des modèles pyramidaux actuels</span><br>
             <a href="limites-structurelles.html" data-i18n="pillar1_link">Voir la page complète “Limites structurelles”</a>
         </li>
         <li>
-            <strong data-i18n="pillar2_title">2. Constitution citoyenne</strong> – 
+            <strong data-i18n="pillar2_title">2. Constitution citoyenne</strong> –
             <span data-i18n="pillar2_desc">définir les règles, responsabilités et protections communes</span><br>
             <a href="constitution.html" data-i18n="pillar2_link">Voir la page complète “Constitution”</a>
         </li>
         <li>
-            <strong data-i18n="pillar3_title">3. Organisation structurelle</strong> – 
+            <strong data-i18n="pillar3_title">3. Organisation structurelle</strong> –
             <span data-i18n="pillar3_desc">organiser les niveaux, flux et interactions de manière distribuée</span><br>
             <a href="organisation-structurelle.html" data-i18n="pillar3_link">Voir la page complète “Organisation structurelle”</a>
         </li>
     </ul>
 </section>
 
-<!-- LES 7 SECTIONS -->
-<div class="zone-bleue">
+<!-- LES 3 PILIERS (EN) -->
+<section class="sommaire lang-en">
+    <h3 data-i18n="pillars_title_en">The three pillars of shared governance</h3>
+    <ul>
+        <li>
+            <strong data-i18n="pillar1_title_en">1. Structural limits</strong> –
+            <span data-i18n="pillar1_desc_en">understanding the drifts of current pyramidal models</span><br>
+            <a href="limites-structurelles.html" data-i18n="pillar1_link_en">See the full “Structural limits” page</a>
+        </li>
+        <li>
+            <strong data-i18n="pillar2_title_en">2. Citizen constitution</strong> –
+            <span data-i18n="pillar2_desc_en">defining common rules, responsibilities and protections</span><br>
+            <a href="constitution.html" data-i18n="pillar2_link_en">See the full “Constitution” page</a>
+        </li>
+        <li>
+            <strong data-i18n="pillar3_title_en">3. Structural organisation</strong> –
+            <span data-i18n="pillar3_desc_en">organising levels, flows and interactions in a distributed way</span><br>
+            <a href="organisation-structurelle.html" data-i18n="pillar3_link_en">See the full “Structural organisation” page</a>
+        </li>
+    </ul>
+</section>
 
-    <h3 class="subtitle" data-i18n="sections_title">Une participation continue, structurée et transparente</h3>
+<!-- LES 3 PILIERS (ES) -->
+<section class="sommaire lang-es">
+    <h3 data-i18n="pillars_title_es">Los tres pilares de la gobernanza compartida</h3>
+    <ul>
+        <li>
+            <strong data-i18n="pillar1_title_es">1. Límites estructurales</strong> –
+            <span data-i18n="pillar1_desc_es">comprender las derivas de los modelos piramidales actuales</span><br>
+            <a href="limites-structurelles.html" data-i18n="pillar1_link_es">Ver la página completa “Límites estructurales”</a>
+        </li>
+        <li>
+            <strong data-i18n="pillar2_title_es">2. Constitución ciudadana</strong> –
+            <span data-i18n="pillar2_desc_es">definir las reglas, responsabilidades y protecciones comunes</span><br>
+            <a href="constitution.html" data-i18n="pillar2_link_es">Ver la página completa “Constitución”</a>
+        </li>
+        <li>
+            <strong data-i18n="pillar3_title_es">3. Organización estructural</strong> –
+            <span data-i18n="pillar3_desc_es">organizar los niveles, flujos e interacciones de manera distribuida</span><br>
+            <a href="organisation-structurelle.html" data-i18n="pillar3_link_es">Ver la página completa “Organización estructural”</a>
+        </li>
+    </ul>
+</section>
+
+<!-- ZONE BLEUE – CONTENU PRINCIPAL (FR) -->
+<div class="zone-bleue lang-fr">
+
+    <h3 class="subtitle" data-i18n="sections_title">
+        Une participation continue, structurée et transparente
+    </h3>
 
     <section>
         <h4 data-i18n="sec1_title">1. Participation continue</h4>
@@ -120,185 +195,195 @@
     </section>
 
     <section>
-        <h4 data-i18n="sec6_title">6. Traçabilité complète</h4>
+        <h4 data-i18n="sec6_title">6. Responsabilité partagée</h4>
         <p data-i18n="sec6_text">
-            Chaque étape — contribution, analyse, arbitrage, décision, mise en œuvre — est documentée. La traçabilité renforce
-            la compréhension, la cohérence et la confiance collective.
+            La responsabilité devient partagée entre citoyens, institutions et acteurs économiques. Chacun voit clairement
+            son rôle, ses engagements et les conséquences de ses décisions ou de ses non‑décisions.
         </p>
     </section>
 
     <section>
-        <h4 data-i18n="sec7_title">7. Équité et inclusion</h4>
+        <h4 data-i18n="sec7_title">7. Mémoire collective</h4>
         <p data-i18n="sec7_text">
-            La gouvernance partagée garantit que les minorités sont entendues, que les désaccords sont traités sans exclusion,
-            que les décisions restent argumentées et que les biais structurels sont identifiés et corrigés.
+            Chaque décision, chaque correction, chaque débat laisse une trace. La plateforme construit une mémoire collective
+            qui permet d’éviter de répéter les mêmes erreurs et de capitaliser sur les solutions qui fonctionnent.
         </p>
     </section>
 
 </div>
 
-<!-- SCHÉMA GÉNÉRAL -->
-<section class="sommaire">
-    <h3 data-i18n="schema_title">Schéma général de la gouvernance partagée</h3>
-    <ul>
-        <li><a href="constitution.html" data-i18n="schema_constitution">Constitution</a></li>
-        <li><a href="limites-structurelles.html" data-i18n="schema_limits">Limites structurelles</a></li>
-        <li><a href="organisation-structurelle.html" data-i18n="schema_structure">Organisation structurelle</a></li>
-        <li><a href="protocole.html" data-i18n="schema_protocol">Protocole</a></li>
-    </ul>
-</section>
+<!-- ZONE BLEUE – CONTENU PRINCIPAL (EN) -->
+<div class="zone-bleue lang-en">
 
+    <h3 class="subtitle" data-i18n="sections_title_en">
+        Continuous, structured and transparent participation
+    </h3>
+
+    <section>
+        <h4 data-i18n="sec1_title_en">1. Continuous participation</h4>
+        <p data-i18n="sec1_text_en">
+            Citizen participation becomes a continuous process. Citizens can report a problem, propose a solution,
+            analyse an issue, join a debate or follow decisions. Each contribution is integrated into a structured,
+            traceable flow visible to all.
+        </p>
+    </section>
+
+    <section>
+        <h4 data-i18n="sec2_title_en">2. Structured deliberation</h4>
+        <p data-i18n="sec2_text_en">
+            Deliberation becomes a collective work of clarification. Citizens compare options, analyse impacts,
+            identify risks and formulate trade‑offs. The platform turns a dispersed set of opinions into structured
+            collective intelligence.
+        </p>
+    </section>
+
+    <section>
+        <h4 data-i18n="sec3_title_en">3. Transparent decision</h4>
+        <p data-i18n="sec3_text_en">
+            Each decision is accompanied by its objective, means, timeline and monitoring indicators. Citizens can
+            verify what has been done, what has not, and request adjustments.
+        </p>
+    </section>
+
+    <section>
+        <h4 data-i18n="sec4_title_en">4. Citizen oversight</h4>
+        <p data-i18n="sec4_text_en">
+            Oversight becomes a continuous right. Citizens have access to data, results, gaps between forecast and reality,
+            and can request corrections when decisions no longer meet real needs.
+        </p>
+    </section>
+
+    <section>
+        <h4 data-i18n="sec5_title_en">5. Role of institutions</h4>
+        <p data-i18n="sec5_text_en">
+            Institutions no longer decide “instead of” citizens. They implement decisions coming from the platform,
+            report continuously, guarantee legal compliance and ensure coordination between territories and sectors.
+        </p>
+    </section>
+
+    <section>
+        <h4 data-i18n="sec6_title_en">6. Shared responsibility</h4>
+        <p data-i18n="sec6_text_en">
+            Responsibility is shared between citizens, institutions and economic actors. Everyone clearly sees their role,
+            commitments and the consequences of their decisions or non‑decisions.
+        </p>
+    </section>
+
+    <section>
+        <h4 data-i18n="sec7_title_en">7. Collective memory</h4>
+        <p data-i18n="sec7_text_en">
+            Each decision, correction and debate leaves a trace. The platform builds a collective memory that helps avoid
+            repeating the same mistakes and capitalise on solutions that work.
+        </p>
+    </section>
+
+</div>
+
+<!-- ZONE BLEUE – CONTENU PRINCIPAL (ES) -->
+<div class="zone-bleue lang-es">
+
+    <h3 class="subtitle" data-i18n="sections_title_es">
+        Una participación continua, estructurada y transparente
+    </h3>
+
+    <section>
+        <h4 data-i18n="sec1_title_es">1. Participación continua</h4>
+        <p data-i18n="sec1_text_es">
+            La participación ciudadana se convierte en un proceso continuo. Los ciudadanos pueden señalar un problema,
+            proponer una solución, analizar un tema, participar en un debate o seguir las decisiones. Cada contribución
+            se integra en un flujo estructurado, trazable y visible para todos.
+        </p>
+    </section>
+
+    <section>
+        <h4 data-i18n="sec2_title_es">2. Deliberación estructurada</h4>
+        <p data-i18n="sec2_text_es">
+            La deliberación se convierte en un trabajo colectivo de clarificación. Los ciudadanos comparan opciones,
+            analizan impactos, identifican riesgos y formulan arbitrajes. La plataforma transforma un conjunto disperso
+            de opiniones en inteligencia colectiva estructurada.
+        </p>
+    </section>
+
+    <section>
+        <h4 data-i18n="sec3_title_es">3. Decisión transparente</h4>
+        <p data-i18n="sec3_text_es">
+            Cada decisión va acompañada de su objetivo, sus medios, su calendario y sus indicadores de seguimiento.
+            Los ciudadanos pueden verificar lo que se ha hecho, lo que no se ha hecho y solicitar ajustes.
+        </p>
+    </section>
+
+    <section>
+        <h4 data-i18n="sec4_title_es">4. Control ciudadano</h4>
+        <p data-i18n="sec4_text_es">
+            El control se convierte en un derecho continuo. Los ciudadanos tienen acceso a los datos, a los resultados,
+            a las diferencias entre previsión y realidad, y pueden solicitar correcciones cuando las decisiones ya no
+            responden a las necesidades reales.
+        </p>
+    </section>
+
+    <section>
+        <h4 data-i18n="sec5_title_es">5. Papel de las instituciones</h4>
+        <p data-i18n="sec5_text_es">
+            Las instituciones ya no deciden “en lugar de” los ciudadanos. Implementan las decisiones procedentes de la
+            plataforma, rinden cuentas de forma continua, garantizan la conformidad jurídica y aseguran la coordinación
+            entre territorios y sectores.
+        </p>
+    </section>
+
+    <section>
+        <h4 data-i18n="sec6_title_es">6. Responsabilidad compartida</h4>
+        <p data-i18n="sec6_text_es">
+            La responsabilidad se comparte entre ciudadanos, instituciones y actores económicos. Cada uno ve claramente
+            su papel, sus compromisos y las consecuencias de sus decisiones o de sus no‑decisiones.
+        </p>
+    </section>
+
+    <section>
+        <h4 data-i18n="sec7_title_es">7. Memoria colectiva</h4>
+        <p data-i18n="sec7_text_es">
+            Cada decisión, cada corrección y cada debate deja una huella. La plataforma construye una memoria colectiva
+            que permite evitar repetir los mismos errores y capitalizar las soluciones que funcionan.
+        </p>
+    </section>
+
+</div>
+
+<!-- FOOTER -->
 <footer class="footer">
-    <p data-i18n="footer">© 2026 Peuplitique – Plateforme citoyenne</p>
+    <p data-i18n="footer_text">
+        Peuplitique – Plateforme citoyenne indépendante – Gouvernance partagée – Tous droits réservés.
+    </p>
 </footer>
 
-<!-- SCRIPT MULTILINGUE -->
+<!-- SCRIPT DE LANGUE (AFFICHAGE DES BLOCS PAR LANGUE) -->
 <script>
-const translations = {
-    "en": {
-        "title_page": "Shared Governance – Peuplitique",
-        "title_main": "PEUPLITIQUE",
-        "title_sub": "First independent citizen platform – Shared governance – Collective decision",
+    (function() {
+        function getLangFromQuery() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('lang') || 'fr';
+        }
 
-        "menu_home": "Home",
-        "menu_governance": "Shared Governance",
-        "menu_limits": "Structural Limits",
-        "menu_constitution": "Constitution",
-        "menu_structure": "Structural Organization",
-        "menu_protocol": "Protocol",
+        const currentLang = getLangFromQuery();
 
-        "gov_title": "Shared Governance",
-        "gov_intro1": "Shared governance is a model where the power to decide, analyze and correct is distributed among citizens rather than concentrated in a pyramidal structure.",
-        "gov_intro2": "It relies on three complementary pillars: an analysis of the structural limits of current systems, an adapted citizen constitution, and a distributed structural organization supported by a common decision protocol.",
+        // Activer / désactiver les blocs de langue
+        document.querySelectorAll('.lang-fr, .lang-en, .lang-es, .lang-ru, .lang-cn').forEach(function(block) {
+            block.style.display = 'none';
+        });
 
-        "pillars_title": "The three pillars of shared governance",
-        "pillar1_title": "1. Structural limits",
-        "pillar1_desc": "understanding the drifts of current pyramidal models",
-        "pillar1_link": "See the full page “Structural Limits”",
+        document.querySelectorAll('.lang-' + currentLang).forEach(function(block) {
+            block.style.display = 'block';
+        });
 
-        "pillar2_title": "2. Citizen constitution",
-        "pillar2_desc": "defining common rules, responsibilities and protections",
-        "pillar2_link": "See the full page “Constitution”",
-
-        "pillar3_title": "3. Structural organization",
-        "pillar3_desc": "organizing levels, flows and interactions in a distributed way",
-        "pillar3_link": "See the full page “Structural Organization”",
-
-        "sections_title": "Continuous, structured and transparent participation",
-
-        "sec1_title": "1. Continuous participation",
-        "sec1_text": "Citizen participation becomes a continuous process. Citizens can report issues, propose solutions, analyze topics, join debates or follow decisions. Every contribution is integrated into a structured, traceable and visible flow.",
-
-        "sec2_title": "2. Structured deliberation",
-        "sec2_text": "Deliberation becomes a collective clarification process. Citizens compare options, analyze impacts, identify risks and formulate trade‑offs. The platform transforms dispersed opinions into structured collective intelligence.",
-
-        "sec3_title": "3. Transparent decision‑making",
-        "sec3_text": "Each decision is accompanied by its objective, means, timeline and monitoring indicators. Citizens can verify what has been done, what has not, and request adjustments.",
-
-        "sec4_title": "4. Citizen oversight",
-        "sec4_text": "Oversight becomes a continuous right. Citizens have access to data, results, gaps between forecasts and reality, and can request corrections when decisions no longer meet real needs.",
-
-        "sec5_title": "5. Role of institutions",
-        "sec5_text": "Institutions no longer decide “in place of”. They implement decisions from the platform, report continuously, ensure legal compliance and coordinate territories and sectors.",
-
-        "sec6_title": "6. Full traceability",
-        "sec6_text": "Each step — contribution, analysis, arbitration, decision, implementation — is documented. Traceability reinforces understanding, coherence and collective trust.",
-
-        "sec7_title": "7. Equity and inclusion",
-        "sec7_text": "Shared governance ensures minorities are heard, disagreements are handled without exclusion, decisions remain reasoned, and structural biases are identified and corrected.",
-
-        "schema_title": "General diagram of shared governance",
-        "schema_constitution": "Constitution",
-        "schema_limits": "Structural Limits",
-        "schema_structure": "Structural Organization",
-        "schema_protocol": "Protocol",
-
-        "footer": "© 2026 Peuplitique – Citizen platform"
-    },
-
-    "es": {
-        "title_page": "Gobernanza Compartida – Peuplitique",
-        "title_main": "PEUPLITIQUE",
-        "title_sub": "Primera plataforma ciudadana independiente – Gobernanza compartida – Decisión común",
-
-        "menu_home": "Inicio",
-        "menu_governance": "Gobernanza compartida",
-        "menu_limits": "Límites estructurales",
-        "menu_constitution": "Constitución",
-        "menu_structure": "Organización estructural",
-        "menu_protocol": "Protocolo",
-
-        "gov_title": "Gobernanza compartida",
-        "gov_intro1": "La gobernanza compartida es un modelo donde el poder de decidir, analizar y corregir se distribuye entre la ciudadanía, en lugar de concentrarse en una estructura piramidal.",
-        "gov_intro2": "Se basa en tres pilares complementarios: un análisis de los límites estructurales de los sistemas actuales, una constitución ciudadana adaptada y una organización estructural distribuida apoyada por un protocolo común de decisión.",
-
-        "pillars_title": "Los tres pilares de la gobernanza compartida",
-        "pillar1_title": "1. Límites estructurales",
-        "pillar1_desc": "comprender las derivas de los modelos piramidales actuales",
-        "pillar1_link": "Ver la página completa “Límites estructurales”",
-
-        "pillar2_title": "2. Constitución ciudadana",
-        "pillar2_desc": "definir reglas, responsabilidades y protecciones comunes",
-        "pillar2_link": "Ver la página completa “Constitución”",
-
-        "pillar3_title": "3. Organización estructural",
-        "pillar3_desc": "organizar niveles, flujos e interacciones de manera distribuida",
-        "pillar3_link": "Ver la página completa “Organización estructural”",
-
-        "sections_title": "Participación continua, estructurada y transparente",
-
-        "sec1_title": "1. Participación continua",
-        "sec1_text": "La participación ciudadana se convierte en un proceso continuo. Las personas pueden señalar problemas, proponer soluciones, analizar temas, participar en debates o seguir decisiones. Cada contribución se integra en un flujo estructurado, trazable y visible.",
-
-        "sec2_title": "2. Deliberación estructurada",
-        "sec2_text": "La deliberación se convierte en un trabajo colectivo de clarificación. La ciudadanía compara opciones, analiza impactos, identifica riesgos y formula arbitrajes. La plataforma transforma opiniones dispersas en inteligencia colectiva estructurada.",
-
-        "sec3_title": "3. Decisión transparente",
-        "sec3_text": "Cada decisión va acompañada de su objetivo, medios, calendario e indicadores de seguimiento. La ciudadanía puede verificar lo realizado, lo pendiente y solicitar ajustes.",
-
-        "sec4_title": "4. Control ciudadano",
-        "sec4_text": "El control se convierte en un derecho continuo. La ciudadanía accede a datos, resultados, diferencias entre previsión y realidad, y puede solicitar correcciones cuando las decisiones ya no responden a las necesidades reales.",
-
-        "sec5_title": "5. Rol de las instituciones",
-        "sec5_text": "Las instituciones ya no deciden “en lugar de”. Implementan decisiones de la plataforma, rinden cuentas continuamente, garantizan conformidad legal y coordinan territorios y sectores.",
-
-        "sec6_title": "6. Trazabilidad completa",
-        "sec6_text": "Cada etapa — contribución, análisis, arbitraje, decisión, implementación — está documentada. La trazabilidad refuerza la comprensión, coherencia y confianza colectiva.",
-
-        "sec7_title": "7. Equidad e inclusión",
-        "sec7_text": "La gobernanza compartida garantiza que las minorías sean escuchadas, que los desacuerdos se traten sin exclusión, que las decisiones sigan argumentadas y que los sesgos estructurales se identifiquen y corrijan.",
-
-        "schema_title": "Esquema general de la gobernanza compartida",
-        "schema_constitution": "Constitución",
-        "schema_limits": "Límites estructurales",
-        "schema_structure": "Organización estructural",
-        "schema_protocol": "Protocolo",
-
-        "footer": "© 2026 Peuplitique – Plataforma ciudadana"
-    },
-
-    "ru": {
-        "title_page": "Совместное управление – Peuplitique",
-        "title_main": "PEUPLITIQUE",
-        "title_sub": "Первая независимая гражданская платформа – Совместное управление – Общее решение",
-
-        "menu_home": "Главная",
-        "menu_governance": "Совместное управление",
-        "menu_limits": "Структурные ограничения",
-        "menu_constitution": "Конституция",
-        "menu_structure": "Структурная организация",
-        "menu_protocol": "Протокол",
-
-        "gov_title": "Совместное управление",
-        "gov_intro1": "Совместное управление — это модель, в которой власть принимать решения, анализировать и корректировать распределена между гражданами, а не сосредоточена в пирамидальной структуре.",
-        "gov_intro2": "Оно основано на трёх взаимодополняющих столпах: анализе структурных ограничений текущих систем, адаптированной гражданской конституции и распределённой структурной организации, поддерживаемой общим протоколом принятия решений.",
-
-        "pillars_title": "Три столпа совместного управления",
-        "pillar1_title": "1. Структурные ограничения",
-        "pillar1_desc": "понимание отклонений текущих пирамидальных моделей",
-        "pillar1_link": "См. полную страницу «Структурные ограничения»",
-
-        "pillar2_title
+        // Activer le bouton de langue
+        document.querySelectorAll('.lang-switch a').forEach(function(link) {
+            if (link.getAttribute('data-lang') === currentLang) {
+                link.classList.add('active-lang');
+            } else {
+                link.classList.remove('active-lang');
+            }
+        });
+    })();
+</script>
 
 </body>
 </html>
