@@ -35,7 +35,20 @@
         </ul>
     </nav>
 </header>
-
+<!-- SOMMAIRE BLANC -->
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="constitution.html" data-i18n="sommaire-constitution">Constitution</a></li>
+        <li><a href="limites-structurelles.html" data-i18n="sommaire-limites">Limites structurelles</a></li>
+        <li><a href="desequilibres-structurels.html" data-i18n="sommaire-desequilibres">Déséquilibres structurels</a></li>
+        <li><a href="organisation-economique.html" data-i18n="sommaire-economie">Organisation économique</a></li>
+        <li><a href="organisation-territoriale.html" data-i18n="sommaire-territoire">Organisation territoriale</a></li>
+        <li><a href="gouvernance-dao.html" data-i18n="sommaire-dao">Gouvernance DAO</a></li>
+        <li><a href="synthese.html" data-i18n="sommaire-synthese">Synthèse</a></li>
+        <li><a href="mise-en-oeuvre.html" data-i18n="sommaire-oeuvre">Mise en œuvre</a></li>
+        <li><a href="articles.html" data-i18n="sommaire-articles">Articles</a></li>
+    </ul>
+</nav>
 <!-- ZONE BLEUE -->
 <section class="zone-bleue">
     <h2 data-i18n="page_title">Organisation structurelle</h2>
@@ -226,6 +239,8 @@ const translations = {
 
         "footer": "© 2026 Peuplitique – All rights reserved"
     },
+sous_titre: "First independent citizen platform – Shared governance – Common decision"
+    },
 
     "es": {
         "title_page": "Organización estructural – Peuplitique",
@@ -257,6 +272,10 @@ const translations = {
         "footer": "© 2026 Peuplitique – Todos los derechos reservados"
     }
 };
+sous_titre: "Primera plataforma ciudadana independiente – Gobernanza compartida – Decisión común"
+    }
+};
+</script>
 
 function applyTranslation(lang) {
     document.querySelectorAll("[data-i18n]").forEach(el => {
