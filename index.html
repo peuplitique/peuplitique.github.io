@@ -262,12 +262,6 @@ const translations = {
 
 };
 
-function setLang(lang) {
-    document.querySelectorAll("[data-key]").forEach(el => {
-        el.innerHTML = translations[lang][el.getAttribute("data-key")];
-    });
-}
-setLang('fr');
 </script>
 
 </body>
