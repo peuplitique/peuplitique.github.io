@@ -50,28 +50,58 @@ footer {
   text-align: center;
  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;   
 }
+/* SOMMAIRE BLANC */
+.sommaire-horizontal {
+    background-color: white;
+    padding: 12px 0;
+}
 
-/* Sommaire gris clair */
-.sommaire {
-    background: #f5f5f5;
-    padding: 10px 0;
-   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
-}
-.sommaire ul {
+.sommaire-horizontal ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0;
     margin: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
-.sommaire a {
+
+.sommaire-horizontal a {
     color: #0a3d78;
-    text-decoration: none;
     font-weight: 600;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
 }
+
+.sommaire-horizontal a:hover {
+    color: #3FD1C2;
+}
+/* SOMMAIRE BLEU */
+.sommaire-bleu {
+    background-color: #0a3d78;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.sommaire-bleu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.sommaire-bleu a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sommaire-bleu a:hover {
+    color: #3FD1C2;
+}
+
+
+
 
 /* Menu principal */
 .menu ul {
