@@ -1,10 +1,3 @@
-/* RESET */
-body {
-    text-align: center;
-    margin: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 /* HEADER */
 .header {
     background-color: #0a3d78;
@@ -46,29 +39,11 @@ footer {
     text-align: center;
 }
 
-/* Sommaire gris clair */
-.sommaire {
-    background: #f5f5f5;
-    padding: 10px 0;
-}
-.sommaire ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-.sommaire a {
-    color: #0a3d78;
-    text-decoration: none;
-    font-weight: 600;
-}
+/* SOMMAIRE HORIZONTAL (barre du haut) */
 .sommaire-horizontal {
     background-color: #0A3D78;
     padding: 12px 0;
 }
-
 .sommaire-horizontal ul {
     list-style: none;
     margin: 0;
@@ -77,17 +52,16 @@ footer {
     gap: 20px;
     justify-content: center;
 }
-
 .sommaire-horizontal a {
     color: white;
     font-weight: 600;
     text-decoration: none;
 }
-
 .sommaire-horizontal a:hover {
     color: #FFFFFF;
 }
-/* Menu principal */
+
+/* Menu principal (si utilisé séparément) */
 .menu ul {
     list-style: none;
     display: flex;
@@ -100,6 +74,29 @@ footer {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+/* DEUXIÈME SOMMAIRE : fond bleu, texte blanc */
+.sommaire-bleu {
+    background-color: #0a3d78;
+    padding: 12px 0;
+    text-align: center;
+}
+.sommaire-bleu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.sommaire-bleu a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.sommaire-bleu a:hover {
+    color: #3FD1C2;
 }
 
 /* Sous-titre et ligne turquoise */
@@ -134,26 +131,6 @@ footer {
     text-align: center;
 }
 
-/* Sommaire horizontal (nouveau) */
-.sommaire-horizontal {
-    background: #f5f5f5;
-    padding: 12px 0;
-    border-bottom: 1px solid #ddd;
-}
-.sommaire-horizontal ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    padding: 0;
-    margin: 0;
-}
-.sommaire-horizontal a {
-    color: #0a3d78;
-    text-decoration: none;
-    font-weight: 600;
-}
-
 /* IA mobile bloc */
 .ia-mobile-bloc {
     background: #eef4ff;
@@ -163,10 +140,6 @@ footer {
     max-width: 700px;
     text-align: left;
 }
-
-
-
-
 
 
 
