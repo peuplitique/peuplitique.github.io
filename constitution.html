@@ -293,7 +293,8 @@
     </p>
     <p><a href="organisation-structurelle.html" class="btn">Accéder à l’organisation structurelle</a></p>
 </section>
-<!-- BLOC EN -->
+
+    <!-- BLOC EN -->
 <div id="en" class="lang-block" style="display:none;">
 <h2>Step 1 — Constitution</h2>
 <p>
@@ -728,11 +729,10 @@ function showLang(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const saved = localStorage.getItem("lang") || "fr"; // récupère la langue
-    showLang(saved);
+    
 });
 </script>
-
+showLang("fr");
 </body>
 </html>
     
