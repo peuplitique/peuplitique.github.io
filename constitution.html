@@ -695,8 +695,6 @@ El Protocolo puede revisarse mediante un proceso transparente y participativo.
 La Constitución puede revisarse en cualquier momento por el pueblo.
 </p>
 </details>
-
-    
 </div>
 </main>
 
@@ -704,11 +702,21 @@ La Constitución puede revisarse en cualquier momento por el pueblo.
 <footer class="footer">
     <p>© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
+
 <script>
 function showLang(lang) {
+    localStorage.setItem("lang", lang); // mémorise la langue
     document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
     document.getElementById(lang).style.display = 'block';
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const saved = localStorage.getItem("lang") || "fr"; // récupère la langue
+    showLang(saved);
+});
 </script>
+
 </body>
 </html>
+    
+
