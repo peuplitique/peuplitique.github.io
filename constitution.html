@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peuplitique – Constitution</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- SYSTÈME DE LANGUES -->
+    <style>
+        .lang { display: none; }
+        .lang.active { display: block; }
+    </style>
+
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+            const target = document.querySelector('.lang-' + lang);
+            if (target) target.classList.add('active');
+        }
+    </script>
 </head>
 
 <body>
+
+<!-- OUVERTURE DU BLOC FR -->
+<div class="lang lang-fr active">
+
 <div class="lang-switch">
     <button onclick="showLang('fr')">FR</button>
     <button onclick="showLang('en')">EN</button>
@@ -67,7 +85,6 @@
 
 <!-- CONTENU -->
 <main class="content">
-
 <!-- ========================= -->
 <!-- ÉTAPE 1 — CONSTITUTION -->
 <section id="constitution">
