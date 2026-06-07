@@ -3,69 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page_title">Peuplitique – Constitution</title>
+    <title>Peuplitique – Constitution</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-<!-- LANG SWITCH -->
 <div class="lang-switch">
-    <a href="#" onclick="setLang('fr')">FR</a> |
-    <a href="#" onclick="setLang('en')">EN</a> |
-    <a href="#" onclick="setLang('es')">ES</a>
+    <button onclick="showLang('fr')">FR</button>
+    <button onclick="showLang('en')">EN</button>
+    <button onclick="showLang('es')">ES</button>
 </div>
 
 <!-- HEADER -->
 <header class="header-blue">
-    <h1 class="title-main" data-i18n="site_title">PEUPLITIQUE</h1>
-    <p class="title-sub" data-i18n="site_subtitle">Constitution, limites structurelles et articles</p>
+    <h1 class="title-main">PEUPLITIQUE</h1>
+    <p class="title-sub">Constitution, limites structurelles et articles</p>
     <div class="header-line"></div>
 
     <nav class="menu">
         <ul>
-            <li><a href="index.html" data-i18n="menu_home">Accueil</a></li>
-            <li><a href="gouvernance-partagee.html" data-i18n="menu_governance">Gouvernance partagée</a></li>
-            <li><a href="gouvernance-dao.html" data-i18n="menu_dao">DAO</a></li>
-            <li><a href="organisation-structurelle.html" data-i18n="menu_structure">Organisation structurelle</a></li>
-            <li><a href="economie-integree.html" data-i18n="menu_economie">Économie intégrée</a></li>
-            <li><a href="protocole.html" data-i18n="menu_protocol">Protocole</a></li>
-            <li><a href="glossaire.html" data-i18n="menu_glossaire">Glossaire</a></li>
-            <li><a href="contact.html" data-i18n="menu_contact">Contact</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
+            <li><a href="gouvernance-dao.html">DAO</a></li>
+            <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
+            <li><a href="economie-integree.html">Économie intégrée</a></li>
+            <li><a href="protocole.html">Protocole</a></li>
+            <li><a href="glossaire.html">Glossaire</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-       <!-- SOMMAIRE BLANC AVEC TRADUCTIONS -->
+<!-- SOMMAIRE BLANC -->
 <nav class="sommaire-horizontal">
     <ul>
-        <li><a href="constitution.html" data-i18n="sommaire-constitution">Constitution</a></li>
-        <li><a href="limites-structurelles.html" data-i18n="sommaire-limites">Limites structurelles</a></li>
-        <li><a href="desequilibres-structurels.html" data-i18n="sommaire-desequilibres">Déséquilibres structurels</a></li>
-        <li><a href="organisation-economique.html" data-i18n="sommaire-economie">Organisation économique</a></li>
-        <li><a href="organisation-territoriale.html" data-i18n="sommaire-territoire">Organisation territoriale</a></li>
-        <li><a href="gouvernance-dao.html" data-i18n="sommaire-dao">Gouvernance DAO</a></li>
-        <li><a href="synthese.html" data-i18n="sommaire-synthese">Synthèse</a></li>
-        <li><a href="mise-en-oeuvre.html" data-i18n="sommaire-oeuvre">Mise en œuvre</a></li>
-        <li><a href="articles.html" data-i18n="sommaire-articles">Articles</a></li>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="limites-structurelles.html">Limites structurelles</a></li>
+        <li><a href="desequilibres-structurels.html">Déséquilibres structurels</a></li>
+        <li><a href="organisation-economique.html">Organisation économique</a></li>
+        <li><a href="organisation-territoriale.html">Organisation territoriale</a></li>
+        <li><a href="gouvernance-dao.html">Gouvernance DAO</a></li>
+        <li><a href="synthese.html">Synthèse</a></li>
+        <li><a href="mise-en-oeuvre.html">Mise en œuvre</a></li>
+        <li><a href="articles.html">Articles</a></li>
     </ul>
 </nav>
 
 <!-- TON SOMMAIRE HORIZONTAL (CONSERVÉ) -->
 <nav class="sommaire-bleu horizontal">
-  
     <ul>
-        <li><a href="#constitution" data-i18n="sum_constitution">Constitution</a></li>
-        <li><a href="#limites-structurelles" data-i18n="sum_limites">Limites structurelles</a></li>
-        <li><a href="#articles-principes" data-i18n="sum_principes">Principes structurels</a></li>
-        <li><a href="#articles-constitution" data-i18n="sum_articles_constitution">Articles constitution</a></li>
-        <li><a href="#lien-organisation" data-i18n="sum_next">Étape suivante</a></li>
+        <li><a href="#constitution">Constitution</a></li>
+        <li><a href="#limites-structurelles">Limites structurelles</a></li>
+        <li><a href="#articles-principes">Principes structurels</a></li>
+        <li><a href="#articles-constitution">Articles constitution</a></li>
+        <li><a href="#lien-organisation">Étape suivante</a></li>
     </ul>
 </nav>
 
 <!-- ZONE BLEUE -->
 <section class="zone-bleue">
-    <h2 data-i18n="blue_title">Constitution</h2>
+    <h2>Constitution</h2>
 </section>
 
 <!-- CONTENU -->
@@ -73,15 +70,14 @@
 
 <!-- ========================= -->
 <!-- ÉTAPE 1 — CONSTITUTION -->
-<!-- ========================= -->
 <section id="constitution">
-    <h2 data-i18n="step1_title">Étape 1 — Constitution</h2>
+    <h2>Étape 1 — Constitution</h2>
 
     <p>
         L’étape 1 consiste à établir une base commune, claire et accessible à tous les citoyens. Elle définit les principes, les règles et les garanties qui encadrent l’ensemble du processus de participation, d’analyse et de décision collective.
     </p>
 
-    <h3 data-i18n="step1_objectifs">Objectifs de l’étape 1</h3>
+    <h3>Objectifs de l’étape 1</h3>
     <ul style="padding: 0 40px;">
         <li>Définir les fondements de la plateforme citoyenne ;</li>
         <li>Garantir l’égalité entre tous les participants ;</li>
@@ -89,7 +85,7 @@
         <li>Créer un cadre stable pour les étapes suivantes.</li>
     </ul>
 
-    <h3 data-i18n="step1_principes">Principes fondamentaux</h3>
+    <h3>Principes fondamentaux</h3>
     <p>Cette constitution citoyenne repose sur plusieurs principes essentiels :</p>
     <ul style="padding: 0 40px;">
         <li><strong>Égalité :</strong> chaque citoyen dispose du même poids dans les décisions ;</li>
@@ -99,7 +95,7 @@
         <li><strong>Accessibilité :</strong> le langage, les outils et les mécanismes doivent être compréhensibles par tous.</li>
     </ul>
 
-    <h3 data-i18n="step1_structure">Structure de la constitution</h3>
+    <h3>Structure de la constitution</h3>
     <p>
         La constitution citoyenne se compose de plusieurs articles, chacun définissant un aspect essentiel du fonctionnement de Peuplitique. Elle n’est pas figée : elle peut évoluer collectivement, selon un processus clair et démocratique.
     </p>
@@ -117,11 +113,9 @@
     </p>
 </section>
 
-<!-- ================================== -->
 <!-- ÉTAPE 2 — LIMITES STRUCTURELLES -->
-<!-- ================================== -->
 <section id="limites-structurelles">
-    <h2 data-i18n="step2_title">Étape 2 — Les limites structurelles des constitutions actuelles</h2>
+    <h2>Étape 2 — Les limites structurelles des constitutions actuelles</h2>
 
     <p>
         Les constitutions actuelles reposent sur un modèle vertical et centralisé qui présente plusieurs limites structurelles. Ces limites ne sont pas des fautes humaines : elles proviennent de la manière dont le système est conçu.
@@ -153,11 +147,9 @@
     </p>
 </section>
 
-<!-- =============================== -->
 <!-- ARTICLES — PRINCIPES -->
-<!-- =============================== -->
 <section id="articles-principes">
-    <h2 data-i18n="articles_principes_title">Articles — Principes structurels</h2>
+    <h2>Articles — Principes structurels</h2>
 
     <details>
         <summary>Article 1 — Principe de non‑fixation du pouvoir</summary>
@@ -221,11 +213,9 @@
     </details>
 </section>
 
-<!-- =============================================== -->
 <!-- ARTICLES 7 À 13 — CONSTITUTION PEUPLITIQUE -->
-<!-- =============================================== -->
 <section id="articles-constitution">
-    <h2 data-i18n="articles_constitution_title">Articles — Constitution Peuplitique</h2>
+    <h2>Articles — Constitution Peuplitique</h2>
 
     <details>
         <summary>Article 7 — Réversibilité des décisions</summary>
@@ -276,76 +266,36 @@
         </p>
     </details>
 </section>
-
 <!-- ========================= -->
 <!-- LIEN VERS ORGANISATION -->
 <!-- ========================= -->
 <section id="lien-organisation" class="sommaire">
-    <h2 data-i18n="next_step_title">Étape suivante</h2>
+    <h2>Étape suivante</h2>
     <p>
         La compréhension de la Constitution ouvre naturellement vers l’<strong>organisation structurelle du pouvoir partagé</strong>.
     </p>
-    <p><a href="organisation-structurelle.html" class="btn" data-i18n="next_step_btn">Accéder à l’organisation structurelle</a></p>
+    <p><a href="organisation-structurelle.html" class="btn">Accéder à l’organisation structurelle</a></p>
 </section>
+<!-- BLOC EN -->
+<div id="en" class="lang-block" style="display:none;">
+    ... traduction anglaise ...
+</div>
 
+<!-- BLOC ES -->
+<div id="es" class="lang-block" style="display:none;">
+    ... traduction espagnole ...
+</div>
 </main>
 
 <!-- FOOTER -->
 <footer class="footer">
-    <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
+    <p>© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
-
-<!-- SCRIPT MULTILINGUE -->
 <script>
-const translations = {
-    fr: {
-        page_title: "Constitution",
-        sous_titre: "Première plateforme citoyenne distribuée",
-        constitution: "Constitution",
-        limites_structurelles: "Limites structurelles",
-        articles_principes: "Principes structurels",
-        articles_constitution: "Articles constitution",
-        etape_suivante: "Étape suivante",
-        footer: "© 2025 Peuplitique – Tous droits réservés"
-    },
-    en: {
-        page_title: "Constitution",
-        sous_titre: "First distributed citizen platform",
-        constitution: "Constitution",
-        limites_structurelles: "Structural limits",
-        articles_principes: "Structural principles",
-        articles_constitution: "Constitution articles",
-        etape_suivante: "Next step",
-        footer: "© 2025 Peuplitique – All rights reserved"
-    },
-    es: {
-        page_title: "Constitución",
-        sous_titre: "Primera plataforma ciudadana distribuida",
-        constitution: "Constitución",
-        limites_structurelles: "Límites estructurales",
-        articles_principes: "Principios estructurales",
-        articles_constitution: "Artículos constitucionales",
-        etape_suivante: "Próximo paso",
-        footer: "© 2025 Peuplitique – Todos los derechos reservados"
-    }
-};
-
-function setLang(lang) {
-    localStorage.setItem("lang", lang);
-    applyTranslations();
+function showLang(lang) {
+    document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
+    document.getElementById(lang).style.display = 'block';
 }
-
-function applyTranslations() {
-    const lang = localStorage.getItem("lang") || "fr";
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-}
-
-document.addEventListener("DOMContentLoaded", applyTranslations);
 </script>
 </body>
 </html>
