@@ -177,7 +177,34 @@ footer {
 .zone-bleue {
     text-align: center;
 }
+/* --- MULTILINGUE --- */
+.lang-block {
+    display: none;
+}
 
+#fr {
+    display: block;
+}
+
+.lang-switch {
+    text-align: right;
+    margin: 10px 20px;
+}
+
+.lang-switch button {
+    background: #3FD1C2;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 5px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.lang-switch button:hover {
+    opacity: 0.8;
+}
 
 
 
