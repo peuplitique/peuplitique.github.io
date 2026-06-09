@@ -719,7 +719,6 @@ La Constitución puede revisarse en cualquier momento por el pueblo.
 <footer class="footer">
     <p>© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
-
 <!-- --- BOUTONS LANGUES --- -->
 <div class="lang-buttons">
     <button onclick="showLang('fr')">FR</button>
@@ -729,30 +728,35 @@ La Constitución puede revisarse en cualquier momento por el pueblo.
 
 <!-- --- BLOCS DE LANGUES --- -->
 <div id="fr" class="lang-block">
-    <!-- TON TEXTE FR ICI -->
+    <p>Texte en français ici.</p>
 </div>
 
 <div id="en" class="lang-block" style="display:none;">
-    <!-- TON TEXTE EN ICI -->
+    <p>Text in English here.</p>
 </div>
 
 <div id="es" class="lang-block" style="display:none;">
-    <!-- TON TEXTE ES ICI -->
+    <p>Texto en español aquí.</p>
 </div>
 
 <!-- --- SCRIPT MULTILINGUE --- -->
 <script>
 function showLang(lang) {
+    // Cache la langue choisie
     localStorage.setItem("lang", lang);
+
+    // Cache tous les blocs
     document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
+
+    // Affiche le bloc demandé
     document.getElementById(lang).style.display = 'block';
 }
 
+// Au chargement de la page, restaure la langue choisie
 document.addEventListener("DOMContentLoaded", () => {
     const saved = localStorage.getItem("lang") || "fr";
     showLang(saved);
 });
 </script>
-
 </body>
 </html>
