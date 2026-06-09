@@ -23,15 +23,19 @@
 
 <body>
 
-<!-- OUVERTURE DU BLOC FR -->
-<div class="lang lang-fr active">
-
+<!-- BOUTONS DE LANGUE -->
 <div class="lang-switch">
     <button onclick="showLang('fr')">FR</button>
     <button onclick="showLang('en')">EN</button>
     <button onclick="showLang('es')">ES</button>
-</div>
+  </div>
+<!-- BLOCS DE LANGUE -->
+  <div class="lang lang-fr active">
+    <h1>Constitution (Français)</h1>
+    <p>Texte en français ici...</p>
+  </div>
 
+  
 <!-- HEADER -->
 <header class="header-blue">
     <h1 class="title-main">PEUPLITIQUE</h1>
@@ -293,9 +297,12 @@
     </p>
     <p><a href="organisation-structurelle.html" class="btn">Accéder à l’organisation structurelle</a></p>
 </section>
+<div class="lang lang-en">
+    <h1>Constitution (English)</h1>
+    <p>Text in English here...</p>
+  </div>
 
-    <!-- BLOC EN -->
-<div id="en" class="lang-block" style="display:none;">
+  
 <h2>Step 1 — Constitution</h2>
 <p>
 Step 1 establishes a common, clear and accessible foundation for all citizens. 
@@ -503,8 +510,11 @@ The Constitution may be revised at any time by the people.
 </details>    
 </div>
 
-<!-- BLOC ES -->
-<div id="es" class="lang-block" style="display:none;">
+<div class="lang lang-es">
+    <h1>Constitución (Español)</h1>
+    <p>Texto en español aquí...</p>
+  </div>
+    
 <h2>Etapa 1 — Constitución</h2>
 <p>
 La etapa 1 establece una base común, clara y accesible para todos los ciudadanos. 
@@ -726,18 +736,6 @@ La Constitución puede revisarse en cualquier momento por el pueblo.
     <button onclick="showLang('es')">ES</button>
 </div>
 
-<!-- --- BLOCS DE LANGUES --- -->
-<div id="fr" class="lang-block">
-    <p>Texte en français ici.</p>
-</div>
-
-<div id="en" class="lang-block" style="display:none;">
-    <p>Text in English here.</p>
-</div>
-
-<div id="es" class="lang-block" style="display:none;">
-    <p>Texto en español aquí.</p>
-</div>
 
 <!-- --- SCRIPT MULTILINGUE --- -->
 <script>
