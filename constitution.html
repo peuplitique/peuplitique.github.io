@@ -715,30 +715,44 @@ La Constitución puede revisarse en cualquier momento por el pueblo.
 </details>
 </div>
 </main>
-
 <!-- FOOTER -->
 <footer class="footer">
     <p>© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
 
+<!-- --- BOUTONS LANGUES --- -->
+<div class="lang-buttons">
+    <button onclick="showLang('fr')">FR</button>
+    <button onclick="showLang('en')">EN</button>
+    <button onclick="showLang('es')">ES</button>
+</div>
+
+<!-- --- BLOCS DE LANGUES --- -->
+<div id="fr" class="lang-block">
+    <!-- TON TEXTE FR ICI -->
+</div>
+
+<div id="en" class="lang-block" style="display:none;">
+    <!-- TON TEXTE EN ICI -->
+</div>
+
+<div id="es" class="lang-block" style="display:none;">
+    <!-- TON TEXTE ES ICI -->
+</div>
+
+<!-- --- SCRIPT MULTILINGUE --- -->
 <script>
 function showLang(lang) {
-    localStorage.setItem("lang", lang); // mémorise la langue
+    localStorage.setItem("lang", lang);
     document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
     document.getElementById(lang).style.display = 'block';
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    
+    const saved = localStorage.getItem("lang") || "fr";
+    showLang(saved);
 });
-<div class="lang-buttons">
-    <button onclick="showLang('fr')">FR</button>
-    <button onclick="showLang('en')">EN</button>
-    <button onclick="showLang('es')">ES</button>
-</div>    
 </script>
-showLang("fr");
+
 </body>
 </html>
-    
-
