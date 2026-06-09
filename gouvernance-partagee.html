@@ -11,47 +11,49 @@
 
 <!-- LANG SWITCH -->
 <div class="lang-switch">
-    <a href="?lang=fr" data-lang="fr">FR</a> |
-    <a href="?lang=en" data-lang="en">EN</a> |
-    <a href="?lang=es" data-lang="es">ES</a> |
-    <a href="?lang=ru" data-lang="ru">RU</a> |
-    <a href="?lang=cn" data-lang="cn">CN</a>
+    <button onclick="showLang('fr')">FR</button>
+    <button onclick="showLang('en')">EN</button>
+    <button onclick="showLang('es')">ES</button>
 </div>
 
-<!-- BARRE BLEUE + MENU -->
-<header class="header-blue">
-    <h1 class="title-main" data-i18n="title_main">PEUPLITIQUE</h1>
-    <p class="title-sub" data-i18n="title_sub">
-        Première plateforme citoyenne indépendante – Gouvernance partagée – Décision commune
-    </p>
-    <div class="header-line"></div>
+<!-- ===================================================== -->
+<!-- ======================  FR  ========================== -->
+<!-- ===================================================== -->
+<div id="fr" class="lang-block">
 
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html" data-i18n="menu_home">Accueil</a></li>
-            <li><a href="gouvernance-partagee.html" class="active" data-i18n="menu_governance">Gouvernance partagée</a></li>
-            <li><a href="limites-structurelles.html" data-i18n="menu_limits">Limites structurelles</a></li>
-            <li><a href="constitution.html" data-i18n="menu_constitution">Constitution</a></li>
-            <li><a href="organisation-structurelle.html" data-i18n="menu_structure">Organisation structurelle</a></li>
-            <li><a href="protocole.html" data-i18n="menu_protocol">Protocole</a></li>
-        </ul>
-    </nav>
+<header class="header">
+    <h1>Peuplitique</h1>
+    <h3 class="sous-titre">Première plateforme citoyenne indépendante – Gouvernance partagée – Décision commune</h3>
+    <div class="ligne"></div>
 </header>
 
-<!-- SOMMAIRE BLANC AVEC TRADUCTIONS -->
-<nav class="sommaire-horizontal">
+<nav class="menu">
     <ul>
-        <li><a href="constitution.html" data-i18n="sommaire-constitution">Constitution</a></li>
-        <li><a href="limites-structurelles.html" data-i18n="sommaire-limites">Limites structurelles</a></li>
-        <li><a href="desequilibres-structurels.html" data-i18n="sommaire-desequilibres">Déséquilibres structurels</a></li>
-        <li><a href="organisation-economique.html" data-i18n="sommaire-economie">Organisation économique</a></li>
-        <li><a href="organisation-territoriale.html" data-i18n="sommaire-territoire">Organisation territoriale</a></li>
-        <li><a href="gouvernance-dao.html" data-i18n="sommaire-dao">Gouvernance DAO</a></li>
-        <li><a href="synthese.html" data-i18n="sommaire-synthese">Synthèse</a></li>
-        <li><a href="mise-en-oeuvre.html" data-i18n="sommaire-oeuvre">Mise en œuvre</a></li>
-        <li><a href="articles.html" data-i18n="sommaire-articles">Articles</a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
+        <li><a href="economie-integree.html">Économie intégrée</a></li>
+        <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
+        <li><a href="protocole.html">Protocole</a></li>
+        <li><a href="glossaire.html">Glossaire</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
+
+<!-- SOMMAIRE BLANC -->
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="limites-structurelles.html">Limites structurelles</a></li>
+        <li><a href="desequilibres-structurels.html">Déséquilibres structurels</a></li>
+        <li><a href="organisation-economique.html">Organisation économique</a></li>
+        <li><a href="organisation-territoriale.html">Organisation territoriale</a></li>
+        <li><a href="gouvernance-dao.html">Gouvernance DAO</a></li>
+        <li><a href="synthese.html">Synthèse</a></li>
+        <li><a href="mise-en-oeuvre.html">Mise en œuvre</a></li>
+        <li><a href="articles.html">Articles</a></li>
+    </ul>
+</nav>
+
 <!-- SOMMAIRE BLEU -->
 <nav class="sommaire-bleu">
    <ul>
@@ -64,6 +66,7 @@
         <li><a href="#sec7" data-i18n="sum_sec7">Mémoire collective</a></li>
     </ul>
 </nav>
+    
 <!-- INTRO FR -->
 <section class="intro">
     <h2 data-i18n="gov_title">Gouvernance partagée</h2>
@@ -165,8 +168,10 @@
     </ul>
 </section>
 
+<div id="en" class="lang-block" style="display:none;">
+
 <!-- INTRODUCTION (EN) -->
-<section class="intro lang-en">
+<section class="intro">
     <h2>Shared governance</h2>
     <p>
         Shared governance is a model in which the power to decide, analyse and correct
@@ -179,7 +184,7 @@
 </section>
 
 <!-- THREE PILLARS (EN) -->
-<section class="sommaire lang-en">
+<section class="sommaire">
     <h3>The three pillars of shared governance</h3>
     <ul>
         <li>
@@ -198,7 +203,7 @@
 </section>
 
 <!-- SEVEN SECTIONS (EN) -->
-<div class="zone-bleue lang-en">
+<div class="zone-bleue">
     <h3 class="subtitle">Continuous, structured and transparent participation</h3>
 
     <section>
@@ -255,7 +260,7 @@
 </div>
 
 <!-- GENERAL SCHEMA (EN) -->
-<section class="sommaire lang-en">
+<section class="sommaire">
     <h3>General structure of shared governance</h3>
     <ul>
         <li><a href="constitution.html">Constitution</a></li>
@@ -264,8 +269,12 @@
         <li><a href="protocole.html">Protocol</a></li>
     </ul>
 </section>
-    <!-- INTRODUCCIÓN (ES) -->
-<section class="intro lang-es">
+
+</div>
+<div id="es" class="lang-block" style="display:none;">
+
+<!-- INTRODUCCIÓN (ES) -->
+<section class="intro">
     <h2>Gobernanza compartida</h2>
     <p>
         La gobernanza compartida es un modelo en el que el poder de decidir, analizar y corregir
@@ -278,7 +287,7 @@
 </section>
 
 <!-- LOS 3 PILARES (ES) -->
-<section class="sommaire lang-es">
+<section class="sommaire">
     <h3>Los tres pilares de la gobernanza compartida</h3>
     <ul>
         <li>
@@ -297,7 +306,7 @@
 </section>
 
 <!-- LAS 7 SECCIONES (ES) -->
-<div class="zone-bleue lang-es">
+<div class="zone-bleue">
     <h3 class="subtitle">Participación continua, estructurada y transparente</h3>
 
     <section>
@@ -354,7 +363,7 @@
 </div>
 
 <!-- ESQUEMA GENERAL (ES) -->
-<section class="sommaire lang-es">
+<section class="sommaire">
     <h3>Estructura general de la gobernanza compartida</h3>
     <ul>
         <li><a href="constitution.html">Constitución</a></li>
@@ -373,10 +382,9 @@
     </p>
 </footer>
 
-<!-- SCRIPT COMPLET -->
 <script>
 const translations = {
-fr: {
+    fr: {
         menu_home: "Accueil",
         menu_governance: "Gouvernance partagée",
         menu_limits: "Limites structurelles",
@@ -434,9 +442,20 @@ fr: {
     }
 };
 
-function setLang(lang) {
-    localStorage.setItem("lang", lang);
+function showLang(lang) {
+    // Masquer tous les blocs
+    document.querySelectorAll('.lang-block').forEach(block => {
+        block.style.display = 'none';
+    });
+
+    // Afficher le bloc choisi
+    document.getElementById(lang).style.display = 'block';
+
+    // Appliquer les traductions
     applyTranslations(lang);
+
+    // Sauvegarder la langue
+    localStorage.setItem("lang", lang);
 }
 
 function applyTranslations(lang) {
@@ -448,7 +467,9 @@ function applyTranslations(lang) {
     });
 }
 
-applyTranslations(localStorage.getItem("lang") || "fr");
+// Charger la langue au démarrage
+const savedLang = localStorage.getItem("lang") || "fr";
+showLang(savedLang);
 </script>
 
 </body>
