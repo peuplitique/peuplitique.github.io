@@ -468,22 +468,88 @@ const translations = {
 sous_titre: "Primera plataforma ciudadana independiente – Gobernanza compartida – Decisión común"
     }
 };
+<script>
+const translations = {
+    fr: {
+        page_title_economie: "Économie intégrée – Peuplitique",
+        site_title: "Peuplitique",
+        site_subtitle: "Plateforme citoyenne – Participation, transparence, gouvernance partagée",
+        sous_titre: "Première plateforme citoyenne indépendante – Gouvernance partagée – Décision commune",
 
-function setLang(lang) {
-    localStorage.setItem("lang", lang);
-    applyTranslations(lang);
-}
+        menu_home: "Accueil",
+        menu_governance: "Gouvernance partagée",
+        menu_dao: "DAO",
+        menu_structure: "Organisation structurelle",
+        menu_economie: "Économie intégrée",
+        menu_protocol: "Protocole",
+        menu_glossaire: "Glossaire",
+        menu_contact: "Contact",
 
-function applyTranslations(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-}
+        sum_organisation_economique: "Organisation économique structurelle",
+        sum_desequilibres: "Déséquilibres structurels",
 
-applyTranslations(localStorage.getItem("lang") || "fr");
+        blue_title_economie: "Économie intégrée",
+
+        eco_intro_title: "Introduction",
+        eco_intro_p1: "L’économie intégrée relie les décisions publiques, les impacts économiques et les réalités sectorielles dans un système cohérent, traçable et compréhensible par tous. Elle rend visibles les flux, les effets et les interactions entre secteurs afin de permettre une gouvernance réellement informée et symétrique.",
+        eco_intro_p2: "Pour comprendre les limites du modèle économique actuel et les raisons du changement proposé, voir : Déséquilibre structurel.",
+
+        eco_objectifs_title: "Objectifs",
+        eco_obj_1: "Mesurer les effets économiques en temps réel.",
+        eco_obj_2: "Aligner les décisions publiques avec les réalités sectorielles.",
+        eco_obj_3: "Éviter les distorsions et déséquilibres structurels.",
+        eco_obj_4: "Permettre une participation citoyenne informée.",
+        eco_obj_5: "Créer un modèle stable, transparent et équitable.",
+
+        eco_schema_title: "Schéma général (ASCII)",
+        eco_schema_ascii: "┌──────────────────────────────┐\n│        BANQUE COOPÉRATIVE    │\n└──────────────┬───────────────┘\n               │\n    ┌──────────┼────────────────────────┐\n    │          │                        │\n┌───────────┐ ┌────────────────┐ ┌────────────────────┐\n│ FLUX ÉCO  │ │ TOKENS /       │ │ MARCHÉS CITOYENS   │\n│ SECTORIELS│ │ PONDÉRATION    │ │                    │\n└───────────┘ └────────────────┘ └────────────────────┘\n               │\n               │\n    └──────────┬───────────────┬────────┘\n               │               │\n     ┌──────────────┐   ┌────────────────────┐\n     │ INNOVATION    │   │ SCÉNARIOS          │\n     │ & ÉNERGIE     │   │ ÉCONOMIQUES        │\n     └──────────────┘   └────────────────────┘\n\n               ▼\n┌──────────────────────────────┐\n│ ORGANISATION ÉCONOMIQUE      │\n│ & STRUCTURELLE               │\n└──────────────────────────────┘",
+
+        eco_archi_title: "Architecture de l’économie intégrée",
+        eco_principes_title: "Principes",
+        eco_principes_p: "Une économie intégrée repose sur la coordination, la transparence, la participation citoyenne et la gestion collective des ressources essentielles.",
+        eco_definition_title: "Définition",
+        eco_definition_p: "L’économie intégrée vise à relier les secteurs, les ressources, les responsabilités et les décisions dans un système cohérent, transparent et équilibré.",
+
+        eco_1_title: "1. Banque coopérative",
+        eco_1_p1: "La banque coopérative constitue le socle financier du modèle. Elle ne vise pas l’accumulation spéculative mais la circulation des ressources au service des besoins réels, des transitions et des projets collectifs.",
+        eco_1_p2: "Pour une compréhension complète du fonctionnement financier du pays, consultez également : Organisation économique et structurelle — Banque coopérative et DAO.",
+
+        eco_2_title: "2. Flux économiques intégrés",
+        eco_2_p: "Les flux entre secteurs (énergie, alimentation, santé, éducation, innovation, etc.) sont cartographiés pour rendre visibles les interdépendances et anticiper les effets en cascade.",
+
+        eco_3_title: "3. Tokens et pondération",
+        eco_3_p: "Les pondérations sectorielles permettent d’ajuster les priorités selon les besoins réels. Elles sont transparentes, vérifiables et contrôlées par le collectif.",
+
+        eco_4_title: "4. Marchés citoyens",
+        eco_4_p: "Les marchés citoyens garantissent une allocation équitable des ressources, sans asymétrie d’information ni capture par des acteurs dominants.",
+
+        eco_5_title: "5. Innovation & énergie",
+        eco_5_p: "L’innovation et l’énergie sont traitées comme des leviers structurants permettant au système de rester soutenable, adaptable et résilient.",
+
+        eco_6_title: "6. Scénarios économiques",
+        eco_6_p: "Les scénarios (croissance, transition, crise, résilience) permettent de simuler les effets des décisions avant leur mise en œuvre.",
+
+        eco_7_title: "7. Organisation économique et structurelle",
+        eco_7_p: "Cette section décrit la manière dont les secteurs, les flux, les décisions et les responsabilités s’articulent dans un ensemble cohérent. Elle vise à empêcher la concentration du pouvoir et les asymétries structurelles durables.",
+
+        eco_73_title: "7.3 — Dynamique interne du système économique",
+        eco_73_p: "La dynamique interne repose sur la circulation continue des ressources, la pondération adaptative et la rétroaction citoyenne. Elle empêche la capture du pouvoir économique.",
+
+        eco_74_title: "7.4 — Flux de gouvernance économique",
+        eco_74_p: "Les décisions suivent un flux clair : observation, analyse distribuée, pondération citoyenne, décision collective et traçabilité. Chaque étape est vérifiable.",
+
+        eco_75_title: "7.5 — Stabilisation du modèle",
+        eco_75_p: "Le modèle intègre des seuils de sécurité, des amortisseurs automatiques et des réserves coopératives pour éviter les crises structurelles.",
+
+        eco_76_title: "7.6 — Prévention des dérives structurelles",
+        eco_76_p: "Des garde‑fous empêchent la concentration du capital, la capture institutionnelle et la manipulation des flux. Ils reposent sur la transparence, la symétrie du pouvoir et la responsabilité distribuée.",
+
+        eco_conclusion_title: "Conclusion",
+        eco_conclusion_p: "L’économie intégrée constitue un socle décisionnel moderne, transparent et équitable. Elle permet de comprendre, d’anticiper et de corriger les effets économiques de manière continue, au service du bien commun.",
+
+        footer: "© 2026 Peuplitique – Tous droits réservés"
+    }
+};
 </script>
 
 </body>
