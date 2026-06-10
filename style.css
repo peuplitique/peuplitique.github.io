@@ -217,3 +217,8 @@ footer {
     padding: 6px 12px;
     cursor: pointer;
 }
+/* --- MULTILINGUE : MASQUAGE PAR DÉFAUT --- */
+.lang-fr, .lang-en, .lang-es {
+  display: none;
+}
+
