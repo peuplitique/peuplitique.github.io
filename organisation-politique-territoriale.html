@@ -3,106 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title_page">Organisation politique territoriale et communautaire – Peuplitique</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Organisation politique territoriale – Peuplitique</title>
+    <link rel="stylesheet" href="style.css?v=9999">
 </head>
 
-<body class="light-bg politique">
+<body>
 
 <!-- LANG SWITCH -->
 <div class="lang-switch">
-    <a href="?lang=fr">FR</a> |
-    <a href="?lang=en">EN</a> |
-    <a href="?lang=es">ES</a> |
-    <a href="?lang=ru">RU</a> |
-    <a href="?lang=cn">CN</a>
+    <button onclick="showLang('fr')">FR</button>
+    <button onclick="showLang('en')">EN</button>
+    <button onclick="showLang('es')">ES</button>
 </div>
 
-<!-- HEADER + MENU -->
-<header class="header-blue">
-    <h1 data-i18n="title_main">Peuplitique</h1>
-    <p data-i18n="title_sub">Plateforme citoyenne – Participation, transparence, gouvernance partagée</p>
+<!-- ===================================================== -->
+<!-- ======================  FR  ========================== -->
+<!-- ===================================================== -->
+<div id="fr" class="lang-block">
 
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html" data-i18n="menu_home">Accueil</a></li>
-            <li><a href="gouvernance-dao.html" data-i18n="menu_dao">Gouvernance DAO</a></li>
-            <li><a href="economie-integree.html" data-i18n="menu_economie">Économie intégrée</a></li>
-            <li><a href="organisation-economique-structurelle.html" data-i18n="menu_org_eco">Organisation économique</a></li>
-            <li><a href="organisation-structurelle.html" data-i18n="menu_org_struct">Organisation structurelle</a></li>
-            <li><a href="organisation-politique-territoriale.html" class="active" data-i18n="menu_org_pol">Organisation politique</a></li>
-            <li><a href="protocole.html" data-i18n="menu_protocole">Protocole citoyen</a></li>
-            <li><a href="glossaire.html" data-i18n="menu_glossaire">Glossaire</a></li>
-        </ul>
-    </nav>
+<header class="header">
+    <h1>Peuplitique</h1>
+    <h3 class="sous-titre">Plateforme citoyenne – Participation, transparence, gouvernance partagée</h3>
+    <div class="ligne"></div>
 </header>
-<!-- SOMMAIRE BLANC -->
-<nav class="sommaire-horizontal">
+
+<nav class="menu">
     <ul>
-        <li><a href="constitution.html" data-i18n="sommaire-constitution">Constitution</a></li>
-        <li><a href="limites-structurelles.html" data-i18n="sommaire-limites">Limites structurelles</a></li>
-        <li><a href="desequilibres-structurels.html" data-i18n="sommaire-desequilibres">Déséquilibres structurels</a></li>
-        <li><a href="organisation-economique.html" data-i18n="sommaire-economie">Organisation économique</a></li>
-        <li><a href="organisation-territoriale.html" data-i18n="sommaire-territoire">Organisation territoriale</a></li>
-        <li><a href="gouvernance-dao.html" data-i18n="sommaire-dao">Gouvernance DAO</a></li>
-        <li><a href="synthese.html" data-i18n="sommaire-synthese">Synthèse</a></li>
-        <li><a href="mise-en-oeuvre.html" data-i18n="sommaire-oeuvre">Mise en œuvre</a></li>
-        <li><a href="articles.html" data-i18n="sommaire-articles">Articles</a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="gouvernance-dao.html">Gouvernance DAO</a></li>
+        <li><a href="economie-integree.html">Économie intégrée</a></li>
+        <li><a href="organisation-economique-structurelle.html">Organisation économique</a></li>
+        <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
+        <li><a href="organisation-politique-territoriale.html" class="active">Organisation politique</a></li>
+        <li><a href="protocole.html">Protocole citoyen</a></li>
+        <li><a href="glossaire.html">Glossaire</a></li>
     </ul>
 </nav>
-<!-- ZONE BLEUE -->
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="limites-structurelles.html">Limites structurelles</a></li>
+        <li><a href="desequilibres-structurels.html">Déséquilibres structurels</a></li>
+        <li><a href="organisation-economique.html">Organisation économique</a></li>
+        <li><a href="organisation-territoriale.html">Organisation territoriale</a></li>
+        <li><a href="gouvernance-dao.html">Gouvernance DAO</a></li>
+        <li><a href="synthese.html">Synthèse</a></li>
+        <li><a href="mise-en-oeuvre.html">Mise en œuvre</a></li>
+        <li><a href="articles.html">Articles</a></li>
+    </ul>
+</nav>
+
 <section class="zone-bleue">
-    <h2 data-i18n="page_title">Organisation politique territoriale et communautaire</h2>
+    <h2>Organisation politique territoriale et communautaire</h2>
 </section>
 
-<!-- SOMMAIRE HORIZONTAL -->
 <nav class="sommaire-horizontal">
     <ul>
-        <li><a href="#intro" data-i18n="som_intro">Introduction</a></li>
-        <li><a href="#niveaux" data-i18n="som_niveaux">Niveaux de gouvernance</a></li>
-        <li><a href="#dao" data-i18n="som_dao">Rôle du DAO</a></li>
-        <li><a href="#articulation" data-i18n="som_articulation">Articulation</a></li>
-        <li><a href="#objectifs" data-i18n="som_objectifs">Objectifs</a></li>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#niveaux">Niveaux de gouvernance</a></li>
+        <li><a href="#dao">Rôle du DAO</a></li>
+        <li><a href="#articulation">Articulation</a></li>
+        <li><a href="#objectifs">Objectifs</a></li>
     </ul>
 </nav>
 
-<!-- CONTENU -->
 <main class="content">
 
-    <section id="intro">
-        <h1>Organisation politique territoriale et communautaire</h1>
-        <p>
-            L’organisation politique territoriale et communautaire définit la manière dont les citoyens structurent leur gouvernance locale, régionale et nationale. Elle repose sur une logique ascendante : les décisions émergent des communautés, remontent par niveaux, et sont consolidées dans un cadre démocratique transparent.
-        </p>
-    </section>
+<section id="intro">
+    <h1>Organisation politique territoriale et communautaire</h1>
+    <p>
+        L’organisation politique territoriale et communautaire définit la manière dont les citoyens structurent leur gouvernance locale, régionale et nationale. Elle repose sur une logique ascendante : les décisions émergent des communautés, remontent par niveaux, et sont consolidées dans un cadre démocratique transparent.
+    </p>
+</section>
 
-    <section id="niveaux">
-        <h2>1. Niveaux de gouvernance</h2>
-        <ul>
-            <li><strong>Niveau communautaire</strong> — décisions locales, besoins immédiats, projets de proximité.</li>
-            <li><strong>Niveau territorial</strong> — coordination intercommunale, infrastructures, services partagés.</li>
-            <li><strong>Niveau national</strong> — vision globale, cohérence structurelle, arbitrages majeurs.</li>
-        </ul>
-    </section>
+<section id="niveaux">
+    <h2>1. Niveaux de gouvernance</h2>
+    <ul>
+        <li><strong>Niveau communautaire</strong> — décisions locales, besoins immédiats, projets de proximité.</li>
+        <li><strong>Niveau territorial</strong> — coordination intercommunale, infrastructures, services partagés.</li>
+        <li><strong>Niveau national</strong> — vision globale, cohérence structurelle, arbitrages majeurs.</li>
+    </ul>
+</section>
 
-    <section id="dao">
-        <h2>2. Rôle du DAO dans la gouvernance politique</h2>
-        <p>Le DAO garantit la transparence, la participation citoyenne et la traçabilité des décisions publiques.</p>
-        <ul>
-            <li>Votes citoyens sur les priorités territoriales.</li>
-            <li>Budgets participatifs automatisés.</li>
-            <li>Audit public permanent.</li>
-            <li>Tableaux de bord accessibles à tous.</li>
-        </ul>
-    </section>
+<section id="dao">
+    <h2>2. Rôle du DAO dans la gouvernance politique</h2>
+    <p>Le DAO garantit la transparence, la participation citoyenne et la traçabilité des décisions publiques.</p>
+    <ul>
+        <li>Votes citoyens sur les priorités territoriales.</li>
+        <li>Budgets participatifs automatisés.</li>
+        <li>Audit public permanent.</li>
+        <li>Tableaux de bord accessibles à tous.</li>
+    </ul>
+</section>
 
-    <section id="articulation">
-        <h2>3. Articulation entre niveaux</h2>
-        <p>
-            Chaque niveau politique est autonome mais interconnecté. Les décisions locales influencent les orientations territoriales, qui elles-mêmes structurent les choix nationaux.
-        </p>
+<section id="articulation">
+    <h2>3. Articulation entre niveaux</h2>
+    <p>
+        Chaque niveau politique est autonome mais interconnecté. Les décisions locales influencent les orientations territoriales, qui elles-mêmes structurent les choix nationaux.
+    </p>
 
-        <pre class="ascii-schema">
+<pre class="ascii-schema">
 [ Communautés ]
         |
         v
@@ -110,151 +111,237 @@
         |
         v
 [ Niveau National ]
-        </pre>
-    </section>
+</pre>
+</section>
 
-    <section id="objectifs">
-        <h2>4. Objectifs</h2>
-        <ul>
-            <li>Renforcer la démocratie directe.</li>
-            <li>Assurer une répartition équitable des ressources.</li>
-            <li>Garantir la cohérence entre besoins locaux et stratégie nationale.</li>
-            <li>Prévenir les déséquilibres structurels.</li>
-        </ul>
-    </section>
+<section id="objectifs">
+    <h2>4. Objectifs</h2>
+    <ul>
+        <li>Renforcer la démocratie directe.</li>
+        <li>Assurer une répartition équitable des ressources.</li>
+        <li>Garantir la cohérence entre besoins locaux et stratégie nationale.</li>
+        <li>Prévenir les déséquilibres structurels.</li>
+    </ul>
+</section>
 
 </main>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
+<footer>
+    <p>© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
 
-<!-- SCRIPT MULTILINGUE -->
+</div> <!-- FIN FR -->
+
+<!-- ===================================================== -->
+<!-- ======================  EN  ========================== -->
+<!-- ===================================================== -->
+<div id="en" class="lang-block" style="display:none;">
+
+<header class="header">
+    <h1>Peuplitique</h1>
+    <h3 class="sous-titre">Citizen platform – Participation, transparency, shared governance</h3>
+    <div class="ligne"></div>
+</header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gouvernance-dao.html">DAO Governance</a></li>
+        <li><a href="economie-integree.html">Integrated Economy</a></li>
+        <li><a href="organisation-economique-structurelle.html">Economic Organization</a></li>
+        <li><a href="organisation-structurelle.html">Structural Organization</a></li>
+        <li><a href="organisation-politique-territoriale.html" class="active">Political Organization</a></li>
+        <li><a href="protocole.html">Citizen Protocol</a></li>
+        <li><a href="glossaire.html">Glossary</a></li>
+    </ul>
+</nav>
+
+<section class="zone-bleue">
+    <h2>Territorial and Community Political Organization</h2>
+</section>
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="#intro-en">Introduction</a></li>
+        <li><a href="#levels-en">Governance Levels</a></li>
+        <li><a href="#dao-en">Role of the DAO</a></li>
+        <li><a href="#articulation-en">Articulation</a></li>
+        <li><a href="#objectives-en">Objectives</a></li>
+    </ul>
+</nav>
+
+<main class="content">
+
+<section id="intro-en">
+    <h1>Territorial and Community Political Organization</h1>
+    <p>
+        This structure defines how citizens organize governance at local, regional and national levels. It is based on a bottom‑up logic: decisions emerge from communities, rise through levels, and are consolidated in a transparent democratic framework.
+    </p>
+</section>
+
+<section id="levels-en">
+    <h2>1. Governance Levels</h2>
+    <ul>
+        <li><strong>Community level</strong> — local decisions, immediate needs, proximity projects.</li>
+        <li><strong>Territorial level</strong> — inter‑community coordination, infrastructures, shared services.</li>
+        <li><strong>National level</strong> — global vision, structural coherence, major arbitration.</li>
+    </ul>
+</section>
+
+<section id="dao-en">
+    <h2>2. Role of the DAO</h2>
+    <p>The DAO ensures transparency, citizen participation and traceability of public decisions.</p>
+    <ul>
+        <li>Citizen votes on territorial priorities.</li>
+        <li>Automated participatory budgets.</li>
+        <li>Permanent public audit.</li>
+        <li>Dashboards accessible to all.</li>
+    </ul>
+</section>
+
+<section id="articulation-en">
+    <h2>3. Articulation Between Levels</h2>
+    <p>
+        Each political level is autonomous but interconnected. Local decisions influence territorial orientations, which structure national choices.
+    </p>
+
+<pre class="ascii-schema">
+[ Communities ]
+        |
+        v
+[ Territories ]
+        |
+        v
+[ National Level ]
+</pre>
+</section>
+
+<section id="objectives-en">
+    <h2>4. Objectives</h2>
+    <ul>
+        <li>Strengthen direct democracy.</li>
+        <li>Ensure fair distribution of resources.</li>
+        <li>Guarantee coherence between local needs and national strategy.</li>
+        <li>Prevent structural imbalances.</li>
+    </ul>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Peuplitique – All rights reserved</p>
+</footer>
+
+</div> <!-- FIN EN -->
+
+<!-- ===================================================== -->
+<!-- ======================  ES  ========================== -->
+<!-- ===================================================== -->
+<div id="es" class="lang-block" style="display:none;">
+
+<header class="header">
+    <h1>Peuplitique</h1>
+    <h3 class="sous-titre">Plataforma ciudadana – Participación, transparencia, gobernanza compartida</h3>
+    <div class="ligne"></div>
+</header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="gouvernance-dao.html">Gobernanza DAO</a></li>
+        <li><a href="economie-integree.html">Economía integrada</a></li>
+        <li><a href="organisation-economique-structurelle.html">Organización económica</a></li>
+        <li><a href="organisation-structurelle.html">Organización estructural</a></li>
+        <li><a href="organisation-politique-territoriale.html" class="active">Organización política</a></li>
+        <li><a href="protocole.html">Protocolo ciudadano</a></li>
+        <li><a href="glossaire.html">Glosario</a></li>
+    </ul>
+</nav>
+
+<section class="zone-bleue">
+    <h2>Organización política territorial y comunitaria</h2>
+</section>
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="#intro-es">Introducción</a></li>
+        <li><a href="#niveles-es">Niveles de gobernanza</a></li>
+        <li><a href="#dao-es">Rol del DAO</a></li>
+        <li><a href="#articulacion-es">Articulación</a></li>
+        <li><a href="#objetivos-es">Objetivos</a></li>
+    </ul>
+</nav>
+
+<main class="content">
+
+<section id="intro-es">
+    <h1>Organización política territorial y comunitaria</h1>
+    <p>
+        Esta estructura define cómo los ciudadanos organizan la gobernanza local, regional y nacional. Se basa en una lógica ascendente: las decisiones emergen de las comunidades, ascienden por niveles y se consolidan en un marco democrático transparente.
+    </p>
+</section>
+
+<section id="niveles-es">
+    <h2>1. Niveles de gobernanza</h2>
+    <ul>
+        <li><strong>Nivel comunitario</strong> — decisiones locales, necesidades inmediatas, proyectos de proximidad.</li>
+        <li><strong>Nivel territorial</strong> — coordinación intercomunitaria, infraestructuras, servicios compartidos.</li>
+        <li><strong>Nivel nacional</strong> — visión global, coherencia estructural, arbitrajes mayores.</li>
+    </ul>
+</section>
+
+<section id="dao-es">
+    <h2>2. Rol del DAO</h2>
+    <p>El DAO garantiza la transparencia, la participación ciudadana y la trazabilidad de las decisiones públicas.</p>
+    <ul>
+        <li>Votos ciudadanos sobre prioridades territoriales.</li>
+        <li>Presupuestos participativos automatizados.</li>
+        <li>Auditoría pública permanente.</li>
+        <li>Paneles accesibles para todos.</li>
+    </ul>
+</section>
+
+<section id="articulacion-es">
+    <h2>3. Articulación entre niveles</h2>
+    <p>
+        Cada nivel político es autónomo pero interconectado. Las decisiones locales influyen en las orientaciones territoriales, que estructuran las decisiones nacionales.
+    </p>
+
+<pre class="ascii-schema">
+[ Comunidades ]
+        |
+        v
+[ Territorios ]
+        |
+        v
+[ Nivel Nacional ]
+</pre>
+</section>
+
+<section id="objetivos-es">
+    <h2>4. Objetivos</h2>
+    <ul>
+        <li>Reforzar la democracia directa.</li>
+        <li>Asegurar una distribución equitativa de los recursos.</li>
+        <li>Garantizar la coherencia entre necesidades locales y estrategia nacional.</li>
+        <li>Prevenir desequilibrios estructurales.</li>
+    </ul>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Peuplitique – Todos los derechos reservados</p>
+</footer>
+
+</div> <!-- FIN ES -->
+
+<!-- SCRIPT LANG -->
 <script>
-const translations = {
-    "en": {
-        "title_page": "Territorial and community political organization – Peuplitique",
-        "title_main": "Peuplitique",
-        "title_sub": "Citizen platform – Participation, transparency, shared governance",
-
-        "menu_home": "Home",
-        "menu_dao": "DAO governance",
-        "menu_economie": "Integrated economy",
-        "menu_org_eco": "Economic organization",
-        "menu_org_struct": "Structural organization",
-        "menu_org_pol": "Political organization",
-        "menu_protocole": "Citizen protocol",
-        "menu_glossaire": "Glossary",
-
-        "page_title": "Territorial and community political organization",
-
-        "som_intro": "Introduction",
-        "som_niveaux": "Governance levels",
-        "som_dao": "Role of the DAO",
-        "som_articulation": "Articulation",
-        "som_objectifs": "Objectives",
-
-        "footer": "© 2026 Peuplitique – All rights reserved"
-    },
-    sous_titre: "First independent citizen platform – Shared governance – Common decision"
-    },
-
-    "es": {
-        "title_page": "Organización política territorial y comunitaria – Peuplitique",
-        "title_main": "Peuplitique",
-        "title_sub": "Plataforma ciudadana – Participación, transparencia, gobernanza compartida",
-
-        "menu_home": "Inicio",
-        "menu_dao": "Gobernanza DAO",
-        "menu_economie": "Economía integrada",
-        "menu_org_eco": "Organización económica",
-        "menu_org_struct": "Organización estructural",
-        "menu_org_pol": "Organización política",
-        "menu_protocole": "Protocolo ciudadano",
-        "menu_glossaire": "Glosario",
-
-        "page_title": "Organización política territorial y comunitaria",
-
-        "som_intro": "Introducción",
-        "som_niveaux": "Niveles de gobernanza",
-        "som_dao": "Rol de la DAO",
-        "som_articulation": "Articulación",
-        "som_objectifs": "Objetivos",
-
-        "footer": "© 2026 Peuplitique – Todos los derechos reservados"
-    },
-   sous_titre: "Primera plataforma ciudadana independiente – Gobernanza compartida – Decisión común"
-    }
-};
-</script>
-
- 
-    "ru": {
-        "title_page": "Территориальная и общественная политическая организация – Peuplitique",
-        "title_main": "Peuplitique",
-        "title_sub": "Гражданская платформа – участие, прозрачность, совместное управление",
-
-        "menu_home": "Главная",
-        "menu_dao": "Управление DAO",
-        "menu_economie": "Интегрированная экономика",
-        "menu_org_eco": "Экономическая организация",
-        "menu_org_struct": "Структурная организация",
-        "menu_org_pol": "Политическая организация",
-        "menu_protocole": "Гражданский протокол",
-        "menu_glossaire": "Глоссарий",
-
-        "page_title": "Территориальная и общественная политическая организация",
-
-        "som_intro": "Введение",
-        "som_niveaux": "Уровни управления",
-        "som_dao": "Роль DAO",
-        "som_articulation": "Связь уровней",
-        "som_objectifs": "Цели",
-
-        "footer": "© 2026 Peuplitique – Все права защищены"
-    },
-    "cn": {
-        "title_page": "区域与社区政治组织 – Peuplitique",
-        "title_main": "Peuplitique",
-        "title_sub": "公民平台 – 参与、透明、共享治理",
-
-        "menu_home": "首页",
-        "menu_dao": "DAO 治理",
-        "menu_economie": "综合经济",
-        "menu_org_eco": "经济组织",
-        "menu_org_struct": "结构组织",
-        "menu_org_pol": "政治组织",
-        "menu_protocole": "公民协议",
-        "menu_glossaire": "术语表",
-
-        "page_title": "区域与社区政治组织",
-
-        "som_intro": "简介",
-        "som_niveaux": "治理层级",
-        "som_dao": "DAO 角色",
-        "som_articulation": "层级衔接",
-        "som_objectifs": "目标",
-
-        "footer": "© 2026 Peuplitique – 版权所有"
-    }
-};
-
-function setLang(lang) {
-    localStorage.setItem("lang", lang);
-    applyTranslations(lang);
+function showLang(lang) {
+    document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
+    document.getElementById(lang).style.display = 'block';
 }
-
-function applyTranslations(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-}
-
-applyTranslations(localStorage.getItem("lang") || "fr");
 </script>
 
 </body>
