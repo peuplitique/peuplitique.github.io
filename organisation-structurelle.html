@@ -3,75 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title_page">Organisation structurelle – Peuplitique</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Organisation structurelle – Peuplitique</title>
+    <link rel="stylesheet" href="style.css?v=9999">
 </head>
 
-<body class="light-bg structurelle">
+<body>
 
 <!-- LANG SWITCH -->
 <div class="lang-switch">
-    <a href="?lang=fr">FR</a> |
-    <a href="?lang=en">EN</a> |
-    <a href="?lang=es">ES</a> |
-    <a href="?lang=ru">RU</a> |
-    <a href="?lang=cn">CN</a>
+    <button onclick="showLang('fr')">FR</button>
+    <button onclick="showLang('en')">EN</button>
+    <button onclick="showLang('es')">ES</button>
 </div>
 
-<!-- HEADER -->
-<header class="header-blue">
-    <h1 data-i18n="title_main">Peuplitique</h1>
-    <p data-i18n="title_sub">Plateforme citoyenne – Participation, transparence, gouvernance partagée</p>
+<!-- ===================================================== -->
+<!-- ======================  FR  ========================== -->
+<!-- ===================================================== -->
+<div id="fr" class="lang-block">
 
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html" data-i18n="menu_home">Accueil</a></li>
-            <li><a href="gouvernance-partagee.html" data-i18n="menu_governance">Gouvernance partagée</a></li>
-            <li><a href="gouvernance-dao.html" data-i18n="menu_dao">DAO</a></li>
-            <li><a href="limites-structurelles.html" data-i18n="menu_limits">Limites structurelles</a></li>
-            <li><a href="constitution.html" data-i18n="menu_constitution">Constitution</a></li>
-            <li><a href="organisation-structurelle.html" class="active" data-i18n="menu_structure">Organisation structurelle</a></li>
-            <li><a href="protocole.html" data-i18n="menu_protocol">Protocole</a></li>
-        </ul>
-    </nav>
+<header class="header">
+    <h1>Peuplitique</h1>
+    <h3 class="sous-titre">Plateforme citoyenne – Participation, transparence, gouvernance partagée</h3>
+    <div class="ligne"></div>
 </header>
-<!-- SOMMAIRE BLANC -->
-<nav class="sommaire-horizontal">
+
+<nav class="menu">
     <ul>
-        <li><a href="constitution.html" data-i18n="sommaire-constitution">Constitution</a></li>
-        <li><a href="limites-structurelles.html" data-i18n="sommaire-limites">Limites structurelles</a></li>
-        <li><a href="desequilibres-structurels.html" data-i18n="sommaire-desequilibres">Déséquilibres structurels</a></li>
-        <li><a href="organisation-economique.html" data-i18n="sommaire-economie">Organisation économique</a></li>
-        <li><a href="organisation-territoriale.html" data-i18n="sommaire-territoire">Organisation territoriale</a></li>
-        <li><a href="gouvernance-dao.html" data-i18n="sommaire-dao">Gouvernance DAO</a></li>
-        <li><a href="synthese.html" data-i18n="sommaire-synthese">Synthèse</a></li>
-        <li><a href="mise-en-oeuvre.html" data-i18n="sommaire-oeuvre">Mise en œuvre</a></li>
-        <li><a href="articles.html" data-i18n="sommaire-articles">Articles</a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
+        <li><a href="gouvernance-dao.html">DAO</a></li>
+        <li><a href="limites-structurelles.html">Limites structurelles</a></li>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="organisation-structurelle.html" class="active">Organisation structurelle</a></li>
+        <li><a href="protocole.html">Protocole</a></li>
+        <li><a href="glossaire.html">Glossaire</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
-<!-- ZONE BLEUE -->
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="limites-structurelles.html">Limites structurelles</a></li>
+        <li><a href="desequilibres-structurels.html">Déséquilibres structurels</a></li>
+        <li><a href="organisation-economique.html">Organisation économique</a></li>
+        <li><a href="organisation-territoriale.html">Organisation territoriale</a></li>
+        <li><a href="gouvernance-dao.html">Gouvernance DAO</a></li>
+        <li><a href="synthese.html">Synthèse</a></li>
+        <li><a href="mise-en-oeuvre.html">Mise en œuvre</a></li>
+        <li><a href="articles.html">Articles</a></li>
+    </ul>
+</nav>
+
 <section class="zone-bleue">
-    <h2 data-i18n="page_title">Organisation structurelle</h2>
+    <h2>Organisation structurelle</h2>
 </section>
 
-<!-- SOMMAIRE -->
 <nav class="sommaire-horizontal">
     <ul>
-        <li><a href="#intro" data-i18n="som_intro">Introduction</a></li>
-        <li><a href="#niveaux" data-i18n="som_niveaux">Niveaux</a></li>
-        <li><a href="#roles" data-i18n="som_roles">Rôles</a></li>
-        <li><a href="#flux" data-i18n="som_flux">Flux</a></li>
-        <li><a href="#articulation" data-i18n="som_articulation">Articulation</a></li>
-        <li><a href="#decentralisation" data-i18n="som_dec">Décentralisation</a></li>
-        <li><a href="#revenus-financiers" data-i18n="som_rev">Revenus</a></li>
-        <li><a href="#pea-etf" data-i18n="som_pea">PEA & ETF</a></li>
-        <li><a href="#financement" data-i18n="som_fin">Financement</a></li>
-        <li><a href="#transparence-fiscale" data-i18n="som_transp">Transparence</a></li>
-        <li><a href="#pension-budget" data-i18n="som_pension">Pension & budget</a></li>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#niveaux">Niveaux</a></li>
+        <li><a href="#roles">Rôles</a></li>
+        <li><a href="#flux">Flux</a></li>
+        <li><a href="#articulation">Articulation</a></li>
+        <li><a href="#decentralisation">Décentralisation</a></li>
+        <li><a href="#revenus-financiers">Revenus</a></li>
+        <li><a href="#pea-etf">PEA & ETF</a></li>
+        <li><a href="#financement">Financement</a></li>
+        <li><a href="#transparence-fiscale">Transparence</a></li>
+        <li><a href="#pension-budget">Pension & budget</a></li>
     </ul>
 </nav>
 
-<!-- CONTENU -->
 <main class="content">
 
 <section id="intro">
@@ -202,95 +205,408 @@
 
 </main>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
+<footer>
+    <p>© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
 
-<!-- SCRIPT MULTILINGUE -->
+</div> <!-- FIN FR -->
+
+<!-- ===================================================== -->
+<!-- ======================  EN  ========================== -->
+<!-- ===================================================== -->
+<div id="en" class="lang-block" style="display:none;">
+
+<header class="header">
+    <h1>Peuplitique</h1>
+    <h3 class="sous-titre">Citizen platform – Participation, transparency, shared governance</h3>
+    <div class="ligne"></div>
+</header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gouvernance-partagee.html">Shared Governance</a></li>
+        <li><a href="gouvernance-dao.html">DAO</a></li>
+        <li><a href="limites-structurelles.html">Structural Limits</a></li>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="organisation-structurelle.html" class="active">Structural Organization</a></li>
+        <li><a href="protocole.html">Protocol</a></li>
+        <li><a href="glossaire.html">Glossary</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="limites-structurelles.html">Structural Limits</a></li>
+        <li><a href="desequilibres-structurels.html">Structural Imbalances</a></li>
+        <li><a href="organisation-economique.html">Economic Organization</a></li>
+        <li><a href="organisation-territoriale.html">Territorial Organization</a></li>
+        <li><a href="gouvernance-dao.html">DAO Governance</a></li>
+        <li><a href="synthese.html">Summary</a></li>
+        <li><a href="mise-en-oeuvre.html">Implementation</a></li>
+        <li><a href="articles.html">Articles</a></li>
+    </ul>
+</nav>
+
+<section class="zone-bleue">
+    <h2>Structural Organization</h2>
+</section>
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="#intro-en">Introduction</a></li>
+        <li><a href="#levels-en">Levels</a></li>
+        <li><a href="#roles-en">Roles</a></li>
+        <li><a href="#flows-en">Information flows</a></li>
+        <li><a href="#articulation-en">Articulation</a></li>
+        <li><a href="#decentralisation-en">Decentralization</a></li>
+        <li><a href="#financial-revenues-en">Financial revenues</a></li>
+        <li><a href="#pea-etf-en">PEA & ETF</a></li>
+        <li><a href="#financing-en">Financing</a></li>
+        <li><a href="#tax-transparency-en">Tax transparency</a></li>
+        <li><a href="#pension-budget-en">Pension & budget</a></li>
+    </ul>
+</nav>
+
+<main class="content">
+
+<section id="intro-en">
+    <h2>Structural organization</h2>
+    <p>
+        The structural organization describes how Peuplitique articulates decision levels, roles, 
+        information flows and fiscal and financial mechanisms.
+    </p>
+</section>
+
+<section id="levels-en">
+    <h3>1. Structural levels</h3>
+
+    <h4>Citizen level</h4>
+    <p>Each person can signal a problem, express a need, propose an idea…</p>
+
+    <h4>Thematic level</h4>
+    <p>Contributions are grouped by themes…</p>
+
+    <h4>Synthesis level</h4>
+    <p>Thematic scenarios are brought into coherence…</p>
+</section>
+
+<section id="roles-en">
+    <h3>2. Roles and responsibilities</h3>
+
+    <h4>Citizen</h4>
+    <p>Express needs, participate in debates, vote…</p>
+
+    <h4>Facilitation</h4>
+    <p>Ensure that exchanges remain inclusive and structured…</p>
+
+    <h4>Institutional interface</h4>
+    <p>Connect decisions from Peuplitique to existing institutions…</p>
+</section>
+
+<section id="flows-en">
+    <h3>3. Information flows</h3>
+
+    <h4>From reality to decision</h4>
+    <p>Signals from the field are qualified and structured…</p>
+
+    <h4>From decision to reality</h4>
+    <p>Each decision is published with objectives, means, timeline…</p>
+</section>
+
+<section id="articulation-en">
+    <h3>4. Articulation with other organizations</h3>
+    <p>
+        The structural organization does not replace existing organizations, it connects them…
+    </p>
+</section>
+
+<section id="decentralisation-en">
+    <h3>5. Fiscal decentralization</h3>
+    <p>
+        Part of the fiscal power is transferred to local authorities, with clear and transparent rules. 
+        Territories have room for manoeuvre to adapt policies to local realities, while respecting common 
+        principles of solidarity and equality. Citizens can see, at the scale of their territory, what is 
+        collected, what is invested and what is kept in reserve.
+    </p>
+</section>
+
+<section id="financial-revenues-en">
+    <h3>6. Management of financial revenues</h3>
+    <p>
+        Revenues from financial activities (public dividends, profitable infrastructures, investments) are managed 
+        in transparent frameworks. A share is reinvested locally (public services, ecological transition, infrastructures), 
+        another feeds national or sectoral common funds. Each flow is traceable, with explicit and understandable 
+        allocation rules.
+    </p>
+</section>
+
+<section id="pea-etf-en">
+    <h3>7. Redirection of PEA and ETF</h3>
+    <p>
+        PEA and ETF can gradually be oriented towards sectors considered strategic: energy, health, 
+        food sovereignty, digital, circular industry. The idea is not to confiscate savings, but to propose 
+        investment vehicles aligned with the collective interest, with real transparency on the use of funds 
+        and the impacts generated.
+    </p>
+</section>
+
+<section id="financing-en">
+    <h3>8. Financing without perpetual debt</h3>
+    <p>
+        The structural organization favours financing mechanisms that do not rely on infinite and opaque debt. 
+        Citizen sovereign funds, targeted local bonds, value sharing on productive projects: each mechanism 
+        is associated with a time horizon, an explicit risk level and an expected return. Citizens can understand 
+        how a project is financed, by whom, and for how long.
+    </p>
+</section>
+
+<section id="tax-transparency-en">
+    <h3>9. Tax transparency</h3>
+    <p>
+        Each tax, each contribution, each levy is linked to a specific use: health, education, water, roads, 
+        digital infrastructures, culture, etc. Citizens can visualize, by sector, what is collected, what is 
+        spent and what is in reserve.
+    </p>
+
+    <p>
+        The factual reality of a tax is in principle backed by the real value of GDP. If GDP does not respond 
+        sufficiently between wages and taxes, the adjustment must be made on real development and the significant 
+        contribution it brings to the country. If wages do not follow tax requirements, it means real development 
+        is suffering or absent. This is the keystone of a country and a necessary reorganization at both local 
+        and international levels.
+    </p>
+</section>
+
+<section id="pension-budget-en">
+    <h3>10. Pension & budget</h3>
+    <p>
+        A citizen pension fund can be designed as a common tool, independent of private interests, with clear, 
+        controllable and revisable governance rules. Sovereign pension cannot become an instrument of blackmail 
+        when economic development fails and it becomes a weapon against citizens, or a favour when intentions 
+        require it.
+    </p>
+
+    <p>
+        A fixed pension, calculated on the current cost of living and revised upwards according to economic factors, 
+        guarantees stability. The national budget is presented in a readable way, linked to concrete objectives 
+        (reducing inequalities, ecological transition, territorial resilience) while reflecting reality in order to 
+        understand which sectors need adjustment. It is subject to continuous citizen oversight rather than a one-off, 
+        technical debate once a year.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Peuplitique – All rights reserved</p>
+</footer>
+
+</div> <!-- FIN EN -->
+
+<!-- ===================================================== -->
+<!-- ======================  ES  ========================== -->
+<!-- ===================================================== -->
+<div id="es" class="lang-block" style="display:none;">
+
+<header class="header">
+    <h1>Peuplitique</h1>
+    <h3 class="sous-titre">Plataforma ciudadana – Participación, transparencia, gobernanza compartida</h3>
+    <div class="ligne"></div>
+</header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="gouvernance-partagee.html">Gobernanza compartida</a></li>
+        <li><a href="gouvernance-dao.html">DAO</a></li>
+        <li><a href="limites-structurelles.html">Límites estructurales</a></li>
+        <li><a href="constitution.html">Constitución</a></li>
+        <li><a href="organisation-structurelle.html" class="active">Organización estructural</a></li>
+        <li><a href="protocole.html">Protocolo</a></li>
+        <li><a href="glossaire.html">Glosario</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="constitution.html">Constitución</a></li>
+        <li><a href="limites-structurelles.html">Límites estructurales</a></li>
+        <li><a href="desequilibres-structurels.html">Desequilibrios estructurales</a></li>
+        <li><a href="organisation-economique.html">Organización económica</a></li>
+        <li><a href="organisation-territoriale.html">Organización territorial</a></li>
+        <li><a href="gouvernance-dao.html">Gobernanza DAO</a></li>
+        <li><a href="synthese.html">Síntesis</a></li>
+        <li><a href="mise-en-oeuvre.html">Implementación</a></li>
+        <li><a href="articles.html">Artículos</a></li>
+    </ul>
+</nav>
+
+<section class="zone-bleue">
+    <h2>Organización estructural</h2>
+</section>
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="#intro-es">Introducción</a></li>
+        <li><a href="#niveles-es">Niveles</a></li>
+        <li><a href="#roles-es">Roles</a></li>
+        <li><a href="#flujos-es">Flujos de información</a></li>
+        <li><a href="#articulacion-es">Articulación</a></li>
+        <li><a href="#descentralizacion-es">Descentralización</a></li>
+        <li><a href="#ingresos-financieros-es">Ingresos financieros</a></li>
+        <li><a href="#pea-etf-es">PEA & ETF</a></li>
+        <li><a href="#financiacion-es">Financiación</a></li>
+        <li><a href="#transparencia-fiscal-es">Transparencia fiscal</a></li>
+        <li><a href="#pension-presupuesto-es">Pensión y presupuesto</a></li>
+    </ul>
+</nav>
+
+<main class="content">
+
+<section id="intro-es">
+    <h2>Organización estructural</h2>
+    <p>
+        La organización estructural describe cómo Peuplitique articula los niveles de decisión, los roles, 
+        los flujos de información y los mecanismos fiscales y financieros.
+    </p>
+</section>
+
+<section id="niveles-es">
+    <h3>1. Niveles de estructura</h3>
+
+    <h4>Nivel ciudadano</h4>
+    <p>Cada persona puede señalar un problema, formular una necesidad, proponer una idea…</p>
+
+    <h4>Nivel temático</h4>
+    <p>Las contribuciones se agrupan por temas…</p>
+
+    <h4>Nivel de síntesis</h4>
+    <p>Los escenarios temáticos se ponen en coherencia…</p>
+</section>
+
+<section id="roles-es">
+    <h3>2. Roles y responsabilidades</h3>
+
+    <h4>Ciudadanía</h4>
+    <p>Expresar sus necesidades, participar en los debates, votar…</p>
+
+    <h4>Facilitación</h4>
+    <p>Garantizar que los intercambios sigan siendo inclusivos y estructurados…</p>
+
+    <h4>Interfaz institucional</h4>
+    <p>Vincular las decisiones surgidas de Peuplitique con las instituciones existentes…</p>
+</section>
+
+<section id="flujos-es">
+    <h3>3. Flujos de información</h3>
+
+    <h4>De la realidad hacia la decisión</h4>
+    <p>Las señales del terreno se califican y estructuran…</p>
+
+    <h4>De la decisión hacia la realidad</h4>
+    <p>Cada decisión se publica con objetivos, medios y calendario…</p>
+</section>
+
+<section id="articulacion-es">
+    <h3>4. Articulación con otras organizaciones</h3>
+    <p>
+        La organización estructural no sustituye a las organizaciones existentes, las conecta…
+    </p>
+</section>
+
+<section id="descentralizacion-es">
+    <h3>5. Descentralización fiscal</h3>
+    <p>
+        Una parte del poder fiscal se transfiere a las colectividades locales, con reglas claras y transparentes. 
+        Los territorios disponen de margen de maniobra para adaptar las políticas a las realidades locales, respetando 
+        principios comunes de solidaridad e igualdad. Los ciudadanos pueden ver, a escala de su territorio, lo que 
+        se recauda, lo que se invierte y lo que se deja en reserva.
+    </p>
+</section>
+
+<section id="ingresos-financieros-es">
+    <h3>6. Gestión de los ingresos financieros</h3>
+    <p>
+        Los ingresos procedentes de actividades financieras (dividendos públicos, infraestructuras rentables, inversiones) 
+        se gestionan en marcos transparentes. Una parte se reinvierte a nivel local (servicios públicos, transición ecológica, 
+        infraestructuras), otra alimenta fondos comunes nacionales o sectoriales. Cada flujo es trazable, con reglas de 
+        reparto explícitas y comprensibles.
+    </p>
+</section>
+
+<section id="pea-etf-es">
+    <h3>7. Redirección de los PEA y ETF</h3>
+    <p>
+        Los PEA y ETF pueden orientarse progresivamente hacia sectores considerados estratégicos: energía, salud, 
+        soberanía alimentaria, digital, industria circular. La idea no es confiscar el ahorro, sino proponer vehículos 
+        de inversión alineados con el interés colectivo, con una transparencia real sobre el uso de los fondos 
+        y los impactos generados.
+    </p>
+</section>
+
+<section id="financiacion-es">
+    <h3>8. Financiación sin deuda perpetua</h3>
+    <p>
+        La organización estructural privilegia mecanismos de financiación que no se basan en una deuda infinita y opaca. 
+        Fondos soberanos ciudadanos, obligaciones locales específicas, reparto de valor en proyectos productivos: cada 
+        mecanismo está asociado a un horizonte temporal, un nivel de riesgo explícito y un retorno esperado. Los ciudadanos 
+        pueden comprender cómo se financia un proyecto, por quién y durante cuánto tiempo.
+    </p>
+</section>
+
+<section id="transparencia-fiscal-es">
+    <h3>9. Transparencia fiscal</h3>
+    <p>
+        Cada impuesto, cada contribución, cada gravamen está vinculado a un uso preciso: salud, educación, agua, carreteras, 
+        infraestructuras digitales, cultura, etc. Los ciudadanos pueden visualizar, por sector, lo que se recauda, lo que 
+        se gasta y lo que queda en reserva.
+    </p>
+
+    <p>
+        La realidad fáctica de un impuesto está, en principio, respaldada por el valor real del PIB. Si el PIB no responde 
+        suficientemente entre salarios e impuestos, el ajuste debe hacerse sobre el desarrollo real y la contribución 
+        significativa que aporta al país. Si los salarios no siguen las exigencias fiscales, significa que el desarrollo 
+        real está en sufrimiento o ausente. Es la piedra angular de un país y una reorganización necesaria a nivel local 
+        e internacional.
+    </p>
+</section>
+
+<section id="pension-presupuesto-es">
+    <h3>10. Pensión y presupuesto</h3>
+    <p>
+        Un fondo de pensiones ciudadano puede concebirse como una herramienta común, independiente de los intereses privados, 
+        con reglas de gobernanza claras, controlables y revisables. La pensión soberana no puede convertirse en instrumento 
+        de chantaje cuando el desarrollo económico falla y se convierte en un arma contra los ciudadanos, o en un favor 
+        cuando las intenciones lo exigen.
+    </p>
+
+    <p>
+        Una pensión fija, calculada sobre el coste actual de la vida y revisada al alza según los factores económicos, 
+        garantiza la estabilidad. El presupuesto nacional se presenta de forma legible, vinculado a objetivos concretos 
+        (reducción de desigualdades, transición ecológica, resiliencia territorial) y reflejando la realidad para comprender 
+        los sectores que deben reajustarse. Está sometido a un control ciudadano continuo en lugar de un debate puntual y 
+        técnico una vez al año.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Peuplitique – Todos los derechos reservados</p>
+</footer>
+
+</div> <!-- FIN ES -->
+
+<!-- SCRIPT LANG -->
 <script>
-const translations = {
-    "en": {
-        "title_page": "Structural Organization – Peuplitique",
-        "title_main": "Peuplitique",
-        "title_sub": "Citizen platform – Participation, transparency, shared governance",
-
-        "menu_home": "Home",
-        "menu_governance": "Shared Governance",
-        "menu_dao": "DAO",
-        "menu_limits": "Structural Limits",
-        "menu_constitution": "Constitution",
-        "menu_structure": "Structural Organization",
-        "menu_protocol": "Protocol",
-
-        "page_title": "Structural Organization",
-
-        "som_intro": "Introduction",
-        "som_niveaux": "Levels",
-        "som_roles": "Roles",
-        "som_flux": "Information flows",
-        "som_articulation": "Articulation",
-        "som_dec": "Decentralization",
-        "som_rev": "Financial revenues",
-        "som_pea": "PEA & ETF",
-        "som_fin": "Financing",
-        "som_transp": "Tax transparency",
-        "som_pension": "Pension & budget",
-
-        "footer": "© 2026 Peuplitique – All rights reserved"
-    },
-sous_titre: "First independent citizen platform – Shared governance – Common decision"
-    },
-
-    "es": {
-        "title_page": "Organización estructural – Peuplitique",
-        "title_main": "Peuplitique",
-        "title_sub": "Plataforma ciudadana – Participación, transparencia, gobernanza compartida",
-
-        "menu_home": "Inicio",
-        "menu_governance": "Gobernanza compartida",
-        "menu_dao": "DAO",
-        "menu_limits": "Límites estructurales",
-        "menu_constitution": "Constitución",
-        "menu_structure": "Organización estructural",
-        "menu_protocol": "Protocolo",
-
-        "page_title": "Organización estructural",
-
-        "som_intro": "Introducción",
-        "som_niveaux": "Niveles",
-        "som_roles": "Roles",
-        "som_flux": "Flujos",
-        "som_articulation": "Articulación",
-        "som_dec": "Descentralización",
-        "som_rev": "Ingresos financieros",
-        "som_pea": "PEA & ETF",
-        "som_fin": "Financiación",
-        "som_transp": "Transparencia fiscal",
-        "som_pension": "Pensión y presupuesto",
-
-        "footer": "© 2026 Peuplitique – Todos los derechos reservados"
-    }
-};
-sous_titre: "Primera plataforma ciudadana independiente – Gobernanza compartida – Decisión común"
-    }
-};
-
-function setLang(lang) {
-    localStorage.setItem("lang", lang);
-    applyTranslations(lang);
+function showLang(lang) {
+    document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
+    document.getElementById(lang).style.display = 'block';
 }
-
-function applyTranslations(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-}
-
-applyTranslations(localStorage.getItem("lang") || "fr");
 </script>
 
 </body>
