@@ -3,370 +3,486 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title_page">Limites structurelles – Peuplitique</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Limites structurelles – Peuplitique</title>
+    <link rel="stylesheet" href="style.css?v=9999">
 </head>
 
 <body>
-    
 
 <!-- LANG SWITCH -->
 <div class="lang-switch">
-    <a href="?lang=fr">FR</a> |
-    <a href="?lang=en">EN</a> |
-    <a href="?lang=es">ES</a>
+    <button onclick="showLang('fr')">FR</button>
+    <button onclick="showLang('en')">EN</button>
+    <button onclick="showLang('es')">ES</button>
 </div>
 
-<header class="header-blue">
-    <h1 data-i18n="title_main">Peuplitique</h1>
-    <p data-i18n="title_sub">Plateforme citoyenne – Participation, transparence, gouvernance partagée</p>
+<!-- ===================================================== -->
+<!-- ======================  FR  ========================== -->
+<!-- ===================================================== -->
+<div id="fr" class="lang-block">
 
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html" data-i18n="menu_home">Accueil</a></li>
-            <li><a href="gouvernance-partagee.html" data-i18n="menu_governance">Gouvernance partagée</a></li>
-            <li><a href="gouvernance-dao.html" data-i18n="menu_dao">DAO</a></li>
-            <li><a href="organisation-structurelle.html" data-i18n="menu_structure">Organisation structurelle</a></li>
-            <li><a href="economie-integree.html" data-i18n="menu_economie">Économie intégrée</a></li>
-            <li><a href="protocole.html" data-i18n="menu_protocol">Protocole</a></li>
-            <li><a href="glossaire.html" data-i18n="menu_glossaire">Glossaire</a></li>
-            <li><a href="contact.html" data-i18n="menu_contact">Contact</a></li>
-        </ul>
-    </nav>
+<header class="header">
+    <h1>Peuplitique</h1>
+    <h3 class="sous-titre">Plateforme citoyenne – Participation, transparence, gouvernance partagée</h3>
+    <div class="ligne"></div>
 </header>
-<!-- SOMMAIRE BLANC -->
-<nav class="sommaire-horizontal">
+
+<nav class="menu">
     <ul>
-        <li><a href="constitution.html" data-i18n="sommaire-constitution">Constitution</a></li>
-        <li><a href="limites-structurelles.html" data-i18n="sommaire-limites">Limites structurelles</a></li>
-        <li><a href="desequilibres-structurels.html" data-i18n="sommaire-desequilibres">Déséquilibres structurels</a></li>
-        <li><a href="organisation-economique.html" data-i18n="sommaire-economie">Organisation économique</a></li>
-        <li><a href="organisation-territoriale.html" data-i18n="sommaire-territoire">Organisation territoriale</a></li>
-        <li><a href="gouvernance-dao.html" data-i18n="sommaire-dao">Gouvernance DAO</a></li>
-        <li><a href="synthese.html" data-i18n="sommaire-synthese">Synthèse</a></li>
-        <li><a href="mise-en-oeuvre.html" data-i18n="sommaire-oeuvre">Mise en œuvre</a></li>
-        <li><a href="articles.html" data-i18n="sommaire-articles">Articles</a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
+        <li><a href="gouvernance-dao.html">DAO</a></li>
+        <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
+        <li><a href="economie-integree.html">Économie intégrée</a></li>
+        <li><a href="protocole.html">Protocole</a></li>
+        <li><a href="glossaire.html">Glossaire</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
-<!-- ZONE BLEUE -->
-<section class="zone-bleue">
-    <h2 data-i18n="page_title">Limites structurelles</h2>
-</section>
 
-<!-- SOMMAIRE HORIZONTAL -->
 <nav class="sommaire-horizontal">
     <ul>
-        <li><a href="#lim1" data-i18n="som_lim1">Institutionnelles</a></li>
-        <li><a href="#lim2" data-i18n="som_lim2">Démocratiques</a></li>
-        <li><a href="#lim3" data-i18n="som_lim3">Économiques</a></li>
-        <li><a href="#lim4" data-i18n="som_lim4">Judiciaires</a></li>
-        <li><a href="#lim5" data-i18n="som_lim5">Sociales</a></li>
-        <li><a href="#lim6" data-i18n="som_lim6">Technologiques</a></li>
-        <li><a href="#lim7" data-i18n="som_lim7">Environnementales</a></li>
-        <li><a href="#lim8" data-i18n="som_lim8">Gouvernance</a></li>
-        <li><a href="#lim9" data-i18n="som_lim9">Transparence</a></li>
-        <li><a href="#lim10" data-i18n="som_lim10">Fiscales</a></li>
-        <li><a href="#lim11" data-i18n="som_lim11">Synthèse</a></li>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="limites-structurelles.html" class="active">Limites structurelles</a></li>
+        <li><a href="desequilibres-structurels.html">Déséquilibres structurels</a></li>
+        <li><a href="organisation-economique.html">Organisation économique</a></li>
+        <li><a href="organisation-territoriale.html">Organisation territoriale</a></li>
+        <li><a href="gouvernance-dao.html">Gouvernance DAO</a></li>
+        <li><a href="synthese.html">Synthèse</a></li>
+        <li><a href="mise-en-oeuvre.html">Mise en œuvre</a></li>
+        <li><a href="articles.html">Articles</a></li>
+    </ul>
+</nav>
+
+<section class="zone-bleue">
+    <h2>Limites structurelles</h2>
+</section>
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="#lim1">Institutionnelles</a></li>
+        <li><a href="#lim2">Démocratiques</a></li>
+        <li><a href="#lim3">Économiques</a></li>
+        <li><a href="#lim4">Judiciaires</a></li>
+        <li><a href="#lim5">Sociales</a></li>
+        <li><a href="#lim6">Technologiques</a></li>
+        <li><a href="#lim7">Environnementales</a></li>
+        <li><a href="#lim8">Gouvernance</a></li>
+        <li><a href="#lim9">Transparence</a></li>
+        <li><a href="#lim10">Fiscales</a></li>
+        <li><a href="#lim11">Synthèse</a></li>
     </ul>
 </nav>
 
 <main class="content">
 
-    <!-- 1 -->
-    <section id="lim1">
-        <h2 data-i18n="lim1_title">1. Limites institutionnelles</h2>
-        <p data-i18n="lim1_text">
-            Les institutions actuelles fonctionnent sur des modèles hérités du XIXe et XXe siècle...
-        </p>
-    </section>
+<section id="lim1">
+    <h2>1. Limites institutionnelles</h2>
+    <p>
+        Les institutions actuelles reposent sur des modèles hérités du XIXe et XXe siècle, inadaptés à la complexité,
+        la rapidité et l’interconnexion du monde contemporain. Les structures pyramidales et la lenteur des procédures
+        créent un décalage profond avec les besoins réels.
+    </p>
+</section>
 
-    <!-- 2 -->
-    <section id="lim2">
-        <h2 data-i18n="lim2_title">2. Limites démocratiques</h2>
-        <p data-i18n="lim2_intro">
-            La démocratie représentative repose sur une délégation quasi totale du pouvoir politique...
-        </p>
+<section id="lim2">
+    <h2>2. Limites démocratiques</h2>
+    <p>
+        La démocratie représentative délègue presque entièrement le pouvoir politique à des représentants élus pour plusieurs années.
+        Entre deux élections, les citoyens disposent de très peu de leviers pour corriger ou ajuster les décisions.
+    </p>
 
-        <p data-i18n="lim2_list_intro">Cette architecture crée plusieurs limites structurelles :</p>
+    <h4>1. Concentration du pouvoir</h4>
+    <p>Les représentants disposent d’une large autonomie, souvent peu contrôlée en continu.</p>
 
-        <h4 data-i18n="lim2_1_title">1. Concentration du pouvoir</h4>
-        <p data-i18n="lim2_1_text">Une fois élus, les représentants disposent d’une large marge de manœuvre...</p>
+    <h4>2. Absence de décision directe</h4>
+    <p>Les citoyens ne peuvent pas intervenir sur les grandes orientations.</p>
 
-        <h4 data-i18n="lim2_2_title">2. Absence de décision directe</h4>
-        <p data-i18n="lim2_2_text">Le citoyen ne peut plus décider...</p>
+    <h4>3. Captation par des intérêts intermédiaires</h4>
+    <p>Les décisions peuvent être influencées par des lobbys ou acteurs économiques.</p>
 
-        <h4 data-i18n="lim2_3_title">3. Captation par des intérêts intermédiaires</h4>
-        <p data-i18n="lim2_3_text">Les décisions publiques peuvent être influencées...</p>
+    <h4>4. Opacité des flux financiers</h4>
+    <p>Les arbitrages budgétaires restent techniques, peu lisibles et peu débattus.</p>
 
-        <h4 data-i18n="lim2_4_title">4. Opacité des flux financiers</h4>
-        <p data-i18n="lim2_4_text">Les mécanismes budgétaires échappent au contrôle citoyen...</p>
+    <h4>5. Faible capacité de correction citoyenne</h4>
+    <p>Les citoyens n’ont presque aucun outil institutionnel pour corriger une trajectoire.</p>
+</section>
 
-        <h4 data-i18n="lim2_5_title">5. Faible capacité de correction citoyenne</h4>
-        <p data-i18n="lim2_5_text">Les citoyens disposent de très peu d’outils institutionnels...</p>
+<section id="lim3">
+    <h2>3. Limites économiques</h2>
+    <p>
+        Les modèles actuels favorisent la concentration des richesses, la financiarisation et la dépendance à des indicateurs
+        de court terme. Les politiques publiques deviennent réactives plutôt que stratégiques.
+    </p>
+</section>
 
-        <p data-i18n="lim2_summary">En résumé, la démocratie représentative...</p>
-    </section>
+<section id="lim4">
+    <h2>4. Limites judiciaires</h2>
+    <p>
+        Le système judiciaire souffre de lenteurs, d’inégalités d’accès, et d’une dépendance excessive vis‑à‑vis du pouvoir politique.
+    </p>
+</section>
 
-    <!-- 3 -->
-    <section id="lim3">
-        <h2 data-i18n="lim3_title">3. Limites économiques</h2>
-        <p data-i18n="lim3_text1">Les modèles économiques actuels favorisent...</p>
-        <p data-i18n="lim3_text2">Cette dépendance systémique...</p>
-        <p data-i18n="lim3_text3">Certains modèles alternatifs évoquent...</p>
-        <p data-i18n="lim3_text4">Les politiques économiques deviennent réactives...</p>
-    </section>
+<section id="lim5">
+    <h2>5. Limites sociales</h2>
+    <p>
+        Les sociétés contemporaines sont fragmentées, polarisées, et marquées par une perte de confiance généralisée.
+    </p>
+</section>
 
-    <!-- 4 -->
-    <section id="lim4">
-        <h2 data-i18n="lim4_title">4. Limites du système judiciaire</h2>
-        <p data-i18n="lim4_text1">Le système judiciaire souffre de limites structurelles...</p>
-        <p data-i18n="lim4_text2">La dépendance vis‑à‑vis du pouvoir politique...</p>
-        <p data-i18n="lim4_text3">Cette situation alimente l’injustice...</p>
-    </section>
+<section id="lim6">
+    <h2>6. Limites technologiques</h2>
+    <p>
+        Les technologies évoluent plus vite que les cadres juridiques et institutionnels, créant un décalage dangereux.
+    </p>
+</section>
 
-    <!-- 5 -->
-    <section id="lim5">
-        <h2 data-i18n="lim5_title">5. Limites sociales</h2>
-        <p data-i18n="lim5_text1">Les sociétés contemporaines sont marquées...</p>
-        <p data-i18n="lim5_text2">L’absence de visibilité renforce...</p>
-        <p data-i18n="lim5_text3">Les modèles sociaux peinent...</p>
-        <p data-i18n="lim5_text4">Cette déconnexion alimente la défiance...</p>
-    </section>
+<section id="lim7">
+    <h2>7. Limites environnementales</h2>
+    <p>
+        Les modèles actuels ne permettent pas de répondre efficacement aux crises écologiques.
+    </p>
+</section>
 
-    <!-- 6 -->
-    <section id="lim6">
-        <h2 data-i18n="lim6_title">6. Limites technologiques</h2>
-        <p data-i18n="lim6_text1">Les technologies évoluent plus vite...</p>
-        <p data-i18n="lim6_text2">L’absence d’encadrement empêche...</p>
-        <p data-i18n="lim6_text3">Ce décalage crée une dépendance...</p>
-    </section>
+<section id="lim8">
+    <h2>8. Limites de gouvernance</h2>
+    <p>
+        La centralisation excessive ralentit les décisions et empêche l’innovation locale.
+    </p>
+</section>
 
-    <!-- 7 -->
-    <section id="lim7">
-        <h2 data-i18n="lim7_title">7. Limites environnementales</h2>
-        <p data-i18n="lim7_text">Les modèles actuels ne permettent pas...</p>
-    </section>
+<section id="lim9">
+    <h2>9. Limites de transparence</h2>
+    <p>
+        Les citoyens n’ont pas accès à une information claire, complète et en temps réel.
+    </p>
+</section>
 
-    <!-- 8 -->
-    <section id="lim8">
-        <h2 data-i18n="lim8_title">8. Limites de gouvernance</h2>
-        <p data-i18n="lim8_text">La centralisation excessive ralentit...</p>
-    </section>
+<section id="lim10">
+    <h2>10. Limites fiscales</h2>
+    <p>
+        Les systèmes fiscaux sont complexes, opaques et inefficaces. Les citoyens ne peuvent pas visualiser clairement
+        ce qui est collecté, redistribué ou investi.
+    </p>
+</section>
 
-    <!-- 9 -->
-    <section id="lim9">
-        <h2 data-i18n="lim9_title">9. Limites de transparence</h2>
-        <p data-i18n="lim9_text">Les citoyens n’ont pas accès...</p>
-    </section>
-
-    <!-- 10 -->
-    <section id="lim10">
-        <h2 data-i18n="lim10_title">10. Limites fiscales</h2>
-        <p data-i18n="lim10_text">Les systèmes fiscaux sont complexes...</p>
-    </section>
-
-    <!-- 11 -->
-    <section id="lim11">
-        <h2 data-i18n="lim11_title">11. Limites structurelles globales</h2>
-        <p data-i18n="lim11_text">L’ensemble de ces limites crée un système rigide...</p>
-    </section>
+<section id="lim11">
+    <h2>11. Synthèse</h2>
+    <p>
+        L’ensemble de ces limites crée un système rigide, lent et peu participatif. Une refonte structurelle est nécessaire
+        pour restaurer la souveraineté citoyenne et renforcer la transparence.
+    </p>
+</section>
 
 </main>
 
-<footer class="footer">
-    <p data-i18n="footer">© 2026 Peuplitique — Plateforme citoyenne</p>
+<footer>
+    <p>© 2026 Peuplitique — Plateforme citoyenne</p>
 </footer>
 
-<!-- SCRIPT MULTILINGUE -->
+</div> <!-- FIN FR -->
+  <!-- ===================================================== -->
+<!-- ======================  EN  ========================== -->
+<!-- ===================================================== -->
+<div id="en" class="lang-block" style="display:none;">
+
+<header class="header">
+    <h1>Peuplitique</h1>
+    <h3 class="sous-titre">Citizen platform – Participation, transparency, shared governance</h3>
+    <div class="ligne"></div>
+</header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gouvernance-partagee.html">Shared Governance</a></li>
+        <li><a href="gouvernance-dao.html">DAO</a></li>
+        <li><a href="organisation-structurelle.html">Structural Organization</a></li>
+        <li><a href="economie-integree.html">Integrated Economy</a></li>
+        <li><a href="protocole.html">Protocol</a></li>
+        <li><a href="glossaire.html">Glossary</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="zone-bleue">
+    <h2>Structural Limits</h2>
+</section>
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="#lim1-en">Institutional</a></li>
+        <li><a href="#lim2-en">Democratic</a></li>
+        <li><a href="#lim3-en">Economic</a></li>
+        <li><a href="#lim4-en">Judicial</a></li>
+        <li><a href="#lim5-en">Social</a></li>
+        <li><a href="#lim6-en">Technological</a></li>
+        <li><a href="#lim7-en">Environmental</a></li>
+        <li><a href="#lim8-en">Governance</a></li>
+        <li><a href="#lim9-en">Transparency</a></li>
+        <li><a href="#lim10-en">Fiscal</a></li>
+        <li><a href="#lim11-en">Summary</a></li>
+    </ul>
+</nav>
+
+<main class="content">
+
+<section id="lim1-en">
+    <h2>1. Institutional limits</h2>
+    <p>
+        Current institutions rely on outdated models that cannot keep up with modern complexity,
+        speed and interconnection.
+    </p>
+</section>
+
+<section id="lim2-en">
+    <h2>2. Democratic limits</h2>
+    <p>
+        Representative democracy delegates almost all political power to elected officials for several years,
+        leaving citizens with very few corrective tools.
+    </p>
+
+    <h4>1. Concentration of power</h4>
+    <p>Representatives have broad autonomy with little continuous oversight.</p>
+
+    <h4>2. No direct decision-making</h4>
+    <p>Citizens cannot intervene in major orientations.</p>
+
+    <h4>3. Influence of intermediaries</h4>
+    <p>Decisions may be influenced by lobbies or economic actors.</p>
+
+    <h4>4. Financial opacity</h4>
+    <p>Budgetary choices remain technical and unclear.</p>
+
+    <h4>5. Weak corrective capacity</h4>
+    <p>Citizens have almost no institutional tools to adjust a trajectory.</p>
+</section>
+
+<section id="lim3-en">
+    <h2>3. Economic limits</h2>
+    <p>
+        Current models favor wealth concentration, financialization and short‑term indicators.
+    </p>
+</section>
+
+<section id="lim4-en">
+    <h2>4. Judicial limits</h2>
+    <p>
+        The judicial system suffers from slowness, unequal access and excessive dependence on political power.
+    </p>
+</section>
+
+<section id="lim5-en">
+    <h2>5. Social limits</h2>
+    <p>
+        Contemporary societies are fragmented, polarized and marked by widespread distrust.
+    </p>
+</section>
+
+<section id="lim6-en">
+    <h2>6. Technological limits</h2>
+    <p>
+        Technology evolves faster than legal and institutional frameworks.
+    </p>
+</section>
+
+<section id="lim7-en">
+    <h2>7. Environmental limits</h2>
+    <p>
+        Current models cannot effectively address ecological crises.
+    </p>
+</section>
+
+<section id="lim8-en">
+    <h2>8. Governance limits</h2>
+    <p>
+        Excessive centralization slows decisions and blocks local innovation.
+    </p>
+</section>
+
+<section id="lim9-en">
+    <h2>9. Transparency limits</h2>
+    <p>
+        Citizens lack clear, complete and real‑time information.
+    </p>
+</section>
+
+<section id="lim10-en">
+    <h2>10. Fiscal limits</h2>
+    <p>
+        Tax systems are complex, opaque and inefficient.
+    </p>
+</section>
+
+<section id="lim11-en">
+    <h2>11. Summary</h2>
+    <p>
+        All these limits create a rigid, slow and poorly participatory system.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Peuplitique — Citizen platform</p>
+</footer>
+
+</div> <!-- FIN EN -->
+
+<!-- ===================================================== -->
+<!-- ======================  ES  ========================== -->
+<!-- ===================================================== -->
+<div id="es" class="lang-block" style="display:none;">
+
+<header class="header">
+    <h1>Peuplitique</h1>
+    <h3 class="sous-titre">Plataforma ciudadana – Participación, transparencia, gobernanza compartida</h3>
+    <div class="ligne"></div>
+</header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="gouvernance-partagee.html">Gobernanza compartida</a></li>
+        <li><a href="gouvernance-dao.html">DAO</a></li>
+        <li><a href="organisation-structurelle.html">Organización estructural</a></li>
+        <li><a href="economie-integree.html">Economía integrada</a></li>
+        <li><a href="protocole.html">Protocolo</a></li>
+        <li><a href="glossaire.html">Glosario</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<section class="zone-bleue">
+    <h2>Límites estructurales</h2>
+</section>
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="#lim1-es">Institucionales</a></li>
+        <li><a href="#lim2-es">Democráticos</a></li>
+        <li><a href="#lim3-es">Económicos</a></li>
+        <li><a href="#lim4-es">Judiciales</a></li>
+        <li><a href="#lim5-es">Sociales</a></li>
+        <li><a href="#lim6-es">Tecnológicos</a></li>
+        <li><a href="#lim7-es">Ambientales</a></li>
+        <li><a href="#lim8-es">Gobernanza</a></li>
+        <li><a href="#lim9-es">Transparencia</a></li>
+        <li><a href="#lim10-es">Fiscales</a></li>
+        <li><a href="#lim11-es">Síntesis</a></li>
+    </ul>
+</nav>
+
+<main class="content">
+
+<section id="lim1-es">
+    <h2>1. Límites institucionales</h2>
+    <p>
+        Las instituciones actuales se basan en modelos antiguos que ya no responden a la complejidad moderna.
+    </p>
+</section>
+
+<section id="lim2-es">
+    <h2>2. Límites democráticos</h2>
+    <p>
+        La democracia representativa delega casi todo el poder político durante años, dejando pocos mecanismos de corrección.
+    </p>
+
+    <h4>1. Concentración del poder</h4>
+    <p>Los representantes tienen un margen muy amplio sin control continuo.</p>
+
+    <h4>2. Ausencia de decisión directa</h4>
+    <p>Los ciudadanos no pueden intervenir en las grandes orientaciones.</p>
+
+    <h4>3. Influencia de intereses intermedios</h4>
+    <p>Las decisiones pueden ser influenciadas por lobbies o actores económicos.</p>
+
+    <h4>4. Opacidad financiera</h4>
+    <p>Las decisiones presupuestarias son técnicas y poco claras.</p>
+
+    <h4>5. Baja capacidad de corrección</h4>
+    <p>Los ciudadanos casi no tienen herramientas institucionales.</p>
+</section>
+
+<section id="lim3-es">
+    <h2>3. Límites económicos</h2>
+    <p>
+        Los modelos actuales favorecen la concentración de riqueza y la dependencia de indicadores de corto plazo.
+    </p>
+</section>
+
+<section id="lim4-es">
+    <h2>4. Límites judiciales</h2>
+    <p>
+        El sistema judicial sufre lentitud, desigualdad de acceso y dependencia del poder político.
+    </p>
+</section>
+
+<section id="lim5-es">
+    <h2>5. Límites sociales</h2>
+    <p>
+        Las sociedades contemporáneas están fragmentadas y marcadas por una desconfianza generalizada.
+    </p>
+</section>
+
+<section id="lim6-es">
+    <h2>6. Límites tecnológicos</h2>
+    <p>
+        La tecnología avanza más rápido que los marcos legales e institucionales.
+    </p>
+</section>
+
+<section id="lim7-es">
+    <h2>7. Límites medioambientales</h2>
+    <p>
+        Los modelos actuales no permiten responder eficazmente a las crisis ecológicas.
+    </p>
+</section>
+
+<section id="lim8-es">
+    <h2>8. Límites de gobernanza</h2>
+    <p>
+        La centralización excesiva ralentiza las decisiones e impide la innovación local.
+    </p>
+</section>
+
+<section id="lim9-es">
+    <h2>9. Límites de transparencia</h2>
+    <p>
+        Los ciudadanos no tienen acceso a información clara, completa y en tiempo real.
+    </p>
+</section>
+
+<section id="lim10-es">
+    <h2>10. Límites fiscales</h2>
+    <p>
+        Los sistemas fiscales son complejos, opacos e ineficaces.
+    </p>
+</section>
+
+<section id="lim11-es">
+    <h2>11. Síntesis</h2>
+    <p>
+        El conjunto de estos límites crea un sistema rígido, lento y poco participativo.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Peuplitique — Plataforma ciudadana</p>
+</footer>
+
+</div> <!-- FIN ES -->
+
+<!-- SCRIPT LANG -->
 <script>
-const translations = {
-    "en": {
-        "title_page": "Structural Limits – Peuplitique",
-        "title_main": "Peuplitique",
-        "title_sub": "Citizen platform – Participation, transparency, shared governance",
-
-        "menu_home": "Home",
-        "menu_governance": "Shared Governance",
-        "menu_dao": "DAO",
-        "menu_structure": "Structural Organization",
-        "menu_economie": "Integrated Economy",
-        "menu_protocol": "Protocol",
-        "menu_glossaire": "Glossary",
-        "menu_contact": "Contact",
-
-        "page_title": "Structural Limits",
-
-        "som_lim1": "Institutional",
-        "som_lim2": "Democratic",
-        "som_lim3": "Economic",
-        "som_lim4": "Judicial",
-        "som_lim5": "Social",
-        "som_lim6": "Technological",
-        "som_lim7": "Environmental",
-        "som_lim8": "Governance",
-        "som_lim9": "Transparency",
-        "som_lim10": "Fiscal",
-        "som_lim11": "Summary",
-
-        "lim1_title": "1. Institutional limits",
-        "lim1_text": "Current institutions operate on models inherited from the 19th and 20th centuries...",
-
-        "lim2_title": "2. Democratic limits",
-        "lim2_intro": "Representative democracy relies on almost total delegation of political power...",
-        "lim2_list_intro": "This architecture creates several structural limits:",
-        "lim2_1_title": "1. Concentration of power",
-        "lim2_1_text": "Once elected, representatives have broad autonomy...",
-        "lim2_2_title": "2. No direct decision-making",
-        "lim2_2_text": "Citizens cannot intervene directly...",
-        "lim2_3_title": "3. Influence of intermediaries",
-        "lim2_3_text": "Public decisions may be influenced by lobbies...",
-        "lim2_4_title": "4. Financial opacity",
-        "lim2_4_text": "Budgetary and monetary mechanisms escape direct citizen control...",
-        "lim2_5_title": "5. Weak corrective capacity",
-        "lim2_5_text": "Citizens have very few institutional tools...",
-        "lim2_summary": "In summary, representative democracy tends to transform sovereignty...",
-
-        "lim3_title": "3. Economic limits",
-        "lim3_text1": "Current economic models favor concentration of wealth...",
-        "lim3_text2": "This systemic dependence prevents real development...",
-        "lim3_text3": "Some alternative models propose indexed currencies...",
-        "lim3_text4": "Economic policies become reactive rather than strategic...",
-
-        "lim4_title": "4. Judicial limits",
-        "lim4_text1": "The judicial system suffers from structural limits...",
-        "lim4_text2": "Dependence on political power weakens independence...",
-        "lim4_text3": "This situation fuels injustice and distrust...",
-
-        "lim5_title": "5. Social limits",
-        "lim5_text1": "Contemporary societies are increasingly fragmented...",
-        "lim5_text2": "Lack of visibility reinforces disconnection...",
-        "lim5_text3": "Social models struggle to adapt...",
-        "lim5_text4": "This disconnection fuels abstention...",
-
-        "lim6_title": "6. Technological limits",
-        "lim6_text1": "Technology evolves faster than legal frameworks...",
-        "lim6_text2": "Lack of regulation prevents full value creation...",
-        "lim6_text3": "This gap increases dependence on private actors...",
-
-        "lim7_title": "7. Environmental limits",
-        "lim7_text": "Current models cannot address ecological crises effectively...",
-
-        "lim8_title": "8. Governance limits",
-        "lim8_text": "Excessive centralization slows decisions...",
-
-        "lim9_title": "9. Transparency limits",
-        "lim9_text": "Citizens lack access to clear and real-time information...",
-
-        "lim10_title": "10. Fiscal limits",
-        "lim10_text": "Tax systems are complex and inefficient...",
-
-        "lim11_title": "11. Global structural limits",
-        "lim11_text": "All these limits create a rigid and inefficient system...",
-
-        "footer": "© 2026 Peuplitique — Citizen platform"
-    },
-
-    "es": {
-        "title_page": "Límites estructurales – Peuplitique",
-        "title_main": "Peuplitique",
-        "title_sub": "Plataforma ciudadana – Participación, transparencia, gobernanza compartida",
-
-        "menu_home": "Inicio",
-        "menu_governance": "Gobernanza compartida",
-        "menu_dao": "DAO",
-        "menu_structure": "Organización estructural",
-        "menu_economie": "Economía integrada",
-        "menu_protocol": "Protocolo",
-        "menu_glossaire": "Glosario",
-        "menu_contact": "Contacto",
-
-        "page_title": "Límites estructurales",
-
-        "som_lim1": "Institucionales",
-        "som_lim2": "Democráticos",
-        "som_lim3": "Económicos",
-        "som_lim4": "Judiciales",
-        "som_lim5": "Sociales",
-        "som_lim6": "Tecnológicos",
-        "som_lim7": "Ambientales",
-        "som_lim8": "Gobernanza",
-        "som_lim9": "Transparencia",
-        "som_lim10": "Fiscales",
-        "som_lim11": "Síntesis",
-
-        "lim1_title": "1. Límites institucionales",
-        "lim1_text": "Las instituciones actuales funcionan con modelos heredados...",
-
-        "lim2_title": "2. Límites democráticos",
-        "lim2_intro": "La democracia representativa se basa en una delegación casi total...",
-        "lim2_list_intro": "Esta arquitectura crea varios límites estructurales:",
-        "lim2_1_title": "1. Concentración del poder",
-        "lim2_1_text": "Una vez elegidos, los representantes tienen amplio margen...",
-        "lim2_2_title": "2. Ausencia de decisión directa",
-        "lim2_2_text": "El ciudadano no puede intervenir directamente...",
-        "lim2_3_title": "3. Influencia de intereses intermedios",
-        "lim2_3_text": "Las decisiones públicas pueden ser influenciadas...",
-        "lim2_4_title": "4. Opacidad financiera",
-        "lim2_4_text": "Los mecanismos presupuestarios escapan al control ciudadano...",
-        "lim2_5_title": "5. Baja capacidad de corrección",
-        "lim2_5_text": "Los ciudadanos tienen pocas herramientas institucionales...",
-        "lim2_summary": "En resumen, la democracia representativa...",
-
-        "lim3_title": "3. Límites económicos",
-        "lim3_text1": "Los modelos económicos actuales favorecen...",
-        "lim3_text2": "Esta dependencia sistémica impide el desarrollo real...",
-        "lim3_text3": "Algunos modelos alternativos proponen monedas indexadas...",
-        "lim3_text4": "Las políticas económicas se vuelven reactivas...",
-
-        "lim4_title": "4. Límites judiciales",
-        "lim4_text1": "El sistema judicial sufre límites estructurales...",
-        "lim4_text2": "La dependencia del poder político debilita la independencia...",
-        "lim4_text3": "Esta situación alimenta la injusticia...",
-
-        "lim5_title": "5. Límites sociales",
-        "lim5_text1": "Las sociedades contemporáneas están fragmentadas...",
-        "lim5_text2": "La falta de visibilidad refuerza la desconexión...",
-        "lim5_text3": "Los modelos sociales no logran
-           "lim6_title": "6. Límites tecnológicos",
-        "lim6_text1": "Las tecnologías evolucionan más rápido que los marcos legales e institucionales.",
-        "lim6_text2": "La ausencia de regulación impide valorizar plenamente la automatización y la investigación.",
-        "lim6_text3": "Este desfase crea una dependencia creciente de actores privados o extranjeros.",
-
-        "lim7_title": "7. Límites medioambientales",
-        "lim7_text": "Los modelos actuales no permiten responder de manera eficaz a las crisis ecológicas.",
-
-        "lim8_title": "8. Límites de gobernanza",
-        "lim8_text": "La centralización excesiva ralentiza las decisiones e impide la innovación local.",
-
-        "lim9_title": "9. Límites de transparencia",
-        "lim9_text": "Los ciudadanos no tienen acceso a una información clara, completa y en tiempo real.",
-
-        "lim10_title": "10. Límites fiscales",
-        "lim10_text": "Los sistemas fiscales son complejos, opacos e ineficaces.",
-
-        "lim11_title": "11. Límites estructurales globales",
-        "lim11_text": "El conjunto de estos límites crea un sistema rígido, lento, ineficaz y poco participativo.",
-
-        "footer": "© 2026 Peuplitique — Plataforma ciudadana"
-    }
-};
-
-function setLang(lang) {
-    localStorage.setItem("lang", lang);
-    applyTranslations(lang);
+function showLang(lang) {
+    document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
+    document.getElementById(lang).style.display = 'block';
 }
-
-function applyTranslations(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-}
-
-applyTranslations(localStorage.getItem("lang") || "fr");
 </script>
 
 </body>
-</html>
+</html>  
+
