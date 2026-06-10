@@ -3,203 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page_title_glossaire">Glossaire – Peuplitique</title>
+    <title>Peuplitique – Glossaire</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
 
 <!-- LANG SWITCH -->
 <div class="lang-switch">
-    <a href="#" onclick="setLang('fr')">FR</a> |
-    <a href="#" onclick="setLang('en')">EN</a> |
-    <a href="#" onclick="setLang('es')">ES</a>
+    <button onclick="showLang('fr')">FR</button>
+    <button onclick="showLang('en')">EN</button>
+    <button onclick="showLang('es')">ES</button>
 </div>
 
-<!-- HEADER -->
-<header class="header-blue">
-    <h1 data-i18n="site_title">PEUPLITIQUE</h1>
-    <p data-i18n="site_subtitle">Plateforme citoyenne – Participation, transparence, gouvernance partagée</p>
+<!-- ===================================================== -->
+<!-- ======================  FR  ========================== -->
+<!-- ===================================================== -->
+<div id="fr" class="lang-block">
 
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html" data-i18n="menu_home">Accueil</a></li>
-            <li><a href="gouvernance-partagee.html" data-i18n="menu_governance">Gouvernance partagée</a></li>
-            <li><a href="gouvernance-dao.html" data-i18n="menu_dao">DAO</a></li>
-            <li><a href="organisation-structurelle.html" data-i18n="menu_structure">Organisation structurelle</a></li>
-            <li><a href="economie-integree.html" data-i18n="menu_economie">Économie intégrée</a></li>
-            <li><a href="protocole.html" data-i18n="menu_protocol">Protocole</a></li>
-            <li><a href="glossaire.html" class="active" data-i18n="menu_glossaire">Glossaire</a></li>
-            <li><a href="contact.html" data-i18n="menu_contact">Contact</a></li>
-        </ul>
-    </nav>
+<header class="header">
+    <h1>Peuplitique</h1>
+    <h3 class="sous-titre">Première plateforme citoyenne indépendante – Gouvernance partagée – Décision commune</h3>
+    <div class="ligne"></div>
 </header>
 
-<!-- SOMMAIRE BLANC -->
-<nav class="sommaire-horizontal">
+<nav class="menu">
     <ul>
-        <li><a href="constitution.html" data-i18n="sommaire-constitution">Constitution</a></li>
-        <li><a href="limites-structurelles.html" data-i18n="sommaire-limites">Limites structurelles</a></li>
-        <li><a href="desequilibres-structurels.html" data-i18n="sommaire-desequilibres">Déséquilibres structurels</a></li>
-        <li><a href="organisation-economique.html" data-i18n="sommaire-economie">Organisation économique</a></li>
-        <li><a href="organisation-territoriale.html" data-i18n="sommaire-territoire">Organisation territoriale</a></li>
-        <li><a href="gouvernance-dao.html" data-i18n="sommaire-dao">Gouvernance DAO</a></li>
-        <li><a href="synthese.html" data-i18n="sommaire-synthese">Synthèse</a></li>
-        <li><a href="mise-en-oeuvre.html" data-i18n="sommaire-oeuvre">Mise en œuvre</a></li>
-        <li><a href="articles.html" data-i18n="sommaire-articles">Articles</a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
+        <li><a href="gouvernance-dao.html">Gouvernance & DAO</a></li>
+        <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
+        <li><a href="economie-integree.html">Économie intégrée</a></li>
+        <li><a href="protocole.html">Protocole</a></li>
+        <li><a href="glossaire.html" class="active">Glossaire</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
 
-<!-- ZONE BLEUE -->
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="limites-structurelles.html">Limites structurelles</a></li>
+        <li><a href="desequilibres-structurels.html">Déséquilibres structurels</a></li>
+        <li><a href="organisation-economique.html">Organisation économique</a></li>
+        <li><a href="organisation-territoriale.html">Organisation territoriale</a></li>
+        <li><a href="gouvernance-dao.html">Gouvernance DAO</a></li>
+        <li><a href="synthese.html">Synthèse</a></li>
+        <li><a href="mise-en-oeuvre.html">Mise en œuvre</a></li>
+        <li><a href="articles.html">Articles</a></li>
+    </ul>
+</nav>
+
 <section class="zone-bleue">
-    <h2 data-i18n="blue_title_glossaire">Glossaire</h2>
+    <h1>Glossaire</h1>
 </section>
 
 <main class="content">
 
 <section id="glossaire">
-    <h2 data-i18n="title_section_glossaire">Glossaire</h2>
+    <h2>Glossaire</h2>
 
-    <!-- ⚠ Le RAW ne contient PAS les définitions → sections vides prêtes -->
-    <p data-i18n="gloss_intro">
-        Retrouvez ici les définitions des termes utilisés dans les différentes sections du projet Peuplitique.
-    </p>
+    <p>Retrouvez ici les définitions des termes utilisés dans les différentes sections du projet Peuplitique.</p>
 
-    <h3 data-i18n="gloss_term_1_title">Terme 1</h3>
-    <p data-i18n="gloss_term_1_desc">Définition à insérer.</p>
+    <h3>Terme 1</h3>
+    <p>Définition à insérer.</p>
 
-    <h3 data-i18n="gloss_term_2_title">Terme 2</h3>
-    <p data-i18n="gloss_term_2_desc">Définition à insérer.</p>
+    <h3>Terme 2</h3>
+    <p>Définition à insérer.</p>
 
-    <h3 data-i18n="gloss_term_3_title">Terme 3</h3>
-    <p data-i18n="gloss_term_3_desc">Définition à insérer.</p>
+    <h3>Terme 3</h3>
+    <p>Définition à insérer.</p>
 
 </section>
 
 </main>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
+<footer>
+    <p>© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
 
-<!-- SCRIPT MULTILINGUE -->
+</div>
+<!-- FIN FR -->
+
+
+
+<!-- ===================================================== -->
+<!-- ======================  EN  ========================== -->
+<!-- ===================================================== -->
+<div id="en" class="lang-block" style="display:none;">
+
+<header class="header">
+    <h1>Peuplitique</h1>
+    <h3 class="sous-titre">First independent citizen platform – Shared governance – Common decision</h3>
+    <div class="ligne"></div>
+</header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gouvernance-partagee.html">Shared Governance</a></li>
+        <li><a href="gouvernance-dao.html">Governance & DAO</a></li>
+        <li><a href="organisation-structurelle.html">Structural Organization</a></li>
+        <li><a href="economie-integree.html">Integrated Economy</a></li>
+        <li><a href="protocole.html">Protocol</a></li>
+        <li><a href="glossaire.html" class="active">Glossary</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="limites-structurelles.html">Structural Limits</a></li>
+        <li><a href="desequilibres-structurels.html">Structural Imbalances</a></li>
+        <li><a href="organisation-economique.html">Economic Organization</a></li>
+        <li><a href="organisation-territoriale.html">Territorial Organization</a></li>
+        <li><a href="gouvernance-dao.html">DAO Governance</a></li>
+        <li><a href="synthese.html">Summary</a></li>
+        <li><a href="mise-en-oeuvre.html">Implementation</a></li>
+        <li><a href="articles.html">Articles</a></li>
+    </ul>
+</nav>
+
+<section class="zone-bleue">
+    <h1>Glossary</h1>
+</section>
+
+<main class="content">
+
+<section id="glossaire">
+    <h2>Glossary</h2>
+
+    <p>Find here the definitions of the terms used throughout the Peuplitique project.</p>
+
+    <h3>Term 1</h3>
+    <p>Definition to insert.</p>
+
+    <h3>Term 2</h3>
+    <p>Definition to insert.</p>
+
+    <h3>Term 3</h3>
+    <p>Definition to insert.</p>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Peuplitique – All rights reserved</p>
+</footer>
+
+</div>
+<!-- FIN EN -->
+
+
+
+<!-- ===================================================== -->
+<!-- ======================  ES  ========================== -->
+<!-- ===================================================== -->
+<div id="es" class="lang-block" style="display:none;">
+
+<header class="header">
+    <h1>Peuplitique</h1>
+    <h3 class="sous-titre">Primera plataforma ciudadana independiente – Gobernanza compartida – Decisión común</h3>
+    <div class="ligne"></div>
+</header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="gouvernance-partagee.html">Gobernanza compartida</a></li>
+        <li><a href="gouvernance-dao.html">Gobernanza & DAO</a></li>
+        <li><a href="organisation-structurelle.html">Organización estructural</a></li>
+        <li><a href="economie-integree.html">Economía integrada</a></li>
+        <li><a href="protocole.html">Protocolo</a></li>
+        <li><a href="glossaire.html" class="active">Glosario</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="constitution.html">Constitución</a></li>
+        <li><a href="limites-structurelles.html">Límites estructurales</a></li>
+        <li><a href="desequilibres-structurels.html">Desequilibrios estructurales</a></li>
+        <li><a href="organisation-economique.html">Organización económica</a></li>
+        <li><a href="organisation-territoriale.html">Organización territorial</a></li>
+        <li><a href="gouvernance-dao.html">Gobernanza DAO</a></li>
+        <li><a href="synthese.html">Síntesis</a></li>
+        <li><a href="mise-en-oeuvre.html">Implementación</a></li>
+        <li><a href="articles.html">Artículos</a></li>
+    </ul>
+</nav>
+
+<section class="zone-bleue">
+    <h1>Glosario</h1>
+</section>
+
+<main class="content">
+
+<section id="glossaire">
+    <h2>Glosario</h2>
+
+    <p>Aquí encontrarás las definiciones de los términos utilizados en el proyecto Peuplitique.</p>
+
+    <h3>Término 1</h3>
+    <p>Definición por insertar.</p>
+
+    <h3>Término 2</h3>
+    <p>Definición por insertar.</p>
+
+    <h3>Término 3</h3>
+    <p>Definición por insertar.</p>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Peuplitique – Todos los derechos reservados</p>
+</footer>
+
+</div>
+<!-- FIN ES -->
+
+
+
+<!-- SCRIPT LANG -->
 <script>
-const translations = {
-    fr: {
-        page_title_glossaire: "Glossaire – Peuplitique",
-        site_title: "PEUPLITIQUE",
-        site_subtitle: "Plateforme citoyenne – Participation, transparence, gouvernance partagée",
-
-        menu_home: "Accueil",
-        menu_governance: "Gouvernance partagée",
-        menu_dao: "DAO",
-        menu_structure: "Organisation structurelle",
-        menu_economie: "Économie intégrée",
-        menu_protocol: "Protocole",
-        menu_glossaire: "Glossaire",
-        menu_contact: "Contact",
-
-        sum_glossaire: "Glossaire",
-
-        blue_title_glossaire: "Glossaire",
-        title_section_glossaire: "Glossaire",
-
-        gloss_intro: "Retrouvez ici les définitions des termes utilisés dans les différentes sections du projet Peuplitique.",
-        gloss_term_1_title: "Terme 1",
-        gloss_term_1_desc: "Définition à insérer.",
-        gloss_term_2_title: "Terme 2",
-        gloss_term_2_desc: "Définition à insérer.",
-        gloss_term_3_title: "Terme 3",
-        gloss_term_3_desc: "Définition à insérer.",
-
-        footer: "© 2026 Peuplitique – Tous droits réservés"
-    },
-sous_titre: "Première plateforme citoyenne indépendante – Gouvernance partagée – Décision commune"
-    },
-
-    en: {
-        page_title_glossaire: "Glossary – Peuplitique",
-        site_title: "PEUPLITIQUE",
-        site_subtitle: "Citizen platform – Participation, transparency, shared governance",
-
-        menu_home: "Home",
-        menu_governance: "Shared Governance",
-        menu_dao: "DAO",
-        menu_structure: "Structural Organization",
-        menu_economie: "Integrated Economy",
-        menu_protocol: "Protocol",
-        menu_glossaire: "Glossary",
-        menu_contact: "Contact",
-
-        sum_glossaire: "Glossary",
-
-        blue_title_glossaire: "Glossary",
-        title_section_glossaire: "Glossary",
-
-        gloss_intro: "Find here the definitions of the terms used throughout the Peuplitique project.",
-        gloss_term_1_title: "Term 1",
-        gloss_term_1_desc: "Definition to insert.",
-        gloss_term_2_title: "Term 2",
-        gloss_term_2_desc: "Definition to insert.",
-        gloss_term_3_title: "Term 3",
-        gloss_term_3_desc: "Definition to insert.",
-
-        footer: "© 2026 Peuplitique – All rights reserved"
-    },
-        sous_titre: "First independent citizen platform – Shared governance – Common decision"
-    },
-
-    es: {
-        page_title_glossaire: "Glosario – Peuplitique",
-        site_title: "PEUPLITIQUE",
-        site_subtitle: "Plataforma ciudadana – Participación, transparencia, gobernanza compartida",
-
-        menu_home: "Inicio",
-        menu_governance: "Gobernanza compartida",
-        menu_dao: "DAO",
-        menu_structure: "Organización estructural",
-        menu_economie: "Economía integrada",
-        menu_protocol: "Protocolo",
-        menu_glossaire: "Glosario",
-        menu_contact: "Contacto",
-
-        sum_glossaire: "Glosario",
-
-        blue_title_glossaire: "Glosario",
-        title_section_glossaire: "Glosario",
-
-        gloss_intro: "Aquí encontrarás las definiciones de los términos utilizados en las diferentes secciones del proyecto Peuplitique.",
-        gloss_term_1_title: "Término 1",
-        gloss_term_1_desc: "Definición por insertar.",
-        gloss_term_2_title: "Término 2",
-        gloss_term_2_desc: "Definición por insertar.",
-        gloss_term_3_title: "Término 3",
-        gloss_term_3_desc: "Definición por insertar.",
-
-        footer: "© 2026 Peuplitique – Todos los derechos reservados"
-    }
-};
-sous_titre: "Primera plataforma ciudadana independiente – Gobernanza compartida – Decisión común"
-    }
-};
-
-function setLang(lang) {
-    localStorage.setItem("lang", lang);
-    applyTranslations(lang);
+function showLang(lang) {
+    document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
+    document.getElementById(lang).style.display = 'block';
 }
-
-function applyTranslations(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-}
-
-applyTranslations(localStorage.getItem("lang") || "fr");
 </script>
 
 </body>
