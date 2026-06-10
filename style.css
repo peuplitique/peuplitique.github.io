@@ -221,4 +221,15 @@ footer {
 .lang-fr, .lang-en, .lang-es {
   display: none;
 }
+/* --- AFFICHAGE SELON LA LANGUE DU BODY --- */
+body.fr .lang-fr {
+  display: block;
+}
 
+body.en .lang-en {
+  display: block;
+}
+
+body.es .lang-es {
+  display: block;
+}
