@@ -8,11 +8,14 @@
 </head>
 
 <body>
-
 <!-- LANG SWITCH -->
 <div class="lang-switch">
-    <span>FR</span> | <span>EN</span> | <span>ES</span>
+    <button onclick="showLang('fr')">FR</button>
+    <button onclick="showLang('en')">EN</button>
+    <button onclick="showLang('es')">ES</button>
 </div>
+
+
 
 <!-- HEADER -->
 <header class="header-blue">
@@ -199,22 +202,13 @@ const translations = {
         footer: "© 2026 Peuplitique – Todos los derechos reservados"
     }
 };
-
+<script>
 function setLang(lang) {
-    localStorage.setItem("lang", lang);
-    applyTranslations(lang);
+    document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
+    document.getElementById(lang).style.display = 'block';
 }
-
-function applyTranslations(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-}
-
-applyTranslations(localStorage.getItem("lang") || "fr");
 </script>
+
+
 </body>
 </html>
