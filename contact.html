@@ -11,10 +11,13 @@
 
 <!-- LANG SWITCH -->
 <div class="lang-switch">
-    <a href="#" onclick="setLang('fr')">FR</a> |
-    <a href="#" onclick="setLang('en')">EN</a> |
-    <a href="#" onclick="setLang('es')">ES</a>
+    <button onclick="showLang('fr')">FR</button>
+    <button onclick="showLang('en')">EN</button>
+    <button onclick="showLang('es')">ES</button>
 </div>
+
+
+
 
 <!-- HEADER -->
 <header class="header-blue">
@@ -35,8 +38,7 @@
         </ul>
     </nav>
 </header>
-
-<!-- SOMMAIRE -->
+<!-- SOMMAIRE BLANC -->
 <nav class="sommaire-horizontal">
     <ul>
         <li><a href="constitution.html" data-i18n="sommaire_constitution">Constitution</a></li>
@@ -45,44 +47,44 @@
         <li><a href="organisation-economique.html" data-i18n="sommaire_economie">Organisation économique</a></li>
         <li><a href="organisation-territoriale.html" data-i18n="sommaire_territoire">Organisation territoriale</a></li>
         <li><a href="gouvernance-dao.html" data-i18n="sommaire_dao">Gouvernance DAO</a></li>
-        <li><a href="synthese.html" data-i18n="sommaire_synthese">Synthèse</a></li>
-        <li><a href="mise-en-oeuvre.html" data-i18n="sommaire_oeuvre">Mise en œuvre</a></li>
-        <li><a href="articles.html" data-i18n="sommaire_articles">Articles</a></li>
     </ul>
-</nav>
+</nav>   
+
+
 
 <!-- ZONE BLEUE -->
 <section class="zone-bleue">
-    <h2 data-i18n="blue_title">Contact</h2>
+ <h2>Contact</h2>
 </section>
+
 
 <!-- CONTENU -->
 <main class="content" id="contact">
 
-    <h2 data-i18n="contact_title">Nous contacter</h2>
+    <h2>Nous contacter</h2>
 
-    <p data-i18n="contact_intro">
+    <p>
         Pour toute question, suggestion ou demande d’information concernant la plateforme Peuplitique, vous pouvez nous écrire via le formulaire ci‑dessous.
     </p>
 
-    <h3 data-i18n="contact_form_title">Formulaire de contact</h3>
+    <h3>Formulaire de contact</h3>
 
     <form class="contact-form">
-        <label data-i18n="contact_name">Nom :</label>
+        <label>Nom :</label>
         <input type="text" placeholder="Votre nom">
 
-        <label data-i18n="contact_email">Email :</label>
+        <label>Email :</label>
         <input type="email" placeholder="Votre email">
 
-        <label data-i18n="contact_message">Message :</label>
+        <label>Message :</label>
         <textarea placeholder="Votre message"></textarea>
 
-        <button type="submit" class="btn" data-i18n="contact_send">Envoyer</button>
+        <button type="submit" class="btn">Envoyer</button>
     </form>
 
-    <h3 data-i18n="contact_alt_title">Autres moyens de contact</h3>
+    <h3>Autres moyens de contact</h3>
 
-    <p data-i18n="contact_alt_text">
+    <p>
         Vous pouvez également nous contacter via nos réseaux sociaux ou par email direct.
     </p>
 
@@ -210,23 +212,13 @@ const translations = {
         footer: "© 2026 Peuplitique – Todos los derechos reservados"
     }
 };
-
+<script>
 function setLang(lang) {
-    localStorage.setItem("lang", lang);
-    applyTranslations(lang);
+    document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
+    document.getElementById(lang).style.display = 'block';
 }
-
-function applyTranslations(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-}
-
-applyTranslations(localStorage.getItem("lang") || "fr");
 </script>
+
 
 </body>
 </html>
