@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation économique et structurelle – Peuplitique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-bg">
+
+<!-- LANG SWITCH -->
+<div class="lang-switch">
+    <button onclick="showLang('fr')">FR</button>
+    <button onclick="showLang('en')">EN</button>
+    <button onclick="showLang('es')">ES</button>
+</div>
+
+<!-- ================= FRANÇAIS ================= -->
+<div id="fr" class="lang-block">
+<header class="header-blue">
+    <h1>Peuplitique</h1>
+    <p>Plateforme citoyenne – Participation, transparence, gouvernance partagée</p>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
+            <li><a href="gouvernance-dao.html">DAO</a></li>
+            <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
+            <li><a href="economie-integree.html">economie intégree</a></li>
+            <li><a href="protocole.html">Protocole</a></li>
+            <li><a href="glossaire.html">Glossaire</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<nav class="sommaire-horizontal">
+    <ul>
+        <li><a href="constitution.html">Constitution</a></li>
+        <li><a href="limites-structurelles.html">Limites structurelles</a></li>
+        <li><a href="desequilibres-structurels.html">Déséquilibres structurels</a></li>
+        <li><a href="organisation-economique.html">Organisation economique</a></li>
+        <li><a href="organisation-politique-territoriale.html">Organisation politique territoriale</a></li>
+        <li><a href="gouvernance-dao.html">Gouvernance DAO</a></li>
+    </ul>
+</nav>
+
+<section class="zone-bleue">
+    <h2>Organisation économique et structurelle</h2>
+</section>
+</div><!-- FIN FR -->
+
+<!-- ================= ENGLISH ================= -->
+<div id="en" class="lang-block" style="display:none;">
+
+<header class="header-blue">
+    <h1>Peuplitique</h1>
+    <p>First independent citizen platform – Shared governance – Common decision</p>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gouvernance-partagee.html">Shared governance</a></li>
+            <li><a href="gouvernance-dao.html">DAO</a></li>
+            <li><a href="organisation-structurelle.html">Structural organization</a></li>
+            <li><a href="economie-integree.html">Integrated economy</a></li>
+            <li><a href="protocole.html">Protocol</a></li>
+            <li><a href="glossaire.html">Glossary</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="zone-bleue">
+    <h2>Economic and structural organization</h2>
+</section>
+
+<main class="content">
+<p>English version of the page (same structure as FR).</p>
+</main>
+
+<footer class="footer">
+    <p>© 2026 Peuplitique — Citizen platform</p>
+</footer>
+
+</div><!-- FIN EN -->
+    <!-- ================= ESPAÑOL ================= -->
+<div id="es" class="lang-block" style="display:none;">
+
+<header class="header-blue">
+    <h1>Peuplitique</h1>
+    <p>Primera plataforma ciudadana independiente – Gobernanza compartida – Decisión común</p>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="gouvernance-partagee.html">Gobernanza compartida</a></li>
+            <li><a href="gouvernance-dao.html">DAO</a></li>
+            <li><a href="organisation-structurelle.html">Organización estructural</a></li>
+            <li><a href="economie-integree.html">Economía integrada</a></li>
+            <li><a href="protocole.html">Protocolo</a></li>
+            <li><a href="glossaire.html">Glosario</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="zone-bleue">
+    <h2>Organización económica y estructural</h2>
+</section>
+
+<main class="content">
+<p>Versión española de la página (misma estructura que FR).</p>
+</main>
+
+<footer class="footer">
+    <p>© 2026 Peuplitique — Plataforma ciudadana</p>
+</footer>
+
+</div><!-- FIN ES -->
+
+<script>
+function showLang(lang) {
+    document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
+    document.getElementById(lang).style.display = 'block';
+}
+</script>
+
+</body>
+</html>
