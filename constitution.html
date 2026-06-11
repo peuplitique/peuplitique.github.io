@@ -3,89 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peuplitique – Constitution</title>
+    <title data-i18n="page_title">Peuplitique – Constitution</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- SYSTÈME DE LANGUES -->
-    <style>
-        .lang { display: none; }
-        .lang.active { display: block; }
-    </style>
-
-    <script>
-        function showLang(lang) {
-            document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
-            const target = document.querySelector('.lang-' + lang);
-            if (target) target.classList.add('active');
-        }
-    </script>
 </head>
 
-<body class="fr">
+<body>
 
-<!-- BOUTONS DE LANGUE -->
+<!-- LANG SWITCH -->
 <div class="lang-switch">
-    <button onclick="showLang('fr')">FR</button>
-    <button onclick="showLang('en')">EN</button>
-    <button onclick="showLang('es')">ES</button>
-</div>
-
-<!-- BLOCS DE LANGUE -->
-<div class="lang lang-fr active">
-    <h1>Constitution (Français)</h1>
-    <p>Texte en français ici...</p>
+    <a href="#" onclick="setLang('fr')">FR</a> |
+    <a href="#" onclick="setLang('en')">EN</a> |
+    <a href="#" onclick="setLang('es')">ES</a>
 </div>
 
 <!-- HEADER -->
 <header class="header-blue">
-    <h1 class="title-main">PEUPLITIQUE</h1>
-    <p class="title-sub">Constitution, limites structurelles et articles</p>
+    <h1 class="title-main" data-i18n="site_title">PEUPLITIQUE</h1>
+    <p class="title-sub" data-i18n="site_subtitle">Constitution, limites structurelles et articles</p>
     <div class="header-line"></div>
 
     <nav class="menu">
         <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
-            <li><a href="gouvernance-dao.html">DAO</a></li>
-            <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
-            <li><a href="economie-integree.html">Économie intégrée</a></li>
-            <li><a href="protocole.html">Protocole</a></li>
-            <li><a href="glossaire.html">Glossaire</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" data-i18n="menu_home">Accueil</a></li>
+            <li><a href="gouvernance-partagee.html" data-i18n="menu_governance">Gouvernance partagée</a></li>
+            <li><a href="gouvernance-dao.html" data-i18n="menu_dao">DAO</a></li>
+            <li><a href="organisation-structurelle.html" data-i18n="menu_structure">Organisation structurelle</a></li>
+            <li><a href="economie-integree.html" data-i18n="menu_economie">Économie intégrée</a></li>
+            <li><a href="protocole.html" data-i18n="menu_protocol">Protocole</a></li>
+            <li><a href="glossaire.html" data-i18n="menu_glossaire">Glossaire</a></li>
+            <li><a href="contact.html" data-i18n="menu_contact">Contact</a></li>
         </ul>
     </nav>
-</header> 
-    
+</header>
 
 <!-- SOMMAIRE BLANC -->
 <nav class="sommaire-horizontal">
     <ul>
-        <li><a href="constitution.html">Constitution</a></li>
-        <li><a href="limites-structurelles.html">Limites structurelles</a></li>
-        <li><a href="desequilibres-structurels.html">Déséquilibres structurels</a></li>
-        <li><a href="organisation-economique.html">Organisation économique</a></li>
-        <li><a href="organisation-territoriale.html">Organisation territoriale</a></li>
-        <li><a href="gouvernance-dao.html">Gouvernance DAO</a></li>
-        <li><a href="synthese.html">Synthèse</a></li>
-        <li><a href="mise-en-oeuvre.html">Mise en œuvre</a></li>
-        <li><a href="articles.html">Articles</a></li>
+        <li><a href="constitution.html" data-i18n="sommaire_constitution">Constitution</a></li>
+        <li><a href="limites-structurelles.html" data-i18n="sommaire_limites">Limites structurelles</a></li>
+        <li><a href="desequilibres-structurels.html" data-i18n="sommaire_desequilibres">Déséquilibres structurels</a></li>
+        <li><a href="organisation-economique.html" data-i18n="sommaire_economie">Organisation économique</a></li>
+        <li><a href="organisation-territoriale.html" data-i18n="sommaire_territoire">Organisation territoriale</a></li>
+        <li><a href="gouvernance-dao.html" data-i18n="sommaire_dao">Gouvernance DAO</a></li>
+        <li><a href="synthese.html" data-i18n="sommaire_synthese">Synthèse</a></li>
+        <li><a href="mise-en-oeuvre.html" data-i18n="sommaire_oeuvre">Mise en œuvre</a></li>
+        <li><a href="articles.html" data-i18n="sommaire_articles">Articles</a></li>
     </ul>
 </nav>
 
 <!-- SOMMAIRE BLEU -->
 <nav class="sommaire-bleu horizontal">
     <ul>
-        <li><a href="#constitution">Constitution</a></li>
-        <li><a href="#limites-structurelles">Limites structurelles</a></li>
-        <li><a href="#articles-principes">Principes structurels</a></li>
-        <li><a href="#articles-constitution">Articles constitution</a></li>
-        <li><a href="#lien-organisation">Étape suivante</a></li>
+        <li><a href="#constitution" data-i18n="sommaire_constitution">Constitution</a></li>
+        <li><a href="#limites-structurelles" data-i18n="sommaire_limites">Limites structurelles</a></li>
+        <li><a href="#articles-principes" data-i18n="sommaire_principes">Principes structurels</a></li>
+        <li><a href="#articles-constitution" data-i18n="sommaire_articles_constitution">Articles constitution</a></li>
+        <li><a href="#lien-organisation" data-i18n="sommaire_suivant">Étape suivante</a></li>
     </ul>
 </nav>
 
 <!-- ZONE BLEUE -->
 <section class="zone-bleue">
-    <h2>Constitution</h2>
+    <h2 data-i18n="blue_title">Constitution</h2>
 </section>
 
 <!-- CONTENU -->
@@ -223,22 +202,86 @@
         </p>
     </details>
 
-    
-  <details>
-    <summary>Article 6 — Principe de transparence des processus</summary>
-    <p>
-        La transparence garantit que les informations nécessaires à la compréhension et au contrôle citoyen sont accessibles.
-    </p>
-</details>
+    <details>
+        <summary>Article 6 — Principe de transparence des processus</summary>
+        <p>
+            La transparence garantit que les informations nécessaires à la compréhension et au contrôle citoyen sont accessibles.
+        </p>
+    </details>
 
-<details>
-    <summary>Article 7 — Principe de réversibilité du pouvoir</summary>
-    <p>
-        Toute délégation de pouvoir est réversible. Le collectif peut suspendre ou retirer une délégation en cas de dérive.
-    </p>
-</details>
+    <details>
+        <summary>Article 7 — Principe de réversibilité du pouvoir</summary>
+        <p>
+            Toute délégation de pouvoir est réversible. Le collectif peut suspendre ou retirer une délégation en cas de dérive.
+        </p>
+    </details>
 </section>
 
+<!-- ========================= -->
+<!-- ARTICLES — CONSTITUTION PEUPLITIQUE -->
+<section id="articles-constitution">
+    <h2>Articles — Constitution Peuplitique</h2>
+
+    <details>
+        <summary>Article 7 — Réversibilité des décisions</summary>
+        <p>
+            Toute décision est réversible si elle devient contraire à l’intérêt général.
+        </p>
+    </details>
+
+    <details>
+        <summary>Article 8 — Traçabilité avancée</summary>
+        <p>
+            Chaque action, analyse ou décision est enregistrée de manière vérifiable et inaltérable.
+        </p>
+    </details>
+
+    <details>
+        <summary>Article 9 — Transparence avancée</summary>
+        <p>
+            Les informations nécessaires à la compréhension et au contrôle citoyen doivent être publiées.
+        </p>
+    </details>
+
+    <details>
+        <summary>Article 10 — Participation citoyenne</summary>
+        <p>
+            Chaque citoyen peut contribuer, proposer, consulter, alerter et voter.
+        </p>
+    </details>
+
+    <details>
+        <summary>Article 11 — Conseil intersectoriel</summary>
+        <p>
+            Instance temporaire assurant la cohérence entre secteurs.
+        </p>
+    </details>
+
+    <details>
+        <summary>Article 12 — Révision du Protocole</summary>
+        <p>
+            Le Protocole peut être révisé selon un processus transparent et participatif.
+        </p>
+    </details>
+
+    <details>
+        <summary>Article 13 — Révision citoyenne de la Constitution</summary>
+        <p>
+            La Constitution peut être révisée à tout moment par le peuple.
+        </p>
+    </details>
+</section>
+
+<!-- ========================= -->
+<!-- ÉTAPE SUIVANTE -->
+<section id="lien-organisation" class="sommaire">
+    <h2>Étape suivante</h2>
+    <p>
+        La compréhension de la Constitution ouvre naturellement vers l’<strong>organisation structurelle du pouvoir partagé</strong>.
+    </p>
+    <p><a href="organisation-structurelle.html" class="btn">Accéder à l’organisation structurelle</a></p>
+</section>
+<!-- ========================= -->
 <!-- ARTICLES 7 À 13 — CONSTITUTION PEUPLITIQUE -->
 <section id="articles-constitution">
     <h2>Articles — Constitution Peuplitique</h2>
@@ -293,87 +336,7 @@
     </details>
 </section>
 
-<!-- LIEN VERS ORGANISATION -->
-<section id="lien-organisation" class="sommaire">
-    <h2>Étape suivante</h2>
-    <p>
-        La compréhension de la Constitution ouvre naturellement vers l’<strong>organisation structurelle du pouvoir partagé</strong>.
-    </p>
-    <p><a href="organisation-structurelle.html" class="btn">Accéder à l’organisation structurelle</a></p>
-</section> 
-    
-   <details>
-    <summary>Article 6 — Principe de transparence des processus</summary>
-    <p>
-        La transparence garantit que les informations nécessaires à la compréhension et au contrôle citoyen sont accessibles.
-    </p>
-</details>
-
-<details>
-    <summary>Article 7 — Principe de réversibilité du pouvoir</summary>
-    <p>
-        Toute délégation de pouvoir est réversible. Le collectif peut suspendre ou retirer une délégation en cas de dérive.
-    </p>
-</details>
-</section>
-
-<!-- ARTICLES 7 À 13 — CONSTITUTION PEUPLITIQUE -->
-<section id="articles-constitution">
-    <h2>Articles — Constitution Peuplitique</h2>
-
-    <details>
-        <summary>Article 7 — Réversibilité des décisions</summary>
-        <p>
-            Toute décision est réversible si elle devient contraire à l’intérêt général.
-        </p>
-    </details>
-
-    <details>
-        <summary>Article 8 — Traçabilité avancée</summary>
-        <p>
-            Chaque action, analyse ou décision est enregistrée de manière vérifiable et inaltérable.
-        </p>
-    </details>
-
-    <details>
-        <summary>Article 9 — Transparence avancée</summary>
-        <p>
-            Les informations nécessaires à la compréhension et au contrôle citoyen doivent être publiées.
-        </p>
-    </details>
-
-    <details>
-        <summary>Article 10 — Participation citoyenne</summary>
-        <p>
-            Chaque citoyen peut contribuer, proposer, consulter, alerter et voter.
-        </p>
-    </details>
-
-    <details>
-        <summary>Article 11 — Conseil intersectoriel</summary>
-        <p>
-            Instance temporaire assurant la cohérence entre secteurs.
-        </p>
-    </details>
-
-    <details>
-        <summary>Article 12 — Révision du Protocole</summary>
-        <p>
-            Le Protocole peut être révisé selon un processus transparent et participatif.
-        </p>
-    </details>
-
-    <details>
-        <summary>Article 13 — Révision citoyenne de la Constitution</summary>
-        <p>
-            La Constitution peut être révisée à tout moment par le peuple.
-        </p>
-    </details>
-</section>
-
-
-
-
+<!-- ========================= -->
 <!-- LIEN VERS ORGANISATION -->
 <section id="lien-organisation" class="sommaire">
     <h2>Étape suivante</h2>
@@ -382,6 +345,9 @@
     </p>
     <p><a href="organisation-structurelle.html" class="btn">Accéder à l’organisation structurelle</a></p>
 </section>
+
+<!-- ========================= -->
+<!-- BLOCS RÉPÉTÉS (TON TEXTE EXACT) -->
 <details>
     <summary>Article 6 — Principe de transparence des processus</summary>
     <p>
@@ -395,12 +361,10 @@
         Toute délégation de pouvoir est réversible. Le collectif peut suspendre ou retirer une délégation en cas de dérive.
     </p>
 </details>
-</section>
 
-
-
-
-
+<!-- ========================= -->
+<!-- VERSION ANGLAISE -->
+<section id="constitution-en">
 <div class="lang lang-en">
     <h1>Constitution (English)</h1>
 
@@ -613,9 +577,12 @@
         </p>
     </details>
 </div>
+</section>
 
-
-    <div class="lang lang-es">
+<!-- ========================= -->
+<!-- VERSION ESPAGNOLE -->
+<section id="constitution-es">
+<div class="lang lang-es">
     <h1>Constitución (Español)</h1>
 
     <h2>Etapa 1 — Constitución</h2>
@@ -827,6 +794,8 @@
         </p>
     </details>
 </div>
+</section>
+    
 </main>
 
 <footer class="footer">
