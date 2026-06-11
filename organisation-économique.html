@@ -11,10 +11,11 @@
 
 <!-- LANG SWITCH -->
 <div class="lang-switch">
-    <a href="?lang=fr">FR</a> |
-    <a href="?lang=en">EN</a> |
-    <a href="?lang=es">ES</a>
+    <button onclick="showLang('fr')">FR</button>
+    <button onclick="showLang('en')">EN</button>
+    <button onclick="showLang('es')">ES</button>
 </div>
+
 
 <!-- HEADER + MENU -->
 <header class="header-blue">
@@ -43,9 +44,7 @@
         <li><a href="organisation-economique.html" data-i18n="sommaire-economie">Organisation économique</a></li>
         <li><a href="organisation-territoriale.html" data-i18n="sommaire-territoire">Organisation territoriale</a></li>
         <li><a href="gouvernance-dao.html" data-i18n="sommaire-dao">Gouvernance DAO</a></li>
-        <li><a href="synthese.html" data-i18n="sommaire-synthese">Synthèse</a></li>
-        <li><a href="mise-en-oeuvre.html" data-i18n="sommaire-oeuvre">Mise en œuvre</a></li>
-        <li><a href="articles.html" data-i18n="sommaire-articles">Articles</a></li>
+        
     </ul>
 </nav>
 <!-- ZONE BLEUE -->
@@ -395,22 +394,11 @@ sous_titre: "First independent citizen platform – Shared governance – Common
 sous_titre: "Primera plataforma ciudadana independiente – Gobernanza compartida – Decisión común"
     }
 };
-
+<script>
 function setLang(lang) {
-    localStorage.setItem("lang", lang);
-    applyTranslations(lang);
+    document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
+    document.getElementById(lang).style.display = 'block';
 }
-
-function applyTranslations(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-}
-
-applyTranslations(localStorage.getItem("lang") || "fr");
 </script>
 
 </body>
