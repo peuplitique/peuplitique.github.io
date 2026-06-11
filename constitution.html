@@ -801,7 +801,12 @@
 <footer class="footer">
     <p>© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
-
+<script>
+function setLang(lang) {
+    document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
+    document.getElementById(lang).style.display = 'block';
+}
+</script>
 </body>
 </html>    
 
