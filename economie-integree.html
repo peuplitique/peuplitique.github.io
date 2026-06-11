@@ -9,14 +9,15 @@
 
 <body class="economique">
     
-    
-
 <!-- LANG SWITCH -->
 <div class="lang-switch">
-    <a href="#" onclick="setLang('fr')">FR</a> |
-    <a href="#" onclick="setLang('en')">EN</a> |
-    <a href="#" onclick="setLang('es')">ES</a>
+    <button onclick="showLang('fr')">FR</button>
+    <button onclick="showLang('en')">EN</button>
+    <button onclick="showLang('es')">ES</button>
 </div>
+    
+
+
 
 <!-- HEADER GLOBAL -->
 <header class="header-blue">
@@ -480,6 +481,13 @@ const translations = {
         footer: "© 2026 Peuplitique – Tous droits réservés"
     
 </footer>
+<script>
+function setLang(lang) {
+    document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
+    document.getElementById(lang).style.display = 'block';
+}
+</script>
+
 
 </body>
 </html>   
