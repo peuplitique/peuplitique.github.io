@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
 <!-- LANG SWITCH -->
 <div class="lang-switch">
     <button onclick="showLang('fr')">FR</button>
@@ -15,8 +16,8 @@
     <button onclick="showLang('es')">ES</button>
 </div>
 
+<!-- LANG FR -->
 <div id="fr" class="lang-block">
-    
 
 <header class="header-blue">
     <h1>Peuplitique</h1>
@@ -51,9 +52,7 @@
     <h2>Déséquilibres structurels</h2>
 </section>
 
-<section class="section">
-    <h2>Déséquilibres structurels</h2>
-
+<section class="content">
     <p>
         Les déséquilibres structurels sont les conséquences directes des limites constitutionnelles actuelles.
         Ils ne proviennent pas d’erreurs humaines, mais de la manière dont les systèmes politiques sont conçus.
@@ -80,6 +79,7 @@
 
 </div><!-- FIN FR -->
 
+<!-- LANG EN -->
 <div id="en" class="lang-block" style="display:none;">
 
 <header class="header-blue">
@@ -115,9 +115,7 @@
     <h2>Structural imbalances</h2>
 </section>
 
-<section class="section">
-    <h2>Structural imbalances</h2>
-
+<section class="content">
     <p>
         Structural imbalances arise from constitutional limits. They are not caused by human error,
         but by the way political systems are designed.
@@ -144,6 +142,7 @@
 
 </div><!-- FIN EN -->
 
+<!-- LANG ES -->
 <div id="es" class="lang-block" style="display:none;">
 
 <header class="header-blue">
@@ -179,9 +178,7 @@
     <h2>Desequilibrios estructurales</h2>
 </section>
 
-<section class="section">
-    <h2>Desequilibrios estructurales</h2>
-
+<section class="content">
     <p>
         Los desequilibrios estructurales provienen de los límites constitucionales. No son errores humanos,
         sino el resultado del diseño del sistema político.
@@ -207,15 +204,18 @@
 </section>
 
 </div><!-- FIN ES -->
+
 <!-- FOOTER -->
 <footer class="footer">
     <p>© 2026 Peuplitique – Plateforme citoyenne</p>
 </footer>
+
 <script>
-function setLang(lang) {
+function showLang(lang) {
     document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
     document.getElementById(lang).style.display = 'block';
 }
 </script>
+
 </body>
 </html>
