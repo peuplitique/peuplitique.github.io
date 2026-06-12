@@ -9,13 +9,12 @@
 
 <body>
 
-<!-- LANG SWITCH -->
 <div class="lang-switch">
-    <button onclick="showLang('fr')">FR</button>
-    <button onclick="showLang('en')">EN</button>
-    <button onclick="showLang('es')">ES</button>
+    <button onclick="applyTranslation('fr')">FR</button>
+    <button onclick="applyTranslation('en')">EN</button>
+    <button onclick="applyTranslation('es')">ES</button>
 </div>
-<!-- HEADER -->
+
 <header class="header-blue">
     <h1 class="title-main" data-i18n="site_title">PEUPLITIQUE</h1>
     <p class="title-sub" data-i18n="site_subtitle">Plateforme citoyenne – Contact</p>
@@ -35,188 +34,61 @@
     </nav>
 </header>
 
-<!-- SOMMAIRE BLANC (VERSION PROPRE) -->
 <nav class="sommaire-horizontal">
     <ul>
         <li><a href="constitution.html" data-i18n="sommaire_constitution">Constitution</a></li>
         <li><a href="limites-structurelles.html" data-i18n="sommaire_limites">Limites structurelles</a></li>
-        <li><a href="desequilibres-structurels.html" data-i18n="sommaire_desequilibres">Déséquilibres structurels</a></li>
-        <li><a href="organisation-economique.html" data-i18n="sommaire_economie">Organisation economique</a></li>
+        <li><a href="desequilibre-structurels.html" data-i18n="sommaire_desequilibres">Déséquilibres structurels</a></li>
+        <li><a href="organisation-economique.html" data-i18n="sommaire_economie">Organisation économique</a></li>
         <li><a href="gouvernance-dao.html" data-i18n="sommaire_dao">Gouvernance DAO</a></li>
     </ul>
 </nav>
 
-
-
-
-
-<!-- ZONE BLEUE -->
 <section class="zone-bleue">
- <h2>Contact</h2>
+    <h2 data-i18n="blue_title">Contact</h2>
 </section>
 
-
-<!-- CONTENU -->
 <main class="content" id="contact">
 
-    <h2>Nous contacter</h2>
+    <h2 data-i18n="contact_title">Nous contacter</h2>
 
-    <p>
-        Pour toute question, suggestion ou demande d’information concernant la plateforme Peuplitique, vous pouvez nous écrire via le formulaire ci‑dessous.
+    <p data-i18n="contact_intro">
+        Pour toute question, suggestion ou demande d’information concernant la plateforme Peuplitique,
+        vous pouvez nous écrire via le formulaire ci‑dessous.
     </p>
 
-    <h3>Formulaire de contact</h3>
+    <h3 data-i18n="contact_form_title">Formulaire de contact</h3>
 
     <form class="contact-form">
-        <label>Nom :</label>
+        <label data-i18n="contact_name">Nom :</label>
         <input type="text" placeholder="Votre nom">
 
-        <label>Email :</label>
+        <label data-i18n="contact_email">Email :</label>
         <input type="email" placeholder="Votre email">
 
-        <label>Message :</label>
+        <label data-i18n="contact_message">Message :</label>
         <textarea placeholder="Votre message"></textarea>
 
-        <button type="submit" class="btn">Envoyer</button>
+        <button type="submit" class="btn" data-i18n="contact_send">Envoyer</button>
     </form>
 
-    <h3>Autres moyens de contact</h3>
+    <h3 data-i18n="contact_alt_title">Autres moyens de contact</h3>
 
-    <p>
+    <p data-i18n="contact_alt_text">
         Vous pouvez également nous contacter via nos réseaux sociaux ou par email direct.
     </p>
 
 </main>
 
-<!-- FOOTER -->
 <footer class="footer">
     <p data-i18n="footer">© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
 
-<!-- SCRIPT MULTILINGUE -->
-<script>
-const translations = {
-    fr: {
-        page_title: "Peuplitique – Contact",
-        site_title: "PEUPLITIQUE",
-        site_subtitle: "Plateforme citoyenne – Contact",
-
-        menu_home: "Accueil",
-        menu_governance: "Gouvernance partagée",
-        menu_dao: "DAO",
-        menu_structure: "Organisation structurelle",
-        menu_economie: "Économie intégrée",
-        menu_protocol: "Protocole",
-        menu_glossaire: "Glossaire",
-        menu_contact: "Contact",
-
-        sommaire_constitution: "Constitution",
-        sommaire_limites: "Limites structurelles",
-        sommaire_desequilibres: "Déséquilibres structurels",
-        sommaire_economie: "Organisation économique",
-        sommaire_territoire: "Organisation territoriale",
-        sommaire_dao: "Gouvernance DAO",
-        sommaire_synthese: "Synthèse",
-        sommaire_oeuvre: "Mise en œuvre",
-        sommaire_articles: "Articles",
-
-        blue_title: "Contact",
-        contact_title: "Nous contacter",
-        contact_intro: "Pour toute question, suggestion ou demande d’information concernant la plateforme Peuplitique, vous pouvez nous écrire via le formulaire ci‑dessous.",
-        contact_form_title: "Formulaire de contact",
-        contact_name: "Nom :",
-        contact_email: "Email :",
-        contact_message: "Message :",
-        contact_send: "Envoyer",
-        contact_alt_title: "Autres moyens de contact",
-        contact_alt_text: "Vous pouvez également nous contacter via nos réseaux sociaux ou par email direct.",
-
-        footer: "© 2026 Peuplitique – Tous droits réservés"
-    },
-
-    en: {
-        page_title: "Peuplitique – Contact",
-        site_title: "PEUPLITIQUE",
-        site_subtitle: "Citizen platform – Contact",
-
-        menu_home: "Home",
-        menu_governance: "Shared Governance",
-        menu_dao: "DAO",
-        menu_structure: "Structural Organization",
-        menu_economie: "Integrated Economy",
-        menu_protocol: "Protocol",
-        menu_glossaire: "Glossary",
-        menu_contact: "Contact",
-
-        sommaire_constitution: "Constitution",
-        sommaire_limites: "Structural Limits",
-        sommaire_desequilibres: "Structural Imbalances",
-        sommaire_economie: "Economic Organization",
-        sommaire_territoire: "Territorial Organization",
-        sommaire_dao: "DAO Governance",
-        sommaire_synthese: "Summary",
-        sommaire_oeuvre: "Implementation",
-        sommaire_articles: "Articles",
-
-        blue_title: "Contact",
-        contact_title: "Contact us",
-        contact_intro: "For any question, suggestion or request for information about the Peuplitique platform, you can write to us using the form below.",
-        contact_form_title: "Contact form",
-        contact_name: "Name:",
-        contact_email: "Email:",
-        contact_message: "Message:",
-        contact_send: "Send",
-        contact_alt_title: "Other contact methods",
-        contact_alt_text: "You can also contact us through our social networks or by direct email.",
-
-        footer: "© 2026 Peuplitique – All rights reserved"
-    },
-
-    es: {
-        page_title: "Peuplitique – Contacto",
-        site_title: "PEUPLITIQUE",
-        site_subtitle: "Plataforma ciudadana – Contacto",
-
-        menu_home: "Inicio",
-        menu_governance: "Gobernanza compartida",
-        menu_dao: "DAO",
-        menu_structure: "Organización estructural",
-        menu_economie: "Economía integrada",
-        menu_protocol: "Protocolo",
-        menu_glossaire: "Glosario",
-        menu_contact: "Contacto",
-
-        sommaire_constitution: "Constitución",
-        sommaire_limites: "Límites estructurales",
-        sommaire_desequilibres: "Desequilibrios estructurales",
-        sommaire_economie: "Organización económica",
-        sommaire_territoire: "Organización territorial",
-        sommaire_dao: "Gobernanza DAO",
-        sommaire_synthese: "Síntesis",
-        sommaire_oeuvre: "Implementación",
-        sommaire_articles: "Artículos",
-
-        blue_title: "Contacto",
-        contact_title: "Contáctanos",
-        contact_intro: "Para cualquier pregunta, sugerencia o solicitud de información sobre la plataforma Peuplitique, puede escribirnos mediante el formulario siguiente.",
-        contact_form_title: "Formulario de contacto",
-        contact_name: "Nombre:",
-        contact_email: "Correo electrónico:",
-        contact_message: "Mensaje:",
-        contact_send: "Enviar",
-        contact_alt_title: "Otros medios de contacto",
-        contact_alt_text: "También puede contactarnos a través de nuestras redes sociales o por correo directo.",
-
-        footer: "© 2026 Peuplitique – Todos los derechos reservados"
-    }
-};
 <script>
 function setLang(lang) {
     document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
     document.getElementById(lang).style.display = 'block';
 }
 </script>
-
-
 </body>
 </html>
