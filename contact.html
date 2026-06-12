@@ -9,30 +9,34 @@
 
 <body>
 
+<!-- LANG SWITCH -->
 <div class="lang-switch">
-    <button>FR</button>
-    <button>EN</button>
-    <button>ES</button>
+    <button onclick="showLang('fr')">FR</button>
+    <button onclick="showLang('en')">EN</button>
+    <button onclick="showLang('es')">ES</button>
 </div>
+
+<!-- LANG FR -->
+<div id="fr" class="lang-block">
 
 <header class="header-blue">
     <h1 class="title-main">PEUPLITIQUE</h1>
     <p class="title-sub">Plateforme citoyenne – Contact</p>
     <div class="header-line"></div>
-
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
-            <li><a href="gouvernance-dao.html">DAO</a></li>
-            <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
-            <li><a href="economie-integree.html">Économie intégrée</a></li>
-            <li><a href="protocole.html">Protocole</a></li>
-            <li><a href="glossaire.html">Glossaire</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 </header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="gouvernance-partagee.html">Gouvernance partagée</a></li>
+        <li><a href="gouvernance-dao.html">DAO</a></li>
+        <li><a href="organisation-structurelle.html">Organisation structurelle</a></li>
+        <li><a href="economie-integree.html">Économie intégrée</a></li>
+        <li><a href="protocole.html">Protocole</a></li>
+        <li><a href="glossaire.html">Glossaire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
 <nav class="sommaire-horizontal">
     <ul>
@@ -46,6 +50,8 @@
 
 <section class="zone-bleue">
     <h2>Contact</h2>
+    <p class="sous-titre">Pour toute question ou demande d’information</p>
+    <div class="ligne"></div>
 </section>
 
 <main class="content" id="contact">
@@ -78,7 +84,21 @@
         Vous pouvez également nous contacter via nos réseaux sociaux ou par email direct.
     </p>
 
-    <hr>
+</main>
+
+</div> <!-- FIN FR -->
+
+
+<!-- LANG EN -->
+<div id="en" class="lang-block" style="display:none;">
+
+<section class="zone-bleue">
+    <h2>Contact</h2>
+    <p class="sous-titre">For any question or request for information</p>
+    <div class="ligne"></div>
+</section>
+
+<main class="content">
 
     <h2>Contact us</h2>
 
@@ -108,7 +128,21 @@
         You can also contact us through our social networks or by direct email.
     </p>
 
-    <hr>
+</main>
+
+</div> <!-- FIN EN -->
+
+
+<!-- LANG ES -->
+<div id="es" class="lang-block" style="display:none;">
+
+<section class="zone-bleue">
+    <h2>Contacto</h2>
+    <p class="sous-titre">Para cualquier pregunta o solicitud de información</p>
+    <div class="ligne"></div>
+</section>
+
+<main class="content">
 
     <h2>Contacto</h2>
 
@@ -140,16 +174,19 @@
 
 </main>
 
+</div> <!-- FIN ES -->
+
+
 <footer class="footer">
     <p>© 2026 Peuplitique – Tous droits réservés</p>
 </footer>
+
 <script>
-function setLang(lang) {
+function showLang(lang) {
     document.querySelectorAll('.lang-block').forEach(b => b.style.display = 'none');
     document.getElementById(lang).style.display = 'block';
 }
 </script>
-
 
 </body>
 </html>
